@@ -7,7 +7,6 @@ import Navbar from "../../components/Navbar";
 import SwiperSlider from "../../components/SwiperSlider";
 import AboutSection from "@/components/AboutSection";
 import Footer from "../../components/Footer";
-import ConnectSection from "@/components/ConnectSection";
 import ContactSection from "@/components/ContactSection";
 // import WelcomeSection from '../components/WelcomeSection'
 // import Gallery from '../components/Gallery'
@@ -20,7 +19,7 @@ import ContactSection from "@/components/ContactSection";
 // import '../public/assets/css/animate.min.css'
 // import '../public/assets/css/aos.css'
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Head>

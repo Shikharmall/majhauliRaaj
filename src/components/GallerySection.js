@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
-import ImageGrid from "./ImagesGrid";
+import ImagesGrid from "./ImagesGrid";
 
-export default function ConnectSection() {
+export default function GallerySection() {
   useEffect(() => {
     // Load Twitter widget script dynamically
     const script = document.createElement("script");
@@ -17,45 +17,107 @@ export default function ConnectSection() {
   }, []);
 
   const imagesMajhauli = [
-    "/assets/img/majhauliraaj1.png",
-    "/assets/img/majhauliraaj4.png",
-    "/assets/img/majhauliraaj5.png",
-    "/assets/img/majhauliraaj3.png",
+    {
+      estate: "Majhauli Estate",
+      url: "/assets/img/majhauliraaj1.png",
+    },
+    {
+      estate: "Majhauli Estate",
+      url: "/assets/img/majhauliraaj4.png",
+    },
+    {
+      estate: "Majhauli Estate",
+      url: "/assets/img/majhauliraaj5.png",
+    },
+    {
+      estate: "Majhauli Estate",
+      url: "/assets/img/majhauliraaj3.png",
+    },
   ];
 
   const imagesPratapgarh = [
-    "/assets/img/kunda1.png",
-    "/assets/img/kunda2.png",
-    "/assets/img/kunda3.png",
-    "/assets/img/kunda4.png",
-  ];
-
-  const imagesNarharpur = [
-    "/assets/img/narharpur1.png",
-    "/assets/img/narharpur4.png",
-    "/assets/img/narharpur6.png",
-    "/assets/img/narharpur2.png",
+    {
+      estate: "Pratapgarh Estate",
+      url: "/assets/img/kunda1.png",
+    },
+    {
+      estate: "Pratapgarh Estate",
+      url: "/assets/img/kunda2.png",
+    },
+    {
+      estate: "Pratapgarh Estate",
+      url: "/assets/img/kunda3.png",
+    },
+    {
+      estate: "Pratapgarh Estate",
+      url: "/assets/img/kunda5.png",
+    },
   ];
 
   const imagesPadrauna = [
-    "/assets/img/padrauna1.jpg",
-    "/assets/img/padrauna2.png",
-    "/assets/img/padrauna3.png",
-    "/assets/img/padrauna4.png",
+    {
+      estate: "Padrauna Estate",
+      url: "/assets/img/padrauna1.jpg",
+    },
+    {
+      estate: "Padrauna Estate",
+      url: "/assets/img/padrauna6.png",
+    },
+    {
+      estate: "Padrauna Estate",
+      url: "/assets/img/padrauna4.png",
+    },
+    {
+      estate: "Padrauna Estate",
+      url: "/assets/img/padrauna6.png",
+    },
+  ];
+
+  const imagesNarharpur = [
+    {
+      estate: "Narharpur Estate",
+      url: "/assets/img/narharpur1.png",
+    },
+    {
+      estate: "Narharpur Estate",
+      url: "/assets/img/narharpur4.png",
+    },
+    {
+      estate: "Narharpur Estate",
+      url: "/assets/img/narharpur6.png",
+    },
+    {
+      estate: "Narharpur Estate",
+      url: "/assets/img/narharpur2.png",
+    },
   ];
 
   const imagesMadhuban = [
-    "/assets/img/madhuban1.jpg",
-    "/assets/img/madhuban2.png",
-    "/assets/img/madhuban3.png",
-    "/assets/img/madhuban4.png",
+    {
+      estate: "Madhuban Estate",
+      url: "/assets/img/madhuban1.jpg",
+    },
+    {
+      estate: "Madhuban Estate",
+      url: "/assets/img/madhuban2.png",
+    },
+    {
+      estate: "Madhuban Estate",
+      url: "/assets/img/madhuban3.png",
+    },
+    {
+      estate: "Madhuban Estate",
+      url: "/assets/img/madhuban4.png",
+    },
   ];
 
   return (
     <section className="bg-[#f472172d] py-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold text-[#f47217]">Gallery</h2>
+          <h2 className="text-2xl font-semibold text-[#f47217] font-serif">
+            Gallery
+          </h2>
           <h1 className="text-4xl  text-[#082366]">Photo Gallery</h1>
         </div>
 
@@ -71,7 +133,7 @@ export default function ConnectSection() {
             >
               Est. by King Vishwa Sen
             </a>
-            <ImageGrid images={imagesMajhauli} />
+            <ImagesGrid images={imagesMajhauli} />
           </div>
 
           {/* Pratapgarh Estate */}
@@ -85,7 +147,7 @@ export default function ConnectSection() {
             >
               Est. by King Roop Mall
             </a>
-            <ImageGrid images={imagesPratapgarh} />
+            <ImagesGrid images={imagesPratapgarh} />
           </div>
 
           {/* Padrauna Estate */}
@@ -99,7 +161,7 @@ export default function ConnectSection() {
             >
               Est. by Rai Bahadur Jagdish Narain Singh
             </a>
-            <ImageGrid images={imagesPadrauna} />
+            <ImagesGrid images={imagesPadrauna} />
           </div>
 
           {/* Narharpur Estate */}
@@ -113,7 +175,7 @@ export default function ConnectSection() {
             >
               Est. by King Raai Mall
             </a>
-            <ImageGrid images={imagesNarharpur} />
+            <ImagesGrid images={imagesNarharpur} />
           </div>
 
           {/* Madhuban Estate */}
@@ -127,7 +189,7 @@ export default function ConnectSection() {
             >
               Est. by King Madhav Mall
             </a>
-            <ImageGrid images={imagesMadhuban} />
+            <ImagesGrid images={imagesMadhuban} />
           </div>
         </div>
       </div>

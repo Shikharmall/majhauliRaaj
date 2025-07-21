@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 import SwiperSlider from "../components/SwiperSlider";
 import AboutSection from "@/components/AboutSection";
 import Footer from "../components/Footer";
-import ConnectSection from "@/components/ConnectSection";
+import GallerySection from "@/components/GallerySection";
 // import WelcomeSection from '../components/WelcomeSection'
 // import Gallery from '../components/Gallery'
 // import Connect from '../components/Connect'
@@ -34,7 +34,7 @@ export default function Home() {
         <SwiperSlider />
       </main>
       <AboutSection />
-      <ConnectSection />
+      <GallerySection />
       {/* <WelcomeSection />
       <Gallery />
       <Connect /> */}

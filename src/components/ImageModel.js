@@ -25,7 +25,7 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
     >
       {/* Close Button */}
       <button
-        className="absolute top-4 right-4 text-white text-3xl z-10"
+        className="absolute top-4 right-4 text-white text-3xl z-10 cursor-pointer"
         onClick={onClose}
       >
         &times;
@@ -36,12 +36,15 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
       >
         {/* Image */}
         <Image
-          src={imageSrc}
+          src={imageSrc.url}
           alt="Full Image"
           width={1200}
           height={800}
           className="w-full h-full object-contain rounded-md"
         />
+        <p className="absolute bottom-4 right-4 text-white text-1xl z-10 cursor-pointer bg-black px-3 rounded">
+          {imageSrc.estate}
+        </p>
       </div>
     </div>
   );

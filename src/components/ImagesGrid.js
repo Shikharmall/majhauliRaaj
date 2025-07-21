@@ -20,15 +20,15 @@ export default function ImageGrid({ images }) {
     <>
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {visibleImages.map((src, index) => (
+          {visibleImages.map((item, index) => (
             <div key={index} className="overflow-hidden rounded shadow-md">
               <Image
-                src={src}
+                src={item.url}
                 width={500}
                 height={300}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                onClick={() => openModal(src)}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                onClick={() => openModal(item)}
               />
             </div>
           ))}
@@ -36,7 +36,7 @@ export default function ImageGrid({ images }) {
           {/* + More Block */}
           <div className="relative overflow-hidden rounded shadow-md group">
             <Image
-              src={moreImage}
+              src={moreImage.url}
               width={500}
               height={300}
               alt="More Images"

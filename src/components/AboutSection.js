@@ -26,7 +26,7 @@ export default function AboutSection() {
           className="w-full md:w-1/2 p-4 aos-init aos-animate"
           data-aos="flip-right"
         >
-          <h2 className="text-2xl font-semibold text-[#f47217]">About</h2>
+          <h2 className="text-2xl font-semibold text-[#f47217] font-serif">About</h2>
           <h1 className="text-4xl mb-4 text-[#082366]">
             Majhauli Raaj
           </h1>

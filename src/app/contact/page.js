@@ -2,12 +2,13 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Script from "next/script";
 
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import SwiperSlider from "../components/SwiperSlider";
+import Header from "../../components/Header";
+import Navbar from "../../components/Navbar";
+import SwiperSlider from "../../components/SwiperSlider";
 import AboutSection from "@/components/AboutSection";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import ConnectSection from "@/components/ConnectSection";
+import ContactSection from "@/components/ContactSection";
 // import WelcomeSection from '../components/WelcomeSection'
 // import Gallery from '../components/Gallery'
 // import Connect from '../components/Connect'
@@ -30,14 +31,7 @@ export default function Home() {
 
       <Header />
       <Navbar />
-      <main>
-        <SwiperSlider />
-      </main>
-      <AboutSection />
-      <ConnectSection />
-      {/* <WelcomeSection />
-      <Gallery />
-      <Connect /> */}
+      <ContactSection />
       <Footer />
     </>
   );

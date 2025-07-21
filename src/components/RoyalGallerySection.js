@@ -26,6 +26,10 @@ const images = [
     url: "/assets/img/majhauliraaj6.png",
   },
   {
+    estate: "Majhauli Estate",
+    url: "/assets/img/majhauliraaj7.jpeg",
+  },
+  {
     estate: "Pratapgarh Estate",
     url: "/assets/img/kunda1.png",
   },
@@ -124,7 +128,7 @@ const images = [
   {
     estate: "Madhuban Estate",
     url: "/assets/img/madhuban4.png",
-  }
+  },
 ];
 
 export default function GallerySection() {

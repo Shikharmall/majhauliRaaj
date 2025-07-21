@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -15,7 +16,7 @@ export default function AboutSection() {
           /> */}
 
           <Image
-            src={`/assets/img/majhauliraaj7.png`}
+            src={`/assets/img/majhauliraaj7.jpeg`}
             alt="majhauli-raaj"
             width={500} // full HD width
             height={600} // adjust height accordingly
@@ -38,9 +39,9 @@ export default function AboutSection() {
             Rastra (Later known as Malla Mahajanpada), had ruled prior to
             Mahajanpad Era from Kushinagar as capital of eastern Koshala.
           </p>
-          <a href="/profile" className="text-blue-600 hover:underline">
+          <Link href="/estate" className="text-blue-600 hover:underline">
             Learn More →
-          </a>
+          </Link>
         </div>
       </div>
     </section>

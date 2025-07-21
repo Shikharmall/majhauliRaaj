@@ -30,19 +30,22 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
       >
         &times;
       </button>
+
+      {/* Image Wrapper */}
       <div
-        className="relative max-w-6xl w-full max-h-[90vh] mx-4"
+        className="relative max-w-6xl w-full h-[90vh] mx-4"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Image */}
+        {/* Full Image */}
         <Image
           src={imageSrc.url}
           alt="Full Image"
-          width={1200}
-          height={800}
-          className="w-full h-full object-contain rounded-md"
+          fill
+          className="object-contain rounded-md"
         />
-        <p className="absolute bottom-4 right-4 text-white text-1xl z-10 cursor-pointer bg-black px-3 rounded">
+
+        {/* Label */}
+        <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-xl z-10 bg-black/70 px-4 py-2 rounded">
           {imageSrc.estate}
         </p>
       </div>

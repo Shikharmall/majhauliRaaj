@@ -8,16 +8,6 @@ import SwiperSlider from "../components/SwiperSlider";
 import AboutSection from "@/components/AboutSection";
 import Footer from "../components/Footer";
 import GallerySection from "@/components/GallerySection";
-// import WelcomeSection from '../components/WelcomeSection'
-// import Gallery from '../components/Gallery'
-// import Connect from '../components/Connect'
-
-// import 'aos/dist/aos.css'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'swiper/swiper-bundle.min.css'
-// import '../public/assets/css/style.css' // Copy from original
-// import '../public/assets/css/animate.min.css'
-// import '../public/assets/css/aos.css'
 
 export default function Home() {
   return (

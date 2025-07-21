@@ -1,4 +1,4 @@
-import ImagesGrid from "./ImagesGrid";
+import RoyalImagesGrid from "./RoyalImagesGrid";
 
 const images = [
   {
@@ -24,10 +24,6 @@ const images = [
   {
     estate: "Majhauli Estate",
     url: "/assets/img/majhauliraaj6.png",
-  },
-  {
-    estate: "Majhauli Estate",
-    url: "/assets/img/majhauliraaj7.png",
   },
   {
     estate: "Pratapgarh Estate",
@@ -128,11 +124,7 @@ const images = [
   {
     estate: "Madhuban Estate",
     url: "/assets/img/madhuban4.png",
-  },
-  {
-    estate: "Madhuban Estate",
-    url: "/assets/img/madhuban5.png",
-  },
+  }
 ];
 
 export default function GallerySection() {
@@ -148,7 +140,7 @@ export default function GallerySection() {
         <h1 className="relative z-10 text-5xl text-white">Royal Gallery</h1>
       </div>
       <div className="max-w-6xl mx-auto px-4">
-        <ImagesGrid images={images} />
+        <RoyalImagesGrid images={images} />
       </div>
     </section>
   );

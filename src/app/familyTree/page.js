@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import EstateDetails from "../../components/EstateDetails";
+import FamilyTreeDetails from "@/components/FamilyTreeDetails";
 
 export default function Estate() {
   return (
@@ -16,7 +17,7 @@ export default function Estate() {
 
       <Header />
       <Navbar />
-      <EstateDetails/>
+      <FamilyTreeDetails />
       <Footer />
     </>
   );

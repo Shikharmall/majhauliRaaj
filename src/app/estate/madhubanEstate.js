@@ -5,7 +5,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import EstateDetails from "../../components/EstateDetails";
 
-export default function Estate() {
+export default function Contact() {
   return (
     <>
       <Head>

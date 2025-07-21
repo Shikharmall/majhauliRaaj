@@ -2,16 +2,19 @@
 import React from "react";
 import Image from "next/image";
 import Banner from "./Banner";
+import FamilyTreeStructure from "./FamilyTreeStructure";
 
-export default function EstateDetails() {
+const WIDTH = 70;
+const HEIGHT = 80;
+
+export default function FamilyTreeDetails() {
   return (
     <div>
-      <Banner title ={'Majhauli Estate'}/>
+      <Banner title={"Royal Family Tree"} />
 
       {/* Main Content */}
-      <main className="container mx-auto px-20 py-10">
+      {/* <main className="container mx-auto px-20 py-10">
         <div className="grid md:grid-cols-3 gap-6">
-          {/* Left Image */}
           <div className="md:col-span-1 ">
             <Image
               src="/assets/img/majhauliraaj7.jpeg"
@@ -32,7 +35,7 @@ export default function EstateDetails() {
             ></iframe>
           </div>
 
-          {/* Bio */}
+     
           <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
             <p className="font-serif">
               Majhauli Raj was the seat of an eponymous Bisen/Visen feudal
@@ -78,7 +81,6 @@ export default function EstateDetails() {
           </div>
         </div>
 
-        {/* Personal Details Table */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Personal Details</h2>
           <div className="overflow-x-auto">
@@ -121,7 +123,6 @@ export default function EstateDetails() {
           </div>
         </div>
 
-        {/* Positions Held Table */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Positions Held</h2>
           <div className="overflow-x-auto">
@@ -173,7 +174,8 @@ export default function EstateDetails() {
             </table>
           </div>
         </div>
-      </main>
+      </main> */}
+      <FamilyTreeStructure />
     </div>
   );
 }

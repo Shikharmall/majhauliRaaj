@@ -1,3 +1,4 @@
+import Banner from "./Banner";
 import RoyalImagesGrid from "./RoyalImagesGrid";
 
 const images = [
@@ -135,14 +136,7 @@ export default function GallerySection() {
   return (
     <section className="bg-white pb-12">
       {/* Heading */}
-      <div
-        className="relative h-80 mb-12 flex items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/img/royal4.jpg')" }} // Replace with actual image path
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
-        {/* Optional overlay */}
-        <h1 className="relative z-10 text-5xl text-white">Royal Gallery</h1>
-      </div>
+      <Banner title={"Royal Gallery"}/>
       <div className="max-w-6xl mx-auto px-4">
         <RoyalImagesGrid images={images} />
       </div>

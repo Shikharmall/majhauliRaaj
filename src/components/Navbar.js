@@ -23,7 +23,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/profile"
+              href="/familyTree"
               className="text-gray-700 hover:text-orange-600"
             >
               Family Tree
@@ -57,7 +57,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/profile"
+            href="/familyTree"
             className="block text-gray-700 hover:text-orange-600"
           >
             Profile

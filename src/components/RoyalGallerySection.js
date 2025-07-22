@@ -31,36 +31,72 @@ const images = [
     url: "/assets/img/majhauliraaj7.jpeg",
   },
   {
-    estate: "Pratapgarh Estate",
-    url: "/assets/img/kunda1.png",
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar1.jpeg",
   },
   {
-    estate: "Pratapgarh Estate",
-    url: "/assets/img/kunda2.png",
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar2.jpg",
   },
   {
-    estate: "Pratapgarh Estate",
-    url: "/assets/img/kunda3.png",
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar3.jpeg",
   },
   {
-    estate: "Pratapgarh Estate",
-    url: "/assets/img/kunda4.png",
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar4.jpeg",
   },
   {
-    estate: "Pratapgarh Estate",
-    url: "/assets/img/kunda5.png",
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar5.jpeg",
   },
   {
-    estate: "Pratapgarh Estate",
-    url: "/assets/img/kunda6.png",
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar6.jpeg",
   },
   {
-    estate: "Pratapgarh Estate",
-    url: "/assets/img/kunda7.png",
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar7.jpeg",
   },
   {
-    estate: "Pratapgarh Estate",
-    url: "/assets/img/kunda8.png",
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar8.jpeg",
+  },
+  {
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar9.jpeg",
+  },
+  {
+    estate: "Kalakankar Estate",
+    url: "/assets/img/kalakankar10.jpeg",
+  },
+  {
+    estate: "Badri Estate",
+    url: "/assets/img/badri1.png",
+  },
+  {
+    estate: "Badri Estate",
+    url: "/assets/img/badri2.png",
+  },
+  {
+    estate: "Badri Estate",
+    url: "/assets/img/badri3.png",
+  },
+  {
+    estate: "Badri Estate",
+    url: "/assets/img/badri5.png",
+  },
+  {
+    estate: "Badri Estate",
+    url: "/assets/img/badri6.png",
+  },
+  {
+    estate: "Badri Estate",
+    url: "/assets/img/badri7.png",
+  },
+  {
+    estate: "Badri Estate",
+    url: "/assets/img/badri8.png",
   },
   {
     estate: "Padrauna Estate",
@@ -136,7 +172,7 @@ export default function GallerySection() {
   return (
     <section className="bg-white pb-12">
       {/* Heading */}
-      <Banner title={"Royal Gallery"}/>
+      <Banner title={"Royal Gallery"} />
       <div className="max-w-6xl mx-auto px-4">
         <RoyalImagesGrid images={images} />
       </div>

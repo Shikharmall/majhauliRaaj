@@ -35,22 +35,41 @@ export default function GallerySection() {
     },
   ];
 
-  const imagesPratapgarh = [
+  const imagesKalakankar = [
     {
-      estate: "Pratapgarh Estate",
-      url: "/assets/img/kunda1.png",
+      estate: "Kalakankar Estate",
+      url: "/assets/img/kalakankar1.jpeg",
     },
     {
-      estate: "Pratapgarh Estate",
-      url: "/assets/img/kunda2.png",
+      estate: "Kalakankar Estate",
+      url: "/assets/img/kalakankar2.jpg",
     },
     {
-      estate: "Pratapgarh Estate",
-      url: "/assets/img/kunda3.png",
+      estate: "Kalakankar Estate",
+      url: "/assets/img/kalakankar3.jpeg",
     },
     {
-      estate: "Pratapgarh Estate",
-      url: "/assets/img/kunda5.png",
+      estate: "Kalakankar Estate",
+      url: "/assets/img/kalakankar4.jpeg",
+    },
+  ];
+
+  const imagesBadri = [
+    {
+      estate: "Badri Estate",
+      url: "/assets/img/badri1.png",
+    },
+    {
+      estate: "Badri Estate",
+      url: "/assets/img/badri2.png",
+    },
+    {
+      estate: "Badri Estate",
+      url: "/assets/img/badri3.png",
+    },
+    {
+      estate: "Badri Estate",
+      url: "/assets/img/badri5.png",
     },
   ];
 
@@ -136,9 +155,9 @@ export default function GallerySection() {
             <ImagesGrid images={imagesMajhauli} />
           </div>
 
-          {/* Pratapgarh Estate */}
+          {/* Kalakankar Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-4">Pratapgarh Estate</h3>
+            <h3 className="text-xl font-semibold mb-4">Kalakankar Estate</h3>
             <a
               className="twitter-timeline"
               data-width="380"
@@ -147,7 +166,21 @@ export default function GallerySection() {
             >
               Est. by King Roop Mall
             </a>
-            <ImagesGrid images={imagesPratapgarh} />
+            <ImagesGrid images={imagesKalakankar} />
+          </div>
+
+          {/* Badri Estate */}
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="text-xl font-semibold mb-4">Badri Estate</h3>
+            <a
+              className="twitter-timeline"
+              data-width="380"
+              data-height="500"
+              href="https://twitter.com/b_bhushansharan"
+            >
+              Est. by Rai Sabal Shah
+            </a>
+            <ImagesGrid images={imagesBadri} />
           </div>
 
           {/* Padrauna Estate */}

@@ -1,12 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import ImageModal from "./ImageModel";
 import { useState } from "react";
 
 export default function ImagesGrid({ images }) {
-  const visibleImages = images.slice(0, images.length - 1); // all except last
-  const moreImage = images[images.length - 1]; // last image (to use as preview if needed)
+  if (!images || images.length === 0) return null;
+
+  const visibleImages = images.slice(0, images.length - 1);
+  const moreImage = images[images.length - 1];
 
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -40,16 +43,21 @@ export default function ImagesGrid({ images }) {
               width={500}
               height={300}
               alt="More Images"
-              className="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-transform duration-300 cursor-pointer"
             />
-            <div className="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/50">
+            <Link
+              href="/gallery"
+              className="absolute inset-0 flex items-center justify-center bg-black/50"
+            >
               <span className="text-white text-sm font-bold px-4 py-2 rounded">
                 + More
               </span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
+
+      {/* Modal */}
       <ImageModal
         isOpen={isModalOpen}
         imageSrc={selectedImage}

@@ -38,7 +38,7 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
       >
         {/* Full Image */}
         <Image
-          src={imageSrc.url}
+          src={imageSrc?.url}
           alt="Full Image"
           fill
           className="object-contain rounded-md"
@@ -46,7 +46,7 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
 
         {/* Label */}
         <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-xl z-10 bg-black/70 px-4 py-2 rounded">
-          {imageSrc.estate}
+          {imageSrc?.estate?.toUpperCase()}
         </p>
       </div>
     </div>

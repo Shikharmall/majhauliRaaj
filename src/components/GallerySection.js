@@ -27,11 +27,11 @@ export default function GallerySection() {
     },
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauliraaj5.png",
+      url: "/assets/img/majhauliraaj3.png",
     },
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauliraaj3.png",
+      url: "/assets/img/majhauliraaj2.png",
     },
   ];
 
@@ -73,22 +73,22 @@ export default function GallerySection() {
     },
   ];
 
-  const imagesPadrauna = [
+  const imagesMankapur = [
     {
-      estate: "Padrauna Estate",
-      url: "/assets/img/padrauna1.jpg",
+      estate: "Mankapur Estate",
+      url: "/assets/img/mankapur1.jpg",
     },
     {
-      estate: "Padrauna Estate",
-      url: "/assets/img/padrauna6.png",
+      estate: "Mankapur Estate",
+      url: "/assets/img/mankapur2.jpg",
     },
     {
-      estate: "Padrauna Estate",
-      url: "/assets/img/padrauna4.png",
+      estate: "Mankapur Estate",
+      url: "/assets/img/mankapur4.jpg",
     },
     {
-      estate: "Padrauna Estate",
-      url: "/assets/img/padrauna6.png",
+      estate: "Mankapur Estate",
+      url: "/assets/img/mankapur5.jpg",
     },
   ];
 
@@ -143,7 +143,10 @@ export default function GallerySection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Majhauli Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-4">Majhauli Estate</h3>
+            <h3 className="text-xl font-semibold mb-0">Majhauli Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Malla Mahajanpada
+            </h3>
             <a
               className="twitter-timeline"
               data-width="380"
@@ -157,7 +160,10 @@ export default function GallerySection() {
 
           {/* Kalakankar Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-4">Kalakankar Estate</h3>
+            <h3 className="text-xl font-semibold mb-0">Kalakankar Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
             <a
               className="twitter-timeline"
               data-width="380"
@@ -169,9 +175,29 @@ export default function GallerySection() {
             <ImagesGrid images={imagesKalakankar} />
           </div>
 
+          {/* Mankapur Estate */}
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="text-xl font-semibold mb-0">Mankapur Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
+            <a
+              className="twitter-timeline"
+              data-width="380"
+              data-height="500"
+              href="https://twitter.com/b_bhushansharan"
+            >
+              Est. by Rai Bahadur Jagdish Narain Singh
+            </a>
+            <ImagesGrid images={imagesMankapur} />
+          </div>
+
           {/* Badri Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-4">Badri Estate</h3>
+            <h3 className="text-xl font-semibold mb-0">Badri Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
             <a
               className="twitter-timeline"
               data-width="380"
@@ -183,23 +209,12 @@ export default function GallerySection() {
             <ImagesGrid images={imagesBadri} />
           </div>
 
-          {/* Padrauna Estate */}
-          <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-4">Padrauna Estate</h3>
-            <a
-              className="twitter-timeline"
-              data-width="380"
-              data-height="500"
-              href="https://twitter.com/b_bhushansharan"
-            >
-              Est. by Rai Bahadur Jagdish Narain Singh
-            </a>
-            <ImagesGrid images={imagesPadrauna} />
-          </div>
-
           {/* Narharpur Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-4">Narharpur Estate</h3>
+            <h3 className="text-xl font-semibold mb-0">Narharpur Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
             <a
               className="twitter-timeline"
               data-width="380"
@@ -213,7 +228,10 @@ export default function GallerySection() {
 
           {/* Madhuban Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-4">Madhuban Estate</h3>
+            <h3 className="text-xl font-semibold mb-0">Madhuban Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
             <a
               className="twitter-timeline"
               data-width="380"

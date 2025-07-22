@@ -71,6 +71,30 @@ const images = [
     url: "/assets/img/kalakankar10.jpeg",
   },
   {
+    estate: "Mankapur Estate",
+    url: "/assets/img/mankapur1.jpg",
+  },
+  {
+    estate: "Mankapur Estate",
+    url: "/assets/img/mankapur2.jpg",
+  },
+  {
+    estate: "Mankapur Estate",
+    url: "/assets/img/mankapur3.jpg",
+  },
+  {
+    estate: "Mankapur Estate",
+    url: "/assets/img/mankapur4.jpg",
+  },
+  {
+    estate: "Mankapur Estate",
+    url: "/assets/img/mankapur5.jpg",
+  },
+  {
+    estate: "Mankapur Estate",
+    url: "/assets/img/mankapur6.jpg",
+  },
+  {
     estate: "Badri Estate",
     url: "/assets/img/badri1.png",
   },
@@ -97,34 +121,6 @@ const images = [
   {
     estate: "Badri Estate",
     url: "/assets/img/badri8.png",
-  },
-  {
-    estate: "Padrauna Estate",
-    url: "/assets/img/padrauna1.jpg",
-  },
-  {
-    estate: "Padrauna Estate",
-    url: "/assets/img/padrauna2.png",
-  },
-  {
-    estate: "Padrauna Estate",
-    url: "/assets/img/padrauna3.png",
-  },
-  {
-    estate: "Padrauna Estate",
-    url: "/assets/img/padrauna4.png",
-  },
-  {
-    estate: "Padrauna Estate",
-    url: "/assets/img/padrauna5.png",
-  },
-  {
-    estate: "Padrauna Estate",
-    url: "/assets/img/padrauna6.png",
-  },
-  {
-    estate: "Padrauna Estate",
-    url: "/assets/img/padrauna7.png",
   },
   {
     estate: "Narharpur Estate",

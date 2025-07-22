@@ -3,10 +3,16 @@ import React from "react";
 import Image from "next/image";
 import Banner from "./Banner";
 
-export default function EstateDetails() {
+export default function MadhubanEstateDetails() {
   return (
     <div>
-      <Banner title ={'Majhauli Estate'}/>
+      <Banner
+        title={
+          <>
+            Madhuban Estate (est. mid 16<sup>th</sup> century)
+          </>
+        }
+      />
 
       {/* Main Content */}
       <main className="container mx-auto px-20 py-10">
@@ -14,15 +20,18 @@ export default function EstateDetails() {
           {/* Left Image */}
           <div className="md:col-span-1 ">
             <Image
-              src="/assets/img/majhauliraaj7.jpeg"
+              src="/assets/img/madhuban1.jpg"
               alt="majhauli-img"
               width={600}
               height={400}
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
+            <div className="flex items-center justify-center">
+              <h2>Ruins of Raja Fateh Bahadur Mall's Haveli</h2>
+            </div>
             <br />
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7153.794212572512!2d83.95687574101336!3d26.29743542657846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993b53248562115%3A0xcf26bb1cd7634614!2sMajhauli%20Raj%2C%20Uttar%20Pradesh%20274506!5e0!3m2!1sen!2sin!4v1753097706026!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14323.669579911992!2d83.67328034658887!3d26.1668195922816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39922eb427a6b111%3A0x15404933bf53d77f!2sMadhuban%2C%20Uttar%20Pradesh%20221603!5e0!3m2!1sen!2sin!4v1753207345187!5m2!1sen!2sin"
               width="100%"
               height="300"
               className="w-full rounded-md border-0"
@@ -35,45 +44,25 @@ export default function EstateDetails() {
           {/* Bio */}
           <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
             <p className="font-serif">
-              Majhauli Raj was the seat of an eponymous Bisen/Visen feudal
-              estate known as the Majhauli Raj, which is said to have been
-              founded around 1100 to 1300 CE. King Vishwa Sen (Estimated Around
-              1000 to 1200 BCE), one of the sole king of Malla Desh or Malla
-              Bhumi or Malla Rastra (Later known as Malla Mahajanpada), had
-              ruled prior to Mahajanpad Era from Kushinagar as capital of
-              eastern Koshala.Later one of descendant of King Vishwa Sen
-              (i.e.most probably 86th generation) King Bhim Malla went to
-              conquer the pargana of Salempur, Uttar Pradesh and Majhauli, where
-              he founded a fort and established the Majhauli Raj around 1100 to
-              1300 CE.
+              Raja Madhav Mall was a prominent Rajput ruler from the Vishen
+              (also called Bisen) dynasty, historically linked to the Majhauli
+              Raj estate in eastern Uttar Pradesh. He was the second son of Raja
+              Dev Mall, the 95th ruler of the Majhauli line.
             </p>
             <p className="font-serif">
-              One branch of this dynasty comes from a founder named Mayyur who
-              has been variously described as a Brahmin, Bhumihar or even a
-              Bhat. He had come from Kashi to Kushinara had children with four
-              wives: One Brahmin, one Malla princess (name may be Suryaprabha),
-              one more Bhumihar, as well as one Rajput. His son from his
-              Bhumihar wife named King Bir Sen (Estimated 600 BCE ) founder of
-              Baghochia Dynasty and his descendants established Bans Gaon Estate
-              (Dileepnagar Estate), Hathwa Raj and Tamkuhi raj and started
-              Bhumihar branch . One son from his Malla princess name King
-              Vishwasen founder of Vishwasen Rajput dynasty and his descendant
-              (probably 86th generation) King Bhim Dev stablished Majhuli Raj,
-              One son from his Brahmin wife went on to become the ancestor of
-              the Misra Brahmins; and the son from his Kurmi wife went on to
-              found the Kakradih estate.
+              In the mid-16th century, Raja Madhav Mall established the region
+              known as Madhuban (in present-day Mau district, Uttar Pradesh),
+              which became an influential settlement for his descendants. This
+              area is now the Madhuban tehsil, comprising numerous villages and
+              a significant population.
             </p>
             <p className="font-serif">
-              As the kings of Majhauli Raj were descendants of King Vishwasen of
-              Malla Mahajanpad, they stills put this name as a surname i.e.
-              Vishen/Bisen short form of Vishwasen in their names. They are
-              Suryavanshi Rajput and claim to be sons of God Laxmana from his
-              one of the sons Chandraketu (had got title 'Malla' for being
-              extraordinary wrestler or fighter of that time) who was ruler of
-              Malla Rastra or Malla Mahajanpada in ancient India. Later many
-              kings who were of Majhauli Kingdom established many estates of
-              names Manakpur (Estate), Bhadri (Estate), Raja Madhav Mall
-              (Madhuban), Kalakankar (Estate) and many more in North India.
+              Raja Madhav Malla had two sons: Raja Nath Malla and Raja Ajay
+              Bahadur Malla (also known as Fateh Bahadur Malla). Their
+              descendants took on the surname “Mall”, and many settled across
+              eastern UP — especially in Madhuban, Mau, Gorakhpur, Deoria, and
+              villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
+              Parshurampur.
             </p>
           </div>
         </div>

@@ -1,13 +1,11 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import Script from "next/script";
-
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import SwiperSlider from "../components/SwiperSlider";
 import AboutSection from "@/components/AboutSection";
 import Footer from "../components/Footer";
 import GallerySection from "@/components/GallerySection";
+import MoreSection from "@/components/MoreSection";
 
 export default function Home() {
   return (
@@ -20,14 +18,10 @@ export default function Home() {
 
       <Header />
       <Navbar />
-      <main>
-        <SwiperSlider />
-      </main>
+      <SwiperSlider />
       <AboutSection />
+      <MoreSection />
       <GallerySection />
-      {/* <WelcomeSection />
-      <Gallery />
-      <Connect /> */}
       <Footer />
     </>
   );

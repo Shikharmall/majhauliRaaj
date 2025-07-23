@@ -15,7 +15,7 @@ export default function Navbar() {
               className="text-xl font-semibold text-[#f47217] font-serif"
               // className="text-xl font-semibold text-[#caaf44] font-serif"
             >
-              Majhauli Raaj
+              Majhauli Raj
             </Link>
           </div>
           <div className="hidden md:flex space-x-4">

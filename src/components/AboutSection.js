@@ -29,7 +29,7 @@ export default function AboutSection() {
         >
           <h2 className="text-2xl font-semibold text-[#f47217] font-serif">About</h2>
           <h1 className="text-4xl mb-4 text-[#082366]">
-            Majhauli Raaj
+            Majhauli Raj
           </h1>
           <p className="mb-4 text-black">
             Majhauli Raj was the seat of an eponymous Bisen/Visen feudal estate

@@ -78,7 +78,7 @@ export default function MoreSection() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Welcome to <strong className="text-[#f47217]">Our</strong> Estates
+          Explore our <strong className="text-[#f47217]">Royal</strong> Estates
         </h2>
 
         <div

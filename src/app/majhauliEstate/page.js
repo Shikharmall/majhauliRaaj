@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import EstateDetails from "../../components/EstateDetails";
+import MajhauliEstateDetails from "../../components/MajhauliEstateDetails";
 
 export default function Estate() {
   return (
@@ -16,7 +16,7 @@ export default function Estate() {
 
       <Header />
       <Navbar />
-      <EstateDetails/>
+      <MajhauliEstateDetails/>
       <Footer />
     </>
   );

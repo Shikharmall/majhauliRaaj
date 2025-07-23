@@ -1,216 +1,76 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
-const familyData = {
-  name: "Raja Raghuvansh Mall",
-  children: [
-    {
-      name: "Raja Ratna Mall",
-      children: [
-        {
-          name: "Raja Ram Mall",
-          children: [
-            {
-              name: "Raja Nipra Mall",
-              children: [
-                {
-                  name: "Raja Harishchandra Mall",
-                  children: [
-                    {
-                      name: "Maharaja Dev Mall",
-                      children: [
-                        {
-                          name: "Raja Prasad Mall",
-                          children: [
-                            {
-                              name: "Maharaja Bheem Mall",
-                              children: [
-                                {
-                                  name: "Raja Narayan Mall",
-                                  children: [
-                                    {
-                                      name: "Raja Roop Mall",
-                                      children: [
-                                        {
-                                          name: "Raja Vikramaditya Mall",
-                                          children: [
-                                            {
-                                              name: "Raja Bodh Mall",
-                                              children: [
-                                                {
-                                                  name: "Bhavani Mall",
-                                                  children: [
-                                                    {
-                                                      name: "Bheem Mall II",
-                                                      children: [],
-                                                    },
-                                                  ],
-                                                },
-                                                {
-                                                  name: "Lakshmi Mall",
-                                                  children: [
-                                                    {
-                                                      name: "Raja Shiv Mall",
-                                                      children: [
-                                                        {
-                                                          name: "Raja Ajit Mall(Rani Dilraaj kuwaari)",
-                                                          children: [
-                                                            {
-                                                              name: "Tej Mall(adopted son of Babu Sarvajeet Mall)",
-                                                              children: [],
-                                                            },
-                                                          ],
-                                                        },
-                                                      ],
-                                                    },
-                                                    {
-                                                      name: "Babu Krishna Prasad Mall",
-                                                      children: [
-                                                        {
-                                                          name: "Babu Sarvajeet Mall",
-                                                          children: [
-                                                            {
-                                                              name: "Tej Mall",
-                                                              children: [],
-                                                            },
-                                                          ],
-                                                        },
-                                                      ],
-                                                    },
-                                                  ],
-                                                },
-                                                {
-                                                  name: "Anand Mall",
-                                                  children: [
-                                                    {
-                                                      name: "Govind Mall",
-                                                      children: [
-                                                        {
-                                                          name: "Prithvi Mall",
-                                                          children: [
-                                                            {
-                                                              name: "Pratap Mall",
-                                                              children: [],
-                                                            },
-                                                            {
-                                                              name: "Juba Mall",
-                                                              children: [],
-                                                            },
-                                                            {
-                                                              name: "Haripal Mall",
-                                                              children: [],
-                                                            },
-                                                            {
-                                                              name: "Kaniyha Mall",
-                                                              children: [],
-                                                            },
-                                                          ],
-                                                        },
-                                                      ],
-                                                    },
-                                                    {
-                                                      name: "Indra Mall",
-                                                      children: [],
-                                                    },
-                                                  ],
-                                                },
-                                              ],
-                                            },
-                                          ],
-                                        },
-                                        {
-                                          name: "Babu Madhav Mall II (Ancestors of Mahen)",
-                                          children: [],
-                                        },
-                                      ],
-                                    },
-                                    {
-                                      name: "Raja Chatur Mall",
-                                      children: [],
-                                    },
-                                    {
-                                      name: "Babu Chattar Shahi",
-                                      children: [],
-                                    },
-                                  ],
-                                },
-                                {
-                                  name: "Babu Ram Shahi",
-                                  children: [],
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                        {
-                          name: "Raja Madhav Mall (Madhuban Estate)",
-                          children: [
-                            {
-                              name: "Raja Nath Mall",
-                              children: [],
-                            },
-                            {
-                              name: "Raja Ajit Mall\n(Raja Fateh Bahadur Mall)",
-                              children: [],
-                            },
-                          ],
-                        },
-                        {
-                          name: "Raja Rai Mall\n(Narharpur Estate)",
-                          children: [],
-                        },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  name: "Raja Pratap Mall\n(Gonda)",
-                  children: [],
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      name: "Raja Roop Mall",
-      children: [],
-    },
-  ],
-};
-
+// Recursive TreeNode component
 function TreeNode({ node }) {
   return (
     <div className="flex flex-col items-center relative">
-      {/* Node */}
-      <div className="bg-[#f5a873] text-sm font-semibold px-4 py-2 border border-[#f47217] rounded shadow text-white">
-        {node.name}
-      </div>
+      {/* Dashed infinite line if node.isInfinite is true */}
+      {node?.isInfinite === true && (
+        <div className="h-10 w-px border-l-2 border-dashed border-gray-400 mt-2"></div>
+      )}
 
-      {/* Vertical Line */}
-      {node.children && node.children.length > 0 && (
+      {node?.isInfinite === undefined && (
         <>
-          <div className="h-5 w-px bg-gray-400"></div>
-
-          {/* Horizontal Connector */}
-          <div className="flex justify-center items-start space-x-4 relative">
-            <div className="absolute top-0 left-0 right-0 h-px bg-gray-400 z-0" />
-            {node.children.map((child, index) => (
-              <div key={index} className="flex flex-col items-center z-10">
-                <TreeNode node={child} />
-              </div>
-            ))}
+          {/* Node box */}
+          <div
+            className={`text-sm font-semibold px-4 py-2 rounded shadow 
+            ${
+              node.isKing
+                ? "bg-[#ffed8a] border border-[#FFD700] text-black"
+                : "bg-[#f5a873] border border-[#f47217] text-white"
+            }`}
+          >
+            {node.name}
           </div>
+
+          {/* Children connectors */}
+          {node.children && node.children.length > 0 && (
+            <>
+              {/* Vertical line down from node */}
+              <div className="h-5 w-px bg-gray-400"></div>
+
+              {/* Horizontal line and recursive child nodes */}
+              <div className="flex justify-center items-start relative">
+                {/* Horizontal connector line */}
+                <div className="absolute top-0 left-0 right-0 h-px bg-gray-400 z-0" />
+
+                {/* Render each child node */}
+                {node.children.map((child, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center px-4 z-10"
+                  >
+                    <div className="h-5 w-px bg-gray-400"></div>
+                    <TreeNode node={child} />
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
         </>
       )}
     </div>
   );
 }
 
-export default function FamilyTreeStructure() {
+// Main Family Tree Component
+export default function FamilyTreeStructure({ familyData }) {
+  const containerRef = useRef();
+
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.scrollLeft =
+        containerRef.current.scrollWidth / 2 -
+        containerRef.current.clientWidth / 2;
+    }
+  }, []);
+
   return (
-    <div className="min-h-screen p-6 bg-gray-100">
-      <div className="flex justify-center overflow-x-auto">
+    <div
+      ref={containerRef}
+      className="min-h-screen p-6 bg-gray-100 overflow-auto"
+    >
+      <div className="min-w-max mx-auto">
         <TreeNode node={familyData} />
       </div>
     </div>

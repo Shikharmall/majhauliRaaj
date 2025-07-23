@@ -2,6 +2,199 @@
 import React from "react";
 import Image from "next/image";
 import Banner from "./Banner";
+import FamilyTreeStructure from "./FamilyTreeStructure";
+
+const familyData = {
+  name: "Raja Madhav Mall",
+  isKing: true,
+  children: [
+    {
+      name: "Raja Nath Mall",
+      children: [
+        {
+          name: "Ajit Mall",
+          children: [
+            {
+              name: "Vijay Mall",
+              children: [
+                {
+                  name: "Ganga Mall",
+                  children: [],
+                },
+                {
+                  name: "Sultan Mall",
+                  children: [],
+                },
+                {
+                  name: "Naval Mall",
+                  children: [],
+                },
+                {
+                  name: "Madhav Mall",
+                  children: [],
+                },
+                {
+                  name: "Brindavan Mall",
+                  children: [],
+                },
+                {
+                  name: "Vikram Mall",
+                  children: [],
+                },
+                {
+                  name: "Vishnu Dayal Mall",
+                  children: [
+                    {
+                      name: "Dhaval Mall",
+                      children: [],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "Raja Ajay Mall (Raja Fateh Bahadur Mall)",
+      children: [
+        {
+          name: "Harihar Mall",
+          children: [
+            {
+              name: "Nag Mall",
+              children: [],
+            },
+            {
+              name: "Karan Mall",
+              children: [],
+            },
+            {
+              name: "Narhar Mall",
+              children: [],
+            },
+            {
+              name: "Banwari Mall",
+              children: [],
+            },
+            {
+              name: "Bisha Mall",
+              children: [
+                {
+                  name: "Sesar Mall",
+                  children: [],
+                },
+                {
+                  name: "Vihari Mall",
+                  children: [
+                    {
+                      name: "Narseva Mall",
+                      children: [
+                        {
+                          name: "Nandan Mall",
+                          children: [],
+                        },
+                        {
+                          name: "Kaval Mall",
+                          children: [
+                            {
+                              name: "Jawaahar Mall",
+                              children: [],
+                            },
+                            {
+                              name: "Uttam Mall",
+                              children: [
+                                {
+                                  name: "Bacchan Mall",
+                                  children: [
+                                    {
+                                      name: "Nanua Mall",
+                                      children: [
+                                        {
+                                          name: "Tikaat Mall",
+                                          children: [
+                                            {
+                                              name: "Shiv Baksh Mall",
+                                              children: [
+                                                {
+                                                  name: "Nakched Mall",
+                                                  children: [],
+                                                },
+                                                {
+                                                  name: "Charita Mall",
+                                                  children: [
+                                                    {
+                                                      name: "Tarapati Mall",
+                                                      children: [],
+                                                    },
+                                                    {
+                                                      name: "Ram Prasad Mall",
+                                                      children: [],
+                                                    },
+                                                    {
+                                                      name: "Shiv Prasad Mall",
+                                                      children: [],
+                                                    },
+                                                  ],
+                                                },
+                                                {
+                                                  name: "Madaari Mall",
+                                                  children: [],
+                                                },
+                                              ],
+                                            },
+                                            {
+                                              name: "Jabaal Mall",
+                                              children: [],
+                                            },
+                                            {
+                                              name: "Ram Baksh Mall",
+                                              children: [],
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                            {
+                              name: "Dhaamu Mall",
+                              children: [
+                                {
+                                  name: "Anand Mall",
+                                  children: [],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Baban Mall",
+                          children: [],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  name: "Mohan Mall",
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "Ratti Mall",
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
 
 export default function MadhubanEstateDetails() {
   return (
@@ -9,7 +202,8 @@ export default function MadhubanEstateDetails() {
       <Banner
         title={
           <>
-            Madhuban Estate (est. mid 16<sup>th</sup> century)
+            Madhuban Estate
+            {/* (est. mid 16<sup>th</sup> century) */}
           </>
         }
       />
@@ -60,15 +254,17 @@ export default function MadhubanEstateDetails() {
               Raja Madhav Malla had two sons: Raja Nath Malla and Raja Ajay
               Bahadur Malla (also known as Fateh Bahadur Malla). Their
               descendants took on the surname “Mall”, and many settled across
-              eastern UP — especially in Madhuban, Mau, Gorakhpur, Deoria, and
-              villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
+              eastern UP — especially in Madhuban, Mau, Gorakhpur and Deoria,
+              and villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
               Parshurampur.
             </p>
           </div>
         </div>
 
+        <FamilyTreeStructure familyData={familyData} />
+
         {/* Personal Details Table */}
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Personal Details</h2>
           <div className="overflow-x-auto">
             <table className="min-w-full border border-gray-300">
@@ -108,10 +304,10 @@ export default function MadhubanEstateDetails() {
               </tbody>
             </table>
           </div>
-        </div>
+        </div> */}
 
         {/* Positions Held Table */}
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Positions Held</h2>
           <div className="overflow-x-auto">
             <table className="min-w-full border border-gray-300">
@@ -161,7 +357,7 @@ export default function MadhubanEstateDetails() {
               </tbody>
             </table>
           </div>
-        </div>
+        </div> */}
       </main>
     </div>
   );

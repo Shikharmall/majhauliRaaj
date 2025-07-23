@@ -39,7 +39,7 @@ export default function AboutSection() {
             Rastra (Later known as Malla Mahajanpada), had ruled prior to
             Mahajanpad Era from Kushinagar as capital of eastern Koshala.
           </p>
-          <Link href="/estate" className="text-blue-600 hover:underline">
+          <Link href="/majhauliEstate" className="text-blue-600 hover:underline">
             Learn More →
           </Link>
         </div>

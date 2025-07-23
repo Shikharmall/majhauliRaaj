@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import EstateDetails from "../../components/EstateDetails";
+import EstateDetails from "../../components/MajhauliEstateDetails";
 import FamilyTreeDetails from "@/components/FamilyTreeDetails";
 
 export default function Estate() {

@@ -5,39 +5,51 @@ import FamilyTreeStructure from "./FamilyTreeStructure";
 
 const familyData = {
   name: "Raja Raghuvansh Mall",
+  isKing: true,
   children: [
     {
       name: "Raja Ratna Mall",
+      isKing: true,
       children: [
         {
           name: "Raja Ram Mall",
+          isKing: true,
           children: [
             {
-              name: "Raja Nipra Mall",
+              name: "Raja Nrip Mall",
+              isKing: true,
               children: [
                 {
                   name: "Raja Harishchandra Mall",
+                  isKing: true,
                   children: [
                     {
                       name: "Maharaja Dev Mall",
+                      isKing: true,
                       children: [
                         {
                           name: "Raja Prasad Mall",
+                          isKing: true,
                           children: [
                             {
                               name: "Maharaja Bheem Mall",
+                              isKing: true,
                               children: [
                                 {
                                   name: "Raja Narayan Mall",
+                                  isKing: true,
                                   children: [
                                     {
                                       name: "Raja Roop Mall",
+                                      isKing: true,
                                       children: [
                                         {
                                           name: "Raja Vikramaditya Mall",
+                                          isKing: true,
                                           children: [
                                             {
                                               name: "Raja Bodh Mall",
+                                              isKing: true,
                                               children: [
                                                 {
                                                   name: "Bhavani Mall",
@@ -53,9 +65,11 @@ const familyData = {
                                                   children: [
                                                     {
                                                       name: "Raja Shiv Mall",
+                                                      isKing: true,
                                                       children: [
                                                         {
                                                           name: "Raja Ajit Mall(Rani Dilraaj kuwaari)",
+                                                          isKing: true,
                                                           children: [
                                                             {
                                                               name: "Tej Mall(adopted son of Babu Sarvajeet Mall)",
@@ -128,6 +142,7 @@ const familyData = {
                                     },
                                     {
                                       name: "Raja Chatur Mall",
+                                      isKing: true,
                                       children: [],
                                     },
                                     {
@@ -146,19 +161,22 @@ const familyData = {
                         },
                         {
                           name: "Raja Madhav Mall (Madhuban Estate)",
+                          isKing: true,
                           children: [
                             {
                               name: "Raja Nath Mall",
+                              isKing: true,
                               children: [],
                             },
                             {
-                              name: "Raja Ajit Mall\n(Raja Fateh Bahadur Mall)",
+                              name: "Ajit Mall(Fateh Bahadur Mall)",
                               children: [],
                             },
                           ],
                         },
                         {
-                          name: "Raja Rai Mall\n(Narharpur Estate)",
+                          name: "Raja Rai Mall(Narharpur Estate)",
+                          isKing: true,
                           children: [],
                         },
                       ],
@@ -166,7 +184,8 @@ const familyData = {
                   ],
                 },
                 {
-                  name: "Raja Pratap Mall\n(Gonda)",
+                  name: "Raja Pratap Mall(Gonda)",
+                  isKing: true,
                   children: [],
                 },
               ],
@@ -177,6 +196,7 @@ const familyData = {
     },
     {
       name: "Raja Roop Mall",
+      isKing: true,
       children: [],
     },
   ],

@@ -27,10 +27,14 @@ export default function AboutSection() {
           className="w-full md:w-1/2 p-4 aos-init aos-animate"
           data-aos="flip-right"
         >
-          <h2 className="text-2xl font-semibold text-[#f47217] font-serif">About</h2>
-          <h1 className="text-4xl mb-4 text-[#082366]">
-            Majhauli Raj
-          </h1>
+          {/* <h2 className="text-2xl font-semibold text-[#f47217] font-serif">About</h2> */}
+          <div className="inline-block relative mb-5">
+            <h2 className="text-2xl font-semibold text-[#f47217] font-serif">
+              About
+            </h2>
+            <div className="absolute left-0 top-8 w-1/2 h-1 bg-[#2ccc7f]"></div>
+          </div>
+          <h1 className="text-4xl mb-4 text-[#082366]">Majhauli Raj</h1>
           <p className="mb-4 text-black">
             Majhauli Raj was the seat of an eponymous Bisen/Visen feudal estate
             known as the Majhauli Raj, which is said to have been founded around
@@ -39,8 +43,11 @@ export default function AboutSection() {
             Rastra (Later known as Malla Mahajanpada), had ruled prior to
             Mahajanpad Era from Kushinagar as capital of eastern Koshala.
           </p>
-          <Link href="/majhauliEstate" className="text-blue-600 hover:underline">
-            Learn More →
+          <Link
+            href="/majhauliEstate"
+            className="text-[#2ccc7f] hover:text-white hover:bg-[#2ccc7f] border border-2 p-3 rounded"
+          >
+            Learn More
           </Link>
         </div>
       </div>

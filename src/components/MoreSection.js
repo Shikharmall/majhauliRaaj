@@ -10,63 +10,63 @@ export default function MoreSection() {
       title: "Majhauli Estate",
       description: "Raja Vishwa Sen",
       src: "/assets/img/royalFlagC.png",
-      href: "#",
+      href: "estates/majhauliEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Kalakankar Estate",
       description: "Raja Roop Mall",
       src: "/assets/img/royalFlagC.png",
-      href: "#",
+      href: "estates/kalakankarEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Badri Estate",
       description: "Rai Sabal Shah",
       src: "/assets/img/royalFlagC.png",
-      href: "#",
+      href: "estates/badriEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Gonda Estate",
       description: "Organizations run by me",
       src: "/assets/img/gonda_coa.png",
-      href: "#",
+      href: "estatesgondaEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Narharpur Estate",
       description: "Raja Rai Mall",
       src: "/assets/img/royalFlagC.png",
-      href: "#",
+      href: "estates/narharpurEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Madhuban Estate",
       description: "Raja Madhav Mall",
       src: "/assets/img/royalFlagC.png",
-      href: "/madhubanEstate",
+      href: "estates/madhubanEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Mankapur Estate",
       description: "Raja Madhav Mall",
       src: "/assets/img/mankapur_coa.png",
-      href: "#",
+      href: "estates/mankapurEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Bhinga Estate",
       description: "Raja Madhav Mall",
       src: "/assets/img/bhinga_coa.png",
-      href: "#",
+      href: "/estates/bhingaEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
-      title: "Dumaria Estate",
-      description: "Raja Madhav Mall",
+      title: "Dumaria Zamindari",
+      description: "Jagat Bahadur Shahi",
       src: "/assets/img/royalFlagC.png",
-      href: "#",
+      href: "/estates/dumariaEstate",
     },
   ];
 
@@ -78,11 +78,11 @@ export default function MoreSection() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Explore our <strong className="text-[#f47217]">Royal</strong> Estates
+          Explore our <strong className="text-[#f47217]">Royal</strong> Legacy
         </h2>
 
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-red-500 justify-items-center items-center" //gap-6
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center items-center" //gap-6
         >
           {items.map((item, idx) => (
             <a

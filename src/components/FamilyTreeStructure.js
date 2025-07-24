@@ -4,49 +4,55 @@ import React, { useRef, useEffect } from "react";
 function TreeNode({ node }) {
   return (
     <div className="flex flex-col items-center relative">
-      {/* Dashed infinite line if node.isInfinite is true */}
-      {node?.isInfinite === true && (
-        <div className="h-10 w-px border-l-2 border-dashed border-gray-400 mt-2"></div>
-      )}
+      {/* Node box */}
 
-      {node?.isInfinite === undefined && (
+      {node?.isInfinite ? (
         <>
-          {/* Node box */}
-          <div
-            className={`text-sm font-semibold px-4 py-2 rounded shadow 
+          <div className="h-10 w-px border-l-2 border-dashed border-gray-400 mt-2"></div>
+        </>
+      ) : (
+        <div
+          className={`px-4 py-2 rounded shadow
             ${
               node.isKing
-                ? "bg-[#ffed8a] border border-[#FFD700] text-black"
-                : "bg-[#f5a873] border border-[#f47217] text-white"
+                ? "border-2 border-[#FFD700] text-[#FFD700]"
+                : "border-2 border-[#f47217] text-[#f5a873]"
             }`}
+        >
+          <p
+            className={`text-sm font-semibold 
+            ${node?.isKing ? "text-[#FFD700]" : "text-[#f5a873]"}`}
           >
-            {node.name}
-          </div>
+            {node?.name}
+          </p>
+          <p
+            className={`text-sm font-semibold 
+            ${node?.isKing ? "text-[#FFD700]" : "text-[#f5a873]"}`}
+          >
+            {node?.isExtra}
+          </p>
+        </div>
+      )}
 
-          {/* Children connectors */}
-          {node.children && node.children.length > 0 && (
-            <>
-              {/* Vertical line down from node */}
-              <div className="h-5 w-px bg-gray-400"></div>
+      {/* Children connectors */}
+      {node.children && node.children.length > 0 && (
+        <>
+          {/* Vertical line down from node */}
+          <div className="h-5 w-px bg-gray-400"></div>
 
-              {/* Horizontal line and recursive child nodes */}
-              <div className="flex justify-center items-start relative">
-                {/* Horizontal connector line */}
-                <div className="absolute top-0 left-0 right-0 h-px bg-gray-400 z-0" />
+          {/* Horizontal line and recursive child nodes */}
+          <div className="flex justify-center items-start relative">
+            {/* Horizontal connector line */}
+            <div className="absolute top-0 left-0 right-0 h-px bg-gray-400 z-0" />
 
-                {/* Render each child node */}
-                {node.children.map((child, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col items-center px-4 z-10"
-                  >
-                    <div className="h-5 w-px bg-gray-400"></div>
-                    <TreeNode node={child} />
-                  </div>
-                ))}
+            {/* Render each child node */}
+            {node.children.map((child, index) => (
+              <div key={index} className="flex flex-col items-center px-4 z-10">
+                <div className="h-5 w-px bg-gray-400"></div>
+                <TreeNode node={child} />
               </div>
-            </>
-          )}
+            ))}
+          </div>
         </>
       )}
     </div>
@@ -68,7 +74,7 @@ export default function FamilyTreeStructure({ familyData }) {
   return (
     <div
       ref={containerRef}
-      className="min-h-screen p-6 bg-gray-100 overflow-auto"
+      className="min-h-screen p-6 bg-gray-100 overflow-auto my-5 rounded"
     >
       <div className="min-w-max mx-auto">
         <TreeNode node={familyData} />

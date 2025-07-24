@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Banner from "./Banner";
-import FamilyTreeStructure from "./FamilyTreeStructure";
+import Banner from "../Banner";
+import FamilyTreeStructure from "../FamilyTreeStructure";
 
 const familyData = {
   name: "Raja Madhav Mall",
@@ -199,14 +199,7 @@ const familyData = {
 export default function MadhubanEstateDetails() {
   return (
     <div>
-      <Banner
-        title={
-          <>
-            Madhuban Estate
-            {/* (est. mid 16<sup>th</sup> century) */}
-          </>
-        }
-      />
+      <Banner title={"Madhuban Estate"} />
 
       {/* Main Content */}
       <main className="container mx-auto px-20 py-10">

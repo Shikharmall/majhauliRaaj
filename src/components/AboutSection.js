@@ -16,7 +16,7 @@ export default function AboutSection() {
           /> */}
 
           <Image
-            src={`/assets/img/majhauliraaj7.jpeg`}
+            src={`/assets/img/majhauli/majhauliraaj7.jpeg`}
             alt="majhauli-raaj"
             width={500} // full HD width
             height={600} // adjust height accordingly

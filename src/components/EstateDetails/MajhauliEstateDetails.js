@@ -534,7 +534,7 @@ export default function MajhauliEstateDetails() {
           {/* Left Image */}
           <div className="md:col-span-1 ">
             <Image
-              src="/assets/img/majhauliraaj7.jpeg"
+              src="/assets/img/majhauli/majhauliraaj7.jpeg"
               alt="majhauli-img"
               width={600}
               height={400}

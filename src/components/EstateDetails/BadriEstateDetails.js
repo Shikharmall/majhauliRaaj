@@ -5,103 +5,127 @@ import FamilyTreeStructure from "../FamilyTreeStructure";
 import Banner from "../Banner";
 
 const familyData = {
-  name: "Jagat Bahadur Shahi",
+  name: "Rai Radho",
   isKing: true,
   children: [
     {
-      name: "Shattru Mardan Shahi (prev. Ranadhwaj Singh - adopted)",
-      isKing: true,
+      name: "",
+      isInfinite: true,
       children: [
         {
-          name: "Ripudaman Shahi",
-          children: [],
-        },
-        {
-          name: "Ran Vijaya Shahi",
+          name: "Rai SABAL SHAH",
           isKing: true,
           children: [
             {
-              name: "Kirti Renu Singh",
-              children: [
-                {
-                  name: "Surya Kirti Singh",
-                  children: [],
-                },
-                {
-                  name: "Arusha Singh",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Arindam Shahi",
+              name: "Rai BIKRAM SHAH",
               isKing: true,
               children: [
                 {
-                  name: "Arimardan Shahi",
-                  children: [],
-                },
-                {
-                  name: "Kritika Shahi",
-                  children: [],
-                },
-                {
-                  name: "Ripumardan Shahi",
-                  children: [],
+                  name: "Rai CHHATAR SINGH",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "Rai RAM SINGH",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "Rai GAHARWAR SINGH",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "Rai DALJIT SINGH",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "Rai ZALIM SINGH",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "Rai JAGMOHAN SINGH",
+                                      isKing: true,
+                                      children: [
+                                        {
+                                          name: "Rai BISHNATH SINGH",
+                                          isKing: true,
+                                          children: [
+                                            {
+                                              name: "Rai JAGAT BAHADUR SINGH",
+                                              isKing: true,
+                                              children: [
+                                                {
+                                                  name: "Rai SARABJIT SINGH",
+                                                  isKing: true,
+                                                  children: [
+                                                    {
+                                                      name: "Rai KRISHAN PRASAD SINGH",
+                                                      isKing: true,
+                                                      children: [
+                                                        {
+                                                          name: "Raja BAJRANG BAHADUR SINGH",
+                                                          isKing: true,
+                                                          children: [
+                                                            {
+                                                              name: "Kumari Prabha Singh",
+                                                            },
+                                                            {
+                                                              name: "Raja UDAI PRATAP SINGH",
+                                                              isKing: true,
+                                                              children: [
+                                                                {
+                                                                  name: "Kunwar Raghuraj Pratap Singh",
+                                                                  isExtra:
+                                                                    "(Raja Bhaiya)",
+                                                                  children: [
+                                                                    {
+                                                                      name: "Raghavi Singh",
+                                                                    },
+                                                                    {
+                                                                      name: "Vijayrajeshwari Kumari",
+                                                                    },
+                                                                    {
+                                                                      name: "Brijraj Singh",
+                                                                    },
+                                                                    {
+                                                                      name: "Shivraj Singh",
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          ],
+                                                        },
+                                                        {
+                                                          name: "Kunwar Bhadreshwar Pratap Singh",
+                                                        },
+                                                        {
+                                                          name: "Kunwar Trilochan Pratap Singh",
+                                                          children: [
+                                                            {
+                                                              name: "Rai UDAI PRATAP SINGH",
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                  ],
+                                                },
+                                              ],
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
                 },
               ],
-            },
-            {
-              name: "Shattrundam Shahi",
-              children: [
-                {
-                  name: "Sreejamya Shahi",
-                  children: [],
-                },
-                {
-                  name: "Samar Vijay Shahi",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Ripundam Shahi",
-              children: [
-                {
-                  name: "Arkaja Shahi",
-                  children: [],
-                },
-              ],
-            },
-          ],
-        },
-        {
-          name: "Bhargavi Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Indira Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Padma Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Ajay Kumar Shahi",
-          children: [
-            {
-              name: "Rananjay Shahi",
-              children: [
-                {
-                  name: "Bhavya Shahi",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Dhananjay Shahi",
-              children: [],
             },
           ],
         },

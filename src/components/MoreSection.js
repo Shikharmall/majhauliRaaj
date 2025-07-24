@@ -28,7 +28,7 @@ export default function MoreSection() {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Gonda Estate",
       description: "Organizations run by me",
-      src: "/assets/img/gonda_coa.png",
+      src: "/assets/img/gonda/gonda_coa.png",
       href: "estates/gondaEstate",
     },
     {
@@ -49,14 +49,14 @@ export default function MoreSection() {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Mankapur Estate",
       description: "Raja Madhav Mall",
-      src: "/assets/img/mankapur_coa.png",
+      src: "/assets/img/mankapur/mankapur_coa.png",
       href: "estates/mankapurEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Bhinga Estate",
       description: "Raja Madhav Mall",
-      src: "/assets/img/bhinga_coa.png",
+      src: "/assets/img/bhinga/bhinga_coa.png",
       href: "/estates/bhingaEstate",
     },
     {

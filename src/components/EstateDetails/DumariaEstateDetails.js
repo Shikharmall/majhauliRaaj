@@ -9,12 +9,12 @@ const familyData = {
   isKing: true,
   children: [
     {
-      name: "Shattru Mardan Shahi (prev. Ranadhwaj Singh - adopted)",
+      name: "Shattru Mardan Shahi",
+      isExtra: "(prev. Ranadhwaj Singh - adopted)",
       isKing: true,
       children: [
         {
           name: "Ripudaman Shahi",
-          children: [],
         },
         {
           name: "Ran Vijaya Shahi",
@@ -25,11 +25,9 @@ const familyData = {
               children: [
                 {
                   name: "Surya Kirti Singh",
-                  children: [],
                 },
                 {
                   name: "Arusha Singh",
-                  children: [],
                 },
               ],
             },
@@ -39,15 +37,12 @@ const familyData = {
               children: [
                 {
                   name: "Arimardan Shahi",
-                  children: [],
                 },
                 {
                   name: "Kritika Shahi",
-                  children: [],
                 },
                 {
                   name: "Ripumardan Shahi",
-                  children: [],
                 },
               ],
             },
@@ -56,11 +51,9 @@ const familyData = {
               children: [
                 {
                   name: "Sreejamya Shahi",
-                  children: [],
                 },
                 {
                   name: "Samar Vijay Shahi",
-                  children: [],
                 },
               ],
             },
@@ -69,7 +62,6 @@ const familyData = {
               children: [
                 {
                   name: "Arkaja Shahi",
-                  children: [],
                 },
               ],
             },
@@ -77,15 +69,12 @@ const familyData = {
         },
         {
           name: "Bhargavi Kumari Devi",
-          children: [],
         },
         {
           name: "Indira Kumari Devi",
-          children: [],
         },
         {
           name: "Padma Kumari Devi",
-          children: [],
         },
         {
           name: "Ajay Kumar Shahi",
@@ -95,13 +84,11 @@ const familyData = {
               children: [
                 {
                   name: "Bhavya Shahi",
-                  children: [],
                 },
               ],
             },
             {
               name: "Dhananjay Shahi",
-              children: [],
             },
           ],
         },
@@ -113,7 +100,7 @@ const familyData = {
 export default function DumariaEstateDetails() {
   return (
     <div>
-      <Banner title={<>Dumaria Zamindari</>} />
+      <Banner title={`Dumaria Zamindari`} />
 
       {/* Main Content */}
       <main className="container mx-auto px-20 py-10">
@@ -121,14 +108,14 @@ export default function DumariaEstateDetails() {
           {/* Left Image */}
           <div className="md:col-span-1 ">
             <Image
-              src="/assets/img/madhuban1.jpg"
+              src="/assets/img/dumaria/dumaria1.jpg"
               alt="majhauli-img"
               width={600}
               height={400}
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Ruins of Raja Fateh Bahadur Mall's Haveli</h2>
+              <h2>Haveli of Dumaria Zamindari</h2>
             </div>
             <br />
             <iframe

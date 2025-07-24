@@ -99,16 +99,16 @@ export default function GallerySection() {
     },
     {
       estate: "Dumaria Estate",
-      url: "/assets/img/dumaria/dumaria1.jpg",
+      url: "/assets/img/dumaria/dumaria2.png",
     },
-    {
-      estate: "Dumaria Estate",
-      url: "/assets/img/dumaria/dumaria1.jpg",
-    },
-    {
-      estate: "Dumaria Estate",
-      url: "/assets/img/dumaria/dumaria1.jpg",
-    },
+    // {
+    //   estate: "Dumaria Estate",
+    //   url: "/assets/img/dumaria/dumaria3.jpeg",
+    // },
+    // {
+    //   estate: "Dumaria Estate",
+    //   url: "/assets/img/dumaria/dumaria4.jpeg",
+    // },
   ];
 
   const imagesBhinga = [

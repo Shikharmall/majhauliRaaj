@@ -1,8 +1,6 @@
-// components/WelcomeSection.tsx
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
 export default function MoreSection() {
   const items = [
     {
@@ -31,7 +29,7 @@ export default function MoreSection() {
       title: "Gonda Estate",
       description: "Organizations run by me",
       src: "/assets/img/gonda_coa.png",
-      href: "estatesgondaEstate",
+      href: "estates/gondaEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,

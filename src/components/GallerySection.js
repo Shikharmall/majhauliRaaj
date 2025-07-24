@@ -19,114 +19,171 @@ export default function GallerySection() {
   const imagesMajhauli = [
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauliraaj1.png",
+      url: "/assets/img/majhauli/majhauliraaj1.png",
     },
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauliraaj4.png",
+      url: "/assets/img/majhauli/majhauliraaj4.png",
     },
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauliraaj3.png",
+      url: "/assets/img/majhauli/majhauliraaj3.png",
     },
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauliraaj2.png",
+      url: "/assets/img/majhauli/majhauliraaj2.png",
     },
   ];
 
   const imagesKalakankar = [
     {
       estate: "Kalakankar Estate",
-      url: "/assets/img/kalakankar1.jpeg",
+      url: "/assets/img/kalakankar/kalakankar1.jpeg",
     },
     {
       estate: "Kalakankar Estate",
-      url: "/assets/img/kalakankar2.jpg",
+      url: "/assets/img/kalakankar/kalakankar2.jpg",
     },
     {
       estate: "Kalakankar Estate",
-      url: "/assets/img/kalakankar3.jpeg",
+      url: "/assets/img/kalakankar/kalakankar3.jpeg",
     },
     {
       estate: "Kalakankar Estate",
-      url: "/assets/img/kalakankar4.jpeg",
-    },
-  ];
-
-  const imagesBadri = [
-    {
-      estate: "Badri Estate",
-      url: "/assets/img/badri1.png",
-    },
-    {
-      estate: "Badri Estate",
-      url: "/assets/img/badri2.png",
-    },
-    {
-      estate: "Badri Estate",
-      url: "/assets/img/badri3.png",
-    },
-    {
-      estate: "Badri Estate",
-      url: "/assets/img/badri5.png",
+      url: "/assets/img/kalakankar/kalakankar4.jpeg",
     },
   ];
 
   const imagesMankapur = [
     {
       estate: "Mankapur Estate",
-      url: "/assets/img/mankapur1.jpg",
+      url: "/assets/img/mankapur/mankapur1.jpg",
     },
     {
       estate: "Mankapur Estate",
-      url: "/assets/img/mankapur2.jpg",
+      url: "/assets/img/mankapur/mankapur2.jpg",
     },
     {
       estate: "Mankapur Estate",
-      url: "/assets/img/mankapur4.jpg",
+      url: "/assets/img/mankapur/mankapur4.jpg",
     },
     {
       estate: "Mankapur Estate",
-      url: "/assets/img/mankapur5.jpg",
+      url: "/assets/img/mankapur/mankapur5.jpg",
+    },
+  ];
+
+  const imagesBadri = [
+    {
+      estate: "Badri Estate",
+      url: "/assets/img/badri/badri1.png",
+    },
+    {
+      estate: "Badri Estate",
+      url: "/assets/img/badri/badri2.png",
+    },
+    {
+      estate: "Badri Estate",
+      url: "/assets/img/badri/badri3.png",
+    },
+    {
+      estate: "Badri Estate",
+      url: "/assets/img/badri/badri5.png",
+    },
+  ];
+
+  const imagesDumaria = [
+    {
+      estate: "Dumaria Estate",
+      url: "/assets/img/dumaria/dumaria1.jpg",
+    },
+    {
+      estate: "Dumaria Estate",
+      url: "/assets/img/dumaria/dumaria1.jpg",
+    },
+    {
+      estate: "Dumaria Estate",
+      url: "/assets/img/dumaria/dumaria1.jpg",
+    },
+    {
+      estate: "Dumaria Estate",
+      url: "/assets/img/dumaria/dumaria1.jpg",
+    },
+  ];
+
+  const imagesBhinga = [
+    {
+      estate: "Bhinga Estate",
+      url: "/assets/img/bhinga/bhinga1.jpg",
+    },
+    {
+      estate: "Bhinga Estate",
+      url: "/assets/img/bhinga/bhinga2.jpg",
+    },
+    {
+      estate: "Bhinga Estate",
+      url: "/assets/img/bhinga/bhinga3.jpg",
+    },
+    {
+      estate: "Bhinga Estate",
+      url: "/assets/img/bhinga/bhinga4.jpg",
+    },
+  ];
+
+  const imagesGonda = [
+    {
+      estate: "Madhuban Estate",
+      url: "/assets/img/madhuban/madhuban1.jpg",
+    },
+    {
+      estate: "Madhuban Estate",
+      url: "/assets/img/madhuban/madhuban1.jpg",
+    },
+    {
+      estate: "Madhuban Estate",
+      url: "/assets/img/madhuban/madhuban1.jpg",
+    },
+    {
+      estate: "Madhuban Estate",
+      url: "/assets/img/madhuban/madhuban1.jpg",
     },
   ];
 
   const imagesNarharpur = [
     {
       estate: "Narharpur Estate",
-      url: "/assets/img/narharpur1.png",
+      url: "/assets/img/narharpur/narharpur1.png",
     },
     {
       estate: "Narharpur Estate",
-      url: "/assets/img/narharpur4.png",
+      url: "/assets/img/narharpur/narharpur4.png",
     },
     {
       estate: "Narharpur Estate",
-      url: "/assets/img/narharpur6.png",
+      url: "/assets/img/narharpur/narharpur6.png",
     },
     {
       estate: "Narharpur Estate",
-      url: "/assets/img/narharpur2.png",
+      url: "/assets/img/narharpur/narharpur2.png",
     },
   ];
 
   const imagesMadhuban = [
     {
       estate: "Madhuban Estate",
-      url: "/assets/img/madhuban1.jpg",
+      url: "/assets/img/madhuban/madhuban1.jpg",
     },
     {
       estate: "Madhuban Estate",
-      url: "/assets/img/madhuban2.png",
+      url: "/assets/img/madhuban/madhuban2.png",
     },
     {
       estate: "Madhuban Estate",
-      url: "/assets/img/madhuban3.png",
+      url: "/assets/img/madhuban/madhuban3.png",
     },
     {
       estate: "Madhuban Estate",
-      url: "/assets/img/madhuban4.png",
+      url: "/assets/img/madhuban/madhuban4.png",
     },
   ];
 
@@ -151,7 +208,7 @@ export default function GallerySection() {
               className="twitter-timeline"
               data-width="380"
               data-height="500"
-              href="https://twitter.com/b_bhushansharan"
+              // href="https://twitter.com/b_bhushansharan"
             >
               Est. by King Vishwa Sen
             </a>
@@ -207,6 +264,57 @@ export default function GallerySection() {
               Est. by Rai Sabal Shah
             </a>
             <ImagesGrid images={imagesBadri} />
+          </div>
+
+          {/* Dumaria Zamindari */}
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="text-xl font-semibold mb-0">Dumaria Zamindar</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
+            <a
+              className="twitter-timeline"
+              data-width="380"
+              data-height="500"
+              href="https://twitter.com/b_bhushansharan"
+            >
+              Est. by King Roop Mall
+            </a>
+            <ImagesGrid images={imagesDumaria} />
+          </div>
+
+          {/* Bhinga Estate */}
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="text-xl font-semibold mb-0">Bhinga Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
+            <a
+              className="twitter-timeline"
+              data-width="380"
+              data-height="500"
+              href="https://twitter.com/b_bhushansharan"
+            >
+              Est. by Rai Bahadur Jagdish Narain Singh
+            </a>
+            <ImagesGrid images={imagesBhinga} />
+          </div>
+
+          {/* Gonda Estate */}
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="text-xl font-semibold mb-0">Gonda Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
+            <a
+              className="twitter-timeline"
+              data-width="380"
+              data-height="500"
+              href="https://twitter.com/b_bhushansharan"
+            >
+              Est. by Rai Sabal Shah
+            </a>
+            <ImagesGrid images={imagesGonda} />
           </div>
 
           {/* Narharpur Estate */}

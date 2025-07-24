@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../../../components/Header";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import BadriEstateDetails from "@/components/EstateDetails/BadriEstateDetails";
+import KalakankarEstateDetails from "@/components/EstateDetails/KalakankarEstateDetails";
 
 export default function Contact() {
   return (
@@ -15,7 +15,7 @@ export default function Contact() {
 
       <Header />
       <Navbar />
-      <BadriEstateDetails />
+      <KalakankarEstateDetails />
       <Footer />
     </>
   );

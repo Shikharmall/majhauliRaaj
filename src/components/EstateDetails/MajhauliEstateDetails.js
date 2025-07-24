@@ -48,14 +48,14 @@ const familyData1 = {
                 },
                 {
                   name: "Bhinga Estate",
-                  isExtra: "(Lucknow)",
+                  isExtra: "Oudh (Bahraich Dist.)",
                   children: [],
                 },
               ],
             },
             {
               name: "Mankapur Estate",
-              isExtra: "(Gonda)",
+              isExtra: "Uttar Pradesh (Gonda Dist.)",
               children: [],
             },
           ],
@@ -64,7 +64,7 @@ const familyData1 = {
     },
     {
       name: "Kala Kankar Estate",
-      isExtra: "(Pratapgarh)",
+      isExtra: "Oudh, Uttar Pradesh",
       children: [
         {
           name: "Kala Kankar Estate",
@@ -73,7 +73,7 @@ const familyData1 = {
         },
         {
           name: "Badri Estate",
-          isExtra: "(Kunda)",
+          isExtra: "Oudh (Pratapgarh Dist.)",
           children: [],
         },
       ],

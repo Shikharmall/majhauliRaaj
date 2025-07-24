@@ -44,7 +44,7 @@ export default function AboutSection() {
             Mahajanpad Era from Kushinagar as capital of eastern Koshala.
           </p>
           <Link
-            href="/majhauliEstate"
+            href="/estates/majhauliEstate"
             className="text-[#2ccc7f] hover:text-white hover:bg-[#2ccc7f] border border-2 p-3 rounded"
           >
             Learn More

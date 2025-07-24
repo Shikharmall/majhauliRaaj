@@ -121,18 +121,18 @@ export default function BadriEstateDetails() {
           {/* Left Image */}
           <div className="md:col-span-1 ">
             <Image
-              src="/assets/img/madhuban1.jpg"
+              src="/assets/img/badri/badri1.png"
               alt="majhauli-img"
               width={600}
               height={400}
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Ruins of Raja Fateh Bahadur Mall's Haveli</h2>
+              <h2>Fort of Badri Estate</h2>
             </div>
             <br />
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8638.905745604467!2d84.39244020699444!3d24.44341386225517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398cf31f8b3626a3%3A0x75658a35e4553df9!2sDumariya%2C%20Bihar%20824206!5e0!3m2!1sen!2sin!4v1753268952049!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28764.600329510467!2d81.54633988433976!3d25.685378177913105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399ad92161cf6587%3A0x50118c97d2357ba5!2sBhadri%2C%20Uttar%20Pradesh%20230201!5e0!3m2!1sen!2sin!4v1753359010351!5m2!1sen!2sin"
               width="100%"
               height="300"
               className="w-full rounded-md border-0"
@@ -145,19 +145,10 @@ export default function BadriEstateDetails() {
           {/* Bio */}
           <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
             <p className="font-serif">
-              The founder of the family was Jagat Bahadur Shahi, who was a
-              wealthy landlord living in Dumaria with his family, consisting of
-              three wives and many daughters, but was still longing for a son
-              who could succeed him. One day, another zamindar who originally
-              belonged to Gorakhpur in Uttar Pradesh shifted with his family to
-              a village called Navendrapur (which is half a km from Dumaria).
-              The latter had five sons, the youngest of whom was, Ranadhwaj
-              Singh who was adopted by Jagat Bahadur Shahi at a very young age
-              but the adoption became legal only after Ranadhwaj turned 18 in
-              1921. After being adopted he was named Shattru Mardan Shahi. He
-              was single handedly responsible for making Dumaria into what it
-              later became. He owned about 5000 acres of land, a considerable
-              amount in those times.
+              The family of Bhadri is a younger branch of that of Kalakankar and
+              belongs to the Bisen family, of which the head is the Raja of
+              Rampur (Dharupur), while the head of the whole clan of Bisens is
+              the Raja of Majhauli.
             </p>
             <p className="font-serif"></p>
             <p className="font-serif"></p>

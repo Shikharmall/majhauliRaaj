@@ -10,6 +10,7 @@ const familyData = {
   children: [
     {
       name: "Raja Nath Mall",
+      isKing: true,
       children: [
         {
           name: "Ajit Mall",
@@ -19,34 +20,32 @@ const familyData = {
               children: [
                 {
                   name: "Ganga Mall",
-                  children: [],
+                  isExtra: "(Poti)",
                 },
                 {
                   name: "Sultan Mall",
-                  children: [],
+                  isExtra: "(KhiriKot, Gangeveer, Nevada, Nathupur)",
                 },
                 {
                   name: "Naval Mall",
-                  children: [],
                 },
                 {
                   name: "Madhav Mall",
-                  children: [],
+                  isExtra: "(Usri, Ahirauli)",
                 },
                 {
                   name: "Brindavan Mall",
-                  children: [],
                 },
                 {
                   name: "Vikram Mall",
-                  children: [],
+                  isExtra: "(Lalaanpur)",
                 },
                 {
                   name: "Vishnu Dayal Mall",
                   children: [
                     {
                       name: "Dhaval Mall",
-                      children: [],
+                      isExtra: "(Bahrampur)",
                     },
                   ],
                 },
@@ -57,33 +56,53 @@ const familyData = {
       ],
     },
     {
-      name: "Raja Ajay Mall (Raja Fateh Bahadur Mall)",
+      name: "Raja Ajay Mall",
+      isExtra: "(Raja Fateh Bahadur Mall)",
+      isKing: true,
       children: [
         {
           name: "Harihar Mall",
           children: [
             {
               name: "Nag Mall",
-              children: [],
             },
             {
               name: "Karan Mall",
-              children: [],
+              isExtra: "(Karanpura)",
             },
             {
               name: "Narhar Mall",
-              children: [],
             },
             {
               name: "Banwari Mall",
-              children: [],
+              isExtra: "(Jogiya, Gorakhpur)",
             },
             {
               name: "Bisha Mall",
               children: [
                 {
                   name: "Sesar Mall",
-                  children: [],
+                  children: [
+                    {
+                      name: "Harash Mall",
+                      children: [
+                        {
+                          name: "Chapali Mall",
+                          children: [
+                            {
+                              name: "Gambhir Mall",
+                              children: [
+                                {
+                                  name: "Dulaar Mall",
+                                  isExtra: "(Lakhnaur)",
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
                 },
                 {
                   name: "Vihari Mall",
@@ -93,14 +112,13 @@ const familyData = {
                       children: [
                         {
                           name: "Nandan Mall",
-                          children: [],
                         },
                         {
                           name: "Kaval Mall",
                           children: [
                             {
                               name: "Jawaahar Mall",
-                              children: [],
+                              isExtra: "(Jalauli-Kothgharana)",
                             },
                             {
                               name: "Uttam Mall",
@@ -110,51 +128,7 @@ const familyData = {
                                   children: [
                                     {
                                       name: "Nanua Mall",
-                                      children: [
-                                        {
-                                          name: "Tikaat Mall",
-                                          children: [
-                                            {
-                                              name: "Shiv Baksh Mall",
-                                              children: [
-                                                {
-                                                  name: "Nakched Mall",
-                                                  children: [],
-                                                },
-                                                {
-                                                  name: "Charita Mall",
-                                                  children: [
-                                                    {
-                                                      name: "Tarapati Mall",
-                                                      children: [],
-                                                    },
-                                                    {
-                                                      name: "Ram Prasad Mall",
-                                                      children: [],
-                                                    },
-                                                    {
-                                                      name: "Shiv Prasad Mall",
-                                                      children: [],
-                                                    },
-                                                  ],
-                                                },
-                                                {
-                                                  name: "Madaari Mall",
-                                                  children: [],
-                                                },
-                                              ],
-                                            },
-                                            {
-                                              name: "Jabaal Mall",
-                                              children: [],
-                                            },
-                                            {
-                                              name: "Ram Baksh Mall",
-                                              children: [],
-                                            },
-                                          ],
-                                        },
-                                      ],
+                                      isExtra: "(Ufrauli)",
                                     },
                                   ],
                                 },
@@ -181,12 +155,12 @@ const familyData = {
                 },
                 {
                   name: "Mohan Mall",
-                  children: [],
                 },
               ],
             },
             {
               name: "Ratti Mall",
+              isExtra: "(Lakuragraam)",
               children: [],
             },
           ],

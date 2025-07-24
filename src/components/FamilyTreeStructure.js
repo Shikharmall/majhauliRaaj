@@ -23,7 +23,7 @@ function TreeNode({ node }) {
             className={`text-sm font-semibold 
             ${node?.isKing ? "text-[#FFD700]" : "text-[#f5a873]"}`}
           >
-            {node?.name}
+            {node?.name?.toUpperCase()}
           </p>
           <p
             className={`text-sm font-semibold 

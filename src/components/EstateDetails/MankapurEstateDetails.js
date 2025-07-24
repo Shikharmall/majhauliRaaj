@@ -5,103 +5,126 @@ import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 
 const familyData = {
-  name: "Jagat Bahadur Shahi",
+  name: "Raja AJMAT SINGHJI (1)",
+  isExtra: "(Son of King of Gonda RAJA DUTT SINGH)",
   isKing: true,
   children: [
     {
-      name: "Shattru Mardan Shahi (prev. Ranadhwaj Singh - adopted)",
+      name: "Raja GOPAL SINGHJI (2)",
       isKing: true,
       children: [
         {
-          name: "Ripudaman Shahi",
-          children: [],
-        },
-        {
-          name: "Ran Vijaya Shahi",
+          name: "Raja Bahadur Singhji (3)",
           isKing: true,
           children: [
             {
-              name: "Kirti Renu Singh",
-              children: [
-                {
-                  name: "Surya Kirti Singh",
-                  children: [],
-                },
-                {
-                  name: "Arusha Singh",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Arindam Shahi",
+              name: "Raja Bakht Singhji (4)",
               isKing: true,
               children: [
                 {
-                  name: "Arimardan Shahi",
-                  children: [],
-                },
-                {
-                  name: "Kritika Shahi",
-                  children: [],
-                },
-                {
-                  name: "Ripumardan Shahi",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Shattrundam Shahi",
-              children: [
-                {
-                  name: "Sreejamya Shahi",
-                  children: [],
-                },
-                {
-                  name: "Samar Vijay Shahi",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Ripundam Shahi",
-              children: [
-                {
-                  name: "Arkaja Shahi",
-                  children: [],
+                  name: "Raja Prithvi Pat Singhji (5)",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "Maharani Gyan Kunwar",
+                    },
+                  ],
                 },
               ],
             },
           ],
         },
         {
-          name: "Bhargavi Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Indira Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Padma Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Ajay Kumar Shahi",
+          name: "Rajkumar (name unknown) Singhji",
           children: [
             {
-              name: "Rananjay Shahi",
+              name: "Kunwar (name unknown) Singhji",
               children: [
                 {
-                  name: "Bhavya Shahi",
-                  children: [],
+                  name: "Raja Jai Prakash Singhji (6)",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "Raja RAGHURAJ SINGHJI (7)",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "Raja Ambikeshwar Pratap Singhji (8)",
+                          isKing: true,
+                        },
+                        {
+                          name: "Kunwar Adya Rudra Pratap Singhji",
+                        },
+                        {
+                          name: "Kuwarani Munni Bachcha",
+                        },
+                        {
+                          name: "Raja Raghvendra Pratap Singhji (9)",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "Raja Anand Singhji (10)",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "Rajkumari Niharika Kumari",
+                                  children: [
+                                    {
+                                      name: "Akshay Singh",
+                                    },
+                                    {
+                                      name: "Akshita Singh",
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "Rajkumar Kirti Vardhan Singhji",
+                                  children: [
+                                    {
+                                      name: "Jai Singh",
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "Rajkumari Shivani Singh Ji",
+                                  children: [
+                                    {
+                                      name: "Anirudh Singh",
+                                    },
+                                    {
+                                      name: "Arnav Singh",
+                                    },
+                                    {
+                                      name: "Shephali Singh",
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "Rajkumari Radhika Singh Ji",
+                                  children: [
+                                    {
+                                      name: "Vasudev Singh",
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                            {
+                              name: "Kunwarani Aruna Kumari",
+                            },
+                          ],
+                        },
+                        {
+                          name: "Kunwar Devendra Pratap Singhji",
+                        },
+                        {
+                          name: "Rani Shaileshwari Kumari",
+                        },
+                      ],
+                    },
+                  ],
                 },
               ],
-            },
-            {
-              name: "Dhananjay Shahi",
-              children: [],
             },
           ],
         },

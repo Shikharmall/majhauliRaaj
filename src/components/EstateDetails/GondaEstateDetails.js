@@ -5,107 +5,153 @@ import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 
 const familyData = {
-  name: "Jagat Bahadur Shahi",
+  name: "Raja Prithvi Mall?",
   isKing: true,
   children: [
     {
-      name: "Shattru Mardan Shahi (prev. Ranadhwaj Singh - adopted)",
+      name: "Raja PRATAP MALL",
       isKing: true,
       children: [
         {
-          name: "Ripudaman Shahi",
-          children: [],
-        },
-        {
-          name: "Ran Vijaya Shahi",
+          name: "Raja SHAH MALL",
           isKing: true,
           children: [
             {
-              name: "Kirti Renu Singh",
-              children: [
-                {
-                  name: "Surya Kirti Singh",
-                  children: [],
-                },
-                {
-                  name: "Arusha Singh",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Arindam Shahi",
+              name: "Raja KUSUM MALL",
               isKing: true,
               children: [
                 {
-                  name: "Arimardan Shahi",
-                  children: [],
-                },
-                {
-                  name: "Kritika Shahi",
-                  children: [],
-                },
-                {
-                  name: "Ripumardan Shahi",
-                  children: [],
+                  name: "Raja MAN SINGH",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "Raja MAN SINGH",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "Raja LAKSHMAN SINGH",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "Raja NIRVAHAN SINGH",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "Raja AMAR SINGH",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "Raja RAM SINGH",
+                                      isKing: true,
+                                      children: [
+                                        {
+                                          name: "Raja Dutt Singh",
+                                          isKing: true,
+                                          children: [
+                                            {
+                                              name: "Raja Udit Singh",
+                                              isKing: true,
+                                              children: [
+                                                {
+                                                  name: "Raja Mangal Singh",
+                                                  isKing: true,
+                                                  children: [
+                                                    {
+                                                      name: "Raja Sheo Prasad Singh",
+                                                      isKing: true,
+                                                      children: [
+                                                        {
+                                                          name: "Raja Jai Singh",
+                                                          isKing: true,
+                                                          children: [
+                                                            {
+                                                              name: "Raja GUMAN SINGH",
+                                                              isExtra:
+                                                                "(I'st son of KANWAR(NAME UNKNOWN) SINGH)",
+                                                              isKing: true,
+                                                              children: [
+                                                                {
+                                                                  name: "Raja DEVI BAKSH SINGH",
+                                                                  isKing: true,
+                                                                  isExtra: `(Son of II'nd son of KANWAR(NAME UNKNOWN) SINGH)`,
+                                                                  children: [
+                                                                    {
+                                                                      name: "property being given to the Zamindar of Balrampur after 1857",
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                    {
+                                                      name: "Maharani Ser Kunwar",
+                                                    },
+                                                  ],
+                                                },
+                                                {
+                                                  name: "Kanwar Pahlwan Singh",
+                                                  children: [
+                                                    {
+                                                      name: "Kanwar(name unknown) Singh",
+                                                      children: [
+                                                        {
+                                                          name: "Raja Guman Singh",
+                                                        },
+                                                        {
+                                                          name: "Kunwar Daljit Singh",
+                                                          children: [
+                                                            {
+                                                              name: "Raja Devi Baksh Singh",
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                    {
+                                                      name: "Kanwar Hindupat Singh",
+                                                    },
+                                                  ],
+                                                },
+                                              ],
+                                            },
+                                            {
+                                              name: "Raja Ajmat Singh",
+                                              isKing: true,
+                                              isExtra:
+                                                "(Received the estate of Mankapur from his father.)",
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                    {
+                                      name: "Raja Bhawani Singh",
+                                      isKing: true,
+                                      isExtra:
+                                        "(Received the estate of Bhinga from his brother.)",
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
                 },
               ],
-            },
-            {
-              name: "Shattrundam Shahi",
-              children: [
-                {
-                  name: "Sreejamya Shahi",
-                  children: [],
-                },
-                {
-                  name: "Samar Vijay Shahi",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Ripundam Shahi",
-              children: [
-                {
-                  name: "Arkaja Shahi",
-                  children: [],
-                },
-              ],
-            },
-          ],
-        },
-        {
-          name: "Bhargavi Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Indira Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Padma Kumari Devi",
-          children: [],
-        },
-        {
-          name: "Ajay Kumar Shahi",
-          children: [
-            {
-              name: "Rananjay Shahi",
-              children: [
-                {
-                  name: "Bhavya Shahi",
-                  children: [],
-                },
-              ],
-            },
-            {
-              name: "Dhananjay Shahi",
-              children: [],
             },
           ],
         },
       ],
+    },
+    {
+      name: "Raja Hom Mall?",
+      isKing: true,
     },
   ],
 };
@@ -132,7 +178,7 @@ export default function GondaEstateDetails() {
             </div>
             <br />
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8638.905745604467!2d84.39244020699444!3d24.44341386225517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398cf31f8b3626a3%3A0x75658a35e4553df9!2sDumariya%2C%20Bihar%20824206!5e0!3m2!1sen!2sin!4v1753268952049!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56807.578406148205!2d81.92802445521721!3d27.141383793755423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999ee0495e5b7a9%3A0xc927d6261ff536ca!2sGonda%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1753383010416!5m2!1sen!2sin"
               width="100%"
               height="300"
               className="w-full rounded-md border-0"
@@ -145,19 +191,11 @@ export default function GondaEstateDetails() {
           {/* Bio */}
           <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
             <p className="font-serif">
-              The founder of the family was Jagat Bahadur Shahi, who was a
-              wealthy landlord living in Dumaria with his family, consisting of
-              three wives and many daughters, but was still longing for a son
-              who could succeed him. One day, another zamindar who originally
-              belonged to Gorakhpur in Uttar Pradesh shifted with his family to
-              a village called Navendrapur (which is half a km from Dumaria).
-              The latter had five sons, the youngest of whom was, Ranadhwaj
-              Singh who was adopted by Jagat Bahadur Shahi at a very young age
-              but the adoption became legal only after Ranadhwaj turned 18 in
-              1921. After being adopted he was named Shattru Mardan Shahi. He
-              was single handedly responsible for making Dumaria into what it
-              later became. He owned about 5000 acres of land, a considerable
-              amount in those times.
+              The ancestor of the Bisen Dynasty of Gonda, Bhinga, Kalakankar etc
+              was Raja Prithvi Mall of Majhauli in Gorakhpur. Gonda was founded
+              by Man Mall, the first to use the surname of Singh, who was given
+              the title of Raja in 1618 by the Mughal Emperor. He was also the
+              ancestor of the Rulers of Bhinga and Mankapur.
             </p>
             <p className="font-serif"></p>
             <p className="font-serif"></p>

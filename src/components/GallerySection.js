@@ -54,25 +54,6 @@ export default function GallerySection() {
     },
   ];
 
-  const imagesMankapur = [
-    {
-      estate: "Mankapur Estate",
-      url: "/assets/img/mankapur/mankapur1.jpg",
-    },
-    {
-      estate: "Mankapur Estate",
-      url: "/assets/img/mankapur/mankapur2.jpg",
-    },
-    {
-      estate: "Mankapur Estate",
-      url: "/assets/img/mankapur/mankapur4.jpg",
-    },
-    {
-      estate: "Mankapur Estate",
-      url: "/assets/img/mankapur/mankapur5.jpg",
-    },
-  ];
-
   const imagesBadri = [
     {
       estate: "Badri Estate",
@@ -89,44 +70,6 @@ export default function GallerySection() {
     {
       estate: "Badri Estate",
       url: "/assets/img/badri/badri5.png",
-    },
-  ];
-
-  const imagesDumaria = [
-    {
-      estate: "Dumaria Estate",
-      url: "/assets/img/dumaria/dumaria1.jpg",
-    },
-    {
-      estate: "Dumaria Estate",
-      url: "/assets/img/dumaria/dumaria2.png",
-    },
-    // {
-    //   estate: "Dumaria Estate",
-    //   url: "/assets/img/dumaria/dumaria3.jpeg",
-    // },
-    // {
-    //   estate: "Dumaria Estate",
-    //   url: "/assets/img/dumaria/dumaria4.jpeg",
-    // },
-  ];
-
-  const imagesBhinga = [
-    {
-      estate: "Bhinga Estate",
-      url: "/assets/img/bhinga/bhinga1.jpg",
-    },
-    {
-      estate: "Bhinga Estate",
-      url: "/assets/img/bhinga/bhinga2.jpg",
-    },
-    {
-      estate: "Bhinga Estate",
-      url: "/assets/img/bhinga/bhinga3.jpg",
-    },
-    {
-      estate: "Bhinga Estate",
-      url: "/assets/img/bhinga/bhinga4.jpg",
     },
   ];
 
@@ -149,22 +92,41 @@ export default function GallerySection() {
     },
   ];
 
-  const imagesNarharpur = [
+  const imagesMankapur = [
     {
-      estate: "Narharpur Estate",
-      url: "/assets/img/narharpur/narharpur1.png",
+      estate: "Mankapur Estate",
+      url: "/assets/img/mankapur/mankapur1.jpg",
     },
     {
-      estate: "Narharpur Estate",
-      url: "/assets/img/narharpur/narharpur4.png",
+      estate: "Mankapur Estate",
+      url: "/assets/img/mankapur/mankapur2.jpg",
     },
     {
-      estate: "Narharpur Estate",
-      url: "/assets/img/narharpur/narharpur6.png",
+      estate: "Mankapur Estate",
+      url: "/assets/img/mankapur/mankapur4.jpg",
     },
     {
-      estate: "Narharpur Estate",
-      url: "/assets/img/narharpur/narharpur2.png",
+      estate: "Mankapur Estate",
+      url: "/assets/img/mankapur/mankapur5.jpg",
+    },
+  ];
+
+  const imagesBhinga = [
+    {
+      estate: "Bhinga Estate",
+      url: "/assets/img/bhinga/bhinga1.jpg",
+    },
+    {
+      estate: "Bhinga Estate",
+      url: "/assets/img/bhinga/bhinga2.jpg",
+    },
+    {
+      estate: "Bhinga Estate",
+      url: "/assets/img/bhinga/bhinga3.jpg",
+    },
+    {
+      estate: "Bhinga Estate",
+      url: "/assets/img/bhinga/bhinga4.jpg",
     },
   ];
 
@@ -185,6 +147,44 @@ export default function GallerySection() {
       estate: "Madhuban Estate",
       url: "/assets/img/madhuban/madhuban4.png",
     },
+  ];
+
+  const imagesNarharpur = [
+    {
+      estate: "Narharpur Estate",
+      url: "/assets/img/narharpur/narharpur1.png",
+    },
+    {
+      estate: "Narharpur Estate",
+      url: "/assets/img/narharpur/narharpur4.png",
+    },
+    {
+      estate: "Narharpur Estate",
+      url: "/assets/img/narharpur/narharpur6.png",
+    },
+    {
+      estate: "Narharpur Estate",
+      url: "/assets/img/narharpur/narharpur2.png",
+    },
+  ];
+
+  const imagesDumaria = [
+    {
+      estate: "Dumaria Estate",
+      url: "/assets/img/dumaria/dumaria1.jpg",
+    },
+    {
+      estate: "Dumaria Estate",
+      url: "/assets/img/dumaria/dumaria2.png",
+    },
+    // {
+    //   estate: "Dumaria Estate",
+    //   url: "/assets/img/dumaria/dumaria3.jpeg",
+    // },
+    // {
+    //   estate: "Dumaria Estate",
+    //   url: "/assets/img/dumaria/dumaria4.jpeg",
+    // },
   ];
 
   return (
@@ -227,26 +227,9 @@ export default function GallerySection() {
               data-height="500"
               href="https://twitter.com/b_bhushansharan"
             >
-              Est. by King Roop Mall
+              Est. by King Hom Mall
             </a>
             <ImagesGrid images={imagesKalakankar} />
-          </div>
-
-          {/* Mankapur Estate */}
-          <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-0">Mankapur Estate</h3>
-            <h3 className="text-sm mb-4">
-              Successor Estate of Majhauli Estate
-            </h3>
-            <a
-              className="twitter-timeline"
-              data-width="380"
-              data-height="500"
-              href="https://twitter.com/b_bhushansharan"
-            >
-              Est. by Rai Bahadur Jagdish Narain Singh
-            </a>
-            <ImagesGrid images={imagesMankapur} />
           </div>
 
           {/* Badri Estate */}
@@ -266,9 +249,9 @@ export default function GallerySection() {
             <ImagesGrid images={imagesBadri} />
           </div>
 
-          {/* Dumaria Zamindari */}
+          {/* Gonda Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-0">Dumaria Zamindar</h3>
+            <h3 className="text-xl font-semibold mb-0">Gonda Estate</h3>
             <h3 className="text-sm mb-4">
               Successor Estate of Majhauli Estate
             </h3>
@@ -278,9 +261,26 @@ export default function GallerySection() {
               data-height="500"
               href="https://twitter.com/b_bhushansharan"
             >
-              Est. by King Roop Mall
+              Est. by Raja Pratap Mall
             </a>
-            <ImagesGrid images={imagesDumaria} />
+            <ImagesGrid images={imagesGonda} />
+          </div>
+
+          {/* Mankapur Estate */}
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="text-xl font-semibold mb-0">Mankapur Estate</h3>
+            <h3 className="text-sm mb-4">
+              Successor Estate of Majhauli Estate
+            </h3>
+            <a
+              className="twitter-timeline"
+              data-width="380"
+              data-height="500"
+              href="https://twitter.com/b_bhushansharan"
+            >
+              Est. by Raja Ajmat Singhji
+            </a>
+            <ImagesGrid images={imagesMankapur} />
           </div>
 
           {/* Bhinga Estate */}
@@ -295,14 +295,14 @@ export default function GallerySection() {
               data-height="500"
               href="https://twitter.com/b_bhushansharan"
             >
-              Est. by Rai Bahadur Jagdish Narain Singh
+              Est. by Raja Bhawani Singh
             </a>
             <ImagesGrid images={imagesBhinga} />
           </div>
 
-          {/* Gonda Estate */}
+          {/* Madhuban Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-0">Gonda Estate</h3>
+            <h3 className="text-xl font-semibold mb-0">Madhuban Estate</h3>
             <h3 className="text-sm mb-4">
               Successor Estate of Majhauli Estate
             </h3>
@@ -312,9 +312,9 @@ export default function GallerySection() {
               data-height="500"
               href="https://twitter.com/b_bhushansharan"
             >
-              Est. by Rai Sabal Shah
+              Est. by King Madhav Mall
             </a>
-            <ImagesGrid images={imagesGonda} />
+            <ImagesGrid images={imagesMadhuban} />
           </div>
 
           {/* Narharpur Estate */}
@@ -334,9 +334,9 @@ export default function GallerySection() {
             <ImagesGrid images={imagesNarharpur} />
           </div>
 
-          {/* Madhuban Estate */}
+          {/* Dumaria Zamindari */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-0">Madhuban Estate</h3>
+            <h3 className="text-xl font-semibold mb-0">Dumaria Zamindar</h3>
             <h3 className="text-sm mb-4">
               Successor Estate of Majhauli Estate
             </h3>
@@ -346,9 +346,9 @@ export default function GallerySection() {
               data-height="500"
               href="https://twitter.com/b_bhushansharan"
             >
-              Est. by King Madhav Mall
+              Est. by Jagat Bahadur Shahi
             </a>
-            <ImagesGrid images={imagesMadhuban} />
+            <ImagesGrid images={imagesDumaria} />
           </div>
         </div>
       </div>

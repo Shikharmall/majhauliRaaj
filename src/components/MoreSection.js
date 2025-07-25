@@ -10,63 +10,81 @@ export default function MoreSection() {
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Majhauli Estate",
+      titleHindi: "मझौली राज",
       description: "Raja Vishwa Sen",
+      descriptionHindi: "राजा विश्वसेन",
       src: "/assets/img/royalFlagC.png",
       href: "estates/majhauliEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Kalakankar Estate",
+      titleHindi: "कालाकंकर रियासत",
       description: "Raja Hom Mall",
+      descriptionHindi: "राजा होम मल",
       src: "/assets/img/royalFlagC.png",
       href: "estates/kalakankarEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Bhadri Estate",
+      titleHindi: "भदरी रियासत",
       description: "Rai Sabal Shah",
+      descriptionHindi: "राय सबल शाह",
       src: "/assets/img/royalFlagC.png",
       href: "estates/bhadriEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Gonda Estate",
+      titleHindi: "गोंडा रियासत",
       description: "Raja Pratap Mall",
+      descriptionHindi: "राजा प्रताप मल",
       src: "/assets/img/gonda/gonda_coa.png",
       href: "estates/gondaEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Mankapur Estate",
+      titleHindi: "मानकपुर रियासत",
       description: "Raja Ajmat Singhji",
+      descriptionHindi: "राजा अजमत सिंहजी",
       src: "/assets/img/mankapur/mankapur_coa.png",
       href: "estates/mankapurEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Bhinga Estate",
+      titleHindi: "भिनगा रियासत",
       description: "Raja Bhawani Singh",
+      descriptionHindi: "राजा भवानी सिंह",
       src: "/assets/img/bhinga/bhinga_coa.png",
       href: "/estates/bhingaEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Madhuban Estate",
+      titleHindi: "मधुबन रियासत",
       description: "Raja Madhav Mall",
+      descriptionHindi: "राजा माधव मल",
       src: "/assets/img/royalFlagC.png",
       href: "estates/madhubanEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Narharpur Estate",
+      titleHindi: "नरहरपुर रियासत",
       description: "Raja Rai Mall",
+      descriptionHindi: "राजा राय मल",
       src: "/assets/img/royalFlagC.png",
       href: "estates/narharpurEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Dumaria Zamindari",
+      titleHindi: "डुमरिया ज़मींदारी",
       description: "Jagat Bahadur Shahi",
+      descriptionHindi: "जगत बहादुर शाही",
       src: "/assets/img/royalFlagC.png",
       href: "/estates/dumariaEstate",
     },
@@ -113,8 +131,14 @@ export default function MoreSection() {
                 className="w-30 h-30" //rounded-full p-3 shadow-lg border-3 border-gray-300
               />
               <div className="name">
-                <h1 className="text-lg font-serif">{item.title}</h1>
-                <p className="text-gray-600 mt-1 text-sm">{item.description}</p>
+                <h1 className="text-lg font-serif">
+                  {language === "english" ? item?.title : item?.titleHindi}
+                </h1>
+                <p className="text-gray-600 mt-1 text-sm">
+                  {language === "english"
+                    ? item?.description
+                    : item?.descriptionHindi}
+                </p>
               </div>
             </Link>
           ))}

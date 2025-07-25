@@ -1,5 +1,6 @@
+import LanguageContext from "@/context/languageContext";
 import COLORS from "@/utils/color";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useContext } from "react";
 
 // Recursive TreeNode component
 function TreeNode({ node }) {
@@ -62,6 +63,7 @@ function TreeNode({ node }) {
 
 // Main Family Tree Component
 export default function FamilyTreeStructure({ familyData }) {
+  const { language } = useContext(LanguageContext);
   const containerRef = useRef();
 
   useEffect(() => {
@@ -80,7 +82,7 @@ export default function FamilyTreeStructure({ familyData }) {
             className="text-2xl font-semibold font-serif"
             style={{ color: COLORS.primary }}
           >
-            GENEALOGY
+            {language === "english" ? "GENEALOGY" : "राजवंश वंशावली"}
           </h2>
           <div
             className="absolute left-0 top-8 w-1/2 h-1"

@@ -1,7 +1,6 @@
-import Image from "next/image";
 import React from "react";
 
-export default function Banner({ title}) {
+export default function Banner({ title }) {
   return (
     <div
       className="relative h-80 mb-12 flex items-center justify-center text-center bg-cover bg-center"

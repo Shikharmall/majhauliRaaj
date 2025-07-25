@@ -1,7 +1,10 @@
 "use client";
 
+import LanguageContext from "@/context/languageContext";
 import Image from "next/image";
+import { useContext } from "react";
 export default function MoreSection() {
+  const { language } = useContext(LanguageContext);
   const items = [
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
@@ -76,7 +79,17 @@ export default function MoreSection() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Explore our <strong className="text-[#f47217]">Royal</strong> Legacy
+          {language === "english" ? (
+            <>
+              Explore our <strong className="text-[#f47217]">Royal</strong>{" "}
+              Legacy
+            </>
+          ) : (
+            <>
+              हमारी <strong className="text-[#f47217]">शाही</strong> विरासत का
+              परिचय
+            </>
+          )}
         </h2>
 
         <div

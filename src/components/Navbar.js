@@ -1,9 +1,10 @@
 "use client";
-
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Link from "next/link";
+import LanguageContext from "@/context/languageContext";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { language } = useContext(LanguageContext);
 
   return (
     <nav className="bg-white border-b border-gray-200 shadow-sm">
@@ -15,30 +16,30 @@ export default function Navbar() {
               className="text-xl font-semibold text-[#f47217] font-serif"
               // className="text-xl font-semibold text-[#caaf44] font-serif"
             >
-              Majhauli Raj
+              {language === "english" ? "Majhauli Raj" : "मझौली राज"}
             </Link>
           </div>
           <div className="hidden md:flex space-x-4">
             <Link href="/" className="text-gray-700 hover:text-orange-600">
-              Home
+              {language === "english" ? "Home" : "होम"}
             </Link>
             <Link
               href="/familyTree"
               className="text-gray-700 hover:text-orange-600"
             >
-              Family Tree
+              {language === "english" ? "Family Tree" : "वंशावली"}
             </Link>
             <Link
               href="/gallery"
               className="text-gray-700 hover:text-orange-600"
             >
-              Gallery
+              {language === "english" ? "Gallery" : "गैलरी"}
             </Link>
             <Link
               href="/contact"
               className="text-gray-700 hover:text-orange-600"
             >
-              Contact
+              {language === "english" ? "Contact" : "संपर्क"}
             </Link>
           </div>
           <div className="md:hidden">
@@ -54,25 +55,25 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden px-4 pt-2 pb-4 space-y-1">
           <Link href="/" className="block text-gray-700 hover:text-orange-600">
-            Home
+            {language === "english" ? "Home" : "होम"}
           </Link>
           <Link
             href="/familyTree"
             className="block text-gray-700 hover:text-orange-600"
           >
-            Profile
+            {language === "english" ? "Family Tree" : "वंशावली"}
           </Link>
           <Link
             href="/gallery"
             className="block text-gray-700 hover:text-orange-600"
           >
-            Gallery
+            {language === "english" ? "Gallery" : "गैलरी"}
           </Link>
           <Link
             href="/contact"
             className="block text-gray-700 hover:text-orange-600"
           >
-            Contact
+            {language === "english" ? "Contact" : "संपर्क"}
           </Link>
         </div>
       )}

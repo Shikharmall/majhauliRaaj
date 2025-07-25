@@ -1,7 +1,10 @@
+import LanguageContext from "@/context/languageContext";
 import Image from "next/image";
 import Link from "next/link";
+import { useContext } from "react";
 
 export default function AboutSection() {
+  const { language } = useContext(LanguageContext);
   return (
     <section className="py-12 bg-[#f472172d] my-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
@@ -24,24 +27,33 @@ export default function AboutSection() {
           {/* <h2 className="text-2xl font-semibold text-[#f47217] font-serif">About</h2> */}
           <div className="inline-block relative mb-5">
             <h2 className="text-2xl font-semibold text-[#f47217] font-serif">
-              About
+              {language === "english" ? "About" : "परिचय"}
             </h2>
             <div className="absolute left-0 top-8 w-1/2 h-1 bg-[#2ccc7f]"></div>
           </div>
-          <h1 className="text-4xl mb-4 text-[#082366]">Majhauli Raj</h1>
+          <h1 className="text-4xl mb-4 text-[#082366]">
+            {language === "english" ? "Majhauli Raj" : "मझौली राज"}
+          </h1>
           <p className="mb-4 text-black">
-            Majhauli Raj was the seat of an eponymous Bisen/Visen feudal estate
-            known as the Majhauli Raj, which is said to have been founded around
-            1100 to 1300 CE. King Vishwa Sen (Estimated Around 1000 to 1200
-            BCE), one of the sole king of Malla Desh or Malla Bhumi or Malla
-            Rastra (Later known as Malla Mahajanpada), had ruled prior to
-            Mahajanpad Era from Kushinagar as capital of eastern Koshala.
+            {language === "english"
+              ? `Majhauli Raj was the seat of an eponymous Bisen (or Visen) feudal estate,
+     said to have been founded between 1100 and 1300 CE. King Vishwa Sen 
+     (estimated around 1000 to 1200 BCE), one of the earliest rulers of 
+     Malla Desh (also known as Malla Bhumi or Malla Rashtra, later Malla 
+     Mahajanpada), ruled before the Mahajanapada era from Kushinagar, 
+     the capital of eastern Kosala.`
+              : `मझौली राज एक बिसेन (या विसेन) सामंतवादी रियासत का मुख्य केंद्र था, 
+     जिसकी स्थापना लगभग 1100 से 1300 ईस्वी के बीच मानी जाती है। 
+     राजा विश्वसेन (अनुमानित काल: 1000 से 1200 ईसा पूर्व), मल्ल देश 
+     (जिसे मल्ल भूमि या मल्ल राष्ट्र भी कहा जाता है, बाद में मल्ल महाजनपद) 
+     के प्रारंभिक शासकों में से एक माने जाते हैं। उन्होंने महाजनपद युग से पहले 
+     कुशीनगर (पूर्वी कोशल की राजधानी) से शासन किया था।`}
           </p>
           <Link
             href="/estates/majhauliEstate"
             className="text-[#2ccc7f] hover:text-white hover:bg-[#2ccc7f] border border-2 p-3 rounded"
           >
-            Learn More
+            {language === "english" ? "Learn More" : "और जानें"}
           </Link>
         </div>
       </div>

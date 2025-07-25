@@ -82,6 +82,83 @@ const familyData1 = {
   ],
 };
 
+const familyData1Hindi = {
+  name: "मझौली राज",
+  isExtra: "(देवरिया)",
+  children: [
+    {
+      name: "मझौली राज",
+      isExtra: "(जारी)",
+      children: [
+        {
+          name: "मझौली राज",
+          isExtra: "(जारी)",
+          children: [
+            {
+              name: "मझौली राज",
+              isExtra: "(जारी)",
+              children: [],
+            },
+            {
+              name: "मधुबन रियासत",
+              isExtra: "(मधुबन)",
+              children: [],
+            },
+            {
+              name: "नरहरपुर रियासत",
+              isExtra: "(नरहरपुर)",
+              children: [],
+            },
+          ],
+        },
+        {
+          name: "गोंडा रियासत",
+          isExtra: "(गोंडा)",
+          children: [
+            {
+              name: "गोंडा रियासत",
+              isExtra: "(जारी)",
+              children: [
+                {
+                  name: "गोंडा रियासत",
+                  isExtra: "(जारी)",
+                  children: [],
+                },
+                {
+                  name: "भिंगा रियासत",
+                  isExtra: "अवध (बहराइच ज़िला)",
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "मनकापुर रियासत",
+              isExtra: "उत्तर प्रदेश (गोंडा ज़िला)",
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "कालाकांकर रियासत",
+      isExtra: "अवध, उत्तर प्रदेश",
+      children: [
+        {
+          name: "कालाकांकर रियासत",
+          isExtra: "(जारी)",
+          children: [],
+        },
+        {
+          name: "भदरी रियासत",
+          isExtra: "अवध (प्रतापगढ़ ज़िला)",
+          children: [],
+        },
+      ],
+    },
+  ],
+};
+
 const familyData = {
   name: "Raja Vishwa Sen",
   isKing: true,
@@ -524,6 +601,448 @@ const familyData = {
   ],
 };
 
+const familyDataHindi = {
+  name: "राजा विश्व सेन",
+  isKing: true,
+  children: [
+    {
+      name: "",
+      isInfinite: true,
+      children: [
+        {
+          name: "राजा रघुवंश मल्ल",
+          isKing: true,
+          children: [
+            {
+              name: "राजा रतन मल्ल",
+              isExtra: "(मझौली)",
+              isKing: true,
+              children: [
+                {
+                  name: "राजा नृप मल्ल",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "राजा हरिश्चन्द्र मल्ल",
+                      isExtra: "(मझौली)",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "महाराजा देव मल्ल",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "राजा प्रसाद मल्ल",
+                              isExtra: "(मझौली)",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "महाराजा भीम मल्ल",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "राजा नारायण मल्ल",
+                                      isKing: true,
+                                      children: [
+                                        {
+                                          name: "राजा रूप मल्ल",
+                                          isKing: true,
+                                          children: [
+                                            {
+                                              name: "राजा विक्रमादित्य मल्ल",
+                                              isKing: true,
+                                              children: [
+                                                {
+                                                  name: "राजा बोध मल्ल",
+                                                  isExtra:
+                                                    "(इसके बाद कुछ त्रुटि)",
+                                                  isKing: true,
+                                                  children: [
+                                                    {
+                                                      name: "राजा शिव मल्ल",
+                                                      isKing: true,
+                                                      children: [
+                                                        {
+                                                          name: "राजा अजीत मल्ल",
+                                                          isKing: true,
+                                                          children: [
+                                                            {
+                                                              name: "राजा तेज मल्ल",
+                                                              isKing: true,
+                                                              children: [
+                                                                {
+                                                                  name: "राजा उदयनारायण मल्ल",
+                                                                  isKing: true,
+                                                                  children: [
+                                                                    {
+                                                                      name: "",
+                                                                      isInfinite: true,
+                                                                      children:
+                                                                        [
+                                                                          {
+                                                                            name: "राजा कौशल किशोर मल्ल",
+                                                                            isKing: true,
+                                                                            children:
+                                                                              [
+                                                                                {
+                                                                                  name: "रानी श्याम सुंदरी कुमारी",
+                                                                                  isKing: true,
+                                                                                  children:
+                                                                                    [
+                                                                                      {
+                                                                                        name: "राजा इन्द्रजीत मल्ल",
+                                                                                        isKing: true,
+                                                                                        children:
+                                                                                          [
+                                                                                            {
+                                                                                              name: "राजा बलभद्र मल्ल",
+                                                                                              isKing: true,
+                                                                                              children:
+                                                                                                [
+                                                                                                  {
+                                                                                                    name: "राजा अवधेश मल्ल",
+                                                                                                    isKing: true,
+                                                                                                    children:
+                                                                                                      [
+                                                                                                        {
+                                                                                                          name: "मझौली रियासत का भारत गणराज्य में विलय (1947)",
+                                                                                                          children:
+                                                                                                            [],
+                                                                                                        },
+                                                                                                      ],
+                                                                                                  },
+                                                                                                ],
+                                                                                            },
+                                                                                          ],
+                                                                                      },
+                                                                                    ],
+                                                                                },
+                                                                              ],
+                                                                          },
+                                                                        ],
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                  ],
+                                                },
+                                              ],
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "राजा माधव मल्ल",
+                                  isExtra: "(मधुबन)",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "राजा नाथ मल्ल",
+                                      isKing: true,
+                                      children: [],
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "राजा राय मल्ल",
+                                  isExtra: "(नरहरपुर)",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "",
+                                      isInfinite: true,
+                                      children: [
+                                        {
+                                          name: "राजा हरि प्रसाद मल्ल",
+                                          isExtra: "(1857 के शहीद)",
+                                          isKing: true,
+                                          children: [],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      name: "राजा राम प्रताप मल्ल",
+                      isExtra: "(गोंडा)",
+                      isKing: true,
+                      children: [],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              name: "बाबू रूप मल्ल",
+              isKing: true,
+              children: [
+                {
+                  name: "राय होम मल्ल",
+                  isExtra: "(कालाकांकर)",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "राय पुरंदर मल्ल",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "राय गोपाल मल्ल",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "राय राधो",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "",
+                                  isInfinite: true,
+                                  children: [
+                                    {
+                                      name: "राय सबल शाह",
+                                      isKing: true,
+                                      children: [
+                                        {
+                                          name: "राय बिक्रम शाह",
+                                          isKing: true,
+                                          children: [
+                                            {
+                                              name: "राय छत्तर सिंह",
+                                              isKing: true,
+                                              children: [
+                                                {
+                                                  name: "राय राम सिंह",
+                                                  isKing: true,
+                                                  children: [
+                                                    {
+                                                      name: "राय गहरवार सिंह",
+                                                      isKing: true,
+                                                      children: [
+                                                        {
+                                                          name: "राय दलजीत सिंह",
+                                                          isKing: true,
+                                                          children: [
+                                                            {
+                                                              name: "राय ज़ालिम सिंह",
+                                                              isKing: true,
+                                                              children: [
+                                                                {
+                                                                  name: "राय दलजीत सिंह",
+                                                                  isKing: true,
+                                                                  children: [
+                                                                    {
+                                                                      name: "राय जगमोहन सिंह",
+                                                                      isKing: true,
+                                                                      children:
+                                                                        [
+                                                                          {
+                                                                            name: "राय बिशनाथ सिंह",
+                                                                            isKing: true,
+                                                                            children:
+                                                                              [
+                                                                                {
+                                                                                  name: "राय जगत बहादुर सिंह",
+                                                                                  isKing: true,
+                                                                                  children:
+                                                                                    [
+                                                                                      {
+                                                                                        name: "राय सरबजीत सिंह",
+                                                                                        isKing: true,
+                                                                                        children:
+                                                                                          [
+                                                                                            {
+                                                                                              name: "राय कृषण प्रसाद सिंह",
+                                                                                              isKing: true,
+                                                                                              children:
+                                                                                                [
+                                                                                                  {
+                                                                                                    name: "राजा बजरंग बहादुर सिंह",
+                                                                                                    isKing: true,
+                                                                                                    children:
+                                                                                                      [
+                                                                                                        {
+                                                                                                          name: "राजा उदय प्रताप सिंह",
+                                                                                                          isKing: true,
+                                                                                                          children:
+                                                                                                            [],
+                                                                                                        },
+                                                                                                      ],
+                                                                                                  },
+                                                                                                ],
+                                                                                            },
+                                                                                          ],
+                                                                                      },
+                                                                                    ],
+                                                                                },
+                                                                              ],
+                                                                          },
+                                                                        ],
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                  ],
+                                                },
+                                              ],
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                            {
+                              name: "बाबू राम",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "राय अस्करन",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "रूद्र प्रताप",
+                                      isKing: true,
+                                      children: [
+                                        {
+                                          name: "टोडल (टोडर मल्ल)",
+                                          isKing: true,
+                                          children: [
+                                            {
+                                              name: "धारू शाह",
+                                              isKing: true,
+                                              children: [
+                                                {
+                                                  name: "बरसल राय",
+                                                  isKing: true,
+                                                  children: [
+                                                    {
+                                                      name: "राय जय सिंह",
+                                                      isKing: true,
+                                                      children: [
+                                                        {
+                                                          name: "राय श्याम सिंह",
+                                                          isKing: true,
+                                                          children: [
+                                                            {
+                                                              name: "मऊ सिंह",
+                                                              isKing: true,
+                                                              children: [
+                                                                {
+                                                                  name: "राय कमल सिंह",
+                                                                  isKing: true,
+                                                                  children: [
+                                                                    {
+                                                                      name: "लाल बलवंत सिंह",
+                                                                      isKing: true,
+                                                                      children:
+                                                                        [
+                                                                          {
+                                                                            name: "लाल बेरीसात",
+                                                                            isKing: true,
+                                                                            children:
+                                                                              [
+                                                                                {
+                                                                                  name: "राय हनुमंत सिंह",
+                                                                                  isKing: true,
+                                                                                  children:
+                                                                                    [
+                                                                                      {
+                                                                                        name: "लाल प्रताप सिंह",
+                                                                                        isKing: true,
+                                                                                        children:
+                                                                                          [
+                                                                                            {
+                                                                                              name: "राजा रामपाल सिंह",
+                                                                                              isKing: true,
+                                                                                              children:
+                                                                                                [
+                                                                                                  {
+                                                                                                    name: "राजा रमेश सिंह",
+                                                                                                    isKing: true,
+                                                                                                    children:
+                                                                                                      [
+                                                                                                        {
+                                                                                                          name: "राजा अवधेश सिंह",
+                                                                                                          isKing: true,
+                                                                                                          children:
+                                                                                                            [
+                                                                                                              {
+                                                                                                                name: "राजा दिनेश सिंह",
+                                                                                                                isExtra:
+                                                                                                                  "(पूर्व विदेश मंत्री)",
+                                                                                                                isKing: true,
+                                                                                                                children:
+                                                                                                                  [],
+                                                                                                              },
+                                                                                                            ],
+                                                                                                        },
+                                                                                                      ],
+                                                                                                  },
+                                                                                                ],
+                                                                                            },
+                                                                                          ],
+                                                                                      },
+                                                                                    ],
+                                                                                },
+                                                                              ],
+                                                                          },
+                                                                        ],
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                  ],
+                                                },
+                                              ],
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
 export default function MajhauliEstateDetails() {
   const { language } = useContext(LanguageContext);
   return (
@@ -645,7 +1164,9 @@ export default function MajhauliEstateDetails() {
           )}
         </div>
 
-        <FamilyTreeStructure familyData={familyData1} />
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData1 : familyData1Hindi}
+        />
 
         {/* Personal Details Table */}
         {/* <div className="mt-12">
@@ -742,7 +1263,9 @@ export default function MajhauliEstateDetails() {
             </table>
           </div>
         </div> */}
-        <FamilyTreeStructure familyData={familyData} />
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
+        />
       </main>
     </div>
   );

@@ -1,10 +1,11 @@
+import COLORS from "@/utils/color";
 import Banner from "./Banner";
 
 export default function ContactSection() {
   return (
     <section className="bg-white pb-12">
       {/* Heading */}
-      
+
       <Banner title={"Contact Us"} />
       <div className="max-w-6xl mx-auto px-4">
         {/* Map */}
@@ -22,7 +23,22 @@ export default function ContactSection() {
 
         {/* Contact Form */}
         <div className="bg-gray-100 p-8 rounded-lg shadow-md mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Get In Touch</h2>
+          <div className="flex justify-center items-center my-3">
+            <div className="inline-block relative mb-5">
+              <h2
+                className="text-2xl font-semibold font-serif"
+                style={{ color: COLORS.primary }}
+              >
+                Get In Touch
+              </h2>
+              <div
+                className="absolute left-0 top-8 w-1/2 h-1"
+                style={{
+                  backgroundColor: COLORS.secondary,
+                }}
+              ></div>
+            </div>
+          </div>
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <input
@@ -47,7 +63,8 @@ export default function ContactSection() {
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition cursor-pointer"
+              style={{ backgroundColor: COLORS.primary }}
             >
               Submit
             </button>
@@ -57,7 +74,10 @@ export default function ContactSection() {
         {/* Contact Icons */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="flex flex-col items-center space-y-3">
-            <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>
+            <i
+              className="fa-solid fa-location-dot text-3xl"
+              style={{ color: COLORS.primary }}
+            ></i>
             <h2 className="text-lg font-semibold">Address</h2>
             <p className="text-gray-700">
               21, Ashoka Road
@@ -67,15 +87,21 @@ export default function ContactSection() {
           </div>
 
           <div className="flex flex-col items-center space-y-3">
-            <i className="fa-solid fa-envelope text-3xl text-blue-600"></i>
+            <i
+              className="fa-solid fa-envelope text-3xl"
+              style={{ color: COLORS.primary }}
+            ></i>
             <h2 className="text-lg font-semibold">Email</h2>
-            <p className="text-gray-700">brijbhusan.singh@sansad.nic.in</p>
+            <p className="text-gray-700">thesarus.2022@gmail.com</p>
           </div>
 
           <div className="flex flex-col items-center space-y-3">
-            <i className="fa-solid fa-phone text-3xl text-blue-600"></i>
+            <i
+              className="fa-solid fa-phone text-3xl"
+              style={{ color: COLORS.primary }}
+            ></i>
             <h2 className="text-lg font-semibold">Number</h2>
-            <p className="text-gray-700">+91 (011) 23346289</p>
+            <p className="text-gray-700">+91-XXXXX XXXXX</p>
           </div>
         </div>
       </div>

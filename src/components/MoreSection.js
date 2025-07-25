@@ -2,6 +2,7 @@
 
 import LanguageContext from "@/context/languageContext";
 import Image from "next/image";
+import Link from "next/link";
 import { useContext } from "react";
 export default function MoreSection() {
   const { language } = useContext(LanguageContext);
@@ -96,7 +97,7 @@ export default function MoreSection() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center items-center" //gap-6
         >
           {items.map((item, idx) => (
-            <a
+            <Link
               key={idx}
               href={item.href}
               className="flex flex-col items-center text-center transition p-3 rounded-xl w-50 h-50 m-1" //bg-gray-100 hover:bg-blue-50 shadow
@@ -115,7 +116,7 @@ export default function MoreSection() {
                 <h1 className="text-lg font-serif">{item.title}</h1>
                 <p className="text-gray-600 mt-1 text-sm">{item.description}</p>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,0 +1,69 @@
+// we just want to automate our workflow by github actions
+
+//name of ur workflow
+
+name: Build & Deploy
+
+// when work flow file will get triggered
+
+on:
+  push:
+    branches:
+      - main
+
+//ignore warning 
+
+env:
+  CI: false
+
+// now creating two jobs build and deploy  
+
+jobs:
+  build:
+    name: Build  // name of build job
+    runs-on: ubuntu-latest     // server
+
+    steps:
+      - name: Checkout repo            // name of the steps
+        uses: actions/checkout@v2
+
+      - name: Setup Node           
+        uses: actions/setup-node@v1  // setup node (already package bana hua hai)
+        with:
+          node-version: 16
+
+      - name: Install dependencies       
+        uses: bahmutov/npm-install@v1      // install all dependencies and store in cache
+
+      - name: Build project
+        run: npm run build     
+
+        // build your project and build foder created with production ready code (Bundles all your JavaScript files (including React components) into static files.)
+
+        env: 
+          REACT_APP_API : ${{secret.REACT_APP_API}}   //get secret keys
+
+      - name: Upload production-ready build files  // upload my build files on cloud
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+
+  deploy:
+    name: Deploy    // name of build job
+    needs: build    // if build job successful then this job will run
+    runs-on: ubuntu-latest     // server
+    if: github.ref == 'refs/heads/main' // deploy that branch only which name is main
+
+    steps:
+      - name: Download artifact   // download my build file
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+
+      - name: Deploy to GitHub Pages 
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./build

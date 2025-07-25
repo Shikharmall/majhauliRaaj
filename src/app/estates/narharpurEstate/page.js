@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import NarharpurEstateDetails from "@/components/EstateDetails/NarharpurEstateDetails";
 
-export default function Contact() {
+export default function Narharpur() {
   return (
     <>
       <Header />

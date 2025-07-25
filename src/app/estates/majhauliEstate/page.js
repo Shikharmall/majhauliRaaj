@@ -5,7 +5,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import MajhauliEstateDetails from "../../../components/EstateDetails/MajhauliEstateDetails";
 
-export default function Estate() {
+export default function Majhauli() {
   return (
     <>
       <Header />

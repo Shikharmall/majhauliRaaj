@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import KalakankarEstateDetails from "@/components/EstateDetails/KalakankarEstateDetails";
 
-export default function Contact() {
+export default function Kalakankar() {
   return (
     <>
       <Header />

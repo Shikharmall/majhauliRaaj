@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import FamilyTreeDetails from "@/components/FamilyTreeDetails";
 
-export default function Estate() {
+export default function FamilyTree() {
   return (
     <>
       <Header />

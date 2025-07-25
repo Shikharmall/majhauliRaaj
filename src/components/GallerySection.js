@@ -56,22 +56,22 @@ export default function GallerySection() {
     },
   ];
 
-  const imagesBadri = [
+  const imagesBhadri = [
     {
-      estate: "Badri Estate",
-      url: "/assets/img/badri/badri1.png",
+      estate: "Bhadri Estate",
+      url: "/assets/img/bhadri/bhadri1.png",
     },
     {
-      estate: "Badri Estate",
-      url: "/assets/img/badri/badri2.png",
+      estate: "Bhadri Estate",
+      url: "/assets/img/bhadri/bhadri2.png",
     },
     {
-      estate: "Badri Estate",
-      url: "/assets/img/badri/badri3.png",
+      estate: "Bhadri Estate",
+      url: "/assets/img/bhadri/bhadri3.png",
     },
     {
-      estate: "Badri Estate",
-      url: "/assets/img/badri/badri5.png",
+      estate: "Bhadri Estate",
+      url: "/assets/img/bhadri/bhadri5.png",
     },
   ];
 
@@ -245,9 +245,9 @@ export default function GallerySection() {
             <ImagesGrid images={imagesKalakankar} />
           </div>
 
-          {/* Badri Estate */}
+          {/* Bhadri Estate */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold mb-0">Badri Estate</h3>
+            <h3 className="text-xl font-semibold mb-0">Bhadri Estate</h3>
             <h3 className="text-sm mb-4">
               Successor Estate of Majhauli Estate
             </h3>
@@ -259,7 +259,7 @@ export default function GallerySection() {
             >
               Est. by Rai Sabal Shah
             </a>
-            <ImagesGrid images={imagesBadri} />
+            <ImagesGrid images={imagesBhadri} />
           </div>
 
           {/* Gonda Estate */}

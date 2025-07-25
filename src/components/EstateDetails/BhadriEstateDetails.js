@@ -134,10 +134,10 @@ const familyData = {
   ],
 };
 
-export default function BadriEstateDetails() {
+export default function BhadriEstateDetails() {
   return (
     <div>
-      <Banner title={"Badri Estate"} />
+      <Banner title={"Bhadri Estate"} />
 
       {/* Main Content */}
       <main className="container mx-auto px-20 py-10">
@@ -145,14 +145,14 @@ export default function BadriEstateDetails() {
           {/* Left Image */}
           <div className="md:col-span-1 ">
             <Image
-              src="/assets/img/badri/badri1.png"
+              src="/assets/img/bhadri/bhadri1.png"
               alt="majhauli-img"
               width={600}
               height={400}
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Fort of Badri Estate</h2>
+              <h2>Fort of Bhadri Estate</h2>
             </div>
             <br />
             <iframe

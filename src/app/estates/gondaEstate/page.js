@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import GondaEstateDetails from "@/components/EstateDetails/GondaEstateDetails";
 
-export default function Contact() {
+export default function Gonda() {
   return (
     <>
       <Header />

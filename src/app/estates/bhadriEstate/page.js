@@ -2,14 +2,14 @@ import Head from "next/head";
 import Header from "../../../components/Header";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import BadriEstateDetails from "@/components/EstateDetails/BadriEstateDetails";
+import BhadriEstateDetails from "@/components/EstateDetails/BhadriEstateDetails";
 
-export default function Contact() {
+export default function Bhadri() {
   return (
     <>
       <Header />
       <Navbar />
-      <BadriEstateDetails />
+      <BhadriEstateDetails />
       <Footer />
     </>
   );

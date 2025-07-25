@@ -73,7 +73,7 @@ const familyData1 = {
           children: [],
         },
         {
-          name: "Badri Estate",
+          name: "Bhadri Estate",
           isExtra: "Oudh (Pratapgarh Dist.)",
           children: [],
         },

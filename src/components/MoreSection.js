@@ -22,10 +22,10 @@ export default function MoreSection() {
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
-      title: "Badri Estate",
+      title: "Bhadri Estate",
       description: "Rai Sabal Shah",
       src: "/assets/img/royalFlagC.png",
-      href: "estates/badriEstate",
+      href: "estates/bhadriEstate",
     },
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,

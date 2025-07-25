@@ -1,3 +1,4 @@
+"use client"
 import LanguageContext from "@/context/languageContext";
 import COLORS from "@/utils/color";
 import React, { useRef, useEffect, useContext } from "react";

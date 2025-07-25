@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Banner from "./Banner";
 import FamilyTreeStructure from "./FamilyTreeStructure";
+import LanguageContext from "@/context/languageContext";
 
 const familyData = {
   name: "Raja Raghuvansh Mall",
@@ -203,9 +204,14 @@ const familyData = {
 };
 
 export default function FamilyTreeDetails() {
+  const { language } = useContext(LanguageContext);
   return (
     <div>
-      <Banner title={"Royal Family Tree"} />
+      <Banner
+        title={
+          language === "english" ? "Royal Family Tree" : "राजपरिवार वंशवृक्ष"
+        }
+      />
       <FamilyTreeStructure familyData={familyData} />
     </div>
   );

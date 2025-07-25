@@ -1,10 +1,11 @@
 "use client";
-
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import ImagesGrid from "./ImagesGrid";
 import COLORS from "@/utils/color";
+import LanguageContext from "@/context/languageContext";
 
 export default function GallerySection() {
+  const { language } = useContext(LanguageContext);
   useEffect(() => {
     // Load Twitter widget script dynamically
     const script = document.createElement("script");

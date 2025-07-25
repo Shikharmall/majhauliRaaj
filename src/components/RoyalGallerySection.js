@@ -1,5 +1,8 @@
+"use client"
+import LanguageContext from "@/context/languageContext";
 import Banner from "./Banner";
 import RoyalImagesGrid from "./RoyalImagesGrid";
+import { useContext } from "react";
 
 const images = [
   {
@@ -189,10 +192,11 @@ const images = [
 ];
 
 export default function GallerySection() {
+  const { language } = useContext(LanguageContext);
   return (
     <section className="bg-white pb-12">
       {/* Heading */}
-      <Banner title={"Royal Gallery"} />
+      <Banner title={language === "english" ? "Royal Gallery" : "राजवंशीय गैलरी"} />
       <div className="max-w-6xl mx-auto px-4">
         <RoyalImagesGrid images={images} />
       </div>

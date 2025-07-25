@@ -27,6 +27,7 @@ export default function SwiperSlider() {
   const images = [
     "/assets/img/majhauli/majhauliraj1.png",
     "/assets/img/majhauli/majhauliraj3.png",
+    // "/assets/img/map1.png",
     "/assets/img/majhauli/majhauliraj4.png",
   ];
 

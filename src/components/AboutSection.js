@@ -13,6 +13,7 @@ export default function AboutSection() {
           data-aos="flip-left"
         >
           <Image
+            // src={`/assets/img/map1Crop.png`}
             src={`/assets/img/majhauli/majhauliraj7.jpeg`}
             alt="majhauli-raj"
             width={500} // full HD width

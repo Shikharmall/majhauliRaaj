@@ -9,15 +9,9 @@ export default function AboutSection() {
           className="w-full md:w-1/2 p-4 aos-init aos-animate flex flex-col md:flex-row justify-center"
           data-aos="flip-left"
         >
-          {/* <img
-            src="/assets/img/FB_IMG_1669810467512.jpg"
-            alt="Brij"
-            className="w-full rounded-md shadow"
-          /> */}
-
           <Image
-            src={`/assets/img/majhauli/majhauliraaj7.jpeg`}
-            alt="majhauli-raaj"
+            src={`/assets/img/majhauli/majhauliraj7.jpeg`}
+            alt="majhauli-raj"
             width={500} // full HD width
             height={600} // adjust height accordingly
             className="rounded-md shadow-2xl"

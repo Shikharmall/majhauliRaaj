@@ -19,19 +19,19 @@ export default function GallerySection() {
   const imagesMajhauli = [
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauli/majhauliraaj1.png",
+      url: "/assets/img/majhauli/majhauliraj1.png",
     },
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauli/majhauliraaj4.png",
+      url: "/assets/img/majhauli/majhauliraj4.png",
     },
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauli/majhauliraaj3.png",
+      url: "/assets/img/majhauli/majhauliraj3.png",
     },
     {
       estate: "Majhauli Estate",
-      url: "/assets/img/majhauli/majhauliraaj2.png",
+      url: "/assets/img/majhauli/majhauliraj2.png",
     },
   ];
 

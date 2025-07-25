@@ -7,7 +7,7 @@ export default function Header() {
             //href="mailto:brijbhusan.singh@sansad.nic.in"
             className="hover:underline"
           >
-            majhauliraaj@gmail.com
+            majhauliraj@gmail.com
           </a>
           <span className="border-r border-white pr-4">+91 XXXXX-XXXXX</span>
           <a href="/home/changeLanguage" className="hover:underline">

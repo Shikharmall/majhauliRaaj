@@ -4,31 +4,31 @@ import RoyalImagesGrid from "./RoyalImagesGrid";
 const images = [
   {
     estate: "Majhauli Estate",
-    url: "/assets/img/majhauli/majhauliraaj1.png",
+    url: "/assets/img/majhauli/majhauliraj1.png",
   },
   {
     estate: "Majhauli Estate",
-    url: "/assets/img/majhauli/majhauliraaj2.png",
+    url: "/assets/img/majhauli/majhauliraj2.png",
   },
   {
     estate: "Majhauli Estate",
-    url: "/assets/img/majhauli/majhauliraaj3.png",
+    url: "/assets/img/majhauli/majhauliraj3.png",
   },
   {
     estate: "Majhauli Estate",
-    url: "/assets/img/majhauli/majhauliraaj4.png",
+    url: "/assets/img/majhauli/majhauliraj4.png",
   },
   {
     estate: "Majhauli Estate",
-    url: "/assets/img/majhauli/majhauliraaj5.png",
+    url: "/assets/img/majhauli/majhauliraj5.png",
   },
   {
     estate: "Majhauli Estate",
-    url: "/assets/img/majhauli/majhauliraaj6.png",
+    url: "/assets/img/majhauli/majhauliraj6.png",
   },
   {
     estate: "Majhauli Estate",
-    url: "/assets/img/majhauli/majhauliraaj7.jpeg",
+    url: "/assets/img/majhauli/majhauliraj7.jpeg",
   },
   {
     estate: "Kalakankar Estate",

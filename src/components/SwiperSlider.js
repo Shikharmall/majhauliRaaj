@@ -25,9 +25,9 @@ export default function SwiperSlider() {
   }, []);
 
   const images = [
-    "/assets/img/majhauliraaj1.png",
-    "/assets/img/majhauliraaj3.png",
-    "/assets/img/majhauliraaj4.png",
+    "/assets/img/majhauli/majhauliraj1.png",
+    "/assets/img/majhauli/majhauliraj3.png",
+    "/assets/img/majhauli/majhauliraj4.png",
   ];
 
   return (

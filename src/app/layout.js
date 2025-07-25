@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Majhauli Raaj",
+  title: "Majhauli Raj",
   description: "Detail History of This Kingdom.",
 };
 

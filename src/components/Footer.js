@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer
       className="relative min-h-screen bg-cover bg-center flex flex-col text-white"
-      style={{ backgroundImage: "url('/assets/img/majhauli/majhauliraaj1.png')" }}
+      style={{ backgroundImage: "url('/assets/img/majhauli/majhauliraj1.png')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black opacity-70 pointer-events-none"></div>

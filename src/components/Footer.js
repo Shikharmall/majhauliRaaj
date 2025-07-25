@@ -1,8 +1,16 @@
+"use client";
+
+import LanguageContext from "@/context/languageContext";
+import { useContext } from "react";
+
 export default function Footer() {
+  const { language } = useContext(LanguageContext);
   return (
     <footer
       className="relative min-h-screen bg-cover bg-center flex flex-col text-white"
-      style={{ backgroundImage: "url('/assets/img/majhauli/majhauliraj1.png')" }}
+      style={{
+        backgroundImage: "url('/assets/img/majhauli/majhauliraj1.png')",
+      }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black opacity-70 pointer-events-none"></div>
@@ -13,7 +21,7 @@ export default function Footer() {
           {/* Contact Us */}
           <div>
             <h5 className="mb-5 text-white text-lg font-semibold">
-              Contact Us
+              {language === "english" ? "Contact Us" : "संपर्क करें"}
             </h5>
             <address className="not-italic mb-3">
               <i className="fa-solid fa-location-dot mr-2"></i>

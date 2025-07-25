@@ -1,9 +1,10 @@
 "use client";
-
+import LanguageContext from "@/context/languageContext";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 export default function ImageModal({ isOpen, imageSrc, onClose }) {
+  const { language } = useContext(LanguageContext);
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -46,7 +47,9 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
 
         {/* Label */}
         <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-xl z-10 bg-black/70 px-4 py-2 rounded">
-          {imageSrc?.estate?.toUpperCase()}
+          {language === "english"
+            ? imageSrc?.estate?.toUpperCase()
+            : imageSrc?.estateHindi?.toUpperCase()}
         </p>
       </div>
     </div>

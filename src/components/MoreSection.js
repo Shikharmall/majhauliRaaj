@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useContext } from "react";
 export default function MoreSection() {
   const { language } = useContext(LanguageContext);
+  
   const items = [
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,

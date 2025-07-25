@@ -1,3 +1,4 @@
+import COLORS from "@/utils/color";
 import React, { useRef, useEffect } from "react";
 
 // Recursive TreeNode component
@@ -72,13 +73,29 @@ export default function FamilyTreeStructure({ familyData }) {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="min-h-screen p-6 bg-gray-100 overflow-auto my-5 rounded"
-    >
-      <div className="min-w-max mx-auto">
-        <TreeNode node={familyData} />
+    <>
+      <div className="flex justify-center items-center">
+        <div className="inline-block relative mb-5">
+          <h2
+            className="text-2xl font-semibold font-serif"
+            style={{ color: COLORS.primary }}
+          >
+            GENEALOGY
+          </h2>
+          <div
+            className="absolute left-0 top-8 w-1/2 h-1"
+            style={{ backgroundColor: COLORS.secondary }}
+          ></div>
+        </div>
       </div>
-    </div>
+      <div
+        ref={containerRef}
+        className="min-h-screen p-6 bg-gray-100 overflow-auto my-5 rounded"
+      >
+        <div className="min-w-max mx-auto">
+          <TreeNode node={familyData} />
+        </div>
+      </div>
+    </>
   );
 }

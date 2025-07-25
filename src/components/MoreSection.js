@@ -86,7 +86,7 @@ export default function MoreSection() {
             <a
               key={idx}
               href={item.href}
-              className="flex flex-col items-center text-center transition p-3 rounded-xl w-50 h-50 bg-white m-1" //bg-gray-100 hover:bg-blue-50 shadow
+              className="flex flex-col items-center text-center transition p-3 rounded-xl w-50 h-50 m-1" //bg-gray-100 hover:bg-blue-50 shadow
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -96,10 +96,10 @@ export default function MoreSection() {
                 alt="flag"
                 width={100}
                 height={100}
-                //className="w-full h-full" //rounded-full p-3 shadow-lg border-3 border-gray-300
+                className="w-30 h-30" //rounded-full p-3 shadow-lg border-3 border-gray-300
               />
               <div className="name">
-                <h1 className="text-xl font-serif">{item.title}</h1>
+                <h1 className="text-lg font-serif">{item.title}</h1>
                 <p className="text-gray-600 mt-1 text-sm">{item.description}</p>
               </div>
             </a>

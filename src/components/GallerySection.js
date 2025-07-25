@@ -191,9 +191,12 @@ export default function GallerySection() {
     <section className="bg-[#f472172d] py-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold text-[#f47217] font-serif">
-            Gallery
-          </h2>
+          <div className="inline-block relative mb-5">
+            <h2 className="text-2xl font-semibold text-[#f47217] font-serif">
+              Gallery
+            </h2>
+            <div className="absolute left-0 top-8 w-1/2 h-1 bg-[#2ccc7f]"></div>
+          </div>
           <h1 className="text-4xl  text-[#082366]">Photo Gallery</h1>
         </div>
 

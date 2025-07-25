@@ -66,7 +66,7 @@ export default function GallerySection() {
     },
     {
       name: "Mankapur Estate",
-      nameHindi: "मानकपुर रियासत",
+      nameHindi: "मनकापुर रियासत",
       successor: "Majhauli Estate",
       successorHindi: "मझौली राज",
       king: "Raja Ajmat Singhji",

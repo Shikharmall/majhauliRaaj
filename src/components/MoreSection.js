@@ -47,7 +47,7 @@ export default function MoreSection() {
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Mankapur Estate",
-      titleHindi: "मानकपुर रियासत",
+      titleHindi: "मनकापुर रियासत",
       description: "Raja Ajmat Singhji",
       descriptionHindi: "राजा अजमत सिंहजी",
       src: "/assets/img/mankapur/mankapur_coa.png",

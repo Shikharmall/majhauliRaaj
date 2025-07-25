@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
+import LanguageContext from "@/context/languageContext";
 
 const familyData = {
   name: "Raja Rai Mall",
@@ -22,10 +23,31 @@ const familyData = {
   ],
 };
 
+const familyDataHindi = {
+  name: "राजा राय मल्ल",
+  isKing: true,
+  children: [
+    {
+      name: "",
+      isInfinite: true,
+      children: [
+        {
+          name: "राजा हरि प्रसाद मल्ल",
+          isExtra: "(शहीद - 1857 की क्रांति)",
+          isKing: true,
+        },
+      ],
+    },
+  ],
+};
+
 export default function NarharpurEstateDetails() {
+  const { language } = useContext(LanguageContext);
   return (
     <div>
-      <Banner title={"Narharpur Estate"} />
+      <Banner
+        title={language === "english" ? "Narharpur Estate" : "नरहरपुर रियासत"}
+      />
 
       {/* Main Content */}
       <main className="container mx-auto px-20 py-10">
@@ -76,7 +98,9 @@ export default function NarharpurEstateDetails() {
           </div>
         </div>
 
-        <FamilyTreeStructure familyData={familyData} />
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
+        />
       </main>
     </div>
   );

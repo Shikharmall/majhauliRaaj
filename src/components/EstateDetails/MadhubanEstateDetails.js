@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
+import LanguageContext from "@/context/languageContext";
 
 const familyData = {
   name: "Raja Madhav Mall",
@@ -171,6 +172,7 @@ const familyData = {
 };
 
 export default function MadhubanEstateDetails() {
+  const { language } = useContext(LanguageContext);
   return (
     <div>
       <Banner title={"Madhuban Estate"} />

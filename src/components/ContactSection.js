@@ -84,9 +84,9 @@ export default function ContactSection() {
             ></i>
             <h2 className="text-lg font-semibold">{language === "english" ? "Address" : "पता"}</h2>
             <p className="text-gray-700">
-              21, Ashoka Road
+              XX, XXXXXX XXXXX
               <br />
-              New Delhi-110001 (INDIA)
+              Uttar Pradesh-XXXXXX (INDIA)
             </p>
           </div>
 

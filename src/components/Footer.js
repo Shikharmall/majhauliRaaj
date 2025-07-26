@@ -1,5 +1,4 @@
 "use client";
-
 import LanguageContext from "@/context/languageContext";
 import { useContext } from "react";
 
@@ -25,39 +24,39 @@ export default function Footer() {
             </h5>
             <address className="not-italic mb-3">
               <i className="fa-solid fa-location-dot mr-2"></i>
-              21, Ashoka Road New Delhi-110001 (INDIA)
+              XX, XXXXXXXXXXXXXXXXXX, Uttar Pradesh (INDIA)
             </address>
             <p className="mb-2">
               <i className="fa-solid fa-envelope mr-2"></i>
-              brijbhusan.singh@sansad.nic.in
+              thesarus.2022@gmail.com
             </p>
             <p className="mb-4">
-              <i className="fa-solid fa-phone mr-2"></i>+91 (011) 23346289
+              <i className="fa-solid fa-phone mr-2"></i>+91 XXXXX-XXXXX
             </p>
             <div className="flex space-x-4 text-xl">
               <a
-                href="https://www.facebook.com/brijbhushansharan/?fref=ts"
+                //href="https://www.facebook.com/brijbhushansharan/?fref=ts"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fab fa-facebook-f hover:text-blue-500"
                 aria-label="Facebook"
               ></a>
               <a
-                href="https://twitter.com/BrijbhushanMp"
+                //href="https://twitter.com/BrijbhushanMp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fab fa-twitter hover:text-blue-400"
                 aria-label="Twitter"
               ></a>
               <a
-                href="#"
+                //href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fab fa-google-plus-g hover:text-red-500"
                 aria-label="Google Plus"
               ></a>
               <a
-                href="#"
+                //href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fab fa-linkedin-in hover:text-blue-700"

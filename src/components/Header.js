@@ -9,7 +9,9 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center py-2 px-4">
         <div className="flex items-center space-x-4 text-sm">
           {/* <a className="hover:underline"></a> */}
-          <span className="border-r border-white pr-4">thesarus.2022@gmail.com</span>
+          <span className="border-r border-white pr-4">
+            thesarus.2022@gmail.com
+          </span>
           <p
             className="cursor-pointer"
             onClick={() => {

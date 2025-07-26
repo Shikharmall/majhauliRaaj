@@ -63,7 +63,11 @@ export default function NarharpurEstateDetails() {
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center mt-2">
-              <h2>Ruins of Raja Narharpur&rsquo;s Haveli</h2>
+              <h2>
+                {language === "english"
+                  ? "Ruins of Raja Narharpur's Haveli"
+                  : "राजा नरहरपुर की हवेली के अवशेष"}{" "}
+              </h2>
             </div>
             <br />
             <iframe
@@ -78,28 +82,54 @@ export default function NarharpurEstateDetails() {
           </div>
 
           {/* Bio */}
-          <div className="md:col-span-2 space-y-4 text-justify leading-relaxed font-serif">
-            <p>
-              The founder of the family was Jagat Bahadur Shahi, who was a
-              wealthy landlord living in Dumaria with his family, consisting of
-              three wives and many daughters, but was still longing for a son
-              who could succeed him.
-            </p>
-            <p>
-              One day, another zamindar who originally belonged to Gorakhpur in
-              Uttar Pradesh shifted with his family to a village called
-              Navendrapur (which is half a km from Dumaria). The latter had five
-              sons, the youngest of whom was Ranadhwaj Singh, who was adopted by
-              Jagat Bahadur Shahi at a very young age. The adoption became legal
-              only after Ranadhwaj turned 18 in 1921.
-            </p>
-            <p>
-              After being adopted, he was named Shattru Mardan Shahi. He was
-              single-handedly responsible for making Dumaria into what it later
-              became. He owned about 5000 acres of land, a considerable amount
-              in those times.
-            </p>
-          </div>
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed font-serif">
+              <p>
+                Narharpur Estate, also known as Chillupar State, was a
+                historical princely estate located near the Sarayu River in
+                present-day Gorakhpur region of Uttar Pradesh. It was ruled by
+                Raja Hariprasad Mall, a valiant freedom fighter who played a
+                significant role in the 1857 War of Independence. Raja
+                Hariprasad Mall resisted British colonial forces by capturing
+                army rations and weapons, and allied with revolutionary leaders
+                like Babu Kunwar Singh and Bandhu Singh. In retaliation, the
+                British bombarded the Narharpur fort with cannons from across
+                the Sarayu, leading to its destruction and the martyrdom of
+                Hariprasad Mall along with thousands of his followers. Unlike
+                neighboring estates that surrendered, Narharpur chose resistance
+                and sacrifice. Though his legacy is still remembered
+                locally—especially through the establishment of a martyr's
+                memorial at the site—formal recognition of the estate's ruins
+                and its significance in India’s freedom struggle remains
+                limited.
+              </p>
+              <p></p>
+              <p></p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed font-serif">
+              <p>
+                नरहरपुर एस्टेट, जिसे छिल्लूपार राज्य भी कहा जाता है, एक ऐतिहासिक
+                रियासत थी जो वर्तमान उत्तर प्रदेश के गोरखपुर क्षेत्र में सरयू
+                नदी के किनारे स्थित थी। इसके शासक राजा हरिप्रसाद मल्ल थे, जो
+                1857 की स्वतंत्रता संग्राम में एक वीर स्वतंत्रता सेनानी के रूप
+                में प्रसिद्ध हुए। उन्होंने ब्रिटिश सेना के राशन और हथियारों को
+                जब्त कर अंग्रेजों के विरुद्ध विद्रोह किया और बाबू कुंवर सिंह तथा
+                बंधु सिंह जैसे क्रांतिकारियों के साथ मिलकर संघर्ष में भाग लिया।
+                इस विद्रोह के प्रतिशोध में अंग्रेजों ने सरयू नदी के पार से
+                नरहरपुर किले पर तोपों से हमला कर दिया, जिससे किला ध्वस्त हो गया
+                और राजा हरिप्रसाद मल्ल अपने हजारों अनुयायियों सहित वीरगति को
+                प्राप्त हुए। जहां आसपास की रियासतों ने अंग्रेजों के सामने
+                आत्मसमर्पण कर दिया, वहीं नरहरपुर ने विद्रोह और बलिदान का मार्ग
+                चुना। आज भी स्थानीय स्तर पर उनकी स्मृति जीवित है और बलिदानी स्थल
+                पर एक शहीद स्मारक स्थापित किया गया है, लेकिन इस एस्टेट के
+                खंडहरों और उसके ऐतिहासिक योगदान को अब तक औपचारिक मान्यता नहीं
+                मिल पाई है।
+              </p>
+              <p></p>
+              <p></p>
+            </div>
+          )}
         </div>
 
         <FamilyTreeStructure

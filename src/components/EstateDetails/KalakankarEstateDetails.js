@@ -170,6 +170,171 @@ const familyData = {
   ],
 };
 
+const familyDataHindi = {
+  name: "बाबू रूप मल्ल",
+  isKing: true,
+  children: [
+    {
+      name: "राय होम मल्ल",
+      isExtra: "(कलाकांकर)",
+      isKing: true,
+      children: [
+        {
+          name: "राय पुरंदर मल्ल",
+          isKing: true,
+          children: [
+            {
+              name: "राय गोपाल मल्ल",
+              isKing: true,
+              children: [
+                {
+                  name: "राय राधो",
+                },
+                {
+                  name: "बाबू राम",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "राय अस्करण",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "रुद्र प्रताप",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "तोड़ल (टोडर मल्ल)",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "धरु शाह",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "बरसाल राय",
+                                      isKing: true,
+                                      children: [
+                                        {
+                                          name: "राय जय सिंह",
+                                          isKing: true,
+                                          children: [
+                                            {
+                                              name: "राय श्याम सिंह",
+                                              isKing: true,
+                                              children: [
+                                                {
+                                                  name: "राय संग्राम सिंह",
+                                                },
+                                                {
+                                                  name: "मऊ सिंह",
+                                                  isKing: true,
+                                                  children: [
+                                                    {
+                                                      name: "राय कमल सिंह",
+                                                      isKing: true,
+                                                      children: [
+                                                        {
+                                                          name: "लाल बलवंत सिंह",
+                                                          isKing: true,
+                                                          children: [
+                                                            {
+                                                              name: "लाल बैरी साल",
+                                                              isKing: true,
+                                                              children: [
+                                                                {
+                                                                  name: "राय हनुमंत सिंह",
+                                                                  isKing: true,
+                                                                  children: [
+                                                                    {
+                                                                      name: "लाल प्रताप सिंह",
+                                                                      isKing: true,
+                                                                      children:
+                                                                        [
+                                                                          {
+                                                                            name: "राजा रामपाल सिंह",
+                                                                            isKing: true,
+                                                                            children:
+                                                                              [
+                                                                                {
+                                                                                  name: "राजा रमेश सिंह",
+                                                                                  isKing: true,
+                                                                                  children:
+                                                                                    [
+                                                                                      {
+                                                                                        name: "राजा अवधेश सिंह",
+                                                                                        isKing: true,
+                                                                                        children:
+                                                                                          [
+                                                                                            {
+                                                                                              name: "राजा दिनेश सिंह",
+                                                                                              isExtra:
+                                                                                                "(पूर्व विदेश मंत्री)",
+                                                                                              isKing: true,
+                                                                                              children:
+                                                                                                [],
+                                                                                            },
+                                                                                          ],
+                                                                                      },
+                                                                                      {
+                                                                                        name: "बृजेश सिंह",
+                                                                                      },
+                                                                                      {
+                                                                                        name: "सुरेश सिंह",
+                                                                                      },
+                                                                                    ],
+                                                                                },
+                                                                              ],
+                                                                          },
+                                                                        ],
+                                                                    },
+                                                                    {
+                                                                      name: "लक्ष्मण सिंह",
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                  ],
+                                                },
+                                              ],
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      name: "राय काशी",
+                    },
+                    {
+                      name: "राय खेमकरन",
+                    },
+                  ],
+                },
+                {
+                  name: "राय रजनीश",
+                  children: [],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
 export default function KalakankarEstateDetails() {
   const { language } = useContext(LanguageContext);
   return (
@@ -191,7 +356,9 @@ export default function KalakankarEstateDetails() {
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Kalakankar Fort</h2>
+              <h2>
+                {language === "english" ? "Kalakankar Fort" : "कलाकांकर किला"}
+              </h2>
             </div>
             <br />
             <iframe
@@ -206,18 +373,32 @@ export default function KalakankarEstateDetails() {
           </div>
 
           {/* Bio */}
-          <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
-            <p className="font-serif">
-              The estate was also known as Rampur Dharupur. The founder of the
-              family was Raja Hom Mull, a younger son of Raja Prithvi Mall of
-              Majhauli in Gorakhpur.
-            </p>
-            <p className="font-serif"></p>
-            <p className="font-serif"></p>
-          </div>
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                The estate was also known as Rampur Dharupur. The founder of the
+                family was Raja Hom Mall, a younger son of Raja Prithvi Mall of
+                Majhauli in Gorakhpur.
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                यह रियासत रामपुर धरुपुर के नाम से भी जानी जाती थी। इस परिवार के
+                संस्थापक राजा होम मल्ल थे, जो गोरखपुर के मझौली के राजा पृथ्वी
+                मल्ल के छोटे पुत्र थे।
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          )}
         </div>
 
-        <FamilyTreeStructure familyData={familyData} />
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
+        />
       </main>
     </div>
   );

@@ -134,11 +134,143 @@ const familyData = {
   ],
 };
 
+const familyDataHindi = {
+  name: "राजा अजमत सिंहजी (1)",
+  isExtra: "(गोंडा के राजा दत्त सिंह के पुत्र)",
+  isKing: true,
+  children: [
+    {
+      name: "राजा गोपाल सिंहजी (2)",
+      isKing: true,
+      children: [
+        {
+          name: "राजा बहादुर सिंहजी (3)",
+          isKing: true,
+          children: [
+            {
+              name: "राजा बख्त सिंहजी (4)",
+              isKing: true,
+              children: [
+                {
+                  name: "राजा पृथ्वी पत सिंहजी (5)",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "महारानी ज्ञान कँवर",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: "राजकुमार (नाम अज्ञात) सिंहजी",
+          children: [
+            {
+              name: "कुँवर (नाम अज्ञात) सिंहजी",
+              children: [
+                {
+                  name: "राजा जय प्रकाश सिंहजी (6)",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "राजा रघुराज सिंहजी (7)",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "राजा अम्बिकेश्वर प्रताप सिंहजी (8)",
+                          isKing: true,
+                        },
+                        {
+                          name: "कुँवर आद्य रुद्र प्रताप सिंहजी",
+                        },
+                        {
+                          name: "कुँवरानी मुन्नी बच्चा",
+                        },
+                        {
+                          name: "राजा राघवेन्द्र प्रताप सिंहजी (9)",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "राजा आनन्द सिंहजी (10)",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "राजकुमारी निहारिका कुमारी",
+                                  children: [
+                                    {
+                                      name: "अक्षय सिंह",
+                                    },
+                                    {
+                                      name: "अक्षिता सिंह",
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "राजकुमार कीर्ति वर्धन सिंहजी",
+                                  children: [
+                                    {
+                                      name: "जय सिंह",
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "राजकुमारी शिवानी सिंहजी",
+                                  children: [
+                                    {
+                                      name: "अनिरुद्ध सिंह",
+                                    },
+                                    {
+                                      name: "अर्नव सिंह",
+                                    },
+                                    {
+                                      name: "शेफाली सिंह",
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "राजकुमारी राधिका सिंहजी",
+                                  children: [
+                                    {
+                                      name: "वासुदेव सिंह",
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                            {
+                              name: "कुँवरानी अरुणा कुमारी",
+                            },
+                          ],
+                        },
+                        {
+                          name: "कुँवर देवेन्द्र प्रताप सिंहजी",
+                        },
+                        {
+                          name: "रानी शैलेश्वरी कुमारी",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+
 export default function MankapurEstateDetails() {
   const { language } = useContext(LanguageContext);
   return (
     <div>
-      <Banner title={"Mankapur Estate"} />
+      <Banner
+        title={language === "english" ? "Mankapur Estate" : "मनकापुर रियासत"}
+      />
 
       {/* Main Content */}
       <main className="container mx-auto px-5 md:px-20 py-5 md:py-10">
@@ -153,7 +285,11 @@ export default function MankapurEstateDetails() {
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Gate of Mankapur Fort</h2>
+              <h2>
+                {language === "english"
+                  ? "Gate of Mankapur Fort"
+                  : "मनकापुर किले का प्रवेश द्वार"}{" "}
+              </h2>
             </div>
             <br />
             <iframe
@@ -168,18 +304,30 @@ export default function MankapurEstateDetails() {
           </div>
 
           {/* Bio */}
-          <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
-            <p className="font-serif">
-              Raja Dutt Singh of Gonda seized the Bandhalgoti rai of Mankapur
-              and gave it to his younger son, Kunwar Ajmat Singh who was still
-              an infant at the time.
-            </p>
-            <p className="font-serif"></p>
-            <p className="font-serif"></p>
-          </div>
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                Raja Dutt Singh of Gonda seized the Bandhalgoti rai of Mankapur
+                and gave it to his younger son, Kunwar Ajmat Singh who was still
+                an infant at the time.
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                गोंडा के राजा दत्त सिंह ने मनकापुर के बंधालगोटी राय को अपने
+                अधिकार में ले लिया और उसे अपने छोटे पुत्र कुंवर अजमत सिंह को दे
+                दिया, जो उस समय शिशु अवस्था में थे।
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          )}
         </div>
 
-        <FamilyTreeStructure familyData={familyData} />
+        <FamilyTreeStructure familyData={language==="english"?familyData:familyDataHindi} />
       </main>
     </div>
   );

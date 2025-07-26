@@ -102,11 +102,112 @@ const familyData = {
   ],
 };
 
+const familyDataHindi = {
+  name: "राजा भवानी सिंह",
+  isKing: true,
+  children: [
+    {
+      name: "राजा सर्वदमन सिंह",
+      isKing: true,
+      children: [
+        {
+          name: "राजा शिव सिंह",
+          isKing: true,
+          children: [
+            {
+              name: "राजा जगत सिंह",
+              isKing: true,
+              children: [
+                {
+                  name: "राजा सरबजीत सिंह",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "राजा कृष्णदत्त सिंह",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "राजा साहब उदय प्रताप सिंह",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "कुँवर सुरेन्द्र बिक्रम सिंह",
+                            },
+                            {
+                              name: "राजा साहब राजेन्द्र बहादुर सिंह",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "राजा साहब वीरेन्द्र कांत सिंह",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "युवराज अलेक्ज़ेंडर कांत सिंह",
+                                      children: [
+                                        {
+                                          name: "राजा साहब चन्द्रमणि कांत सिंह",
+                                          isKing: true,
+                                        },
+                                        {
+                                          name: "रानी भूरत्ना प्रभा कुमारी",
+                                        },
+                                      ],
+                                    },
+                                    {
+                                      name: "कुँवर चामेन्द्र कांत सिंह",
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "राजकुमार योगेन्द्र कांत सिंह",
+                                  children: [
+                                    {
+                                      name: "कुँवर योपेन्द्र कांत सिंह",
+                                    },
+                                    {
+                                      name: "कुँवर सतैन्द्र कांत सिंह",
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "राजकुमार जयेन्द्र सिंह (लक्ष्मणपुर)",
+                                  children: [],
+                                },
+                              ],
+                            },
+                            {
+                              name: "कुँवर मनमहेंद्र बिक्रम सिंह",
+                              children: [
+                                {
+                                  name: "महारानी बृजराज कँवर",
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "कुमारी (नाम अज्ञात) [रानी साहिबा, मल्हजनी]",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
 export default function BhingaEstateDetails() {
   const { language } = useContext(LanguageContext);
   return (
     <div>
-      <Banner title={"Bhinga Estate"} />
+      <Banner
+        title={language === "english" ? "Bhinga Estate" : "भिंगा रियासत"}
+      />
 
       {/* Main Content */}
       <main className="container mx-auto px-5 md:px-20 py-5 md:py-10">
@@ -121,7 +222,11 @@ export default function BhingaEstateDetails() {
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Fort of Bhinga</h2>
+              <h2>
+                {language === "english"
+                  ? "Fort of Bhinga Estate"
+                  : "भिंगा रियासत का किला"}
+              </h2>
             </div>
             <br />
             <iframe
@@ -136,17 +241,30 @@ export default function BhingaEstateDetails() {
           </div>
 
           {/* Bio */}
-          <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
-            <p className="font-serif">
-              The Taluq was granted to Kunwar Bhawani Singh, second son of Raja
-              Ram Singh of Gonda
-            </p>
-            <p className="font-serif"></p>
-            <p className="font-serif"></p>
-          </div>
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                The Taluq was granted to Kunwar Bhawani Singh, second son of
+                Raja Ram Singh of Gonda.
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                यह तालुका राजा राम सिंह (गोंडा) के द्वितीय पुत्र कुंवर भवानी
+                सिंह को प्रदान किया गया था।
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          )}
         </div>
 
-        <FamilyTreeStructure familyData={familyData} />
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
+        />
       </main>
     </div>
   );

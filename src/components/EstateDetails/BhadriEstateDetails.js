@@ -135,11 +135,143 @@ const familyData = {
   ],
 };
 
+const familyDataHindi = {
+  name: "राय राधो",
+  isKing: true,
+  children: [
+    {
+      name: "",
+      isInfinite: true,
+      children: [
+        {
+          name: "राय सबल शाह",
+          isKing: true,
+          children: [
+            {
+              name: "राय विक्रम शाह",
+              isKing: true,
+              children: [
+                {
+                  name: "राय छत्तर सिंह",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "राय राम सिंह",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "राय गहरवार सिंह",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "राय दलजीत सिंह",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "राय ज़ालिम सिंह",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "राय जगमोहन सिंह",
+                                      isKing: true,
+                                      children: [
+                                        {
+                                          name: "राय बिशनाथ सिंह",
+                                          isKing: true,
+                                          children: [
+                                            {
+                                              name: "राय जगत बहादुर सिंह",
+                                              isKing: true,
+                                              children: [
+                                                {
+                                                  name: "राय सरबजीत सिंह",
+                                                  isKing: true,
+                                                  children: [
+                                                    {
+                                                      name: "राय कृष्ण प्रसाद सिंह",
+                                                      isKing: true,
+                                                      children: [
+                                                        {
+                                                          name: "राजा बजरंग बहादुर सिंह",
+                                                          isKing: true,
+                                                          children: [
+                                                            {
+                                                              name: "कुमारी प्रभा सिंह",
+                                                            },
+                                                            {
+                                                              name: "राजा उदय प्रताप सिंह",
+                                                              isKing: true,
+                                                              children: [
+                                                                {
+                                                                  name: "कुँवर रघुराज प्रताप सिंह",
+                                                                  isExtra:
+                                                                    "(राजा भैया)",
+                                                                  children: [
+                                                                    {
+                                                                      name: "राघवी सिंह",
+                                                                    },
+                                                                    {
+                                                                      name: "विजयराजेश्वरी कुमारी",
+                                                                    },
+                                                                    {
+                                                                      name: "बृजराज सिंह",
+                                                                    },
+                                                                    {
+                                                                      name: "शिवराज सिंह",
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          ],
+                                                        },
+                                                        {
+                                                          name: "कुँवर भद्रेश्वर प्रताप सिंह",
+                                                        },
+                                                        {
+                                                          name: "कुँवर त्रिलोचन प्रताप सिंह",
+                                                          children: [
+                                                            {
+                                                              name: "राय उदय प्रताप सिंह",
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                  ],
+                                                },
+                                              ],
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
 export default function BhadriEstateDetails() {
   const { language } = useContext(LanguageContext);
   return (
     <div>
-      <Banner title={"Bhadri Estate"} />
+      <Banner
+        title={language === "english" ? "Bhadri Estate" : "भदरी रियासत"}
+      />
 
       {/* Main Content */}
       <main className="container mx-auto px-5 md:px-20 py-5 md:py-10">
@@ -154,7 +286,9 @@ export default function BhadriEstateDetails() {
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Fort of Bhadri Estate</h2>
+              <h2>
+                {language === "english" ? "Fort of Bhadri Estate" : "भदरी रियासत का किला"}
+              </h2>
             </div>
             <br />
             <iframe
@@ -169,19 +303,33 @@ export default function BhadriEstateDetails() {
           </div>
 
           {/* Bio */}
-          <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
-            <p className="font-serif">
-              The family of Bhadri is a younger branch of that of Kalakankar and
-              belongs to the Bisen family, of which the head is the Raja of
-              Rampur (Dharupur), while the head of the whole clan of Bisens is
-              the Raja of Majhauli.
-            </p>
-            <p className="font-serif"></p>
-            <p className="font-serif"></p>
-          </div>
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                The family of Bhadri is a younger branch of that of Kalakankar
+                and belongs to the Bisen family, of which the head is the Raja
+                of Rampur (Dharupur), while the head of the whole clan of Bisens
+                is the Raja of Majhauli.
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                भदरी का परिवार कलाकांकर के परिवार की एक कनिष्ठ शाखा है और यह
+                बिसेन वंश से संबंधित है, जिसके प्रमुख रामपुर (धरुपुर) के राजा
+                हैं, जबकि पूरे बिसेन वंश के प्रमुख मझौली के राजा हैं।
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          )}
         </div>
 
-        <FamilyTreeStructure familyData={familyData} />
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
+        />
       </main>
     </div>
   );

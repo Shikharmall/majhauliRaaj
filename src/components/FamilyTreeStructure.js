@@ -78,7 +78,7 @@ export default function FamilyTreeStructure({ familyData }) {
   return (
     <>
       <div className="flex justify-center items-center">
-        <div className="inline-block relative mb-5">
+        <div className="inline-block relative mb-4 mt-5">
           <h2
             className="text-2xl font-semibold font-serif"
             style={{ color: COLORS.primary }}

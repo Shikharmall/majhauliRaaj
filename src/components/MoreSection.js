@@ -113,7 +113,7 @@ export default function MoreSection() {
         </h2>
 
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center items-center" //gap-6
+          className="grid grid-cols-2 md:grid-cols-3 justify-items-center items-center" //gap-6
         >
           {items.map((item, idx) => (
             <Link

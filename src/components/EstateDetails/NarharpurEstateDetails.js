@@ -98,9 +98,9 @@ export default function NarharpurEstateDetails() {
                 Hariprasad Mall along with thousands of his followers. Unlike
                 neighboring estates that surrendered, Narharpur chose resistance
                 and sacrifice. Though his legacy is still remembered
-                locally—especially through the establishment of a martyr's
-                memorial at the site—formal recognition of the estate's ruins
-                and its significance in India’s freedom struggle remains
+                locally—especially through the establishment of a martyr&apos;s
+                memorial at the site—formal recognition of the estate&apos;s ruins
+                and its significance in India&apos;s freedom struggle remains
                 limited.
               </p>
               <p></p>

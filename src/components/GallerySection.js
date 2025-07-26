@@ -155,7 +155,7 @@ export default function GallerySection() {
           {language === "english" ? estate.name : estate.nameHindi}
         </h3>
         <div
-          className="absolute left-0 top-8 w-1/2 h-0.5"
+          className="absolute left-0 top-8 w-1/2 md:h-0.5"
           style={{
             backgroundColor: COLORS.primary,
           }}

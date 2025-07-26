@@ -21,7 +21,7 @@ export default function ImagesGrid({ images }) {
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
           {visibleImages.map((item, index) => (
             <div key={index} className="overflow-hidden rounded shadow-md">
               <Image

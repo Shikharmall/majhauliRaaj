@@ -171,11 +171,179 @@ const familyData = {
   ],
 };
 
+const familyDataHindi = {
+  name: "राजा माधव मल्ल",
+  isKing: true,
+  children: [
+    {
+      name: "राजा नत्थ मल्ल",
+      isKing: true,
+      children: [
+        {
+          name: "अजीत मल्ल",
+          children: [
+            {
+              name: "विजय मल्ल",
+              children: [
+                {
+                  name: "गंगा मल्ल",
+                  isExtra: "(पोती)",
+                },
+                {
+                  name: "सुल्तान मल्ल",
+                  isExtra: "(खीरीकोट, गंगेवीर, नेवादा, नाथुपुर)",
+                },
+                {
+                  name: "नवल मल्ल",
+                },
+                {
+                  name: "माधव मल्ल",
+                  isExtra: "(उसरी, अहरौली)",
+                },
+                {
+                  name: "वृंदावन मल्ल",
+                },
+                {
+                  name: "विक्रम मल्ल",
+                  isExtra: "(ललानपुर)",
+                },
+                {
+                  name: "विष्णु दयाल मल्ल",
+                  children: [
+                    {
+                      name: "धवल मल्ल",
+                      isExtra: "(बहरामपुर)",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "राजा अजय मल्ल",
+      isExtra: "(राजा फतेह बहादुर मल्ल)",
+      isKing: true,
+      children: [
+        {
+          name: "हरिहर मल्ल",
+          children: [
+            {
+              name: "नाग मल्ल",
+            },
+            {
+              name: "करण मल्ल",
+              isExtra: "(करणपुरा)",
+            },
+            {
+              name: "नरहर मल्ल",
+            },
+            {
+              name: "बनवारी मल्ल",
+              isExtra: "(जोगिया, गोरखपुर)",
+            },
+            {
+              name: "बिशा मल्ल",
+              children: [
+                {
+                  name: "सेसर मल्ल",
+                  children: [
+                    {
+                      name: "हरष मल्ल",
+                      children: [
+                        {
+                          name: "चपली मल्ल",
+                          children: [
+                            {
+                              name: "गंभीर मल्ल",
+                              children: [
+                                {
+                                  name: "दुलार मल्ल",
+                                  isExtra: "(लखनौर)",
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  name: "विहारी मल्ल",
+                  children: [
+                    {
+                      name: "नरसेवा मल्ल",
+                      children: [
+                        {
+                          name: "नंदन मल्ल",
+                        },
+                        {
+                          name: "कवल मल्ल",
+                          children: [
+                            {
+                              name: "जवाहर मल्ल",
+                              isExtra: "(जजौली - कोठघराना)",
+                            },
+                            {
+                              name: "उत्तम मल्ल",
+                              children: [
+                                {
+                                  name: "बच्चन मल्ल",
+                                  children: [
+                                    {
+                                      name: "ननुआ मल्ल",
+                                      isExtra: "(उफरौली)",
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                            {
+                              name: "धामू मल्ल",
+                              children: [
+                                {
+                                  name: "आनंद मल्ल",
+                                  children: [],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "बबन मल्ल",
+                          children: [],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  name: "मोहन मल्ल",
+                },
+              ],
+            },
+            {
+              name: "रट्टी मल्ल",
+              isExtra: "(लाकुराग्राम)",
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
 export default function MadhubanEstateDetails() {
   const { language } = useContext(LanguageContext);
   return (
     <div>
-      <Banner title={"Madhuban Estate"} />
+      <Banner
+        title={language === "english" ? "Madhuban Estate" : "मधुबन रियासत"}
+      />
 
       {/* Main Content */}
       <main className="container mx-auto px-20 py-10">
@@ -190,7 +358,11 @@ export default function MadhubanEstateDetails() {
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Ruins of Raja Fateh Bahadur Mall's Haveli</h2>
+              <h2>
+                {language === "english"
+                  ? "Ruins of Raja Fateh Bahadur Mall's Haveli"
+                  : "राजा फतेह बहादुर मल्ल की हवेली के अवशेष"}{" "}
+              </h2>
             </div>
             <br />
             <iframe
@@ -205,32 +377,60 @@ export default function MadhubanEstateDetails() {
           </div>
 
           {/* Bio */}
-          <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
-            <p className="font-serif">
-              Raja Madhav Mall was a prominent Rajput ruler from the Vishen
-              (also called Bisen) dynasty, historically linked to the Majhauli
-              Raj estate in eastern Uttar Pradesh. He was the second son of Raja
-              Dev Mall, the 95th ruler of the Majhauli line.
-            </p>
-            <p className="font-serif">
-              In the mid-16th century, Raja Madhav Mall established the region
-              known as Madhuban (in present-day Mau district, Uttar Pradesh),
-              which became an influential settlement for his descendants. This
-              area is now the Madhuban tehsil, comprising numerous villages and
-              a significant population.
-            </p>
-            <p className="font-serif">
-              Raja Madhav Malla had two sons: Raja Nath Malla and Raja Ajay
-              Bahadur Malla (also known as Fateh Bahadur Malla). Their
-              descendants took on the surname “Mall”, and many settled across
-              eastern UP — especially in Madhuban, Mau, Gorakhpur and Deoria,
-              and villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
-              Parshurampur.
-            </p>
-          </div>
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                Raja Madhav Mall was a prominent Rajput ruler from the Vishen
+                (also called Bisen) dynasty, historically linked to the Majhauli
+                Raj estate in eastern Uttar Pradesh. He was the second son of
+                Raja Dev Mall, the 95th ruler of the Majhauli line.
+              </p>
+              <p className="font-serif">
+                In the mid-16th century, Raja Madhav Mall established the region
+                known as Madhuban (in present-day Mau district, Uttar Pradesh),
+                which became an influential settlement for his descendants. This
+                area is now the Madhuban tehsil, comprising numerous villages
+                and a significant population.
+              </p>
+              <p className="font-serif">
+                Raja Madhav Malla had two sons: Raja Nath Malla and Raja Ajay
+                Bahadur Malla (also known as Fateh Bahadur Malla). Their
+                descendants took on the surname “Mall”, and many settled across
+                eastern UP — especially in Madhuban, Mau, Gorakhpur and Deoria,
+                and villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
+                Parshurampur.
+              </p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                राजा माधव मल्ल एक प्रमुख राजपूत शासक थे, जो विशेन (या बीसेन) वंश
+                से संबंधित थे और उनका ऐतिहासिक संबंध उत्तर प्रदेश के पूर्वी भाग
+                में स्थित मझौली राज रियासत से था। वे राजा देव मल्ल के द्वितीय
+                पुत्र थे, जो मझौली वंश के 95वें शासक माने जाते हैं।
+              </p>
+              <p className="font-serif">
+                16वीं शताब्दी के मध्य में, राजा माधव मल्ल ने मधुबन नामक क्षेत्र
+                की स्थापना की (जो वर्तमान में उत्तर प्रदेश के मऊ ज़िले में स्थित
+                है)। यह क्षेत्र उनके वंशजों के लिए एक प्रभावशाली बस्ती बन गया और
+                आज यह मधुबन तहसील के रूप में जाना जाता है, जिसमें अनेक गाँव और
+                बड़ी जनसंख्या शामिल है।
+              </p>
+              <p className="font-serif">
+                राजा माधव मल्ल के दो पुत्र थे: राजा नाथ मल्ल और राजा अजय बहादुर
+                मल्ल (जिन्हें फतेह बहादुर मल्ल के नाम से भी जाना जाता है)। इनके
+                वंशजों ने “मल्ल” उपनाम को अपनाया और वे पूर्वी उत्तर प्रदेश के
+                विभिन्न क्षेत्रों में बस गए — विशेष रूप से मधुबन, मऊ, गोरखपुर,
+                देवरिया और हसनपुर, बहारामपुर, जाजौली, अहरौली और परशुरामपुर जैसे
+                गाँवों में।
+              </p>
+            </div>
+          )}
         </div>
 
-        <FamilyTreeStructure familyData={familyData} />
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
+        />
 
         {/* Personal Details Table */}
         {/* <div className="mt-12">

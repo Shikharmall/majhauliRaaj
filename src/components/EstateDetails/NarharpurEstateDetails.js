@@ -99,9 +99,9 @@ export default function NarharpurEstateDetails() {
                 neighboring estates that surrendered, Narharpur chose resistance
                 and sacrifice. Though his legacy is still remembered
                 locally—especially through the establishment of a martyr&apos;s
-                memorial at the site—formal recognition of the estate&apos;s ruins
-                and its significance in India&apos;s freedom struggle remains
-                limited.
+                memorial at the site—formal recognition of the estate&apos;s
+                ruins and its significance in India&apos;s freedom struggle
+                remains limited.
               </p>
               <p></p>
               <p></p>

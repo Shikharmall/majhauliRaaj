@@ -203,6 +203,205 @@ const familyData = {
   ],
 };
 
+const familyDataHindi = {
+  name: "राजा रघुवंश मल्ल",
+  isKing: true,
+  children: [
+    {
+      name: "राजा रत्न मल्ल",
+      isKing: true,
+      children: [
+        {
+          name: "राजा राम मल्ल",
+          isKing: true,
+          children: [
+            {
+              name: "राजा नृप मल्ल",
+              isKing: true,
+              children: [
+                {
+                  name: "राजा हरिश्चंद्र मल्ल",
+                  isKing: true,
+                  children: [
+                    {
+                      name: "महाराजा देव मल्ल",
+                      isKing: true,
+                      children: [
+                        {
+                          name: "राजा प्रसाद मल्ल",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "महाराजा भीम मल्ल",
+                              isKing: true,
+                              children: [
+                                {
+                                  name: "राजा नारायण मल्ल",
+                                  isKing: true,
+                                  children: [
+                                    {
+                                      name: "राजा रूप मल्ल",
+                                      isKing: true,
+                                      children: [
+                                        {
+                                          name: "राजा विक्रमादित्य मल्ल",
+                                          isKing: true,
+                                          children: [
+                                            {
+                                              name: "राजा बोध मल्ल",
+                                              isKing: true,
+                                              children: [
+                                                {
+                                                  name: "भावानी मल्ल",
+                                                  children: [
+                                                    {
+                                                      name: "भीम मल्ल द्वितीय",
+                                                      children: [],
+                                                    },
+                                                  ],
+                                                },
+                                                {
+                                                  name: "लक्ष्मी मल्ल",
+                                                  children: [
+                                                    {
+                                                      name: "राजा शिव मल्ल",
+                                                      isKing: true,
+                                                      children: [
+                                                        {
+                                                          name: "राजा अजीत मल्ल (रानी दिलराज कुवाँरी)",
+                                                          isKing: true,
+                                                          children: [
+                                                            {
+                                                              name: "तेज मल्ल (बाबू सर्वजीत मल्ल के दत्तक पुत्र)",
+                                                              children: [],
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                    {
+                                                      name: "बाबू कृष्ण प्रसाद मल्ल",
+                                                      children: [
+                                                        {
+                                                          name: "बाबू सर्वजीत मल्ल",
+                                                          children: [
+                                                            {
+                                                              name: "तेज मल्ल",
+                                                              children: [],
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                  ],
+                                                },
+                                                {
+                                                  name: "आनंद मल्ल",
+                                                  children: [
+                                                    {
+                                                      name: "गोविंद मल्ल",
+                                                      children: [
+                                                        {
+                                                          name: "पृथ्वी मल्ल",
+                                                          children: [
+                                                            {
+                                                              name: "प्रताप मल्ल",
+                                                              children: [],
+                                                            },
+                                                            {
+                                                              name: "जुबा मल्ल",
+                                                              children: [],
+                                                            },
+                                                            {
+                                                              name: "हरिपाल मल्ल",
+                                                              children: [],
+                                                            },
+                                                            {
+                                                              name: "कनिहा मल्ल",
+                                                              children: [],
+                                                            },
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                    {
+                                                      name: "इंद्र मल्ल",
+                                                      children: [],
+                                                    },
+                                                  ],
+                                                },
+                                              ],
+                                            },
+                                          ],
+                                        },
+                                        {
+                                          name: "बाबू माधव मल्ल द्वितीय (महेन के पूर्वज)",
+                                          children: [],
+                                        },
+                                      ],
+                                    },
+                                    {
+                                      name: "राजा चतुर मल्ल",
+                                      isKing: true,
+                                      children: [],
+                                    },
+                                    {
+                                      name: "बाबू चत्तर शाही",
+                                      children: [],
+                                    },
+                                  ],
+                                },
+                                {
+                                  name: "बाबू राम शाही",
+                                  children: [],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "राजा माधव मल्ल (मधुबन एस्टेट)",
+                          isKing: true,
+                          children: [
+                            {
+                              name: "राजा नाथ मल्ल",
+                              isKing: true,
+                              children: [],
+                            },
+                            {
+                              name: "अजीत मल्ल (फ़तेह बहादुर मल्ल)",
+                              children: [],
+                            },
+                          ],
+                        },
+                        {
+                          name: "राजा राय मल्ल (नरहरपुर एस्टेट)",
+                          isKing: true,
+                          children: [],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  name: "राजा प्रताप मल्ल (गोंडा)",
+                  isKing: true,
+                  children: [],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "राजा रूप मल्ल",
+      isKing: true,
+      children: [],
+    },
+  ],
+};
+
 export default function FamilyTreeDetails() {
   const { language } = useContext(LanguageContext);
   return (
@@ -212,7 +411,9 @@ export default function FamilyTreeDetails() {
           language === "english" ? "Royal Family Tree" : "राजपरिवार वंशवृक्ष"
         }
       />
-      <FamilyTreeStructure familyData={familyData} />
+      <FamilyTreeStructure
+        familyData={language === "english" ? familyData : familyDataHindi}
+      />
     </div>
   );
 }

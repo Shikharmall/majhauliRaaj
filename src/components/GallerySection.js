@@ -146,10 +146,21 @@ export default function GallerySection() {
   }, []);
 
   const renderEstateCard = (estate) => (
-    <div key={estate.name} className="bg-white p-4 rounded-lg shadow flex flex-col items-center">
-      <h3 className="text-xl font-semibold mb-0">
-        {language === "english" ? estate.name : estate.nameHindi}
-      </h3>
+    <div
+      key={estate.name}
+      className="bg-white p-4 rounded-lg shadow flex flex-col items-center"
+    >
+      <div className="inline-block relative mb-5">
+        <h3 className="text-xl font-semibold mb-0">
+          {language === "english" ? estate.name : estate.nameHindi}
+        </h3>
+        <div
+          className="absolute left-0 top-8 w-1/2 h-0.5"
+          style={{
+            backgroundColor: COLORS.primary,
+          }}
+        ></div>
+      </div>
       <h3 className="text-sm mb-4">
         {language === "english"
           ? `Successor Estate of ${estate.successor}`

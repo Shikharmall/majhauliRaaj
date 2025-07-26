@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import LanguageContext from "@/context/languageContext";
 import { useContext } from "react";
@@ -9,11 +9,7 @@ export default function Header() {
     <header className="bg-[#082366] text-white border-b-3 border-green-500">
       <div className="container mx-auto flex justify-between items-center py-2 px-4">
         <div className="flex items-center space-x-4 text-sm">
-          <a
-            className="hover:underline"
-          >
-            majhauliraj@gmail.com
-          </a>
+          <a className="hover:underline">thesarus.2022@gmail.com</a>
           <span className="border-r border-white pr-4">+91 XXXXX-XXXXX</span>
           <p
             className="cursor-pointer"

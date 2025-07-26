@@ -28,9 +28,9 @@ export default function ImagesGrid({ images }) {
               <Image
                 src={item.url}
                 width={500}
-                height={300}
+                height={100}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                className="w-100 h-20 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
                 onClick={() => openModal(item)}
               />
             </div>
@@ -41,9 +41,9 @@ export default function ImagesGrid({ images }) {
             <Image
               src={moreImage.url}
               width={500}
-              height={300}
+              height={100}
               alt="More Images"
-              className="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+              className="w-100 h-20 object-cover brightness-75 group-hover:scale-105 transition-transform duration-300 cursor-pointer"
             />
             <Link
               href="/gallery"

@@ -146,7 +146,7 @@ export default function GallerySection() {
   }, []);
 
   const renderEstateCard = (estate) => (
-    <div key={estate.name} className="bg-white p-4 rounded shadow">
+    <div key={estate.name} className="bg-white p-4 rounded-lg shadow flex flex-col items-center">
       <h3 className="text-xl font-semibold mb-0">
         {language === "english" ? estate.name : estate.nameHindi}
       </h3>

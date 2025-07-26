@@ -174,7 +174,9 @@ export default function KalakankarEstateDetails() {
   const { language } = useContext(LanguageContext);
   return (
     <div>
-      <Banner title={"Kalakankar Estate"} />
+      <Banner
+        title={language === "english" ? "Kalakankar Estate" : "कालाकंकर रियासत"}
+      />
 
       {/* Main Content */}
       <main className="container mx-auto px-5 md:px-20 py-5 md:py-10">

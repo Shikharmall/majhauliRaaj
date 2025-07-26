@@ -169,8 +169,8 @@ export default function GondaEstateDetails() {
           {/* Left Image */}
           <div className="md:col-span-1 ">
             <Image
-              src="/assets/img/madhuban1.jpg"
-              alt="majhauli-img"
+              src="/assets/img/madhuban/madhuban1.jpg"
+              alt="img"
               width={600}
               height={400}
               className="rounded-lg shadow-lg border-3 border-gray-300"

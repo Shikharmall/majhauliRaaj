@@ -1112,7 +1112,7 @@ export default function MajhauliEstateDetails() {
                 of Malla Mahajanpad, they stills put this name as a surname i.e.
                 Vishen/Bisen short form of Vishwasen in their names. They are
                 Suryavanshi Rajput and claim to be sons of God Laxmana from his
-                one of the sons Chandraketu (had got title 'Malla' for being
+                one of the sons Chandraketu (had got title Malla for being
                 extraordinary wrestler or fighter of that time) who was ruler of
                 Malla Rastra or Malla Mahajanpada in ancient India. Later many
                 kings who were of Majhauli Kingdom established many estates of
@@ -1151,11 +1151,11 @@ export default function MajhauliEstateDetails() {
               </p>
               <p className="font-serif">
                 चूंकि मझौली राज के राजा मल्ल महाजनपद के राजा विश्वसेन के वंशज
-                थे, इसलिए वे आज भी अपने नाम के साथ "विश्वेन/बिसेन" (जो कि
-                "विश्वसेन" का संक्षिप्त रूप है) उपनाम का प्रयोग करते हैं। वे
+                थे, इसलिए वे आज भी अपने नाम के साथ विश्वेन/बिसेन (जो कि
+                विश्वसेन का संक्षिप्त रूप है) उपनाम का प्रयोग करते हैं। वे
                 सूर्यवंशी राजपूत माने जाते हैं और स्वयं को भगवान लक्ष्मण के
                 पुत्र चंद्रकेतु (जिन्हें उस समय की कुश्ती और युद्ध-कला में
-                प्रवीण होने के कारण "मल्ल" की उपाधि मिली थी) की संतान मानते हैं।
+                प्रवीण होने के कारण मल्ल की उपाधि मिली थी) की संतान मानते हैं।
                 बाद में मझौली राज के कई राजाओं ने भारत के उत्तरी भागों में कई
                 रियासतों की स्थापना की जैसे — मनकापुर (एस्टेट), भदरी (एस्टेट),
                 राजा माधव मल्ल (मधुबन), कालाकांकर (एस्टेट) आदि।

@@ -176,7 +176,7 @@ export default function GondaEstateDetails() {
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
             <div className="flex items-center justify-center">
-              <h2>Ruins of Raja Fateh Bahadur Mall's Haveli</h2>
+              <h2>Ruins of Raja Fateh Bahadur Mall&rsquo;s Haveli</h2>
             </div>
             <br />
             <iframe

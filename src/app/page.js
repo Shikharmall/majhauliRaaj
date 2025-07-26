@@ -6,6 +6,7 @@ import AboutSection from "@/components/AboutSection";
 import Footer from "../components/Footer";
 import GallerySection from "@/components/GallerySection";
 import MoreSection from "@/components/MoreSection";
+import MapSection from "@/components/MapSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutSection />
       <MoreSection />
       <GallerySection />
+      <MapSection />
       <Footer />
     </>
   );

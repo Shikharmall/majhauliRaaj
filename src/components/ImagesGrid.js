@@ -1,18 +1,17 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import ImageModal from "./ImageModel";
 import { useState } from "react";
 
 export default function ImagesGrid({ images }) {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
   if (!images || images.length === 0) return null;
 
   const visibleImages = images.slice(0, images.length - 1);
   const moreImage = images[images.length - 1];
-
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (src) => {
     setSelectedImage(src);

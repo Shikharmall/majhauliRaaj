@@ -15,7 +15,7 @@ const familyData = {
       children: [
         {
           name: "Raja Hari Prasad Mall",
-          isExtra: "(Martyr - 1857's war)",
+          isExtra: "(Martyr - 1857&rsquo;s war)",
           isKing: true,
         },
       ],
@@ -43,6 +43,7 @@ const familyDataHindi = {
 
 export default function NarharpurEstateDetails() {
   const { language } = useContext(LanguageContext);
+
   return (
     <div>
       <Banner
@@ -50,19 +51,19 @@ export default function NarharpurEstateDetails() {
       />
 
       {/* Main Content */}
-      <main className="container mx-auto px-20 py-10">
+      <main className="container mx-auto px-4 md:px-20 py-10">
         <div className="grid md:grid-cols-3 gap-6">
           {/* Left Image */}
-          <div className="md:col-span-1 ">
+          <div className="md:col-span-1">
             <Image
               src="/assets/img/narharpur/narharpur4.png"
-              alt="majhauli-img"
+              alt="Narharpur Estate"
               width={600}
               height={400}
               className="rounded-lg shadow-lg border-3 border-gray-300"
             />
-            <div className="flex items-center justify-center">
-              <h2>Ruins of Raja Narharpur's Haveli</h2>
+            <div className="flex items-center justify-center mt-2">
+              <h2>Ruins of Raja Narharpur&rsquo;s Haveli</h2>
             </div>
             <br />
             <iframe
@@ -70,31 +71,34 @@ export default function NarharpurEstateDetails() {
               width="100%"
               height="300"
               className="w-full rounded-md border-0"
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
           {/* Bio */}
-          <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
-            <p className="font-serif">
+          <div className="md:col-span-2 space-y-4 text-justify leading-relaxed font-serif">
+            <p>
               The founder of the family was Jagat Bahadur Shahi, who was a
               wealthy landlord living in Dumaria with his family, consisting of
               three wives and many daughters, but was still longing for a son
-              who could succeed him. One day, another zamindar who originally
-              belonged to Gorakhpur in Uttar Pradesh shifted with his family to
-              a village called Navendrapur (which is half a km from Dumaria).
-              The latter had five sons, the youngest of whom was, Ranadhwaj
-              Singh who was adopted by Jagat Bahadur Shahi at a very young age
-              but the adoption became legal only after Ranadhwaj turned 18 in
-              1921. After being adopted he was named Shattru Mardan Shahi. He
-              was single handedly responsible for making Dumaria into what it
-              later became. He owned about 5000 acres of land, a considerable
-              amount in those times.
+              who could succeed him.
             </p>
-            <p className="font-serif"></p>
-            <p className="font-serif"></p>
+            <p>
+              One day, another zamindar who originally belonged to Gorakhpur in
+              Uttar Pradesh shifted with his family to a village called
+              Navendrapur (which is half a km from Dumaria). The latter had five
+              sons, the youngest of whom was Ranadhwaj Singh, who was adopted by
+              Jagat Bahadur Shahi at a very young age. The adoption became legal
+              only after Ranadhwaj turned 18 in 1921.
+            </p>
+            <p>
+              After being adopted, he was named Shattru Mardan Shahi. He was
+              single-handedly responsible for making Dumaria into what it later
+              became. He owned about 5000 acres of land, a considerable amount
+              in those times.
+            </p>
           </div>
         </div>
 

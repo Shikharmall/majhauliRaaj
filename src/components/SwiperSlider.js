@@ -32,7 +32,7 @@ export default function SwiperSlider() {
   ];
 
   return (
-    <div className="swiper relative w-full  overflow-hidden">
+    <div className="swiper relative w-full overflow-hidden md:h-[600px]">
       {" "}
       {/* h-[400px] */}
       <div className="swiper-wrapper">

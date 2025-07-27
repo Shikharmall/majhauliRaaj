@@ -15,7 +15,7 @@ function TreeNode({ node }) {
         </>
       ) : (
         <div
-          className={`px-4 py-2 rounded shadow
+          className={`px-4 py-2 rounded shadow flex flex-col items-center
             ${
               node.isKing
                 ? "border-2 border-[#FFD700] text-[#FFD700]"

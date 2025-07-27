@@ -16,8 +16,10 @@ export default function Header() {
             className="cursor-pointer"
             onClick={() => {
               language === "english"
-                ? setLanguage("hindi")
-                : setLanguage("english");
+                ? (setLanguage("hindi"),
+                  localStorage.setItem("language", "hindi"))
+                : (setLanguage("english"),
+                  localStorage.setItem("language", "english"));
             }}
           >
             {language === "english" ? "हिंदी में देखें" : "Watch in English"}

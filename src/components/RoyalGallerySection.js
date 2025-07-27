@@ -8,22 +8,22 @@ const images = [
   {
     estate: "Majhauli Estate",
     estateHindi: "मझौली राज",
-    url: "/assets/img/majhauli/majhauliraj1.png",
+    url: "/assets/img/majhauli/majhauliraj1.jpg",
   },
   {
     estate: "Majhauli Estate",
     estateHindi: "मझौली राज",
-    url: "/assets/img/majhauli/majhauliraj2.png",
+    url: "/assets/img/majhauli/majhauliraj2.jpg",
   },
   {
     estate: "Majhauli Estate",
     estateHindi: "मझौली राज",
-    url: "/assets/img/majhauli/majhauliraj3.png",
+    url: "/assets/img/majhauli/majhauliraj3.jpg",
   },
   {
     estate: "Majhauli Estate",
     estateHindi: "मझौली राज",
-    url: "/assets/img/majhauli/majhauliraj4.png",
+    url: "/assets/img/majhauli/majhauliraj4.jpg",
   },
   {
     estate: "Majhauli Estate",
@@ -39,6 +39,21 @@ const images = [
     estate: "Majhauli Estate",
     estateHindi: "मझौली राज",
     url: "/assets/img/majhauli/majhauliraj7.jpeg",
+  },
+  {
+    estate: "Majhauli Estate",
+    estateHindi: "मझौली राज",
+    url: "/assets/img/majhauli/majhauliraj10.jpg",
+  },
+  {
+    estate: "Majhauli Estate",
+    estateHindi: "मझौली राज",
+    url: "/assets/img/majhauli/majhauliraj11.jpg",
+  },
+  {
+    estate: "Majhauli Estate",
+    estateHindi: "मझौली राज",
+    url: "/assets/img/majhauli/majhauliraj12.jpg",
   },
   {
     estate: "Kalakankar Estate",

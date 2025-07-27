@@ -25,10 +25,10 @@ export default function SwiperSlider() {
   }, []);
 
   const images = [
-    "/assets/img/majhauli/majhauliraj1.png",
-    "/assets/img/majhauli/majhauliraj3.png",
+    "/assets/img/majhauli/majhauliraj3.jpg",
+    "/assets/img/majhauli/majhauliraj1.jpg",
     // "/assets/img/map1.png",
-    "/assets/img/majhauli/majhauliraj4.png",
+    "/assets/img/majhauli/majhauliraj4.jpg",
   ];
 
   return (
@@ -51,6 +51,15 @@ export default function SwiperSlider() {
           </div>
         ))}
       </div>
+      {/* <div className="absolute top-50 left-130 z-1">
+        <Image
+          src={'/assets/img/majhauli/logo.png'}
+          alt="img"
+          width={500} // full HD width
+          height={60} // adjust height accordingly
+          //className="w-full h-auto object-cover"
+        />
+      </div> */}
       {/* <div className="swiper-pagination absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10 " /> */}
       <div className="swiper-button-prev absolute left-2 top-1/2 -translate-y-1/2 z-10" />
       <div className="swiper-button-next absolute right-2 top-1/2 -translate-y-1/2 z-10" />

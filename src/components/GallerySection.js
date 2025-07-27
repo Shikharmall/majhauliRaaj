@@ -16,10 +16,10 @@ export default function GallerySection() {
       king: "King Vishwa Sen",
       kingHindi: "राजा विश्व सेन",
       images: [
-        "/assets/img/majhauli/majhauliraj1.png",
-        "/assets/img/majhauli/majhauliraj4.png",
-        "/assets/img/majhauli/majhauliraj3.png",
-        "/assets/img/majhauli/majhauliraj2.png",
+        "/assets/img/majhauli/majhauliraj3.jpg",
+        "/assets/img/majhauli/majhauliraj1.jpg",
+        "/assets/img/majhauli/majhauliraj4.jpg",
+        "/assets/img/majhauli/majhauliraj2.jpg",
       ],
     },
     {

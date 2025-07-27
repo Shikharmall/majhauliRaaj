@@ -1,9 +1,11 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
+import COLORS from "@/utils/color";
+import ImageModal from "../ImageModel";
 
 const familyData1 = {
   name: "Majhauli Raj",
@@ -1045,23 +1047,32 @@ const familyDataHindi = {
 
 export default function MajhauliEstateDetails() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
   return (
     <div>
       <Banner
         title={language === "english" ? "Majhauli Estate" : "मझौली राज"}
       />
 
-      {/* Main Content */}
       <main className="container mx-auto px-5 md:px-20 py-5 md:py-10">
         <div className="grid md:grid-cols-3 gap-6">
           {/* Left Image */}
-          <div className="md:col-span-1 ">
+          <div className="md:col-span-1">
             <Image
               src="/assets/img/majhauli/majhauliraj7.jpeg"
               alt="majhauli-img"
               width={600}
               height={400}
               className="rounded-lg shadow-lg border-3 border-gray-300"
+              onClick={() =>
+                openModal({ url: "/assets/img/majhauli/majhauliraj7.jpeg" })
+              }
             />
             <br />
             <iframe
@@ -1151,21 +1162,216 @@ export default function MajhauliEstateDetails() {
               </p>
               <p className="font-serif">
                 चूंकि मझौली राज के राजा मल्ल महाजनपद के राजा विश्वसेन के वंशज
-                थे, इसलिए वे आज भी अपने नाम के साथ विश्वेन/बिसेन (जो कि
-                विश्वसेन का संक्षिप्त रूप है) उपनाम का प्रयोग करते हैं। वे
-                सूर्यवंशी राजपूत माने जाते हैं और स्वयं को भगवान लक्ष्मण के
-                पुत्र चंद्रकेतु (जिन्हें उस समय की कुश्ती और युद्ध-कला में
-                प्रवीण होने के कारण मल्ल की उपाधि मिली थी) की संतान मानते हैं।
-                बाद में मझौली राज के कई राजाओं ने भारत के उत्तरी भागों में कई
-                रियासतों की स्थापना की जैसे — मनकापुर (एस्टेट), भदरी (एस्टेट),
-                राजा माधव मल्ल (मधुबन), कालाकांकर (एस्टेट) आदि।
+                थे, इसलिए वे आज भी अपने नाम के साथ विश्वेन/बिसेन (जो कि विश्वसेन
+                का संक्षिप्त रूप है) उपनाम का प्रयोग करते हैं। वे सूर्यवंशी
+                राजपूत माने जाते हैं और स्वयं को भगवान लक्ष्मण के पुत्र
+                चंद्रकेतु (जिन्हें उस समय की कुश्ती और युद्ध-कला में प्रवीण होने
+                के कारण मल्ल की उपाधि मिली थी) की संतान मानते हैं। बाद में मझौली
+                राज के कई राजाओं ने भारत के उत्तरी भागों में कई रियासतों की
+                स्थापना की जैसे — मनकापुर (एस्टेट), भदरी (एस्टेट), राजा माधव
+                मल्ल (मधुबन), कालाकांकर (एस्टेट) आदि।
               </p>
             </div>
           )}
         </div>
 
+        {/* <div className="flex justify-center items-center">
+          <div className="inline-block relative mb-4 mt-5">
+            <h2
+              className="text-2xl font-semibold font-serif"
+              style={{ color: COLORS.primary }}
+            >
+              {language === "english" ? "MUGHAL PERIOD" : "मुग़ल काल"}
+            </h2>
+            <div
+              className="absolute left-0 top-8 w-1/2 h-1"
+              style={{ backgroundColor: COLORS.secondary }}
+            ></div>
+          </div>
+        </div> */}
+
+        <div className="flex items-center gap-4 my-5">
+          <div className="h-px flex-grow bg-gray-300"></div>
+          <span className="text-gray-500 text-2xl whitespace-nowrap">
+            {language === "english" ? "MUGHAL PERIOD" : "मुग़ल काल"}
+          </span>
+          <div className="h-px flex-grow bg-gray-300"></div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 my-3">
+          {/* Left Image */}
+          <div className="md:col-span-1">
+            <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+              <div className="flex justify-center">
+                <Image
+                  src="/assets/img/majhauli/proof1.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="border-1 border-gray-300 m-1" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/majhauli/proof1.png" })
+                  }
+                />
+                <Image
+                  src="/assets/img/majhauli/proof2.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="border-1 border-gray-300 m-1" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/majhauli/proof2.png" })
+                  }
+                />
+              </div>
+              <p>
+                {language === "english"
+                  ? "Majhauli miswritten as Mahauli and Maholi in Ain-I-Akbari"
+                  : "मझौली का उल्लेख आईन-ए-अकबरी में गलत रूप से महौली के रूप में किया गया है।"}
+              </p>
+            </div>
+          </div>
+
+          {/* Bio */}
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                The first documented mention of Majhauli Raj appears in the
+                Ain-i-Akbari, written by Abul Fazl, the court historian of
+                Emperor Akbar. In this imperial record, Majhauli was incorrectly
+                spelled as "Mahauli" and “Maholi” likely due to phonetic
+                transliteration into Persian. Despite the spelling error, its
+                inclusion highlights Majhauli's prominence during the Mughal
+                era. At that time, Majhauli was a part of the Sarkar of
+                Gorakhpur and consisted of two mahals, indicating its
+                administrative importance within the region.
+              </p>
+              <p className="font-serif">
+                Majhauli Raj held both military and architectural significance.
+                The estate had two forts constructed from brick, which served
+                defensive and strategic purposes. It also maintained a standing
+                army of 2,000 infantry soldiers, showcasing its role in local
+                security and possible participation in Mughal military
+                campaigns. These details point to a strong and organized estate,
+                capable of defending its territory and supporting the imperial
+                administration when needed.
+              </p>
+              <p className="font-serif">
+                Economically, Majhauli was a valuable asset to the empire. The
+                Ain-i-Akbari records a revenue demand of 618,256 dams,
+                calculated from 2,523 bighas of agricultural land. The dam was a
+                copper coin widely used in Akbar's time, and such a high
+                assessment reflects the estate's fertile land and productive
+                output. The ruling family of Majhauli belonged to the Bisen
+                Rajput clan, known for their loyalty, governance, and influence
+                in eastern Uttar Pradesh.
+              </p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                मझौली राज का पहला लिखित उल्लेख अबुल फज़ल द्वारा रचित प्रसिद्ध
+                ग्रंथ आईन-ए-अकबरी में मिलता है। इस मुगल दस्तावेज़ में मझौली को
+                गलती से “महौली” के रूप में लिखा गया है, जो फ़ारसी लिप्यंतरण की
+                त्रुटि का परिणाम था। इस नाम की गलती के बावजूद, इसका उल्लेख इस
+                बात का प्रमाण है कि मझौली मुग़ल काल में एक महत्वपूर्ण क्षेत्र
+                था। उस समय यह गोरखपुर सरकार का हिस्सा था और इसमें दो महल
+                (प्रशासनिक इकाइयाँ) शामिल थीं, जो इसके प्रशासनिक महत्व को
+                दर्शाता है।
+              </p>
+              <p className="font-serif">
+                मझौली राज सैन्य और स्थापत्य दोनों दृष्टियों से महत्वपूर्ण था। इस
+                रियासत में ईंटों से बने दो किले थे, जो रक्षा और रणनीतिक
+                उद्देश्यों के लिए बनाए गए थे। इसके अतिरिक्त, मझौली के पास 2,000
+                पैदल सैनिकों की एक संगठित सेना भी थी, जो इसे स्थानीय सुरक्षा में
+                सशक्त बनाती थी और संभवतः मुग़ल अभियानों में भी भाग लेती थी। यह
+                व्यवस्था इस रियासत की ताकत, अनुशासन और उसके राजनीतिक योगदान को
+                दर्शाती है।
+              </p>
+              <p className="font-serif">
+                आर्थिक रूप से भी मझौली राज मुग़ल खजाने के लिए एक महत्वपूर्ण
+                स्रोत था। आईन-ए-अकबरी के अनुसार, मझौली से 6,18,256 दाम (जो उस
+                समय तांबे का सिक्का था) का राजस्व निर्धारित किया गया था, जो कि
+                2,523 बीघा कृषि भूमि पर आधारित था। यह आँकड़ा मझौली की भूमि की
+                उपजाऊता और उत्पादन क्षमता को दर्शाता है। इस रियासत पर शासन करने
+                वाला बिसेन राजपूत वंश था, जो पूर्वी उत्तर प्रदेश में अपनी
+                निष्ठा, शासन-कुशलता और प्रभाव के लिए प्रसिद्ध था।
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 my-3">
+          {/* Bio */}
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                The first written record of any king of Majhauli appears in the
+                Tuzuk-i-Jahangiri, where Raja Nath Mall is mentioned twice, with
+                a gap of ten years between the two references. The first mention
+                is dated 5th of Amurdad (corresponding to 25th July), and the
+                second appears on 21st Jumada al-Awwal, 1032 AH (1st April
+                1623).
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                मझौली के किसी राजा का पहला लिखित उल्लेख तुज़ुक-ए-जहांगीरी में
+                मिलता है, जहाँ राजा नाथ मल्ल का उल्लेख दो बार किया गया है, और इन
+                दोनों संदर्भों के बीच लगभग दस वर्षों का अंतर है। पहली बार उनका
+                उल्लेख 5 अमुर्दाद (जो कि 25 जुलाई के अनुसार है) को हुआ था, और
+                दूसरी बार 21 जुमाद-उल-अव्वल, 1032 हिजरी (1 अप्रैल 1623 ईस्वी) को
+                किया गया।
+              </p>
+              <p className="font-serif"></p>
+              <p className="font-serif"></p>
+            </div>
+          )}
+
+          {/* right Image */}
+          <div className="md:col-span-1">
+            <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+              <div className="flex justify-center">
+                <Image
+                  src="/assets/img/majhauli/proof3.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="m-1" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/majhauli/proof3.png" })
+                  }
+                />
+                <Image
+                  src="/assets/img/majhauli/proof4.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="m-1" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/majhauli/proof4.png" })
+                  }
+                />
+              </div>
+
+              <p>
+                {language === "english"
+                  ? "Mention of Raja Nath Mall of Majhauli in Tuzuk-i-Jahangiri"
+                  : "तुझुक-ए-जहांगीरी में मझौली के राजा नाथ मल्ल का उल्लेख मिलता है।"}
+              </p>
+            </div>
+          </div>
+        </div>
+
         <FamilyTreeStructure
           familyData={language === "english" ? familyData1 : familyData1Hindi}
+        />
+
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
         />
 
         {/* Personal Details Table */}
@@ -1263,10 +1469,14 @@ export default function MajhauliEstateDetails() {
             </table>
           </div>
         </div> */}
-        <FamilyTreeStructure
-          familyData={language === "english" ? familyData : familyDataHindi}
-        />
       </main>
+
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }

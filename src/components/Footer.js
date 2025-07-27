@@ -8,7 +8,7 @@ export default function Footer() {
     <footer
       className="relative min-h-screen bg-cover bg-center flex flex-col text-white"
       style={{
-        backgroundImage: "url('/assets/img/majhauli/majhauliraj1.png')",
+        backgroundImage: "url('/assets/img/majhauli/majhauliraj9.png')",
       }}
     >
       {/* Dark overlay */}

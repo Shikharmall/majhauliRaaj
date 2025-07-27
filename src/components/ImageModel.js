@@ -46,11 +46,13 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
         />
 
         {/* Label */}
-        <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-xl z-10 bg-black/70 px-4 py-2 rounded">
-          {language === "english"
-            ? imageSrc?.estate?.toUpperCase()
-            : imageSrc?.estateHindi?.toUpperCase()}
-        </p>
+        {imageSrc?.estate && (
+          <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-xl z-10 bg-black/70 px-4 py-2 rounded">
+            {language === "english"
+              ? imageSrc?.estate?.toUpperCase()
+              : imageSrc?.estateHindi?.toUpperCase()}
+          </p>
+        )}
       </div>
     </div>
   );

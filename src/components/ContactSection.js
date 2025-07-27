@@ -2,10 +2,75 @@
 import COLORS from "@/utils/color";
 import Banner from "./Banner";
 import LanguageContext from "@/context/languageContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 export default function ContactSection() {
   const { language } = useContext(LanguageContext);
+  const [formData, setFormData] = useState({
+    name: "",
+    fromEmail: "",
+    number: "",
+    message: "",
+  });
+
+  const onChangeHandler = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // const sendEmail = async (e) => {
+  //   e.preventDefault(); // prevent page refresh
+
+  //   try {
+  //     const res = await fetch("/api/contact", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(formData),
+  //     });
+
+  //     const data = await res.json();
+
+  //     if (data.success) {
+  //       alert(
+  //         language === "english"
+  //           ? "Email sent successfully!"
+  //           : "ईमेल सफलतापूर्वक भेजा गया!"
+  //       );
+  //       setFormData({ name: "", fromEmail: "", number: "", message: "" });
+  //     } else {
+  //       alert(
+  //         language === "english"
+  //           ? "Failed to send email."
+  //           : "ईमेल भेजने में विफल।"
+  //       );
+  //     }
+  //   } catch (err) {
+  //     console.error(err);
+  //     alert(
+  //       language === "english" ? "Something went wrong!" : "कुछ गलत हो गया!"
+  //     );
+  //   }
+  // };
+
+  // const sendEmail = async (e) => {
+  //   e.preventDefault();
+
+  //   const res = await fetch("/api/sendEmail", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({
+  //       name: "Shikhar",
+  //       email: "shikhar@example.com",
+  //       message: "Hello from Next.js!",
+  //     }),
+  //   });
+
+  //   const data = await res.json();
+  //   alert(data.message);
+  // };
+
   return (
     <section className="bg-white pb-12">
       {/* Heading */}
@@ -47,28 +112,41 @@ export default function ContactSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <input
                 type="text"
+                name="name"
                 placeholder={language === "english" ? "Full Name" : "पूरा नाम"}
                 className="p-3 border rounded w-full"
+                onChange={(e) => onChangeHandler(e)}
+                value={formData?.name}
               />
               <input
                 type="email"
+                name="fromEmail"
                 placeholder={language === "english" ? "Email Address" : "ईमेल"}
                 className="p-3 border rounded w-full"
+                onChange={(e) => onChangeHandler(e)}
+                value={formData?.fromEmail}
               />
               <input
                 type="text"
+                name="number"
                 placeholder={language === "english" ? "Number" : "नंबर"}
                 className="p-3 border rounded w-full"
+                onChange={(e) => onChangeHandler(e)}
+                value={formData?.number}
               />
             </div>
             <textarea
+              name="message"
               placeholder={language === "english" ? "Message" : "संदेश"}
               className="w-full p-3 border rounded h-40 resize-none"
+              onChange={(e) => onChangeHandler(e)}
+              value={formData?.message}
             ></textarea>
             <button
               type="submit"
               className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition cursor-pointer"
               style={{ backgroundColor: COLORS.primary }}
+              //onClick={sendEmail}
             >
               {language === "english" ? "Submit" : "सबमिट करें"}
             </button>
@@ -82,7 +160,9 @@ export default function ContactSection() {
               className="fa-solid fa-location-dot text-3xl"
               style={{ color: COLORS.primary }}
             ></i>
-            <h2 className="text-lg font-semibold">{language === "english" ? "Address" : "पता"}</h2>
+            <h2 className="text-lg font-semibold">
+              {language === "english" ? "Address" : "पता"}
+            </h2>
             <p className="text-gray-700">
               XX, XXXXXX XXXXX
               <br />
@@ -95,7 +175,9 @@ export default function ContactSection() {
               className="fa-solid fa-envelope text-3xl"
               style={{ color: COLORS.primary }}
             ></i>
-            <h2 className="text-lg font-semibold">{language === "english" ? "Email" : "ईमेल"}</h2>
+            <h2 className="text-lg font-semibold">
+              {language === "english" ? "Email" : "ईमेल"}
+            </h2>
             <p className="text-gray-700">thesarus.2022@gmail.com</p>
           </div>
 
@@ -104,7 +186,9 @@ export default function ContactSection() {
               className="fa-solid fa-phone text-3xl"
               style={{ color: COLORS.primary }}
             ></i>
-            <h2 className="text-lg font-semibold">{language === "english" ? "Number" : "नंबर"}</h2>
+            <h2 className="text-lg font-semibold">
+              {language === "english" ? "Number" : "नंबर"}
+            </h2>
             <p className="text-gray-700">+91-XXXXX XXXXX</p>
           </div>
         </div>

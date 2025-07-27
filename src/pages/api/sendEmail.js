@@ -24,10 +24,8 @@ export default async function handler(req, res) {
     secure: true,
     requireTLS: true,
     auth: {
-      // user: process.env.EMAIL_USER,
-      // pass: process.env.EMAIL_PASS,
-      user: "thesarus.2020@gmail.com",
-      pass: "kmwnupcqerialzgy",
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 

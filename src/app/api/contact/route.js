@@ -1,7 +1,7 @@
 // app/api/contact/route.js or /api/contact/route.js (Next.js 13/14+)
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API);
+const resend = new Resend(""); //process.env.NEXT_PUBLIC_RESEND_API
 
 export async function POST(req) {
 //   console.log("innn");

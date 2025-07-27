@@ -1236,35 +1236,13 @@ export default function MajhauliEstateDetails() {
           {language === "english" ? (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                The first documented mention of Majhauli Raj appears in the
-                Ain-i-Akbari, written by Abul Fazl, the court historian of
-                Emperor Akbar. In this imperial record, Majhauli was incorrectly
-                spelled as "Mahauli" and “Maholi” likely due to phonetic
-                transliteration into Persian. Despite the spelling error, its
-                inclusion highlights Majhauli's prominence during the Mughal
-                era. At that time, Majhauli was a part of the Sarkar of
-                Gorakhpur and consisted of two mahals, indicating its
-                administrative importance within the region.
+                {`The first documented mention of Majhauli Raj appears in the Ain-i-Akbari, written by Abul Fazl, the court historian of Emperor Akbar. In this imperial record, Majhauli was incorrectly spelled as "Mahauli" and "Maholi", likely due to phonetic transliteration into Persian. Despite the spelling error, its inclusion highlights Majhauli's prominence during the Mughal era. At that time, Majhauli was a part of the Sarkar of Gorakhpur and consisted of two mahals, indicating its administrative importance within the region.`}
               </p>
               <p className="font-serif">
-                Majhauli Raj held both military and architectural significance.
-                The estate had two forts constructed from brick, which served
-                defensive and strategic purposes. It also maintained a standing
-                army of 2,000 infantry soldiers, showcasing its role in local
-                security and possible participation in Mughal military
-                campaigns. These details point to a strong and organized estate,
-                capable of defending its territory and supporting the imperial
-                administration when needed.
+                {`Majhauli Raj held both military and architectural significance. The estate had two forts constructed from brick, which served defensive and strategic purposes. It also maintained a standing army of 2,000 infantry soldiers, showcasing its role in local security and possible participation in Mughal military campaigns. These details point to a strong and organized estate, capable of defending its territory and supporting the imperial administration when needed.`}
               </p>
               <p className="font-serif">
-                Economically, Majhauli was a valuable asset to the empire. The
-                Ain-i-Akbari records a revenue demand of 618,256 dams,
-                calculated from 2,523 bighas of agricultural land. The dam was a
-                copper coin widely used in Akbar's time, and such a high
-                assessment reflects the estate's fertile land and productive
-                output. The ruling family of Majhauli belonged to the Bisen
-                Rajput clan, known for their loyalty, governance, and influence
-                in eastern Uttar Pradesh.
+                {`Economically, Majhauli was a valuable asset to the empire. The Ain-i-Akbari records a revenue demand of 618,256 dams, calculated from 2,523 bighas of agricultural land. The dam was a copper coin widely used in Akbar's time, and such a high assessment reflects the estate's fertile land and productive output. The ruling family of Majhauli belonged to the Bisen Rajput clan, known for their loyalty, governance, and influence in eastern Uttar Pradesh.`}
               </p>
             </div>
           ) : (

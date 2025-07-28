@@ -541,7 +541,7 @@ export default function MadhubanEstateDetails() {
                 शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
               </p>
               <p className="font-serif mx-5 md:mx-10">
-                <em>"मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये दिए।"</em>
+                <em>&quot;मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये दिए।&quot;</em>
               </p>
               <p className="font-serif mt-4">
                 दूसरा उल्लेख
@@ -550,9 +550,9 @@ export default function MadhubanEstateDetails() {
               </p>
               <p className="font-serif mx-5 md:mx-10">
                 <em>
-                  "5वीं अमुर्दाद को, राजा नत्थमल की मनसबदारी जो 1,500 व्यक्तिगत
+                  &quot;5वीं अमुर्दाद को, राजा नत्थमल की मनसबदारी जो 1,500 व्यक्तिगत
                   और 1,100 घुड़सवार थी, उसमें 500 व्यक्तिगत और 100 घुड़सवार की
-                  वृद्धि की गई।"
+                  वृद्धि की गई।&quot;
                 </em>
               </p>
             </div>

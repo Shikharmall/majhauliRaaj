@@ -1297,20 +1297,20 @@ export default function MajhauliEstateDetails() {
               </p>
               <p className="font-serif">
                 The first reference appears on the page titled{" "}
-                <strong>"Remarkable Letter of Aziz Koka"</strong>, where it
+                <strong>Remarkable Letter of Aziz Koka</strong>, where it
                 states: <br /> <br />
                 <em>
-                  “I gave 5,000 rupees to Nathu Mal(?), Raja of Manjholi.”
+                  I gave 5,000 rupees to Nathu Mal(?), Raja of Manjholi.
                 </em>
               </p>
               <p className="font-serif mt-4">
                 The second reference appears on the page titled{" "}
-                <strong>"Hindu Raja Turns Musulman"</strong>, where it states:{" "}
+                <strong>Hindu Raja Turns Musulman</strong>, where it states:{" "}
                 <br /> <br />
                 <em>
-                  “On the 5th Amurdad, to the mansab of Raja Nathmal, which was
+                  On the 5th Amurdad, to the mansab of Raja Nathmal, which was
                   1,500 personal and 1,100 horse, an addition of 500 personal
-                  and 100 horse was made.”
+                  and 100 horse was made.
                 </em>
               </p>
             </div>

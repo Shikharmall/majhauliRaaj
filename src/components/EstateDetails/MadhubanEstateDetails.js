@@ -649,9 +649,9 @@ export default function MadhubanEstateDetails() {
           )}
         </div>
 
-        {/* <FamilyTreeStructure
+        <FamilyTreeStructure
           familyData={language === "english" ? familyData : familyDataHindi}
-        /> */}
+        />
 
         {/* Personal Details Table */}
         {/* <div className="mt-12">

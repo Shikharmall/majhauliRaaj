@@ -1392,13 +1392,13 @@ export default function MajhauliEstateDetails() {
           <div className="h-px flex-grow bg-gray-300"></div>
         </div>
 
-        {/* <FamilyTreeStructure
+        <FamilyTreeStructure
           familyData={language === "english" ? familyData1 : familyData1Hindi}
         />
 
         <FamilyTreeStructure
           familyData={language === "english" ? familyData : familyDataHindi}
-        /> */}
+        />
 
         {/* Personal Details Table */}
         {/* <div className="mt-12">

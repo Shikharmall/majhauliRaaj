@@ -747,7 +747,7 @@ const familyDataHindi = {
                                   isKing: true,
                                   children: [
                                     {
-                                      name: "राजा नाथ मल्ल",
+                                      name: "राजा नत्थ मल्ल",
                                       isKing: true,
                                       children: [],
                                     },
@@ -1061,6 +1061,8 @@ export default function MajhauliEstateDetails() {
       />
 
       <main className="container mx-auto px-5 md:px-20 py-5 md:py-10">
+        {/* Intoduction */}
+
         <div className="grid md:grid-cols-3 gap-6">
           {/* Left Image */}
           <div className="md:col-span-1">
@@ -1069,7 +1071,7 @@ export default function MajhauliEstateDetails() {
               alt="majhauli-img"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg border-3 border-gray-300"
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
               onClick={() =>
                 openModal({ url: "/assets/img/majhauli/majhauliraj7.jpeg" })
               }
@@ -1190,6 +1192,8 @@ export default function MajhauliEstateDetails() {
           </div>
         </div> */}
 
+        {/* Mughal Period */}
+
         <div className="flex items-center gap-4 my-5">
           <div className="h-px flex-grow bg-gray-300"></div>
           <span className="text-gray-500 text-2xl whitespace-nowrap">
@@ -1208,7 +1212,7 @@ export default function MajhauliEstateDetails() {
                   alt="majhauli-img"
                   width={200}
                   height={50}
-                  className="border-1 border-gray-300 m-1" // shadow-lg border-3 border-gray-300
+                  className="border-1 border-gray-300 m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
                   onClick={() =>
                     openModal({ url: "/assets/img/majhauli/proof1.png" })
                   }
@@ -1218,7 +1222,7 @@ export default function MajhauliEstateDetails() {
                   alt="majhauli-img"
                   width={200}
                   height={50}
-                  className="border-1 border-gray-300 m-1" // shadow-lg border-3 border-gray-300
+                  className="border-1 border-gray-300 m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
                   onClick={() =>
                     openModal({ url: "/assets/img/majhauli/proof2.png" })
                   }
@@ -1285,27 +1289,52 @@ export default function MajhauliEstateDetails() {
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
                 The first written record of any king of Majhauli appears in the
-                Tuzuk-i-Jahangiri, where Raja Nath Mall is mentioned twice, with
-                a gap of ten years between the two references. The first mention
-                is dated 5th of Amurdad (corresponding to 25th July), and the
-                second appears on 21st Jumada al-Awwal, 1032 AH (1st April
-                1623).
+                <em> Tuzuk-i-Jahangiri</em>, where Raja Nath Mall is mentioned
+                twice, with a gap of ten years between the two references. The
+                first mention is dated the 5th of Amurdad (corresponding to 25th
+                or 26th July 1607), and the second appears on the 21st of Jumada
+                al-Awwal, 1032 AH (1st April 1623 or 14th November 1606).
               </p>
-              <p className="font-serif"></p>
-              <p className="font-serif"></p>
+              <p className="font-serif">
+                The first reference appears on the page titled{" "}
+                <strong>"Remarkable Letter of Aziz Koka"</strong>, where it
+                states: <br /> <br />
+                <em>
+                  “I gave 5,000 rupees to Nathu Mal(?), Raja of Manjholi.”
+                </em>
+              </p>
+              <p className="font-serif mt-4">
+                The second reference appears on the page titled{" "}
+                <strong>"Hindu Raja Turns Musulman"</strong>, where it states:{" "}
+                <br /> <br />
+                <em>
+                  “On the 5th Amurdad, to the mansab of Raja Nathmal, which was
+                  1,500 personal and 1,100 horse, an addition of 500 personal
+                  and 100 horse was made.”
+                </em>
+              </p>
             </div>
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                मझौली के किसी राजा का पहला लिखित उल्लेख तुज़ुक-ए-जहांगीरी में
-                मिलता है, जहाँ राजा नाथ मल्ल का उल्लेख दो बार किया गया है, और इन
-                दोनों संदर्भों के बीच लगभग दस वर्षों का अंतर है। पहली बार उनका
-                उल्लेख 5 अमुर्दाद (जो कि 25 जुलाई के अनुसार है) को हुआ था, और
-                दूसरी बार 21 जुमाद-उल-अव्वल, 1032 हिजरी (1 अप्रैल 1623 ईस्वी) को
-                किया गया।
+                मझौली के किसी भी राजा का पहला लिखित उल्लेख{" "}
+                <em>तुज़ुक-ए-जहांगीरी</em> में मिलता है, जहाँ राजा नाथ मल का दो
+                बार उल्लेख हुआ है—इन दोनों उल्लेखों के बीच दस वर्षों का अंतर है।
+                पहला उल्लेख अमुर्दाद की 5वीं तारीख को (जो 25 या 26 जुलाई 1607 के
+                अनुरूप है) मिलता है, जबकि दूसरा जुमादा अल-अव्वल 1032 हिजरी की
+                21वीं तारीख को (1 अप्रैल 1623 या 14 नवंबर 1606 के अनुरूप)।
               </p>
-              <p className="font-serif"></p>
-              <p className="font-serif"></p>
+              <p className="font-serif">
+                पहला उल्लेख <strong>"अज़ीज़ कोका का उल्लेखनीय पत्र"</strong>{" "}
+                शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है: "मैंने 5,000 रुपए
+                नाथू मल(?) राजा मंझोली को दिए।"
+              </p>
+              <p className="font-serif">
+                दूसरा उल्लेख <strong>"हिंदू राजा मुसलमान बना"</strong> शीर्षक
+                वाले पृष्ठ पर मिलता है, जहाँ लिखा है: "5वीं अमुर्दाद को राजा
+                नत्थमल की मंसबदारी, जो पहले 1,500 व्यक्तिगत और 1,100 घोड़े थी,
+                उसमें 500 व्यक्तिगत और 100 घोड़े की वृद्धि की गई।"
+              </p>
             </div>
           )}
 
@@ -1318,7 +1347,7 @@ export default function MajhauliEstateDetails() {
                   alt="majhauli-img"
                   width={200}
                   height={50}
-                  className="m-1" // shadow-lg border-3 border-gray-300
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
                   onClick={() =>
                     openModal({ url: "/assets/img/majhauli/proof3.png" })
                   }
@@ -1328,7 +1357,7 @@ export default function MajhauliEstateDetails() {
                   alt="majhauli-img"
                   width={200}
                   height={50}
-                  className="m-1" // shadow-lg border-3 border-gray-300
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
                   onClick={() =>
                     openModal({ url: "/assets/img/majhauli/proof4.png" })
                   }
@@ -1344,13 +1373,21 @@ export default function MajhauliEstateDetails() {
           </div>
         </div>
 
-        <FamilyTreeStructure
+        <div className="flex items-center gap-4 my-5">
+          <div className="h-px flex-grow bg-gray-300"></div>
+          <span className="text-gray-500 text-2xl whitespace-nowrap">
+            {language === "english" ? "BRITISH PERIOD" : "मुग़ल काल"}
+          </span>
+          <div className="h-px flex-grow bg-gray-300"></div>
+        </div>
+
+        {/* <FamilyTreeStructure
           familyData={language === "english" ? familyData1 : familyData1Hindi}
         />
 
         <FamilyTreeStructure
           familyData={language === "english" ? familyData : familyDataHindi}
-        />
+        /> */}
 
         {/* Personal Details Table */}
         {/* <div className="mt-12">

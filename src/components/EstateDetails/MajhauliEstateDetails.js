@@ -1296,8 +1296,8 @@ export default function MajhauliEstateDetails() {
                 al-Awwal, 1032 AH (1st April 1623 or 14th November 1606).
               </p>
               <p className="font-serif">
-                The first reference appears on the page titled{" "}
-                <strong>Remarkable Letter of Aziz Koka</strong>, where it
+                The first reference appears on the page titled
+                <strong> Remarkable Letter of Aziz Koka</strong>, where it
                 states:
               </p>
               <p className="font-serif mx-5 md:mx-10">
@@ -1307,9 +1307,8 @@ export default function MajhauliEstateDetails() {
                 </em>
               </p>
               <p className="font-serif mt-4">
-                The second reference appears on the page titled{" "}
-                <strong>Hindu Raja Turns Musulman</strong>, where it
-                states:{" "}
+                The second reference appears on the page titled
+                <strong> Hindu Raja Turns Musulman</strong>, where it states:
               </p>
               <p className="font-serif mx-5 md:mx-10">
                 <em>
@@ -1322,15 +1321,15 @@ export default function MajhauliEstateDetails() {
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                मझौली के किसी भी राजा का पहला लिखित उल्लेख{" "}
-                <em>तुज़ुक-ए-जहांगीरी</em> में मिलता है, जहाँ राजा नाथ मल का दो
+                मझौली के किसी भी राजा का पहला लिखित उल्लेख
+                <em> तुज़ुक-ए-जहांगीरी</em> में मिलता है, जहाँ राजा नाथ मल का दो
                 बार उल्लेख हुआ है—इन दोनों उल्लेखों के बीच दस वर्षों का अंतर है।
                 पहला उल्लेख अमुर्दाद की 5वीं तारीख को (जो 25 या 26 जुलाई 1607 के
                 अनुरूप है) मिलता है, जबकि दूसरा जुमादा अल-अव्वल 1032 हिजरी की
                 21वीं तारीख को (1 अप्रैल 1623 या 14 नवंबर 1606 के अनुरूप)।
               </p>
               <p className="font-serif">
-                पहला उल्लेख <strong>"अज़ीज़ कोका का उल्लेखनीय पत्र"</strong>{" "}
+                पहला उल्लेख <strong>"अज़ीज़ कोका का उल्लेखनीय पत्र" </strong>
                 शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है: "मैंने 5,000 रुपए
                 नाथू मल(?) राजा मंझोली को दिए।"
               </p>

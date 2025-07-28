@@ -1,9 +1,10 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
+import ImageModal from "../ImageModel";
 
 const familyData = {
   name: "Raja Madhav Mall",
@@ -339,6 +340,13 @@ const familyDataHindi = {
 
 export default function MadhubanEstateDetails() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
   return (
     <div>
       <Banner
@@ -347,6 +355,7 @@ export default function MadhubanEstateDetails() {
 
       {/* Main Content */}
       <main className="container mx-auto px-5 md:px-20 py-5 md:py-10">
+        {/* intro */}
         <div className="grid md:grid-cols-3 gap-6">
           {/* Left Image */}
           <div className="md:col-span-1 ">
@@ -355,7 +364,10 @@ export default function MadhubanEstateDetails() {
               alt="madhuban-img"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg border-3 border-gray-300"
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+              onClick={() =>
+                openModal({ url: "/assets/img/madhuban/madhuban1.jpg" })
+              }
             />
             <div className="flex items-center justify-center">
               <h2>
@@ -428,9 +440,122 @@ export default function MadhubanEstateDetails() {
           )}
         </div>
 
-        <FamilyTreeStructure
+        {/* Mughal Period */}
+
+        <div className="flex items-center gap-4 my-5">
+          <div className="h-px flex-grow bg-gray-300"></div>
+          <span className="text-gray-500 text-2xl whitespace-nowrap">
+            {language === "english" ? "MUGHAL PERIOD" : "मुग़ल काल"}
+          </span>
+          <div className="h-px flex-grow bg-gray-300"></div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 my-3">
+          {/* left Image */}
+          <div className="md:col-span-1">
+            <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+              <div className="flex justify-center">
+                <Image
+                  src="/assets/img/majhauli/proof3.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/majhauli/proof3.png" })
+                  }
+                />
+                <Image
+                  src="/assets/img/majhauli/proof4.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/majhauli/proof4.png" })
+                  }
+                />
+              </div>
+
+              <p>
+                {language === "english"
+                  ? "Mention of Raja Nath Mall of Majhauli in Tuzuk-i-Jahangiri"
+                  : "तुझुक-ए-जहांगीरी में मझौली के राजा नाथ मल्ल का उल्लेख मिलता है।"}
+              </p>
+            </div>
+          </div>
+
+          {/* Bio */}
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                The first written record of any king of Majhauli appears in the
+                <em> Tuzuk-i-Jahangiri </em>, where Raja Nath Mall is mentioned
+                twice, with a gap of ten years between the two references. The
+                first mention is dated the 5th of Amurdad (corresponding to 25th
+                or 26th July 1607), and the second appears on the 21st of Jumada
+                al-Awwal, 1032 AH (1st April 1623 or 14th November 1606).
+              </p>
+              <p className="font-serif">
+                The first reference appears on the page titled
+                <strong> Remarkable Letter of Aziz Koka</strong>, where it
+                states:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  &quot;I gave 5,000 rupees to Nathu Mal(?), Raja of
+                  Manjholi.&quot;
+                </em>
+              </p>
+              <p className="font-serif mt-4">
+                The second reference appears on the page titled
+                <strong> Hindu Raja Turns Musulman</strong>, where it states:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  &quot;On the 5th Amurdad, to the mansab of Raja Nathmal, which
+                  was 1,500 personal and 1,100 horse, an addition of 500
+                  personal and 100 horse was made.&quot;
+                </em>
+              </p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                मझौली के किसी भी राजा का सबसे पहला लिखित उल्लेख{" "}
+                <em>तुज़ुक-ए-जहाँगीरी</em> में मिलता है, जहाँ राजा नाथ मल का दो
+                बार उल्लेख हुआ है, दोनों के बीच लगभग दस वर्षों का अंतर है। पहली
+                बार उनका उल्लेख अमुर्दाद की 5वीं तारीख को हुआ है (जो 25 या 26
+                जुलाई 1607 के आसपास की है), और दूसरा उल्लेख 21 जुमादा अल-अव्वल,
+                1032 हिजरी (1 अप्रैल 1623 या 14 नवंबर 1606) को मिलता है।
+              </p>
+              <p className="font-serif">
+                पहला उल्लेख <strong>अज़ीज़ कोका का उल्लेखनीय पत्र</strong>{" "}
+                शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  &quot;मैंने नाथू मल(?), राजा मंझोली को 5,000 रुपये दिए।&quot;
+                </em>
+              </p>
+              <p className="font-serif mt-4">
+                दूसरा उल्लेख <strong>हिंदू राजा बना मुसलमान</strong> शीर्षक वाले
+                पृष्ठ पर मिलता है, जहाँ लिखा है:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  &quot;5वें अमुर्दाद को राजा नथमल की मनसबदारी, जो 1,500
+                  व्यक्तिगत और 1,100 घुड़सवार थी, उसमें 500 व्यक्तिगत और 100
+                  घुड़सवार की वृद्धि की गई।&quot;
+                </em>
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* <FamilyTreeStructure
           familyData={language === "english" ? familyData : familyDataHindi}
-        />
+        /> */}
 
         {/* Personal Details Table */}
         {/* <div className="mt-12">
@@ -528,6 +653,12 @@ export default function MadhubanEstateDetails() {
           </div>
         </div> */}
       </main>
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }

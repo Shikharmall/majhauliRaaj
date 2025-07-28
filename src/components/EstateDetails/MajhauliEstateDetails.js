@@ -1289,7 +1289,7 @@ export default function MajhauliEstateDetails() {
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
                 The first written record of any king of Majhauli appears in the
-                <em> Tuzuk-i-Jahangiri</em>, where Raja Nath Mall is mentioned
+                <em> Tuzuk-i-Jahangiri </em>, where Raja Nath Mall is mentioned
                 twice, with a gap of ten years between the two references. The
                 first mention is dated the 5th of Amurdad (corresponding to 25th
                 or 26th July 1607), and the second appears on the 21st of Jumada
@@ -1298,19 +1298,24 @@ export default function MajhauliEstateDetails() {
               <p className="font-serif">
                 The first reference appears on the page titled{" "}
                 <strong>Remarkable Letter of Aziz Koka</strong>, where it
-                states: <br /> <br />
+                states:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
                 <em>
-                  I gave 5,000 rupees to Nathu Mal(?), Raja of Manjholi.
+                  &quot;I gave 5,000 rupees to Nathu Mal(?), Raja of
+                  Manjholi.&quot;
                 </em>
               </p>
               <p className="font-serif mt-4">
                 The second reference appears on the page titled{" "}
-                <strong>Hindu Raja Turns Musulman</strong>, where it states:{" "}
-                <br /> <br />
+                <strong>Hindu Raja Turns Musulman</strong>, where it
+                states:{" "}
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
                 <em>
-                  On the 5th Amurdad, to the mansab of Raja Nathmal, which was
-                  1,500 personal and 1,100 horse, an addition of 500 personal
-                  and 100 horse was made.
+                  &quot; On the 5th Amurdad, to the mansab of Raja Nathmal,
+                  which was 1,500 personal and 1,100 horse, an addition of 500
+                  personal and 100 horse was made.&quot;
                 </em>
               </p>
             </div>

@@ -405,8 +405,8 @@ export default function MadhubanEstateDetails() {
                 and a significant population.
               </p>
               <p className="font-serif">
-                Raja Madhav Malla had two sons: Raja Nath Malla and Raja Ajay
-                Bahadur Malla (also known as Fateh Bahadur Malla). Their
+                Raja Madhav Mall had two sons: Raja Nath Mall and Raja Ajay
+                Bahadur Mall (also known as Fateh Bahadur Mall). Their
                 descendants took on the surname “Mall”, and many settled across
                 eastern UP — especially in Madhuban, Mau, Gorakhpur and Deoria,
                 and villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and

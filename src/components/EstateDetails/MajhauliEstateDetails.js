@@ -1289,12 +1289,16 @@ export default function MajhauliEstateDetails() {
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
                 The first written record of any king of Majhauli appears in the
-                <em> Tuzuk-i-Jahangiri </em>, where Raja Nath Mall is mentioned
-                twice, with a gap of ten years between the two references. The
-                first mention is dated the 5th of Amurdad (corresponding to 25th
-                or 26th July 1607), and the second appears on the 21st of Jumada
-                al-Awwal, 1032 AH (1st April 1623 or 14th November 1606).
-              </p>
+                <strong>
+                  <em> Tuzuk-i-Jahangiri </em>
+                </strong>
+                , where Raja Nath Mall is mentioned twice, with a gap of ten
+                years between the two references. The first mention is dated the
+                21st of second Jumada(corresponding to 14th October, 1606), and
+                the second appears on the 5th of Amurdad (corresponding to 25th
+                July, 1615).
+              </p>{" "}
+              {/* october, 1606 // 25 July */}
               <p className="font-serif">
                 The first reference appears on the page titled
                 <strong> Remarkable Letter of Aziz Koka</strong>, where it
@@ -1321,29 +1325,33 @@ export default function MajhauliEstateDetails() {
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                मझौली के किसी भी राजा का सबसे पहला लिखित उल्लेख{" "}
-                <em>तुज़ुक-ए-जहाँगीरी</em> में मिलता है, जहाँ राजा नाथ मल का दो
-                बार उल्लेख हुआ है, दोनों के बीच लगभग दस वर्षों का अंतर है। पहली
-                बार उनका उल्लेख अमुर्दाद की 5वीं तारीख को हुआ है (जो 25 या 26
-                जुलाई 1607 के आसपास की है), और दूसरा उल्लेख 21 जुमादा अल-अव्वल,
-                1032 हिजरी (1 अप्रैल 1623 या 14 नवंबर 1606) को मिलता है।
+                मझौली के किसी भी राजा का पहला लिखित उल्लेख
+                <strong>
+                  <em> तुजुक-ए-जहाँगीरी &nbsp;</em> 
+                </strong>
+                 में मिलता है, जहाँ राजा नाथ मल का दो बार उल्लेख हुआ है — दोनों
+                के बीच दस वर्षों का अंतर है। पहला उल्लेख दूसरी जमादि (22वीं
+                तारीख) के दिनांक (14 अक्टूबर, 1606) का है, और दूसरा अमुर्दाद की
+                5वीं तारीख (25 जुलाई, 1615) का है।
               </p>
               <p className="font-serif">
-                पहला उल्लेख <strong>अज़ीज़ कोका का उल्लेखनीय पत्र</strong>{" "}
+                पहला उल्लेख
+                <strong> अज़ीज़ कोका का उल्लेखनीय पत्र </strong>
                 शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
               </p>
               <p className="font-serif mx-5 md:mx-10">
-                <em>&quot;मैंने नाथू मल(?), राजा मंझोली को 5,000 रुपये दिए।&quot;</em>
+                <em>"मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये दिए।"</em>
               </p>
               <p className="font-serif mt-4">
-                दूसरा उल्लेख <strong>हिंदू राजा बना मुसलमान</strong> शीर्षक वाले
-                पृष्ठ पर मिलता है, जहाँ लिखा है:
+                दूसरा उल्लेख
+                <strong> हिंदू राजा मुसलमान बना </strong>
+                शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
               </p>
               <p className="font-serif mx-5 md:mx-10">
                 <em>
-                  &quot;5वें अमुर्दाद को राजा नथमल की मनसबदारी, जो 1,500 व्यक्तिगत और
-                  1,100 घुड़सवार थी, उसमें 500 व्यक्तिगत और 100 घुड़सवार की
-                  वृद्धि की गई।&quot;
+                  "5वीं अमुर्दाद को, राजा नत्थमल की मनसबदारी जो 1,500 व्यक्तिगत
+                  और 1,100 घुड़सवार थी, उसमें 500 व्यक्तिगत और 100 घुड़सवार की
+                  वृद्धि की गई।"
                 </em>
               </p>
             </div>

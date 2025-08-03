@@ -1,129 +1,139 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
+import ImageModal from "../ImageModel";
 
 const familyData = {
-  name: "Babu Roop Mall",
+  name: "Raja Raghuvansh Mall",
+  isExtra: "(63 generations - Majhauli Raj)",
   isKing: true,
   children: [
     {
-      name: "Rai Hom Mall",
-      isExtra: "(Kala Kankar)",
+      name: "Babu Roop Mall",
+      isExtra: "(Raja Prithvi Mall?)",
       isKing: true,
       children: [
         {
-          name: "Rai Purandar Mall",
+          name: "Rai Hom Mall",
+          isExtra: "(Kala Kankar)",
           isKing: true,
           children: [
             {
-              name: "Rai Gopal Mall",
+              name: "Rai Purandar Mall",
               isKing: true,
               children: [
                 {
-                  name: "Rai Radho",
-                },
-                {
-                  name: "Babu Ram",
+                  name: "Rai Gopal Mall",
                   isKing: true,
                   children: [
                     {
-                      name: "Rai Askaran",
+                      name: "Rai Radho",
+                    },
+                    {
+                      name: "Babu Ram",
                       isKing: true,
                       children: [
                         {
-                          name: "Rudra Pratap",
+                          name: "Rai Askaran",
                           isKing: true,
                           children: [
                             {
-                              name: "Todal(Todar Mall)",
+                              name: "Rudra Pratap",
                               isKing: true,
                               children: [
                                 {
-                                  name: "Dharu Shah",
+                                  name: "Todal(Todar Mall)",
                                   isKing: true,
                                   children: [
                                     {
-                                      name: "Barsal Rai",
+                                      name: "Dharu Shah",
                                       isKing: true,
                                       children: [
                                         {
-                                          name: "Rai Jai Singh",
+                                          name: "Barsal Rai",
                                           isKing: true,
                                           children: [
                                             {
-                                              name: "Rai Shyam Singh",
+                                              name: "Rai Jai Singh",
                                               isKing: true,
                                               children: [
                                                 {
-                                                  name: "Rai Sangram Singh",
-                                                },
-                                                {
-                                                  name: "Mau Singh",
+                                                  name: "Rai Shyam Singh",
                                                   isKing: true,
                                                   children: [
                                                     {
-                                                      name: "Rai Kamal Singh",
+                                                      name: "Rai Sangram Singh",
+                                                    },
+                                                    {
+                                                      name: "Mau Singh",
                                                       isKing: true,
                                                       children: [
                                                         {
-                                                          name: "Lal Balwant Singh",
+                                                          name: "Rai Kamal Singh",
                                                           isKing: true,
                                                           children: [
                                                             {
-                                                              name: "Lal Bairi Sal",
+                                                              name: "Lal Balwant Singh",
                                                               isKing: true,
                                                               children: [
                                                                 {
-                                                                  name: "Rai Hanumant Singh",
+                                                                  name: "Lal Bairi Sal",
                                                                   isKing: true,
                                                                   children: [
                                                                     {
-                                                                      name: "Laal Pratap Singh",
+                                                                      name: "Rai Hanumant Singh",
                                                                       isKing: true,
                                                                       children:
                                                                         [
                                                                           {
-                                                                            name: "Raja Rampal Singh",
+                                                                            name: "Laal Pratap Singh",
                                                                             isKing: true,
                                                                             children:
                                                                               [
                                                                                 {
-                                                                                  name: "Raja Ramesh Singh",
+                                                                                  name: "Raja Rampal Singh",
                                                                                   isKing: true,
                                                                                   children:
                                                                                     [
                                                                                       {
-                                                                                        name: "Raja AVADESH SINGH",
+                                                                                        name: "Raja Ramesh Singh",
                                                                                         isKing: true,
                                                                                         children:
                                                                                           [
                                                                                             {
-                                                                                              name: "Raja DINESH SINGH",
-                                                                                              isExtra:
-                                                                                                "(Former Foreign Minister)",
+                                                                                              name: "Raja AVADESH SINGH",
                                                                                               isKing: true,
                                                                                               children:
-                                                                                                [],
+                                                                                                [
+                                                                                                  {
+                                                                                                    name: "Raja DINESH SINGH",
+                                                                                                    isExtra:
+                                                                                                      "(Former Foreign Minister)",
+                                                                                                    isKing: true,
+                                                                                                    children:
+                                                                                                      [],
+                                                                                                  },
+                                                                                                ],
+                                                                                            },
+                                                                                            {
+                                                                                              name: "Brijesh Singh",
+                                                                                            },
+                                                                                            {
+                                                                                              name: "Suresh Singh",
                                                                                             },
                                                                                           ],
-                                                                                      },
-                                                                                      {
-                                                                                        name: "Brijesh Singh",
-                                                                                      },
-                                                                                      {
-                                                                                        name: "Suresh Singh",
                                                                                       },
                                                                                     ],
                                                                                 },
                                                                               ],
                                                                           },
+                                                                          {
+                                                                            name: "Lakshman Singh",
+                                                                          },
                                                                         ],
-                                                                    },
-                                                                    {
-                                                                      name: "Lakshman Singh",
                                                                     },
                                                                   ],
                                                                 },
@@ -147,19 +157,19 @@ const familyData = {
                             },
                           ],
                         },
+                        {
+                          name: "Rai Kashi",
+                        },
+                        {
+                          name: "Rai Khemkaran",
+                        },
                       ],
                     },
                     {
-                      name: "Rai Kashi",
-                    },
-                    {
-                      name: "Rai Khemkaran",
+                      name: "Rai Rajneesh",
+                      children: [],
                     },
                   ],
-                },
-                {
-                  name: "Rai Rajneesh",
-                  children: [],
                 },
               ],
             },
@@ -171,124 +181,133 @@ const familyData = {
 };
 
 const familyDataHindi = {
-  name: "बाबू रूप मल्ल",
+  name: "राजा रघुवंश मल्ल",
+  isExtra: "(63 पीढ़ी - मझौली राज)",
   isKing: true,
   children: [
     {
-      name: "राय होम मल्ल",
-      isExtra: "(कलाकांकर)",
+      name: "बाबू रूप मल्ल",
+      isExtra: "(राजा पृथ्वी मल्ल?)",
       isKing: true,
       children: [
         {
-          name: "राय पुरंदर मल्ल",
+          name: "राय होम मल्ल",
+          isExtra: "(कलाकांकर)",
           isKing: true,
           children: [
             {
-              name: "राय गोपाल मल्ल",
+              name: "राय पुरंदर मल्ल",
               isKing: true,
               children: [
                 {
-                  name: "राय राधो",
-                },
-                {
-                  name: "बाबू राम",
+                  name: "राय गोपाल मल्ल",
                   isKing: true,
                   children: [
                     {
-                      name: "राय अस्करण",
+                      name: "राय राधो",
+                    },
+                    {
+                      name: "बाबू राम",
                       isKing: true,
                       children: [
                         {
-                          name: "रुद्र प्रताप",
+                          name: "राय अस्करण",
                           isKing: true,
                           children: [
                             {
-                              name: "तोड़ल (टोडर मल्ल)",
+                              name: "रुद्र प्रताप",
                               isKing: true,
                               children: [
                                 {
-                                  name: "धरु शाह",
+                                  name: "तोड़ल (टोडर मल्ल)",
                                   isKing: true,
                                   children: [
                                     {
-                                      name: "बरसाल राय",
+                                      name: "धरु शाह",
                                       isKing: true,
                                       children: [
                                         {
-                                          name: "राय जय सिंह",
+                                          name: "बरसाल राय",
                                           isKing: true,
                                           children: [
                                             {
-                                              name: "राय श्याम सिंह",
+                                              name: "राय जय सिंह",
                                               isKing: true,
                                               children: [
                                                 {
-                                                  name: "राय संग्राम सिंह",
-                                                },
-                                                {
-                                                  name: "मऊ सिंह",
+                                                  name: "राय श्याम सिंह",
                                                   isKing: true,
                                                   children: [
                                                     {
-                                                      name: "राय कमल सिंह",
+                                                      name: "राय संग्राम सिंह",
+                                                    },
+                                                    {
+                                                      name: "मऊ सिंह",
                                                       isKing: true,
                                                       children: [
                                                         {
-                                                          name: "लाल बलवंत सिंह",
+                                                          name: "राय कमल सिंह",
                                                           isKing: true,
                                                           children: [
                                                             {
-                                                              name: "लाल बैरी साल",
+                                                              name: "लाल बलवंत सिंह",
                                                               isKing: true,
                                                               children: [
                                                                 {
-                                                                  name: "राय हनुमंत सिंह",
+                                                                  name: "लाल बैरी साल",
                                                                   isKing: true,
                                                                   children: [
                                                                     {
-                                                                      name: "लाल प्रताप सिंह",
+                                                                      name: "राय हनुमंत सिंह",
                                                                       isKing: true,
                                                                       children:
                                                                         [
                                                                           {
-                                                                            name: "राजा रामपाल सिंह",
+                                                                            name: "लाल प्रताप सिंह",
                                                                             isKing: true,
                                                                             children:
                                                                               [
                                                                                 {
-                                                                                  name: "राजा रमेश सिंह",
+                                                                                  name: "राजा रामपाल सिंह",
                                                                                   isKing: true,
                                                                                   children:
                                                                                     [
                                                                                       {
-                                                                                        name: "राजा अवधेश सिंह",
+                                                                                        name: "राजा रमेश सिंह",
                                                                                         isKing: true,
                                                                                         children:
                                                                                           [
                                                                                             {
-                                                                                              name: "राजा दिनेश सिंह",
-                                                                                              isExtra:
-                                                                                                "(पूर्व विदेश मंत्री)",
+                                                                                              name: "राजा अवधेश सिंह",
                                                                                               isKing: true,
                                                                                               children:
-                                                                                                [],
+                                                                                                [
+                                                                                                  {
+                                                                                                    name: "राजा दिनेश सिंह",
+                                                                                                    isExtra:
+                                                                                                      "(पूर्व विदेश मंत्री)",
+                                                                                                    isKing: true,
+                                                                                                    children:
+                                                                                                      [],
+                                                                                                  },
+                                                                                                ],
+                                                                                            },
+                                                                                            {
+                                                                                              name: "बृजेश सिंह",
+                                                                                            },
+                                                                                            {
+                                                                                              name: "सुरेश सिंह",
                                                                                             },
                                                                                           ],
-                                                                                      },
-                                                                                      {
-                                                                                        name: "बृजेश सिंह",
-                                                                                      },
-                                                                                      {
-                                                                                        name: "सुरेश सिंह",
                                                                                       },
                                                                                     ],
                                                                                 },
                                                                               ],
                                                                           },
+                                                                          {
+                                                                            name: "लक्ष्मण सिंह",
+                                                                          },
                                                                         ],
-                                                                    },
-                                                                    {
-                                                                      name: "लक्ष्मण सिंह",
                                                                     },
                                                                   ],
                                                                 },
@@ -312,19 +331,19 @@ const familyDataHindi = {
                             },
                           ],
                         },
+                        {
+                          name: "राय काशी",
+                        },
+                        {
+                          name: "राय खेमकरन",
+                        },
                       ],
                     },
                     {
-                      name: "राय काशी",
-                    },
-                    {
-                      name: "राय खेमकरन",
+                      name: "राय रजनीश",
+                      children: [],
                     },
                   ],
-                },
-                {
-                  name: "राय रजनीश",
-                  children: [],
                 },
               ],
             },
@@ -337,6 +356,13 @@ const familyDataHindi = {
 
 export default function KalakankarEstateDetails() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
   return (
     <div>
       <Banner
@@ -350,10 +376,17 @@ export default function KalakankarEstateDetails() {
           <div className="md:col-span-1 ">
             <Image
               src="/assets/img/kalakankar/kalakankar1.jpeg"
-              alt="majhauli-img"
+              alt="kalakankar-img"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg border-3 border-gray-300"
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+              onClick={() =>
+                openModal({
+                  url: "/assets/img/kalakankar/kalakankar1.jpeg",
+                  estate: "Kalakankar Fort",
+                  estateHindi: "कलाकांकर किला",
+                })
+              }
             />
             <div className="flex items-center justify-center">
               <h2>
@@ -376,9 +409,9 @@ export default function KalakankarEstateDetails() {
           {language === "english" ? (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                The estate was also known as Rampur Dharupur. The founder of the
-                family was Raja Hom Mall, a younger son of Raja Prithvi Mall of
-                Majhauli in Gorakhpur.
+                The estate was also known as <strong>Rampur Dharupur</strong>.
+                The founder of the family was Raja Hom Mall, a younger son of
+                Babu Roop Mall(Raja Prithvi Mall?) of Majhauli in Gorakhpur.
               </p>
               <p className="font-serif"></p>
               <p className="font-serif"></p>
@@ -386,9 +419,9 @@ export default function KalakankarEstateDetails() {
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                यह रियासत रामपुर धरुपुर के नाम से भी जानी जाती थी। इस परिवार के
-                संस्थापक राजा होम मल्ल थे, जो गोरखपुर के मझौली के राजा पृथ्वी
-                मल्ल के छोटे पुत्र थे।
+                यह रियासत <strong>रामपुर धरुपुर</strong> के नाम से भी जानी जाती थी। इस परिवार के
+                संस्थापक राजा होम मल्ल थे, जो गोरखपुर के मझौली के बाबू रूप मल्ल
+                (राजा पृथ्वी मल्ल?) के छोटे पुत्र थे।
               </p>
               <p className="font-serif"></p>
               <p className="font-serif"></p>
@@ -400,6 +433,12 @@ export default function KalakankarEstateDetails() {
           familyData={language === "english" ? familyData : familyDataHindi}
         />
       </main>
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }

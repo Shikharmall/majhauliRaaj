@@ -1,10 +1,17 @@
 import LanguageContext from "@/context/languageContext";
 import Image from "next/image";
 import Link from "next/link";
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import ImageModal from "./ImageModel";
 
 export default function AboutSection() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
   return (
     <section className="py-12 bg-[#f472172d] my-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
@@ -18,7 +25,10 @@ export default function AboutSection() {
             alt="majhauli-raj"
             width={500} // full HD width
             height={600} // adjust height accordingly
-            className="rounded-md shadow-2xl"
+            className="rounded-md shadow-2xl cursor-pointer"
+            onClick={() =>
+              openModal({ url: "/assets/img/majhauli/majhauliraj7.jpeg" })
+            }
           />
         </div>
         <div
@@ -58,6 +68,13 @@ export default function AboutSection() {
           </Link>
         </div>
       </div>
+
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </section>
   );
 }

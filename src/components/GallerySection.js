@@ -58,10 +58,7 @@ export default function GallerySection() {
       king: "Raja Pratap Mall",
       kingHindi: "राजा प्रताप मल्ल",
       images: [
-        "/assets/img/madhuban/madhuban1.jpg",
-        "/assets/img/madhuban/madhuban1.jpg",
-        "/assets/img/madhuban/madhuban1.jpg",
-        "/assets/img/madhuban/madhuban1.jpg",
+        "/assets/img/noimage.jpeg",
       ],
     },
     {

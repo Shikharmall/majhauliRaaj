@@ -5,6 +5,7 @@ import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
 import ImageModal from "../ImageModel";
+import myLoader from "../../utils/myLoader";
 
 const familyData = {
   name: "Raja BHAWANI SINGH",
@@ -227,6 +228,7 @@ export default function BhingaEstateDetails() {
               alt="majhauli-img"
               width={600}
               height={400}
+              loader={myLoader}
               className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
               onClick={() =>
                 openModal({

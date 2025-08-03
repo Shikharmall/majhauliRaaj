@@ -1,5 +1,6 @@
 "use client";
 import LanguageContext from "@/context/languageContext";
+import myLoader from "@/utils/myLoader";
 import Image from "next/image";
 import { useContext, useEffect } from "react";
 
@@ -43,6 +44,7 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
           alt="Full Image"
           fill
           className="object-contain rounded-md"
+          loader={myLoader}
         />
 
         {/* Label */}

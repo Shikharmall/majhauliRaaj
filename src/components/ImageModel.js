@@ -45,7 +45,6 @@ export default function ImageModal({ isOpen, imageSrc, onClose }) {
           fill
           className="object-contain rounded-md"
           loader={myLoader}
-          loading="lazy"
         />
 
         {/* Label */}

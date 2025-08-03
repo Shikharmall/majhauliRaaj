@@ -17,99 +17,100 @@ const familyData = {
       isKing: true,
       children: [
         {
-          name: "Rai Hom Mall",
-          isExtra: "(Kala Kankar)",
+          name: "Rai Hom Mall (1)",
+          isExtra: "( Est. Kalakankar Estate)",
           isKing: true,
           children: [
             {
-              name: "Rai Purandar Mall",
+              name: "Rai Purandar Mall (2)",
               isKing: true,
               children: [
                 {
-                  name: "Rai Gopal Mall",
+                  name: "Rai Gopal Mall (3)",
                   isKing: true,
                   children: [
                     {
                       name: "Rai Radho",
                     },
                     {
-                      name: "Babu Ram",
+                      name: "Babu Ram (4)",
                       isKing: true,
                       children: [
                         {
-                          name: "Rai Askaran",
+                          name: "Rai Askaran (5)",
                           isKing: true,
                           children: [
                             {
-                              name: "Rudra Pratap",
+                              name: "Rudra Pratap (6)",
                               isKing: true,
                               children: [
                                 {
-                                  name: "Todal(Todar Mall)",
+                                  name: "Todal Mall (7)",
+                                  isExtra: "(Todar Mall)",
                                   isKing: true,
                                   children: [
                                     {
-                                      name: "Dharu Shah",
+                                      name: "Dharu Shah (8)",
                                       isKing: true,
                                       children: [
                                         {
-                                          name: "Barsal Rai",
+                                          name: "Barsal Rai (9)",
                                           isKing: true,
                                           children: [
                                             {
-                                              name: "Rai Jai Singh",
+                                              name: "Rai Jai Singh (10)",
                                               isKing: true,
                                               children: [
                                                 {
-                                                  name: "Rai Shyam Singh",
+                                                  name: "Rai Shyam Singh (11)",
                                                   isKing: true,
                                                   children: [
                                                     {
                                                       name: "Rai Sangram Singh",
                                                     },
                                                     {
-                                                      name: "Mau Singh",
+                                                      name: "Mau Singh (12)",
                                                       isKing: true,
                                                       children: [
                                                         {
-                                                          name: "Rai Kamal Singh",
+                                                          name: "Rai Kamal Singh (13)",
                                                           isKing: true,
                                                           children: [
                                                             {
-                                                              name: "Lal Balwant Singh",
+                                                              name: "Lal Balwant Singh (14)",
                                                               isKing: true,
                                                               children: [
                                                                 {
-                                                                  name: "Lal Bairi Sal",
+                                                                  name: "Lal Bairi Sal (15)",
                                                                   isKing: true,
                                                                   children: [
                                                                     {
-                                                                      name: "Rai Hanumant Singh",
+                                                                      name: "Rai Hanumant Singh (16)",
                                                                       isKing: true,
                                                                       children:
                                                                         [
                                                                           {
-                                                                            name: "Laal Pratap Singh",
+                                                                            name: "Laal Pratap Singh (17)",
                                                                             isKing: true,
                                                                             children:
                                                                               [
                                                                                 {
-                                                                                  name: "Raja Rampal Singh",
+                                                                                  name: "Raja Rampal Singh (18)",
                                                                                   isKing: true,
                                                                                   children:
                                                                                     [
                                                                                       {
-                                                                                        name: "Raja Ramesh Singh",
+                                                                                        name: "Raja Ramesh Singh (19)",
                                                                                         isKing: true,
                                                                                         children:
                                                                                           [
                                                                                             {
-                                                                                              name: "Raja AVADESH SINGH",
+                                                                                              name: "Raja AVADESH SINGH (20)",
                                                                                               isKing: true,
                                                                                               children:
                                                                                                 [
                                                                                                   {
-                                                                                                    name: "Raja DINESH SINGH",
+                                                                                                    name: "Raja DINESH SINGH (21)",
                                                                                                     isExtra:
                                                                                                       "(Former Foreign Minister)",
                                                                                                     isKing: true,
@@ -409,24 +410,67 @@ export default function KalakankarEstateDetails() {
           {language === "english" ? (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                The estate was also known as <strong>Rampur Dharupur</strong>.
-                It lies on the banks of the Ganges River. The founder of the
-                family was Raja Hom Mall, a younger son of Babu Roop Mall(Raja
-                Prithvi Mall?) of Majhauli in Gorakhpur.
+                The Kalakankar Estate, historically also known as
+                <strong> Rampur Dharupur</strong>, was a significant taluqdari
+                estate located on the banks of the sacred Ganges River in
+                present-day Pratapgarh district, Uttar Pradesh. The estate
+                played a pivotal role not just in regional politics but also in
+                the broader cultural and spiritual life of Awadh. Its scenic
+                location by the river enhanced its prominence, both
+                strategically and spiritually, as riverside estates were often
+                considered auspicious and vital for trade and pilgrimages.
               </p>
-              <p className="font-serif"></p>
-              <p className="font-serif"></p>
+              <p className="font-serif">
+                The founding of the Kalakankar royal lineage is traced back to
+                <strong> Raja Hom Mall</strong>, a younger son of
+                <strong> Babu Roop Mall </strong> (Raja Prithvi Mall?) of
+                Majhauli, a powerful Bisen Rajput king in the Gorakhpur region.
+                This lineage indicates a direct connection between the Majhauli
+                Raj of eastern Uttar Pradesh and the establishment of
+                Kalakankar, reinforcing the widespread influence of the Bisen
+                dynasty across the eastern and central Gangetic plain.
+              </p>
+              <p className="font-serif">
+                The movement of Raja Hom Mall from Majhauli (in Gorakhpur) to
+                the fertile lands of Pratapgarh was likely influenced by
+                political expansion, settlement rights, or internal succession
+                divisions common in Rajput clans. Over time, his descendants
+                solidified their rule, gained recognition under both regional
+                Nawabs and eventually the British Raj, and laid the groundwork
+                for what would later become the influential Kalakankar Raj.
+              </p>
             </div>
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                यह रियासत <strong>रामपुर धरुपुर</strong> के नाम से भी जानी जाती
-                थी। यह गंगा नदी के तट पर बसा हुआ है। इस परिवार के संस्थापक राजा
-                होम मल्ल थे, जो गोरखपुर के मझौली के बाबू रूप मल्ल (राजा पृथ्वी
-                मल्ल?) के छोटे पुत्र थे।
+                <strong>कलाकंकर एस्टेट</strong>, जिसे ऐतिहासिक रूप से{" "}
+                <strong>रामपुर धरुपुर</strong> के नाम से भी जाना जाता है, एक
+                प्रमुख तालुकेदारी रियासत थी जो वर्तमान उत्तर प्रदेश के प्रतापगढ़
+                ज़िले में पवित्र गंगा नदी के तट पर स्थित थी। यह रियासत न केवल
+                क्षेत्रीय राजनीति में, बल्कि अवध की सांस्कृतिक और आध्यात्मिक
+                जीवन में भी एक महत्वपूर्ण भूमिका निभाती थी। नदी के किनारे इसकी
+                स्थिति ने इसे रणनीतिक रूप से और धार्मिक दृष्टि से महत्वपूर्ण बना
+                दिया था, क्योंकि नदी किनारे स्थित रियासतों को प्राचीन काल से ही
+                शुभ, व्यापारिक और तीर्थ यात्रा के लिए उपयुक्त माना जाता था।
               </p>
-              <p className="font-serif"></p>
-              <p className="font-serif"></p>
+              <p className="font-serif">
+                कलाकंकर राजवंश की स्थापना का श्रेय
+                <strong> राजा होम मल्ल</strong> को जाता है, जो
+                <strong> बाबू रूप मल्ल</strong> (राजा पृथ्वी मल्ल?) के छोटे
+                पुत्र थे। बाबू रूप मल्ल गोरखपुर क्षेत्र की शक्तिशाली
+                <strong> बिसेन राजपूत</strong> वंश परंपरा से संबंध रखते थे। यह
+                वंशावली पूर्वी उत्तर प्रदेश के मझौली राज और कलाकंकर की स्थापना
+                के बीच प्रत्यक्ष संबंध को दर्शाती है, और बिसेन वंश के पूर्वी व
+                मध्य गंगा मैदान में फैले व्यापक प्रभाव को प्रमाणित करती है।
+              </p>
+              <p className="font-serif">
+                राजा होम मल्ल का गोरखपुर के मझौली से प्रतापगढ़ की उपजाऊ भूमि की
+                ओर आगमन संभवतः राजनीतिक विस्तार, बंटवारे या राजपूत परिवारों में
+                सामान्य रूप से होने वाले उत्तराधिकार विवादों के कारण हुआ होगा।
+                समय के साथ, उनके वंशजों ने अपने शासन को मजबूत किया, क्षेत्रीय
+                नवाबों तथा अंततः ब्रिटिश राज से मान्यता प्राप्त की, और इस प्रकार
+                <strong> कलाकंकर राज्य</strong> की प्रभावशाली नींव रखी।
+              </p>
             </div>
           )}
         </div>
@@ -507,15 +551,15 @@ export default function KalakankarEstateDetails() {
                 <p className="font-serif mx-5 md:mx-10">
                   <strong>
                     <em>
-                      &quot;साहिब, तुम्हारे देशवासियों ने इस देश में आकर हमारे राजा
-                      को बेदखल कर दिया। तुमने अपने अफसरों को ज़िलों में भेजा और
-                      जमींदारियों की जाँच करवाई। एक ही झटके में तुमने मुझसे वे
-                      ज़मीने छीन लीं जो अनादिकाल से मेरे परिवार के पास थीं।
-                      मैंने सब सहन किया। अचानक तुम पर विपत्ति आई। देश की जनता
-                      तुम्हारे विरुद्ध उठ खड़ी हुई। तुम उस आदमी के पास आए जिसे
-                      तुमने लूटा था। मैंने तुम्हें बचाया। लेकिन अब, अब मैं अपने
-                      अनुयायियों के साथ लखनऊ की ओर कूच कर रहा हूँ, ताकि तुम्हें
-                      इस देश से निकाल सकूँ।&quot;
+                      &quot;साहिब, तुम्हारे देशवासियों ने इस देश में आकर हमारे
+                      राजा को बेदखल कर दिया। तुमने अपने अफसरों को ज़िलों में
+                      भेजा और जमींदारियों की जाँच करवाई। एक ही झटके में तुमने
+                      मुझसे वे ज़मीने छीन लीं जो अनादिकाल से मेरे परिवार के पास
+                      थीं। मैंने सब सहन किया। अचानक तुम पर विपत्ति आई। देश की
+                      जनता तुम्हारे विरुद्ध उठ खड़ी हुई। तुम उस आदमी के पास आए
+                      जिसे तुमने लूटा था। मैंने तुम्हें बचाया। लेकिन अब, अब मैं
+                      अपने अनुयायियों के साथ लखनऊ की ओर कूच कर रहा हूँ, ताकि
+                      तुम्हें इस देश से निकाल सकूँ।&quot;
                     </em>
                   </strong>
                 </p>
@@ -526,12 +570,12 @@ export default function KalakankarEstateDetails() {
                 राजनीतिक आक्रोश झलकता है। इस चुनौतीपूर्ण घोषणा के बावजूद, राजा
                 हनुमंत सिंह ने अंततः ब्रिटिशों के विरुद्ध युद्ध नहीं किया।
                 उन्हें एक
-                <strong> &quot;सच्चे राजपूत&quot;</strong> के रूप में याद किया जाता है,
-                जिन्होंने ब्रिटिश अन्याय के बावजूद प्रत्यक्ष युद्ध में शामिल न
-                होकर संयम दिखाया। यह संभवतः व्यावहारिक सोच या ब्रिटिश शक्ति के
-                सामने रणनीतिक विवशता का परिणाम था। कई अन्य क्षेत्रीय नेताओं की
-                तरह, उनका शुरूआती सहयोग धीरे-धीरे मोहभंग में बदल गया, लेकिन यह
-                विरोध पूर्ण विद्रोह का रूप नहीं ले सका।
+                <strong> &quot;सच्चे राजपूत&quot;</strong> के रूप में याद किया
+                जाता है, जिन्होंने ब्रिटिश अन्याय के बावजूद प्रत्यक्ष युद्ध में
+                शामिल न होकर संयम दिखाया। यह संभवतः व्यावहारिक सोच या ब्रिटिश
+                शक्ति के सामने रणनीतिक विवशता का परिणाम था। कई अन्य क्षेत्रीय
+                नेताओं की तरह, उनका शुरूआती सहयोग धीरे-धीरे मोहभंग में बदल गया,
+                लेकिन यह विरोध पूर्ण विद्रोह का रूप नहीं ले सका।
               </p>
 
               <p className="font-serif mt-4">

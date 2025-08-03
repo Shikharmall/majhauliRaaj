@@ -1,9 +1,10 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
+import ImageModal from "../ImageModel";
 
 const familyData = {
   name: "Raja Rai Mall",
@@ -15,7 +16,7 @@ const familyData = {
       children: [
         {
           name: "Raja Hari Prasad Mall",
-          isExtra: "(Martyr - 1857&rsquo;s war)",
+          isExtra: "(Martyr - 1857's war)",
           isKing: true,
         },
       ],
@@ -43,6 +44,13 @@ const familyDataHindi = {
 
 export default function NarharpurEstateDetails() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
 
   return (
     <div>
@@ -60,7 +68,14 @@ export default function NarharpurEstateDetails() {
               alt="Narharpur Estate"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg border-3 border-gray-300"
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+              onClick={() =>
+                openModal({
+                  url: "/assets/img/narharpur/narharpur4.png",
+                  estate: "Ruins of Raja Narharpur's Haveli",
+                  estateHindi: "राजा नरहरपुर की हवेली के अवशेष",
+                })
+              }
             />
             <div className="flex items-center justify-center mt-2">
               <h2>
@@ -136,6 +151,13 @@ export default function NarharpurEstateDetails() {
           familyData={language === "english" ? familyData : familyDataHindi}
         />
       </main>
+
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }

@@ -1,9 +1,10 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
+import ImageModal from "../ImageModel";
 
 const familyData = {
   name: "Raja AJMAT SINGHJI (1)",
@@ -263,9 +264,15 @@ const familyDataHindi = {
   ],
 };
 
-
 export default function MankapurEstateDetails() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
   return (
     <div>
       <Banner
@@ -282,7 +289,14 @@ export default function MankapurEstateDetails() {
               alt="majhauli-img"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg border-3 border-gray-300"
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+              onClick={() =>
+                openModal({
+                  url: "/assets/img/mankapur/mankapur1.jpg",
+                  estate: "Gate of Mankapur Fort",
+                  estateHindi: "मनकापुर किले का प्रवेश द्वार",
+                })
+              }
             />
             <div className="flex items-center justify-center">
               <h2>
@@ -327,8 +341,17 @@ export default function MankapurEstateDetails() {
           )}
         </div>
 
-        <FamilyTreeStructure familyData={language==="english"?familyData:familyDataHindi} />
+        <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
+        />
       </main>
+
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }

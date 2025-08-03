@@ -1,9 +1,10 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
+import ImageModal from "../ImageModel";
 
 const familyData = {
   name: "Raja BHAWANI SINGH",
@@ -203,6 +204,13 @@ const familyDataHindi = {
 
 export default function BhingaEstateDetails() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
   return (
     <div>
       <Banner
@@ -219,7 +227,14 @@ export default function BhingaEstateDetails() {
               alt="majhauli-img"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg border-3 border-gray-300"
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+              onClick={() =>
+                openModal({
+                  url: "/assets/img/bhinga/bhinga1.jpg",
+                  estate: "Fort of Bhinga Estate",
+                  estateHindi: "भिंगा रियासत का किला",
+                })
+              }
             />
             <div className="flex items-center justify-center">
               <h2>
@@ -266,6 +281,13 @@ export default function BhingaEstateDetails() {
           familyData={language === "english" ? familyData : familyDataHindi}
         />
       </main>
+
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }

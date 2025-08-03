@@ -497,21 +497,19 @@ export default function KalakankarEstateDetails() {
                 on the eve of his departure, hoped for the Raja&apos;s support
                 in suppressing the rebellion, Hanumant Singh gave a powerful and
                 unforgettable reply:
-                <p className="font-serif mx-5 md:mx-10">
-                  <strong>
-                    <em>
-                      &quot;Sahib, your countrymen came into this country and
-                      drove out our king. You sent your officers round the
-                      districts to examine the titles to the estates. At one
-                      blow you took from me lands which from time immemorial had
-                      been in my family. I submitted. Suddenly misfortune fell
-                      upon you. The people of the land rose against you. You
-                      came to me whom you had despoiled. I have saved you. But
-                      now, now I march at the head of my retainers to Lakhnau to
-                      try and drive you from the country.&quot;
-                    </em>
-                  </strong>
-                </p>
+                <strong>
+                  <em>
+                    &quot;Sahib, your countrymen came into this country and
+                    drove out our king. You sent your officers round the
+                    districts to examine the titles to the estates. At one blow
+                    you took from me lands which from time immemorial had been
+                    in my family. I submitted. Suddenly misfortune fell upon
+                    you. The people of the land rose against you. You came to me
+                    whom you had despoiled. I have saved you. But now, now I
+                    march at the head of my retainers to Lakhnau to try and
+                    drive you from the country.&quot;
+                  </em>
+                </strong>
               </p>
               <p className="font-serif">
                 His words reflected the deep personal and political grievances

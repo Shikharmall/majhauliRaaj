@@ -120,17 +120,17 @@ export default function NarharpurEstateDetails() {
                 of his followers. Unlike neighboring estates that surrendered,
                 Narharpur chose resistance and sacrifice. Though his legacy is
                 still remembered locally—especially through the establishment of
-                a martyr's memorial at the site—formal recognition of the
-                estate's ruins and its significance in India's freedom struggle
-                remains limited. In 1857, Raja Hariprasad Mall of Chillupar
-                challenged British rule by seizing the supplies and weapons
-                being transported from the Indigo Factory (Neel Kothi) at
-                Doharighat. Enraged by this defiance, the British army launched
-                a brutal cannon attack on the Narharpur estate and its military
-                encampment, causing widespread devastation. In retaliation, Raja
-                Hariprasad Mall’s soldiers destroyed the Indigo Factory and
-                killed several British soldiers. Raja Hariprasad Mall was
-                martyred in this war of independence.
+                a martyr&apos;s memorial at the site—formal recognition of the
+                estate&apos;s ruins and its significance in India&apos;s freedom
+                struggle remains limited. In 1857, Raja Hariprasad Mall of
+                Chillupar challenged British rule by seizing the supplies and
+                weapons being transported from the Indigo Factory (Neel Kothi)
+                at Doharighat. Enraged by this defiance, the British army
+                launched a brutal cannon attack on the Narharpur estate and its
+                military encampment, causing widespread devastation. In
+                retaliation, Raja Hariprasad Mall’s soldiers destroyed the
+                Indigo Factory and killed several British soldiers. Raja
+                Hariprasad Mall was martyred in this war of independence.
               </p>
               <p>
                 Chillupar was a princely estate in the Gorakhpur district, and
@@ -147,49 +147,52 @@ export default function NarharpurEstateDetails() {
                 of these developments, they became furious. They attempted to
                 pressure Raja Hariprasad Mall into submission, but the Raja and
                 his soldiers responded fiercely. Raja Hariprasad Mall seized the
-                British government's arms and supplies being transported by boat
-                to Gorakhpur, posing an open and direct challenge to British
-                rule. Frustrated, the British officers attacked the Chillupar
-                estate. Raja Hariprasad Mall’s forces fought back fiercely,
-                killing hundreds of British soldiers. The infuriated British
-                army then turned their cannons—stationed at the Indigo
+                British government&apos;s arms and supplies being transported by
+                boat to Gorakhpur, posing an open and direct challenge to
+                British rule. Frustrated, the British officers attacked the
+                Chillupar estate. Raja Hariprasad Mall’s forces fought back
+                fiercely, killing hundreds of British soldiers. The infuriated
+                British army then turned their cannons—stationed at the Indigo
                 Factory—toward the Narharpur Fort and bombarded it, reducing it
                 to rubble. After this, the British forces also destroyed the
-                military camp at what is now known as "Muktipath" in
-                Bardahalgunj, which used to be Chillupar's military base. In
-                retaliation, Raja Hariprasad Mall’s forces launched a final
-                attack on the Indigo Factory, setting it ablaze and killing the
-                British troops stationed there. Raja Hariprasad Mall was
-                martyred along with thousands of his soldiers in this war of
-                independence. The site where the Raja’s military camp once stood
-                is now home to the Muktipath roadway.
+                military camp at what is now known as &quot;Muktipath&quot; in
+                Bardahalgunj, which used to be Chillupar&apos;s military base.
+                In retaliation, Raja Hariprasad Mall&apos;s forces launched a
+                final attack on the Indigo Factory, setting it ablaze and
+                killing the British troops stationed there. Raja Hariprasad Mall
+                was martyred along with thousands of his soldiers in this war of
+                independence. The site where the Raja&apos;s military camp once
+                stood is now home to the Muktipath roadway.
               </p>
               <p>
                 A martyr’s memorial has been built there in honor of the fallen
                 soldiers. However, the martyrdom site of Raja Hariprasad Mall
                 and the ruins of his fort are yet to receive the recognition and
-                respect they truly deserve.{" "}
-                <strong>Raja’s Stables in Bardahalgunj Police Station:</strong>{" "}
+                respect they truly deserve.
+                <strong>
+                  Raja&apos;s Stables in Bardahalgunj Police Station:
+                </strong>
                 The place where the Bardahalgunj police station now stands used
-                to be Raja Hariprasad Mall’s horse stable and elephant enclosure
-                (Hathisar). The Raja would travel by boat from his fort to this
-                location. After overseeing the stables, he would hold court in
-                what is now the Junior High School. He used to meet the local
-                people there, listen to their grievances, and resolve their
-                issues.{" "}
-                <strong>Historical Significance of Bardahalgunj Market:</strong>{" "}
+                to be Raja Hariprasad Mall&apos;s horse stable and elephant
+                enclosure (Hathisar). The Raja would travel by boat from his
+                fort to this location. After overseeing the stables, he would
+                hold court in what is now the Junior High School. He used to
+                meet the local people there, listen to their grievances, and
+                resolve their issues.
+                <strong>Historical Significance of Bardahalgunj Market:</strong>
                 The largest market in the Chillupar region, now known as
-                Bardahalgunj, was once called "Barhan Ganj." It was considered
-                the biggest market in the surrounding areas. Over time, the name
-                evolved and came to be known as Bardahalgunj.{" "}
-                <strong>Former Minister's Statement:</strong> A martyr's
-                memorial has been built at Muktipath with support from local
-                citizens. The mention of Raja Hariprasad Mall still stirs deep
-                patriotic emotions in the hearts of the people in this region.
-                However, the ruins of his fort and his martyrdom site have yet
-                to receive the full recognition they deserve. Efforts have
-                begun, and it is hoped that the government will take steps to
-                preserve and honor this important piece of history.
+                Bardahalgunj, was once called &quot;Barhan Ganj.&quot; It was
+                considered the biggest market in the surrounding areas. Over
+                time, the name evolved and came to be known as Bardahalgunj.
+                <strong>Former Minister&apos;s Statement:</strong> A
+                martyr&apos;s memorial has been built at Muktipath with support
+                from local citizens. The mention of Raja Hariprasad Mall still
+                stirs deep patriotic emotions in the hearts of the people in
+                this region. However, the ruins of his fort and his martyrdom
+                site have yet to receive the full recognition they deserve.
+                Efforts have begun, and it is hoped that the government will
+                take steps to preserve and honor this important piece of
+                history.
               </p>
             </div>
           ) : (
@@ -256,8 +259,8 @@ export default function NarharpurEstateDetails() {
                 वहां शहीद सैनिकों की स्मृति में एक शहीद स्मारक का निर्माण किया
                 गया है। हालांकि, राजा हरिप्रसाद मल्ल की शहादत स्थल और उनके किले
                 के खंडहरों को आज भी वह मान्यता और सम्मान नहीं मिला है, जिसके वे
-                हकदार हैं।{" "}
-                <strong>बरदहालगंज थाना परिसर में राजा के अस्तबल:</strong> जहां
+                हकदार हैं।
+                <strong> बरदहालगंज थाना परिसर में राजा के अस्तबल: </strong> जहां
                 आज बरदहालगंज पुलिस थाना स्थित है, वह स्थान पहले राजा हरिप्रसाद
                 मल्ल का घुड़साल और हाथीशाला (हाथी दरबार) हुआ करता था। राजा नाव
                 से अपने किले से वहां आते थे। अस्तबल का निरीक्षण करने के बाद वे

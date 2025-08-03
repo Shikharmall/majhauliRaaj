@@ -366,14 +366,18 @@ export default function MadhubanEstateDetails() {
               height={400}
               className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
               onClick={() =>
-                openModal({ url: "/assets/img/madhuban/madhuban1.jpg" })
+                openModal({
+                  url: "/assets/img/madhuban/madhuban1.jpg",
+                  estate: "Ruins of Raja Fateh Bahadur Mall's Haveli",
+                  estateHindi: "राजा फतेह बहादुर मल्ल की हवेली के अवशेष",
+                })
               }
             />
             <div className="flex items-center justify-center">
               <h2>
                 {language === "english"
                   ? "Ruins of Raja Fateh Bahadur Mall's Haveli"
-                  : "राजा फतेह बहादुर मल्ल की हवेली के अवशेष"}{" "}
+                  : "राजा फतेह बहादुर मल्ल की हवेली के अवशेष"}
               </h2>
             </div>
             <br />
@@ -462,7 +466,11 @@ export default function MadhubanEstateDetails() {
                   height={50}
                   className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
                   onClick={() =>
-                    openModal({ url: "/assets/img/majhauli/proof3.png" })
+                    openModal({
+                      url: "/assets/img/majhauli/proof3.png",
+                      // estate: "(Page 1)",
+                      // estateHindi: "(पृष्ठ 1)",
+                    })
                   }
                 />
                 <Image
@@ -472,7 +480,11 @@ export default function MadhubanEstateDetails() {
                   height={50}
                   className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
                   onClick={() =>
-                    openModal({ url: "/assets/img/majhauli/proof4.png" })
+                    openModal({
+                      url: "/assets/img/majhauli/proof4.png",
+                      // estate: "(Page 2)",
+                      // estateHindi: "(पृष्ठ 2)",
+                    })
                   }
                 />
               </div>
@@ -586,7 +598,12 @@ export default function MadhubanEstateDetails() {
                   height={50}
                   className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
                   onClick={() =>
-                    openModal({ url: "/assets/img/madhuban/letter.jpg" })
+                    openModal({
+                      url: "/assets/img/madhuban/letter.jpg",
+                      // estate: "Letter of Raja Awadesh Mall to Madhuban People",
+                      // estateHindi:
+                      //   "राजा अवधेश मल्ल का मधुबन की प्रजा के नाम पत्र।",
+                    })
                   }
                 />
               </div>

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useContext } from "react";
 export default function MoreSection() {
   const { language } = useContext(LanguageContext);
-  
+
   const items = [
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
@@ -56,7 +56,7 @@ export default function MoreSection() {
     {
       icon: <i className="fa-solid fa-location-dot text-3xl text-blue-600"></i>,
       title: "Bhinga Estate",
-      titleHindi: "भिनगा रियासत",
+      titleHindi: "भिंगा रियासत",
       description: "Raja Bhawani Singh",
       descriptionHindi: "राजा भवानी सिंह",
       src: "/assets/img/bhinga/bhinga_coa.png",

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import LanguageContext from "@/context/languageContext";
 import COLORS from "@/utils/color";
 import React, { useRef, useEffect, useContext } from "react";
@@ -91,6 +91,12 @@ export default function FamilyTreeStructure({ familyData }) {
           ></div>
         </div>
       </div>
+
+      <div className="flex items-center justify-end space-x-2">
+        <div className="w-5 h-5 border-2 border-[#FFD700] rounded-full"></div>
+        <span className="text-gray-800">King</span>
+      </div>
+
       <div
         ref={containerRef}
         className="min-h-screen p-6 bg-gray-100 overflow-auto my-5 rounded"

@@ -7,7 +7,8 @@ import LanguageContext from "@/context/languageContext";
 import ImageModal from "../ImageModel";
 
 const familyData = {
-  name: "Raja Prithvi Mall?",
+  name: "Raja Roop Mall",
+  isExtra: "(Raja Prithvi Mall?)",
   isKing: true,
   children: [
     {
@@ -23,57 +24,57 @@ const familyData = {
               isKing: true,
               children: [
                 {
-                  name: "Raja MAN SINGH",
+                  name: "Raja MAN SINGH (1)",
                   isKing: true,
                   children: [
                     {
-                      name: "Raja MAN SINGH",
+                      name: "Raja MAN SINGH (2)",
                       isKing: true,
                       children: [
                         {
-                          name: "Raja LAKSHMAN SINGH",
+                          name: "Raja LAKSHMAN SINGH (3)",
                           isKing: true,
                           children: [
                             {
-                              name: "Raja NIRVAHAN SINGH",
+                              name: "Raja NIRVAHAN SINGH (4)",
                               isKing: true,
                               children: [
                                 {
-                                  name: "Raja AMAR SINGH",
+                                  name: "Raja AMAR SINGH (5)",
                                   isKing: true,
                                   children: [
                                     {
-                                      name: "Raja RAM SINGH",
+                                      name: "Raja RAM SINGH (6)",
                                       isKing: true,
                                       children: [
                                         {
-                                          name: "Raja Dutt Singh",
+                                          name: "Raja Dutt Singh (7)",
                                           isKing: true,
                                           children: [
                                             {
-                                              name: "Raja Udit Singh",
+                                              name: "Raja Udit Singh (8)",
                                               isKing: true,
                                               children: [
                                                 {
-                                                  name: "Raja Mangal Singh",
+                                                  name: "Raja Mangal Singh (9)",
                                                   isKing: true,
                                                   children: [
                                                     {
-                                                      name: "Raja Sheo Prasad Singh",
+                                                      name: "Raja Sheo Prasad Singh (10)",
                                                       isKing: true,
                                                       children: [
                                                         {
-                                                          name: "Raja Jai Singh",
+                                                          name: "Raja Jai Singh (11)",
                                                           isKing: true,
                                                           children: [
                                                             {
-                                                              name: "Raja GUMAN SINGH",
+                                                              name: "Raja GUMAN SINGH (12)",
                                                               isExtra:
                                                                 "(I'st son of KANWAR(NAME UNKNOWN) SINGH)",
                                                               isKing: true,
                                                               children: [
                                                                 {
-                                                                  name: "Raja DEVI BAKSH SINGH",
+                                                                  name: "Raja DEVI BAKSH SINGH (13)",
                                                                   isKing: true,
                                                                   isExtra: `(Son of II'nd son of KANWAR(NAME UNKNOWN) SINGH)`,
                                                                   children: [
@@ -393,6 +394,177 @@ export default function GondaEstateDetails() {
               <p className="font-serif"></p>
             </div>
           )}
+        </div>
+
+        {/* 1857-Revolt */}
+
+        <div className="flex items-center gap-4 my-5">
+          <div className="h-px flex-grow bg-gray-300"></div>
+          <span className="text-gray-500 text-2xl whitespace-nowrap">
+            {language === "english" ? "1857 Revolt" : "1857 का विद्रोह"}
+          </span>
+          <div className="h-px flex-grow bg-gray-300"></div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 my-3">
+          {/* Bio */}
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                <strong>Raja Hanumant Singh of Dharupur (Kalakankar) </strong>
+                initially extended protection to British fugitives from Salone
+                during the revolt of 1857, sheltering them in his fort,
+                including Deputy Commissioner Captain Barrow. But when Barrow,
+                on the eve of his departure, hoped for the Raja&apos;s support
+                in suppressing the rebellion, Hanumant Singh gave a powerful and
+                unforgettable reply:
+              </p>
+              <p className="m-10">
+                <strong>
+                  <em>
+                    &quot;Sahib, your countrymen came into this country and
+                    drove out our king. You sent your officers round the
+                    districts to examine the titles to the estates. At one blow
+                    you took from me lands which from time immemorial had been
+                    in my family. I submitted. Suddenly misfortune fell upon
+                    you. The people of the land rose against you. You came to me
+                    whom you had despoiled. I have saved you. But now, now I
+                    march at the head of my retainers to Lakhnau to try and
+                    drive you from the country.&quot;
+                  </em>
+                </strong>
+              </p>
+              <p className="font-serif">
+                His words reflected the deep personal and political grievances
+                he held against British rule. Despite this defiant stance,
+                Hanumant Singh did not ultimately join the battlefield against
+                the British. He is remembered as a
+                <strong> &quot;true-hearted Rajput&quot;</strong> who, although
+                embittered by British policies and dispossession, chose not to
+                fight his new overlords. This restraint may have stemmed from
+                caution or strategic calculation in the face of overwhelming
+                British power. Like many regional leaders of the time, his
+                initial cooperation gave way to disillusionment, yet without
+                full transformation into armed resistance.
+              </p>
+              <p className="font-serif mt-4">
+                Hanumant Singh belonged to a class of traditional nobles whose
+                motivations were complex—rooted in loss of estate, prestige, and
+                autonomy. Along with figures like Rana Beni Madho and Muhammad
+                Hassan, he resented British dominance but did not fully commit
+                to the collective cause of restoring Awadh or resisting colonial
+                control. He notably did not rally behind Begum Hazrat Mahal, who
+                was leading the charge in Lucknow, nor did he place his
+                resources at her disposal. His story is emblematic of how many
+                local leaders joined or supported the revolt more out of
+                personal grievance than a broader nationalistic vision.
+              </p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                <strong>धरुपुर (कलाकांकर) के राजा हनुमंत सिंह</strong> ने 1857
+                के विद्रोह के दौरान सलोन से भागे हुए ब्रिटिश अधिकारियों को अपने
+                किले में शरण दी थी, जिनमें डिप्टी कमिश्नर कैप्टन बैरो भी शामिल
+                थे। लेकिन जब कैप्टन बैरो ने विद्रोह को दबाने में राजा से सहयोग
+                की आशा की, तो राजा हनुमंत सिंह ने एक साहसिक और ऐतिहासिक उत्तर
+                दिया:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <strong>
+                  <em>
+                    &quot;साहिब, तुम्हारे देशवासियों ने इस देश में आकर हमारे
+                    राजा को बेदखल कर दिया। तुमने अपने अफसरों को ज़िलों में भेजा
+                    और जमींदारियों की जाँच करवाई। एक ही झटके में तुमने मुझसे वे
+                    ज़मीने छीन लीं जो अनादिकाल से मेरे परिवार के पास थीं। मैंने
+                    सब सहन किया। अचानक तुम पर विपत्ति आई। देश की जनता तुम्हारे
+                    विरुद्ध उठ खड़ी हुई। तुम उस आदमी के पास आए जिसे तुमने लूटा
+                    था। मैंने तुम्हें बचाया। लेकिन अब, अब मैं अपने अनुयायियों के
+                    साथ लखनऊ की ओर कूच कर रहा हूँ, ताकि तुम्हें इस देश से निकाल
+                    सकूँ।&quot;
+                  </em>
+                </strong>
+              </p>
+              <p className="font-serif">
+                उनके इन शब्दों में ब्रिटिश शासन के प्रति गहरा व्यक्तिगत और
+                राजनीतिक आक्रोश झलकता है। इस चुनौतीपूर्ण घोषणा के बावजूद, राजा
+                हनुमंत सिंह ने अंततः ब्रिटिशों के विरुद्ध युद्ध नहीं किया।
+                उन्हें एक
+                <strong> &quot;सच्चे राजपूत&quot;</strong> के रूप में याद किया
+                जाता है, जिन्होंने ब्रिटिश अन्याय के बावजूद प्रत्यक्ष युद्ध में
+                शामिल न होकर संयम दिखाया। यह संभवतः व्यावहारिक सोच या ब्रिटिश
+                शक्ति के सामने रणनीतिक विवशता का परिणाम था। कई अन्य क्षेत्रीय
+                नेताओं की तरह, उनका शुरूआती सहयोग धीरे-धीरे मोहभंग में बदल गया,
+                लेकिन यह विरोध पूर्ण विद्रोह का रूप नहीं ले सका।
+              </p>
+              <p className="font-serif mt-4">
+                हनुमंत सिंह उन पारंपरिक राजाओं की श्रेणी में आते हैं जिनके
+                उद्देश्यों में व्यक्तिगत क्षति, प्रतिष्ठा की हानि और स्वायत्तता
+                की रक्षा प्रमुख थी। राणा बेनी माधव और मुहम्मद हसन जैसे अन्य
+                नेताओं की तरह उन्होंने भी ब्रिटिश आधिपत्य का विरोध किया, लेकिन
+                अवध की बहाली या ब्रिटिश शासन के विरुद्ध एकजुट संघर्ष में पूर्ण
+                रूप से शामिल नहीं हुए। उन्होंने लखनऊ में नेतृत्व कर रही बेगम
+                हज़रत महल का साथ नहीं दिया और न ही अपने संसाधन उनके अधीन किए।
+                उनकी कहानी इस बात का प्रतीक है कि कैसे उस समय के कई स्थानीय नेता
+                राष्ट्रीय हितों से अधिक अपनी व्यक्तिगत पीड़ा और स्वार्थ के कारण
+                विद्रोह से जुड़े।
+              </p>
+            </div>
+          )}
+
+          {/* right Image */}
+          <div className="md:col-span-1">
+            <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <Image
+                  src="/assets/img/kalakankar/proof1.png"
+                  alt="kalakankar-img"
+                  width={200}
+                  height={50}
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/kalakankar/proof1.png" })
+                  }
+                />
+                <Image
+                  src="/assets/img/kalakankar/proof2.png"
+                  alt="kalakankar-img"
+                  width={200}
+                  height={50}
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/kalakankar/proof2.png" })
+                  }
+                />
+                <Image
+                  src="/assets/img/kalakankar/proof3.png"
+                  alt="kalakankar-img"
+                  width={200}
+                  height={50}
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/kalakankar/proof3.png" })
+                  }
+                />
+                <Image
+                  src="/assets/img/kalakankar/proof4.png"
+                  alt="kalakankar-img"
+                  width={200}
+                  height={50}
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/kalakankar/proof4.png" })
+                  }
+                />
+              </div>
+
+              <p>
+                {language === "english"
+                  ? "Mention of Raja Hanumant Singh of Dharupur (Kalakankar) in “The Sepoy Mutiny and the Revolt of 1857” by R.C. Majumdar"
+                  : "“1857 की क्रांति और सिपाही विद्रोह” पुस्तक (लेखक: आर. सी. मजूमदार) में धरुपुर (कलाकांकर) के राजा हनुमंत सिंह का उल्लेख मिलता है।"}
+              </p>
+            </div>
+          </div>
         </div>
 
         <FamilyTreeStructure

@@ -1,9 +1,10 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
+import ImageModal from "../ImageModel";
 
 const familyData = {
   name: "Raja Prithvi Mall?",
@@ -312,6 +313,13 @@ const familyDataHindi = {
 
 export default function GondaEstateDetails() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
   return (
     <div>
       <Banner
@@ -324,15 +332,24 @@ export default function GondaEstateDetails() {
           {/* Left Image */}
           <div className="md:col-span-1 ">
             <Image
-              src="/assets/img/noimage.jpeg"
+              src="/assets/img/gonda/gonda1.jpg"
               alt="img"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg border-3 border-gray-300"
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+              onClick={() =>
+                openModal({
+                  url: "/assets/img/gonda/gonda1.jpg",
+                  estate: "Ruins of Raja Devi Baksh Singh's Haveli",
+                  estateHindi: "राजा देवी बख्श सिंह की हवेली के अवशेष",
+                })
+              }
             />
             <div className="flex items-center justify-center">
               <h2>
-                {language === "english" ? "Gonda Estate" : "गोंडा एस्टेट"}
+                {language === "english"
+                  ? "Ruins of Raja Devi Baksh Singh's Haveli"
+                  : "राजा देवी बख्श सिंह की हवेली के अवशेष"}
               </h2>
             </div>
             <br />
@@ -382,6 +399,12 @@ export default function GondaEstateDetails() {
           familyData={language === "english" ? familyData : familyDataHindi}
         />
       </main>
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }

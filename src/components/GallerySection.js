@@ -58,7 +58,8 @@ export default function GallerySection() {
       king: "Raja Pratap Mall",
       kingHindi: "राजा प्रताप मल्ल",
       images: [
-        "/assets/img/noimage.jpeg",
+        "/assets/img/gonda/gonda1.jpg",
+        "/assets/img/gonda/gonda2.png",
       ],
     },
     {

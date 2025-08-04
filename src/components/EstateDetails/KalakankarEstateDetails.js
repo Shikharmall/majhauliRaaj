@@ -498,6 +498,8 @@ export default function KalakankarEstateDetails() {
                 on the eve of his departure, hoped for the Raja&apos;s support
                 in suppressing the rebellion, Hanumant Singh gave a powerful and
                 unforgettable reply:
+              </p>
+              <p className="m-10">
                 <strong>
                   <em>
                     &quot;Sahib, your countrymen came into this country and

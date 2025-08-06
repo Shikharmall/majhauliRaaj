@@ -324,7 +324,7 @@ export default function GondaEstateDetails() {
   return (
     <div>
       <Banner
-        title={language === "english" ? "Gonda Estate" : "गोंडा एस्टेट"}
+        title={language === "english" ? "Gonda Estate" : "गोंडा रियासत"}
       />
 
       {/* Main Content */}
@@ -515,18 +515,20 @@ export default function GondaEstateDetails() {
           {/* right Image */}
           <div className="md:col-span-1">
             <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                 <Image
-                  src="/assets/img/kalakankar/proof1.png"
-                  alt="kalakankar-img"
+                  src="/assets/img/gonda/Raja_devi_Bakhsh_Singh.jpg"
+                  alt="gonda-img"
                   width={200}
                   height={50}
                   className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
                   onClick={() =>
-                    openModal({ url: "/assets/img/kalakankar/proof1.png" })
+                    openModal({
+                      url: "/assets/img/gonda/Raja_devi_Bakhsh_Singh.jpg",
+                    })
                   }
                 />
-                <Image
+                {/* <Image
                   src="/assets/img/kalakankar/proof2.png"
                   alt="kalakankar-img"
                   width={200}
@@ -535,32 +537,12 @@ export default function GondaEstateDetails() {
                   onClick={() =>
                     openModal({ url: "/assets/img/kalakankar/proof2.png" })
                   }
-                />
-                <Image
-                  src="/assets/img/kalakankar/proof3.png"
-                  alt="kalakankar-img"
-                  width={200}
-                  height={50}
-                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
-                  onClick={() =>
-                    openModal({ url: "/assets/img/kalakankar/proof3.png" })
-                  }
-                />
-                <Image
-                  src="/assets/img/kalakankar/proof4.png"
-                  alt="kalakankar-img"
-                  width={200}
-                  height={50}
-                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
-                  onClick={() =>
-                    openModal({ url: "/assets/img/kalakankar/proof4.png" })
-                  }
-                />
+                /> */}
               </div>
 
               <p>
                 {language === "english"
-                  ? "Mention of Raja Hanumant Singh of Dharupur (Kalakankar) in “The Sepoy Mutiny and the Revolt of 1857” by R.C. Majumdar"
+                  ? "Statue of Raja Devi Baksh Singh"
                   : "“1857 की क्रांति और सिपाही विद्रोह” पुस्तक (लेखक: आर. सी. मजूमदार) में धरुपुर (कलाकांकर) के राजा हनुमंत सिंह का उल्लेख मिलता है।"}
               </p>
             </div>

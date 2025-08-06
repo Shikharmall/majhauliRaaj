@@ -1403,6 +1403,15 @@ export default function MajhauliEstateDetails() {
           <div className="h-px flex-grow bg-gray-300"></div>
         </div>
 
+        <Image
+          src="/assets/img/map3.png"
+          alt="majhauli-img"
+          width={600}
+          height={400}
+          className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+          onClick={() => openModal({ url: "/assets/img/map3.png" })}
+        />
+
         <FamilyTreeStructure
           familyData={language === "english" ? familyData1 : familyData1Hindi}
         />

@@ -101,6 +101,16 @@ const images = [
     url: "/assets/img/kalakankar/kalakankar9.jpeg",
   },
   {
+    estate: "Gonda Estate",
+    estateHindi: "गोंडा रियासत",
+    url: "/assets/img/gonda/gonda1.jpg",
+  },
+  {
+    estate: "Gonda Estate",
+    estateHindi: "गोंडा रियासत",
+    url: "/assets/img/gonda/gonda2.png",
+  },
+  {
     estate: "Kalakankar Estate",
     estateHindi: "कालाकंकर रियासत",
     url: "/assets/img/kalakankar/kalakankar10.jpeg",

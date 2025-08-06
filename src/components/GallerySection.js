@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import ImagesGrid from "./ImagesGrid";
 import COLORS from "@/utils/color";
 import LanguageContext from "@/context/languageContext";
+import { motion } from "framer-motion";
 
 export default function GallerySection() {
   const { language } = useContext(LanguageContext);
@@ -57,10 +58,7 @@ export default function GallerySection() {
       successorHindi: "मझौली राज",
       king: "Raja Pratap Mall",
       kingHindi: "राजा प्रताप मल्ल",
-      images: [
-        "/assets/img/gonda/gonda1.jpg",
-        "/assets/img/gonda/gonda2.png",
-      ],
+      images: ["/assets/img/gonda/gonda1.jpg", "/assets/img/gonda/gonda2.png"],
     },
     {
       name: "Mankapur Estate",
@@ -143,9 +141,17 @@ export default function GallerySection() {
     };
   }, []);
 
-  const renderEstateCard = (estate) => (
-    <div
+  const renderEstateCard = (estate, idx) => (
+    <motion.div
       key={estate.name}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.8 + idx * 0.1,
+        // type: "spring",
+        // stiffness: 300,
+      }}
       className="bg-white p-4 rounded-lg shadow flex flex-col items-center"
     >
       <div className="inline-block relative mb-5">
@@ -176,13 +182,18 @@ export default function GallerySection() {
           url,
         }))}
       />
-    </div>
+    </motion.div>
   );
 
   return (
     <section className="bg-[#f472172d] py-12">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-8">
+        <motion.div
+          className="text-center mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           <div className="inline-block relative mb-5">
             <h2
               className="text-2xl font-semibold font-serif"
@@ -200,11 +211,16 @@ export default function GallerySection() {
           <h1 className="text-4xl text-[#082366]">
             {language === "english" ? "Photo Gallery" : "फोटो गैलरी"}
           </h1>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+        >
           {estates.map(renderEstateCard)}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

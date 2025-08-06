@@ -1206,7 +1206,7 @@ export default function MajhauliEstateDetails() {
           {/* Left Image */}
           <div className="md:col-span-1">
             <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
-              <div className="flex justify-center">
+              <div className="flex flex-col md:flex-row justify-center">
                 <Image
                   src="/assets/img/majhauli/proof1.png"
                   alt="majhauli-img"
@@ -1363,7 +1363,7 @@ export default function MajhauliEstateDetails() {
           {/* right Image */}
           <div className="md:col-span-1">
             <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
-              <div className="flex justify-center">
+              <div className="flex flex-col md:flex-row justify-center">
                 <Image
                   src="/assets/img/majhauli/proof3.png"
                   alt="majhauli-img"

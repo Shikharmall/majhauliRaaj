@@ -1,12 +1,14 @@
 "use client";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useRef } from "react";
 import ImagesGrid from "./ImagesGrid";
 import COLORS from "@/utils/color";
 import LanguageContext from "@/context/languageContext";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 export default function GallerySection() {
   const { language } = useContext(LanguageContext);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const estates = [
     {
@@ -141,57 +143,55 @@ export default function GallerySection() {
     };
   }, []);
 
-  const renderEstateCard = (estate, idx) => (
-    <motion.div
-      key={estate.name}
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.8 + idx * 0.1,
-        // type: "spring",
-        // stiffness: 300,
-      }}
-      className="bg-white p-4 rounded-lg shadow flex flex-col items-center"
-    >
-      <div className="inline-block relative mb-5">
-        <h3 className="text-xl font-semibold mb-0">
-          {language === "english" ? estate.name : estate.nameHindi}
+  const renderEstateCard = (estate, idx) => {
+    return (
+      <motion.div
+        key={estate.name}
+        animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.2 + idx * 0.1,
+        }}
+        className="bg-white p-4 rounded-lg shadow flex flex-col items-center"
+      >
+        <div className="inline-block relative mb-5">
+          <h3 className="text-xl font-semibold mb-0">
+            {language === "english" ? estate.name : estate.nameHindi}
+          </h3>
+          <div
+            className="absolute left-0 top-8 w-1/2 h-0.5"
+            style={{ backgroundColor: COLORS.primary }}
+          ></div>
+        </div>
+        <h3 className="text-sm mb-4">
+          {language === "english"
+            ? `Successor Estate of ${estate.successor}`
+            : `${estate.successorHindi} की उत्तराधिकारी रियासत`}
         </h3>
-        <div
-          className="absolute left-0 top-8 w-1/2 h-0.5"
-          style={{
-            backgroundColor: COLORS.primary,
-          }}
-        ></div>
-      </div>
-      <h3 className="text-sm mb-4">
-        {language === "english"
-          ? `Successor Estate of ${estate.successor}`
-          : `${estate.successorHindi} की उत्तराधिकारी रियासत`}
-      </h3>
-      <p className="twitter-timeline" data-width="380" data-height="500">
-        {language === "english"
-          ? `Est. by ${estate.king}`
-          : `${estate.kingHindi} द्वारा स्थापित`}
-      </p>
-      <ImagesGrid
-        images={estate.images.map((url) => ({
-          estate: estate.name,
-          estateHindi: estate.nameHindi,
-          url,
-        }))}
-      />
-    </motion.div>
-  );
+        <p className="twitter-timeline" data-width="380" data-height="500">
+          {language === "english"
+            ? `Est. by ${estate.king}`
+            : `${estate.kingHindi} द्वारा स्थापित`}
+        </p>
+        <ImagesGrid
+          images={estate.images.map((url) => ({
+            estate: estate.name,
+            estateHindi: estate.nameHindi,
+            url,
+          }))}
+        />
+      </motion.div>
+    );
+  };
 
   return (
     <section className="bg-[#f472172d] py-12">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4" ref={ref}>
         <motion.div
           className="text-center mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          // initial={{ opacity: 0, y: 20 }}
+          // animate={{ opacity: 1, y: 0 }}
+          animate={isInView ? { opacity: 1, y: 20 } : { opacity: 0, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="inline-block relative mb-5">
@@ -203,9 +203,7 @@ export default function GallerySection() {
             </h2>
             <div
               className="absolute left-0 top-8 w-1/2 h-1"
-              style={{
-                backgroundColor: COLORS.secondary,
-              }}
+              style={{ backgroundColor: COLORS.secondary }}
             ></div>
           </div>
           <h1 className="text-4xl text-[#082366]">
@@ -213,14 +211,9 @@ export default function GallerySection() {
           </h1>
         </motion.div>
 
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {estates.map(renderEstateCard)}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

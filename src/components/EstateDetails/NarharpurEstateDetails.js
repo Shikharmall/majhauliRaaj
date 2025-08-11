@@ -101,7 +101,7 @@ export default function NarharpurEstateDetails() {
           {/* Bio */}
           {language === "english" ? (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed font-serif">
-              <p>
+              <p className="font-serif">
                 Narharpur Estate, also known as
                 <strong> Chillupar Estate</strong>, was a historical princely
                 estate located near the Sarayu River (also called the Ghaghara
@@ -132,7 +132,7 @@ export default function NarharpurEstateDetails() {
                 Indigo Factory and killed several British soldiers. Raja
                 Hariprasad Mall was martyred in this war of independence.
               </p>
-              <p>
+              <p className="font-serif">
                 Chillupar was a princely estate in the Gorakhpur district, and
                 Raja Hariprasad Mall ruled over it. His fort was located at
                 Narharpur on the banks of the Sarayu River. By 1857, the fire of
@@ -164,13 +164,14 @@ export default function NarharpurEstateDetails() {
                 independence. The site where the Raja&apos;s military camp once
                 stood is now home to the Muktipath roadway.
               </p>
-              <p>
-                A martyr’s memorial has been built there in honor of the fallen
-                soldiers. However, the martyrdom site of Raja Hariprasad Mall
-                and the ruins of his fort are yet to receive the recognition and
-                respect they truly deserve.
+              <p className="font-serif">
+                A martyr&apos;s memorial has been built there in honor of the
+                fallen soldiers. However, the martyrdom site of Raja Hariprasad
+                Mall and the ruins of his fort are yet to receive the
+                recognition and respect they truly deserve.
                 <strong>
-                  Raja&apos;s Stables in Bardahalgunj Police Station:
+                  {" "}
+                  Raja&apos;s Stables in Bardahalgunj Police Station:{" "}
                 </strong>
                 The place where the Bardahalgunj police station now stands used
                 to be Raja Hariprasad Mall&apos;s horse stable and elephant
@@ -179,25 +180,34 @@ export default function NarharpurEstateDetails() {
                 hold court in what is now the Junior High School. He used to
                 meet the local people there, listen to their grievances, and
                 resolve their issues.
-                <strong>Historical Significance of Bardahalgunj Market:</strong>
+                <strong>
+                  {" "}
+                  Historical Significance of Bardahalgunj Market:{" "}
+                </strong>
                 The largest market in the Chillupar region, now known as
                 Bardahalgunj, was once called &quot;Barhan Ganj.&quot; It was
                 considered the biggest market in the surrounding areas. Over
                 time, the name evolved and came to be known as Bardahalgunj.
-                <strong>Former Minister&apos;s Statement:</strong> A
-                martyr&apos;s memorial has been built at Muktipath with support
-                from local citizens. The mention of Raja Hariprasad Mall still
-                stirs deep patriotic emotions in the hearts of the people in
-                this region. However, the ruins of his fort and his martyrdom
-                site have yet to receive the full recognition they deserve.
-                Efforts have begun, and it is hoped that the government will
-                take steps to preserve and honor this important piece of
-                history.
+              </p>
+              <p className="font-serif">
+                <strong> Former Minister&apos;s Statement:</strong>
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  A martyr&apos;s memorial has been built at Muktipath with
+                  support from local citizens. The mention of Raja Hariprasad
+                  Mall still stirs deep patriotic emotions in the hearts of the
+                  people in this region. However, the ruins of his fort and his
+                  martyrdom site have yet to receive the full recognition they
+                  deserve. Efforts have begun, and it is hoped that the
+                  government will take steps to preserve and honor this
+                  important piece of history.
+                </em>
               </p>
             </div>
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed font-serif">
-              <p>
+              <p className="font-serif">
                 नरहरपुर एस्टेट, जिसे
                 <strong> चिल्लूपार एस्टेट </strong>के नाम से भी जाना जाता है, एक
                 ऐतिहासिक रियासत थी जो उत्तर प्रदेश के वर्तमान गोरखपुर क्षेत्र
@@ -227,7 +237,7 @@ export default function NarharpurEstateDetails() {
                 डाला। इस स्वतंत्रता संग्राम में राजा हरिप्रसाद मल्ल वीरगति को
                 प्राप्त हुए।
               </p>
-              <p>
+              <p className="font-serif">
                 चिल्लूपार गोरखपुर जनपद की एक रियासत थी, जिसका शासन राजा
                 हरिप्रसाद मल्ल के हाथों में था। उनका किला सरयू नदी के तट पर
                 स्थित नरहरपुर में था। 1857 तक मंगल पांडे द्वारा भड़काई गई
@@ -255,7 +265,7 @@ export default function NarharpurEstateDetails() {
                 हजारों सैनिकों सहित शहीद हो गए। जहां कभी राजा की छावनी थी, आज
                 वहीं “मुक्तिपथ” रोड बनाई गई है।
               </p>
-              <p>
+              <p className="font-serif">
                 वहां शहीद सैनिकों की स्मृति में एक शहीद स्मारक का निर्माण किया
                 गया है। हालांकि, राजा हरिप्रसाद मल्ल की शहादत स्थल और उनके किले
                 के खंडहरों को आज भी वह मान्यता और सम्मान नहीं मिला है, जिसके वे
@@ -271,14 +281,23 @@ export default function NarharpurEstateDetails() {
                 क्षेत्र का सबसे बड़ा बाजार, जिसे आज बरदहालगंज कहा जाता है, पहले
                 “बरहनगंज” के नाम से जाना जाता था। यह आसपास के क्षेत्रों का सबसे
                 प्रमुख व्यापारिक केंद्र था। समय के साथ इसका नाम बदलकर बरदहालगंज
-                हो गया। <strong>पूर्व मंत्री का वक्तव्य:</strong> स्थानीय
-                नागरिकों के सहयोग से मुक्तिपथ पर एक शहीद स्मारक बनाया गया है। आज
-                भी जब राजा हरिप्रसाद मल्ल का नाम लिया जाता है तो इस क्षेत्र के
-                लोगों के मन में देशभक्ति की भावना जाग उठती है। फिर भी, उनके किले
-                के खंडहर और उनकी शहादत स्थल को आज तक वह पूर्ण मान्यता नहीं मिल
-                सकी है जिसकी वे हकदार हैं। कुछ प्रयास आरंभ हो चुके हैं, और
-                उम्मीद है कि सरकार इस ऐतिहासिक धरोहर को संरक्षित करने और उसका
-                सम्मान करने की दिशा में आवश्यक कदम उठाएगी।
+                हो गया।
+              </p>
+
+              <p className="font-serif">
+                <strong> पूर्व मंत्री का बयान:</strong>
+              </p>
+
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  मुक्तिपथ पर स्थानीय नागरिकों के सहयोग से एक शहीद स्मारक का
+                  निर्माण किया गया है। राजा हरिप्रसाद मल्ल का नाम आज भी इस
+                  क्षेत्र के लोगों के दिलों में गहरी देशभक्ति की भावना जागृत
+                  करता है। फिर भी, उनके किले के अवशेष और शहादत स्थल को अब तक
+                  पूरी मान्यता नहीं मिल पाई है। प्रयास शुरू हो चुके हैं और आशा
+                  है कि सरकार इस इतिहास के महत्वपूर्ण हिस्से को संरक्षित और
+                  सम्मानित करने के लिए कदम उठाएगी।
+                </em>
               </p>
             </div>
           )}

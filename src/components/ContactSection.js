@@ -34,6 +34,7 @@ export default function ContactSection() {
         access_key: "59e83bd7-97cc-461f-8443-24f9cf9737c4",
         name: formData?.name,
         email: formData?.fromEmail,
+        number: formData?.number,
         message: formData?.message,
       }),
     });

@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 
 export default function ContactSection() {
   const { language } = useContext(LanguageContext);
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     fromEmail: "",
@@ -20,56 +21,37 @@ export default function ContactSection() {
     });
   };
 
-  // const sendEmail = async (e) => {
-  //   e.preventDefault(); // prevent page refresh
-
-  //   try {
-  //     const res = await fetch("/api/contact", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify(formData),
-  //     });
-
-  //     const data = await res.json();
-
-  //     if (data.success) {
-  //       alert(
-  //         language === "english"
-  //           ? "Email sent successfully!"
-  //           : "ईमेल सफलतापूर्वक भेजा गया!"
-  //       );
-  //       setFormData({ name: "", fromEmail: "", number: "", message: "" });
-  //     } else {
-  //       alert(
-  //         language === "english"
-  //           ? "Failed to send email."
-  //           : "ईमेल भेजने में विफल।"
-  //       );
-  //     }
-  //   } catch (err) {
-  //     console.error(err);
-  //     alert(
-  //       language === "english" ? "Something went wrong!" : "कुछ गलत हो गया!"
-  //     );
-  //   }
-  // };
-
-  // const sendEmail = async (e) => {
-  //   e.preventDefault();
-
-  //   const res = await fetch("/api/sendEmail", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({
-  //       name: "Shikhar",
-  //       email: "shikhar@example.com",
-  //       message: "Hello from Next.js!",
-  //     }),
-  //   });
-
-  //   const data = await res.json();
-  //   alert(data.message);
-  // };
+  async function sendEmail(e) {
+    e.preventDefault();
+    setIsLoading(true);
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: "59e83bd7-97cc-461f-8443-24f9cf9737c4",
+        name: formData?.name,
+        email: formData?.fromEmail,
+        message: formData?.message,
+      }),
+    });
+    const result = await response.json();
+    console.log(result);
+    if (result.success) {
+      setIsLoading(false);
+      alert(
+        language === "english"
+          ? "Email sent successfully!"
+          : "ईमेल सफलतापूर्वक भेजा गया!"
+      );
+      setFormData({ name: "", fromEmail: "", number: "", message: "" });
+    } else {
+      setIsLoading(false);
+      alert(language === "english" ? result?.message : "कुछ त्रुटि हुई है!");
+    }
+  }
 
   return (
     <section className="bg-white pb-12">
@@ -142,13 +124,23 @@ export default function ContactSection() {
               onChange={(e) => onChangeHandler(e)}
               value={formData?.message}
             ></textarea>
+
             <button
               type="submit"
               className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition cursor-pointer"
               style={{ backgroundColor: COLORS.primary }}
-              //onClick={sendEmail}
+              onClick={sendEmail}
+              disabled={isLoading}
             >
-              {language === "english" ? "Submit" : "सबमिट करें"}
+              {isLoading ? (
+                <>
+                  {language === "english"
+                    ? "Submiting...."
+                    : "भेजा जा रहा है..."}
+                </>
+              ) : (
+                <>{language === "english" ? "Submit" : "सबमिट करें"}</>
+              )}
             </button>
           </form>
         </div>

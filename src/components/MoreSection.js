@@ -14,7 +14,7 @@ export default function MoreSection() {
   const cardRef = useRef(null);
   const cardInView = useInView(cardRef, {
     once: true,
-    //margin: "-100px",
+    margin: "-100px",
   });
 
   const items = [

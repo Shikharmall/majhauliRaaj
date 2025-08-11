@@ -157,9 +157,9 @@ export default function ContactSection() {
               {language === "english" ? "Address" : "पता"}
             </h2>
             <p className="text-gray-700">
-              XX, XXXXXX XXXXX
-              <br />
-              Uttar Pradesh-XXXXXX (INDIA)
+              {language === "english"
+                ? "Uttar Pradesh (INDIA)"
+                : "उत्तर प्रदेश (भारत)"}
             </p>
           </div>
 

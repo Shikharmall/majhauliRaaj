@@ -26,22 +26,29 @@ export default function Header() {
           </p>
         </div>
         <div className="flex space-x-3 text-xl">
-          <a
+          {/* <a
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-facebook-f" />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          </a> */}
+          <a href="#" rel="noopener noreferrer">
             <i className="fab fa-twitter" />
           </a>
-          <a href="#" className="fab fa-google-plus-g" />
-          <a href="#" className="fab fa-linkedin-in" />
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=thesarus.2022@gmail.com&su=${encodeURIComponent(
+              ""
+            )}&body=${encodeURIComponent("")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fab fa-google-plus-g"
+          />
+          <a
+            href="https://www.linkedin.com/company/the-sarus"
+            target="_blank"
+            className="fab fa-linkedin-in"
+          />
         </div>
       </div>
     </header>

@@ -4,6 +4,29 @@ import { useContext } from "react";
 
 export default function Footer() {
   const { language } = useContext(LanguageContext);
+
+  const quickLinks = [
+    { name: "HOME", nameHindi: "होम", link: "/" },
+    {
+      name: "ROYAL FAMILY TREE",
+      nameHindi: "राजपरिवार वंशवृक्ष",
+      link: "/familyTree",
+    },
+    { name: "GALLERY", nameHindi: "गैलरी", link: "/gallery" },
+    { name: "CONTACT US", nameHindi: "संपर्क करें", link: "/contact" },
+  ];
+
+  const aboutMe = [
+    { name: "HOME", nameHindi: "होम", link: "/" },
+    {
+      name: "ROYAL FAMILY TREE",
+      nameHindi: "राजपरिवार वंशवृक्ष",
+      link: "/familyTree",
+    },
+    { name: "GALLERY", nameHindi: "गैलरी", link: "/gallery" },
+    { name: "CONTACT US", nameHindi: "संपर्क करें", link: "/contact" },
+  ];
+
   return (
     <footer
       className="relative min-h-screen bg-cover bg-center flex flex-col text-white"
@@ -24,7 +47,9 @@ export default function Footer() {
             </h5>
             <address className="not-italic mb-3">
               <i className="fa-solid fa-location-dot mr-2"></i>
-              XX, XXXXXXXXXXXXXXXXXX, Uttar Pradesh (INDIA)
+              {language === "english"
+                ? "Uttar Pradesh (INDIA)"
+                : "उत्तर प्रदेश (भारत)"}
             </address>
             <p className="mb-2">
               <i className="fa-solid fa-envelope mr-2"></i>
@@ -34,29 +59,31 @@ export default function Footer() {
               <i className="fa-solid fa-phone mr-2"></i>+91 XXXXX-XXXXX
             </p>
             <div className="flex space-x-4 text-xl">
-              <a
-                //href="https://www.facebook.com/brijbhushansharan/?fref=ts"
+              {/* <a
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fab fa-facebook-f hover:text-blue-500"
                 aria-label="Facebook"
-              ></a>
+              ></a> */}
               <a
-                //href="https://twitter.com/BrijbhushanMp"
-                target="_blank"
+                href="#"
+                // target="_blank"
                 rel="noopener noreferrer"
                 className="fab fa-twitter hover:text-blue-400"
                 aria-label="Twitter"
               ></a>
               <a
-                //href="#"
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=thesarus.2022@gmail.com&su=${encodeURIComponent(
+                  ""
+                )}&body=${encodeURIComponent("")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fab fa-google-plus-g hover:text-red-500"
                 aria-label="Google Plus"
               ></a>
               <a
-                //href="#"
+                href="https://www.linkedin.com/company/the-sarus"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fab fa-linkedin-in hover:text-blue-700"
@@ -68,26 +95,16 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h5 className="mb-5 text-white text-lg font-semibold">
-              Quick Links
+              {language === "english" ? "Quick Links" : "त्वरित लिंक"}
             </h5>
             <ul className="space-y-2">
-              {[
-                "HOME",
-                "PERSONAL DETAILS",
-                "MY VIEWS",
-                "MEDIA",
-                "SOCIAL & CULTURAL ACTIVITIES",
-                "DTSE",
-                "SPORTS",
-                "GALLERY",
-                "CONTACT US",
-              ].map((link, i) => (
+              {quickLinks.map((link, i) => (
                 <li key={i}>
                   <a
-                    href="javascript:void(0)"
+                    href={link?.link}
                     className="text-white/70 hover:text-white transition-colors"
                   >
-                    {link}
+                    {language === "english" ? link.name : link.nameHindi}
                   </a>
                 </li>
               ))}
@@ -96,7 +113,9 @@ export default function Footer() {
 
           {/* About Me */}
           <div>
-            <h5 className="mb-5 text-white text-lg font-semibold">About Me</h5>
+            <h5 className="mb-5 text-white text-lg font-semibold">
+              {language === "english" ? "About Me" : "मेरे बारे में"}
+            </h5>
             <ul className="space-y-2">
               {[
                 "HOME",
@@ -120,16 +139,25 @@ export default function Footer() {
           {/* Subscribe */}
           <div>
             <h5 className="mb-5 text-white text-lg font-semibold">
-              Subscribe For Newsletter
+              {language === "english"
+                ? "Subscribe For Newsletter"
+                : "सदस्यता लें समाचार पत्र के लिए"}
             </h5>
             <p className="mb-4 text-white/70">
-              Subscribe newsletter to get updates..
+              {language === "english"
+                ? "Subscribe newsletter to get updates..."
+                : "अपडेट प्राप्त करने के लिए समाचार पत्र की सदस्यता लें..."}
+              .
             </p>
             <div className="flex">
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your email"
+                placeholder={
+                  language === "english"
+                    ? "Enter your email"
+                    : "अपना ईमेल दर्ज करें"
+                }
                 className="flex-grow rounded-l-md px-3 py-2 text-gray-900 focus:outline-none bg-white"
               />
               <button

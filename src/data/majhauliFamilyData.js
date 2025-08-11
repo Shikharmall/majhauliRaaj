@@ -1,87 +1,151 @@
+import {
+  madhubanFamilyData,
+  madhubanFamilyDataHindi,
+} from "./madhubanFamilyData";
+import {
+  narharpurFamilyData,
+  narharpurFamilyDataHindi,
+} from "./narharpurFamilyData";
+
 export const majhauliFamilyData = {
-  name: "Raja Raghuvansh Mall (1)",
+  name: "Raja Vishwa Sen",
   isKing: true,
   children: [
     {
-      name: "Raja Ratna Mall (2)",
-      isKing: true,
+      name: "",
+      isInfinite: true,
       children: [
         {
-          name: "Raja Ram Mall (3)",
+          name: "Raja Raghuvansh Mall (M.J. 66)",
           isKing: true,
           children: [
             {
-              name: "Raja Nrip Mall (4)",
+              name: "Raja Ratna Mall (M.J. 67)",
               isKing: true,
               children: [
                 {
-                  name: "Raja Harishchandra Mall (5)",
+                  name: "Raja Ram Mall (M.J. 68)",
                   isKing: true,
                   children: [
                     {
-                      name: "Maharaja Dev Mall (6)",
+                      name: "Raja Nrip Mall (M.J. 69)",
                       isKing: true,
                       children: [
                         {
-                          name: "Raja Prasad Mall (7)",
+                          name: "Raja Harishchandra Mall (M.J. 70)",
                           isKing: true,
                           children: [
                             {
-                              name: "Maharaja Bheem Mall (8)",
+                              name: "Maharaja Dev Mall (M.J. 71)",
                               isKing: true,
                               children: [
                                 {
-                                  name: "Raja Narayan Mall (9)",
+                                  name: "Raja Prasad Mall (M.J. 71)",
+                                  isExtra:
+                                    "(First Son of of Maharaja Dev Mall of Majhauli Raj)",
                                   isKing: true,
                                   children: [
                                     {
-                                      name: "Raja Roop Mall (10)",
+                                      name: "Maharaja Bheem Mall (M.J. 72)",
                                       isKing: true,
                                       children: [
                                         {
-                                          name: "Raja Vikramaditya Mall (11)",
+                                          name: "Raja Narayan Mall (M.J. 73)",
                                           isKing: true,
                                           children: [
                                             {
-                                              name: "Raja Bodh Mall (12)",
+                                              name: "Raja Roop Mall (M.J. 74)",
                                               isKing: true,
                                               children: [
                                                 {
-                                                  name: "Bhavani Mall",
+                                                  name: "Raja Vikramaditya Mall (M.J. 75)",
+                                                  isKing: true,
                                                   children: [
                                                     {
-                                                      name: "Bheem Mall II",
-                                                      children: [],
-                                                    },
-                                                  ],
-                                                },
-                                                {
-                                                  name: "Lakshmi Mall",
-                                                  children: [
-                                                    {
-                                                      name: "Raja Shiv Mall",
+                                                      name: "Raja Bodh Mall (M.J. 76)",
                                                       isKing: true,
                                                       children: [
                                                         {
-                                                          name: "Raja Ajit Mall (Rani Dilraaj kuwaari)",
-                                                          isKing: true,
+                                                          name: "Bhavani Mall",
                                                           children: [
                                                             {
-                                                              name: "Tej Mall(adopted son of Babu Sarvajeet Mall)",
+                                                              name: "Bheem Mall II",
                                                               children: [],
                                                             },
                                                           ],
                                                         },
-                                                      ],
-                                                    },
-                                                    {
-                                                      name: "Babu Krishna Prasad Mall",
-                                                      children: [
                                                         {
-                                                          name: "Babu Sarvajeet Mall",
+                                                          name: "Lakshmi Mall",
                                                           children: [
                                                             {
-                                                              name: "Tej Mall",
+                                                              name: "Raja Shiv Mall",
+                                                              isKing: true,
+                                                              children: [
+                                                                {
+                                                                  name: "Raja Ajit Mall (Rani Dilraaj kuwaari)",
+                                                                  isKing: true,
+                                                                  children: [
+                                                                    {
+                                                                      name: "Tej Mall(adopted son of Babu Sarvajeet Mall)",
+                                                                      children:
+                                                                        [],
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                            {
+                                                              name: "Babu Krishna Prasad Mall",
+                                                              children: [
+                                                                {
+                                                                  name: "Babu Sarvajeet Mall",
+                                                                  children: [
+                                                                    {
+                                                                      name: "Tej Mall",
+                                                                      children:
+                                                                        [],
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          ],
+                                                        },
+                                                        {
+                                                          name: "Anand Mall",
+                                                          children: [
+                                                            {
+                                                              name: "Govind Mall",
+                                                              children: [
+                                                                {
+                                                                  name: "Prithvi Mall",
+                                                                  children: [
+                                                                    {
+                                                                      name: "Pratap Mall",
+                                                                      children:
+                                                                        [],
+                                                                    },
+                                                                    {
+                                                                      name: "Juba Mall",
+                                                                      children:
+                                                                        [],
+                                                                    },
+                                                                    {
+                                                                      name: "Haripal Mall",
+                                                                      children:
+                                                                        [],
+                                                                    },
+                                                                    {
+                                                                      name: "Kaniyha Mall",
+                                                                      children:
+                                                                        [],
+                                                                    },
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                            {
+                                                              name: "Indra Mall",
                                                               children: [],
                                                             },
                                                           ],
@@ -91,236 +155,172 @@ export const majhauliFamilyData = {
                                                   ],
                                                 },
                                                 {
-                                                  name: "Anand Mall",
-                                                  children: [
-                                                    {
-                                                      name: "Govind Mall",
-                                                      children: [
-                                                        {
-                                                          name: "Prithvi Mall",
-                                                          children: [
-                                                            {
-                                                              name: "Pratap Mall",
-                                                              children: [],
-                                                            },
-                                                            {
-                                                              name: "Juba Mall",
-                                                              children: [],
-                                                            },
-                                                            {
-                                                              name: "Haripal Mall",
-                                                              children: [],
-                                                            },
-                                                            {
-                                                              name: "Kaniyha Mall",
-                                                              children: [],
-                                                            },
-                                                          ],
-                                                        },
-                                                      ],
-                                                    },
-                                                    {
-                                                      name: "Indra Mall",
-                                                      children: [],
-                                                    },
-                                                  ],
+                                                  name: "Babu Madhav Mall II (Ancestors of Mahen)",
+                                                  children: [],
                                                 },
                                               ],
+                                            },
+                                            {
+                                              name: "Raja Chatur Mall",
+                                              isKing: true,
+                                              children: [],
+                                            },
+                                            {
+                                              name: "Babu Chattar Shahi",
+                                              children: [],
                                             },
                                           ],
                                         },
                                         {
-                                          name: "Babu Madhav Mall II (Ancestors of Mahen)",
+                                          name: "Babu Ram Shahi",
                                           children: [],
                                         },
                                       ],
                                     },
-                                    {
-                                      name: "Raja Chatur Mall",
-                                      isKing: true,
-                                      children: [],
-                                    },
-                                    {
-                                      name: "Babu Chattar Shahi",
-                                      children: [],
-                                    },
                                   ],
                                 },
-                                {
-                                  name: "Babu Ram Shahi",
-                                  children: [],
-                                },
+                                madhubanFamilyData,
+                                narharpurFamilyData,
                               ],
                             },
                           ],
                         },
                         {
-                          name: "Raja Madhav Mall (Madhuban Estate) (6-1-1)",
+                          name: "Raja Pratap Mall (Gonda))",
                           isKing: true,
                           children: [
                             {
-                              name: "Raja Nath Mall (6-1-1-1)",
-                              isExtra: "(Mentioned twice in Tuzuk-i-Jahangiri)",
-                              isKing: true,
-                              children: [],
-                            },
-                            {
-                              name: "Raja Ajay Mall (6-1-1-1)",
-                              isKing: true,
-                              isExtra: "(Raja Fateh Bahadur Mall)",
-                              children: [],
-                            },
-                          ],
-                        },
-                        {
-                          name: "Raja Rai Mall (Narharpur Estate)  (6-2-1)",
-                          isKing: true,
-                          children: [
-                            {
-                              name: "",
-                              isInfinite: true,
-                              children: [
-                                {
-                                  name: "Raja Hari Prasad Mall (6-2-?)",
-                                  isExtra: "(Martyr - 1857's war)",
-                                  isKing: true,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  name: "Raja Pratap Mall (Gonda) (4-1)",
-                  isKing: true,
-                  children: [
-                    {
-                      name: "Raja SHAH MALL",
-                      isKing: true,
-                      children: [
-                        {
-                          name: "Raja KUSUM MALL",
-                          isKing: true,
-                          children: [
-                            {
-                              name: "Raja MAN SINGH (1)",
+                              name: "Raja SHAH MALL",
                               isKing: true,
                               children: [
                                 {
-                                  name: "Raja MAN SINGH (2)",
+                                  name: "Raja KUSUM MALL",
                                   isKing: true,
                                   children: [
                                     {
-                                      name: "Raja LAKSHMAN SINGH (3)",
+                                      name: "Raja MAN SINGH",
                                       isKing: true,
                                       children: [
                                         {
-                                          name: "Raja NIRVAHAN SINGH (4)",
+                                          name: "Raja MAN SINGH",
                                           isKing: true,
                                           children: [
                                             {
-                                              name: "Raja AMAR SINGH (5)",
+                                              name: "Raja LAKSHMAN SINGH",
                                               isKing: true,
                                               children: [
                                                 {
-                                                  name: "Raja RAM SINGH (6)",
+                                                  name: "Raja NIRVAHAN SINGH",
                                                   isKing: true,
                                                   children: [
                                                     {
-                                                      name: "Raja Dutt Singh (7)",
+                                                      name: "Raja AMAR SINGH",
                                                       isKing: true,
                                                       children: [
                                                         {
-                                                          name: "Raja Udit Singh (8)",
+                                                          name: "Raja RAM SINGH",
                                                           isKing: true,
                                                           children: [
                                                             {
-                                                              name: "Raja Mangal Singh (9)",
+                                                              name: "Raja Dutt Singh (7)",
                                                               isKing: true,
                                                               children: [
                                                                 {
-                                                                  name: "Raja Sheo Prasad Singh (10)",
+                                                                  name: "Raja Udit Singh (8)",
                                                                   isKing: true,
                                                                   children: [
                                                                     {
-                                                                      name: "Raja Jai Singh (11)",
+                                                                      name: "Raja Mangal Singh (9)",
                                                                       isKing: true,
                                                                       children:
                                                                         [
                                                                           {
-                                                                            name: "Raja GUMAN SINGH (12)",
-                                                                            isExtra:
-                                                                              "(I'st son of KANWAR(NAME UNKNOWN) SINGH)",
+                                                                            name: "Raja Sheo Prasad Singh (10)",
                                                                             isKing: true,
                                                                             children:
                                                                               [
                                                                                 {
-                                                                                  name: "Raja DEVI BAKSH SINGH (13)",
+                                                                                  name: "Raja Jai Singh (11)",
                                                                                   isKing: true,
-                                                                                  isExtra: `(Son of II'nd son of KANWAR(NAME UNKNOWN) SINGH)`,
                                                                                   children:
                                                                                     [
                                                                                       {
-                                                                                        name: "property being given to the Zamindar of Balrampur after 1857",
+                                                                                        name: "Raja GUMAN SINGH (12)",
+                                                                                        isExtra:
+                                                                                          "(I'st son of KANWAR(NAME UNKNOWN) SINGH)",
+                                                                                        isKing: true,
+                                                                                        children:
+                                                                                          [
+                                                                                            {
+                                                                                              name: "Raja DEVI BAKSH SINGH (13)",
+                                                                                              isKing: true,
+                                                                                              isExtra: `(Son of II'nd son of KANWAR(NAME UNKNOWN) SINGH)`,
+                                                                                              children:
+                                                                                                [
+                                                                                                  {
+                                                                                                    name: "property being given to the Zamindar of Balrampur after 1857",
+                                                                                                  },
+                                                                                                ],
+                                                                                            },
+                                                                                          ],
                                                                                       },
                                                                                     ],
                                                                                 },
                                                                               ],
                                                                           },
+                                                                          {
+                                                                            name: "Maharani Ser Kunwar",
+                                                                          },
                                                                         ],
                                                                     },
-                                                                  ],
-                                                                },
-                                                                {
-                                                                  name: "Maharani Ser Kunwar",
-                                                                },
-                                                              ],
-                                                            },
-                                                            {
-                                                              name: "Kanwar Pahlwan Singh",
-                                                              children: [
-                                                                {
-                                                                  name: "Kanwar(name unknown) Singh",
-                                                                  children: [
                                                                     {
-                                                                      name: "Raja Guman Singh",
-                                                                    },
-                                                                    {
-                                                                      name: "Kunwar Daljit Singh",
+                                                                      name: "Kanwar Pahlwan Singh",
                                                                       children:
                                                                         [
                                                                           {
-                                                                            name: "Raja Devi Baksh Singh",
+                                                                            name: "Kanwar(name unknown) Singh",
+                                                                            children:
+                                                                              [
+                                                                                {
+                                                                                  name: "Raja Guman Singh",
+                                                                                },
+                                                                                {
+                                                                                  name: "Kunwar Daljit Singh",
+                                                                                  children:
+                                                                                    [
+                                                                                      {
+                                                                                        name: "Raja Devi Baksh Singh",
+                                                                                      },
+                                                                                    ],
+                                                                                },
+                                                                              ],
+                                                                          },
+                                                                          {
+                                                                            name: "Kanwar Hindupat Singh",
                                                                           },
                                                                         ],
                                                                     },
                                                                   ],
                                                                 },
                                                                 {
-                                                                  name: "Kanwar Hindupat Singh",
+                                                                  name: "Raja Ajmat Singh",
+                                                                  isKing: true,
+                                                                  isExtra:
+                                                                    "(Received the estate of Mankapur from his father.)",
                                                                 },
                                                               ],
                                                             },
                                                           ],
                                                         },
                                                         {
-                                                          name: "Raja Ajmat Singh",
+                                                          name: "Raja Bhawani Singh",
                                                           isKing: true,
                                                           isExtra:
-                                                            "(Received the estate of Mankapur from his father.)",
+                                                            "(Received the estate of Bhinga from his brother.)",
                                                         },
                                                       ],
                                                     },
                                                   ],
-                                                },
-                                                {
-                                                  name: "Raja Bhawani Singh",
-                                                  isKing: true,
-                                                  isExtra:
-                                                    "(Received the estate of Bhinga from his brother.)",
                                                 },
                                               ],
                                             },
@@ -340,132 +340,134 @@ export const majhauliFamilyData = {
                 },
               ],
             },
-          ],
-        },
-      ],
-    },
-    {
-      name: "Raja Roop Mall (1-1)",
-      isExtra: "(Raja Prithvi Mall?)",
-      isKing: true,
-      children: [
-        {
-          name: "Rai Hom Mall (1-2)",
-          isExtra: "( Est. Kalakankar Estate)",
-          isKing: true,
-          children: [
             {
-              name: "Rai Purandar Mall (1-3)",
+              name: "Raja Roop Mall (1-1)",
+              isExtra: "(Raja Prithvi Mall?)",
               isKing: true,
               children: [
                 {
-                  name: "Rai Gopal Mall (1-4)",
+                  name: "Rai Hom Mall (1-2)",
+                  isExtra: "( Est. Kalakankar Estate)",
                   isKing: true,
                   children: [
                     {
-                      name: "Rai Radho",
-                    },
-                    {
-                      name: "Babu Ram (1-5)",
+                      name: "Rai Purandar Mall (1-3)",
                       isKing: true,
                       children: [
                         {
-                          name: "Rai Askaran (1-6)",
+                          name: "Rai Gopal Mall (1-4)",
                           isKing: true,
                           children: [
                             {
-                              name: "Rudra Pratap (1-7)",
+                              name: "Rai Radho",
+                            },
+                            {
+                              name: "Babu Ram (1-5)",
                               isKing: true,
                               children: [
                                 {
-                                  name: "Todal Mall (1-8)",
-                                  isExtra: "(Todar Mall)",
+                                  name: "Rai Askaran (1-6)",
                                   isKing: true,
                                   children: [
                                     {
-                                      name: "Dharu Shah (1-9)",
+                                      name: "Rudra Pratap (1-7)",
                                       isKing: true,
                                       children: [
                                         {
-                                          name: "Barsal Rai (1-10)",
+                                          name: "Todal Mall (1-8)",
+                                          isExtra: "(Todar Mall)",
                                           isKing: true,
                                           children: [
                                             {
-                                              name: "Rai Jai Singh (1-11)",
+                                              name: "Dharu Shah (1-9)",
                                               isKing: true,
                                               children: [
                                                 {
-                                                  name: "Rai Shyam Singh (1-12)",
+                                                  name: "Barsal Rai (1-10)",
                                                   isKing: true,
                                                   children: [
                                                     {
-                                                      name: "Rai Sangram Singh",
-                                                    },
-                                                    {
-                                                      name: "Mau Singh (1-13)",
+                                                      name: "Rai Jai Singh (1-11)",
                                                       isKing: true,
                                                       children: [
                                                         {
-                                                          name: "Rai Kamal Singh (1-14)",
+                                                          name: "Rai Shyam Singh (1-12)",
                                                           isKing: true,
                                                           children: [
                                                             {
-                                                              name: "Lal Balwant Singh (1-15)",
+                                                              name: "Rai Sangram Singh",
+                                                            },
+                                                            {
+                                                              name: "Mau Singh (1-13)",
                                                               isKing: true,
                                                               children: [
                                                                 {
-                                                                  name: "Lal Bairi Sal (1-16)",
+                                                                  name: "Rai Kamal Singh (1-14)",
                                                                   isKing: true,
                                                                   children: [
                                                                     {
-                                                                      name: "Rai Hanumant Singh (1-17)",
+                                                                      name: "Lal Balwant Singh (1-15)",
                                                                       isKing: true,
                                                                       children:
                                                                         [
                                                                           {
-                                                                            name: "Laal Pratap Singh (1-18)",
+                                                                            name: "Lal Bairi Sal (1-16)",
                                                                             isKing: true,
                                                                             children:
                                                                               [
                                                                                 {
-                                                                                  name: "Raja Rampal Singh (1-19)",
+                                                                                  name: "Rai Hanumant Singh (1-17)",
                                                                                   isKing: true,
                                                                                   children:
                                                                                     [
                                                                                       {
-                                                                                        name: "Raja Ramesh Singh (1-20)",
+                                                                                        name: "Laal Pratap Singh (1-18)",
                                                                                         isKing: true,
                                                                                         children:
                                                                                           [
                                                                                             {
-                                                                                              name: "Raja AVADESH SINGH (1-21)",
+                                                                                              name: "Raja Rampal Singh (1-19)",
                                                                                               isKing: true,
                                                                                               children:
                                                                                                 [
                                                                                                   {
-                                                                                                    name: "Raja DINESH SINGH (1-22)",
-                                                                                                    isExtra:
-                                                                                                      "(Former Foreign Minister)",
+                                                                                                    name: "Raja Ramesh Singh (1-20)",
                                                                                                     isKing: true,
                                                                                                     children:
-                                                                                                      [],
+                                                                                                      [
+                                                                                                        {
+                                                                                                          name: "Raja AVADESH SINGH (1-21)",
+                                                                                                          isKing: true,
+                                                                                                          children:
+                                                                                                            [
+                                                                                                              {
+                                                                                                                name: "Raja DINESH SINGH (1-22)",
+                                                                                                                isExtra:
+                                                                                                                  "(Former Foreign Minister)",
+                                                                                                                isKing: true,
+                                                                                                                children:
+                                                                                                                  [],
+                                                                                                              },
+                                                                                                            ],
+                                                                                                        },
+                                                                                                        {
+                                                                                                          name: "Brijesh Singh",
+                                                                                                        },
+                                                                                                        {
+                                                                                                          name: "Suresh Singh",
+                                                                                                        },
+                                                                                                      ],
                                                                                                   },
                                                                                                 ],
                                                                                             },
-                                                                                            {
-                                                                                              name: "Brijesh Singh",
-                                                                                            },
-                                                                                            {
-                                                                                              name: "Suresh Singh",
-                                                                                            },
                                                                                           ],
+                                                                                      },
+                                                                                      {
+                                                                                        name: "Lakshman Singh",
                                                                                       },
                                                                                     ],
                                                                                 },
                                                                               ],
-                                                                          },
-                                                                          {
-                                                                            name: "Lakshman Singh",
                                                                           },
                                                                         ],
                                                                     },
@@ -487,21 +489,21 @@ export const majhauliFamilyData = {
                                     },
                                   ],
                                 },
+                                {
+                                  name: "Rai Kashi",
+                                },
+                                {
+                                  name: "Rai Khemkaran",
+                                },
                               ],
+                            },
+                            {
+                              name: "Rai Rajneesh",
+                              children: [],
                             },
                           ],
                         },
-                        {
-                          name: "Rai Kashi",
-                        },
-                        {
-                          name: "Rai Khemkaran",
-                        },
                       ],
-                    },
-                    {
-                      name: "Rai Rajneesh",
-                      children: [],
                     },
                   ],
                 },
@@ -670,26 +672,8 @@ export const majhauliFamilyDataHindi = {
                             },
                           ],
                         },
-                        {
-                          name: "राजा माधव मल्ल (मधुबन एस्टेट)",
-                          isKing: true,
-                          children: [
-                            {
-                              name: "राजा नाथ मल्ल",
-                              isKing: true,
-                              children: [],
-                            },
-                            {
-                              name: "अजीत मल्ल (फ़तेह बहादुर मल्ल)",
-                              children: [],
-                            },
-                          ],
-                        },
-                        {
-                          name: "राजा राय मल्ल (नरहरपुर एस्टेट)",
-                          isKing: true,
-                          children: [],
-                        },
+                        madhubanFamilyDataHindi,
+                        narharpurFamilyDataHindi,
                       ],
                     },
                   ],

@@ -1,22 +1,22 @@
 export const mankapurFamilyData = {
-  name: "Raja AJMAT SINGHJI (1)",
+  name: "Raja AJMAT SINGHJI (M.K. 1)",
   isExtra: "(Son of King of Gonda RAJA DUTT SINGH)",
   isKing: true,
   children: [
     {
-      name: "Raja GOPAL SINGHJI (2)",
+      name: "Raja GOPAL SINGHJI (M.K. 2)",
       isKing: true,
       children: [
         {
-          name: "Raja Bahadur Singhji (3)",
+          name: "Raja Bahadur Singhji (M.K. 3)",
           isKing: true,
           children: [
             {
-              name: "Raja Bakht Singhji (4)",
+              name: "Raja Bakht Singhji (M.K. 4)",
               isKing: true,
               children: [
                 {
-                  name: "Raja Prithvi Pat Singhji (5)",
+                  name: "Raja Prithvi Pat Singhji (M.K. 5)",
                   isKing: true,
                   children: [
                     {
@@ -35,15 +35,15 @@ export const mankapurFamilyData = {
               name: "Kunwar (name unknown) Singhji",
               children: [
                 {
-                  name: "Raja Jai Prakash Singhji (6)",
+                  name: "Raja Jai Prakash Singhji (M.K. 6)",
                   isKing: true,
                   children: [
                     {
-                      name: "Raja RAGHURAJ SINGHJI (7)",
+                      name: "Raja RAGHURAJ SINGHJI (M.K. 7)",
                       isKing: true,
                       children: [
                         {
-                          name: "Raja Ambikeshwar Pratap Singhji (8)",
+                          name: "Raja Ambikeshwar Pratap Singhji (M.K. 8)",
                           isKing: true,
                         },
                         {
@@ -53,11 +53,11 @@ export const mankapurFamilyData = {
                           name: "Kuwarani Munni Bachcha",
                         },
                         {
-                          name: "Raja Raghvendra Pratap Singhji (9)",
+                          name: "Raja Raghvendra Pratap Singhji (M.K. 9)",
                           isKing: true,
                           children: [
                             {
-                              name: "Raja Anand Singhji (10)",
+                              name: "Raja Anand Singhji (M.K. 10)",
                               isKing: true,
                               children: [
                                 {
@@ -128,30 +128,26 @@ export const mankapurFamilyData = {
 };
 
 export const mankapurFamilyDataHindi = {
-  name: "राजा अजमत सिंहजी (1)",
+  name: "राजा अजमत सिंहजी (म.क. 1)",
   isExtra: "(गोंडा के राजा दत्त सिंह के पुत्र)",
   isKing: true,
   children: [
     {
-      name: "राजा गोपाल सिंहजी (2)",
+      name: "राजा गोपाल सिंहजी (म.क. 2)",
       isKing: true,
       children: [
         {
-          name: "राजा बहादुर सिंहजी (3)",
+          name: "राजा बहादुर सिंहजी (म.क. 3)",
           isKing: true,
           children: [
             {
-              name: "राजा बख्त सिंहजी (4)",
+              name: "राजा बख्त सिंहजी (म.क. 4)",
               isKing: true,
               children: [
                 {
-                  name: "राजा पृथ्वी पत सिंहजी (5)",
+                  name: "राजा पृथ्वी पत सिंहजी (म.क. 5)",
                   isKing: true,
-                  children: [
-                    {
-                      name: "महारानी ज्ञान कँवर",
-                    },
-                  ],
+                  children: [{ name: "महारानी ज्ञान कँवर" }],
                 },
               ],
             },
@@ -164,85 +160,57 @@ export const mankapurFamilyDataHindi = {
               name: "कुँवर (नाम अज्ञात) सिंहजी",
               children: [
                 {
-                  name: "राजा जय प्रकाश सिंहजी (6)",
+                  name: "राजा जय प्रकाश सिंहजी (म.क. 6)",
                   isKing: true,
                   children: [
                     {
-                      name: "राजा रघुराज सिंहजी (7)",
+                      name: "राजा रघुराज सिंहजी (म.क. 7)",
                       isKing: true,
                       children: [
                         {
-                          name: "राजा अम्बिकेश्वर प्रताप सिंहजी (8)",
+                          name: "राजा अम्बिकेश्वर प्रताप सिंहजी (म.क. 8)",
                           isKing: true,
                         },
+                        { name: "कुँवर आद्य रुद्र प्रताप सिंहजी" },
+                        { name: "कुँवरानी मुन्नी बच्चा" },
                         {
-                          name: "कुँवर आद्य रुद्र प्रताप सिंहजी",
-                        },
-                        {
-                          name: "कुँवरानी मुन्नी बच्चा",
-                        },
-                        {
-                          name: "राजा राघवेन्द्र प्रताप सिंहजी (9)",
+                          name: "राजा राघवेन्द्र प्रताप सिंहजी (म.क. 9)",
                           isKing: true,
                           children: [
                             {
-                              name: "राजा आनन्द सिंहजी (10)",
+                              name: "राजा आनन्द सिंहजी (म.क. 10)",
                               isKing: true,
                               children: [
                                 {
                                   name: "राजकुमारी निहारिका कुमारी",
                                   children: [
-                                    {
-                                      name: "अक्षय सिंह",
-                                    },
-                                    {
-                                      name: "अक्षिता सिंह",
-                                    },
+                                    { name: "अक्षय सिंह" },
+                                    { name: "अक्षिता सिंह" },
                                   ],
                                 },
                                 {
                                   name: "राजकुमार कीर्ति वर्धन सिंहजी",
-                                  children: [
-                                    {
-                                      name: "जय सिंह",
-                                    },
-                                  ],
+                                  children: [{ name: "जय सिंह" }],
                                 },
                                 {
                                   name: "राजकुमारी शिवानी सिंहजी",
                                   children: [
-                                    {
-                                      name: "अनिरुद्ध सिंह",
-                                    },
-                                    {
-                                      name: "अर्नव सिंह",
-                                    },
-                                    {
-                                      name: "शेफाली सिंह",
-                                    },
+                                    { name: "अनिरुद्ध सिंह" },
+                                    { name: "अर्नव सिंह" },
+                                    { name: "शेफाली सिंह" },
                                   ],
                                 },
                                 {
                                   name: "राजकुमारी राधिका सिंहजी",
-                                  children: [
-                                    {
-                                      name: "वासुदेव सिंह",
-                                    },
-                                  ],
+                                  children: [{ name: "वासुदेव सिंह" }],
                                 },
                               ],
                             },
-                            {
-                              name: "कुँवरानी अरुणा कुमारी",
-                            },
+                            { name: "कुँवरानी अरुणा कुमारी" },
                           ],
                         },
-                        {
-                          name: "कुँवर देवेन्द्र प्रताप सिंहजी",
-                        },
-                        {
-                          name: "रानी शैलेश्वरी कुमारी",
-                        },
+                        { name: "कुँवर देवेन्द्र प्रताप सिंहजी" },
+                        { name: "रानी शैलेश्वरी कुमारी" },
                       ],
                     },
                   ],

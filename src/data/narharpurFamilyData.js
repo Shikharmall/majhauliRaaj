@@ -1,6 +1,5 @@
-
 export const narharpurFamilyData = {
-  name: "Raja Rai Mall",
+  name: "Raja Rai Mall (Narharpur Estate) (N.P. 1)",
   isExtra: "(Third son of Maharaja Dev Mall of Majhauli Raj)",
   isKing: true,
   children: [
@@ -9,7 +8,7 @@ export const narharpurFamilyData = {
       isInfinite: true,
       children: [
         {
-          name: "Raja Hari Prasad Mall",
+          name: "Raja Hari Prasad Mall (N.P. ?)",
           isExtra: "(Martyr - 1857's war)",
           isKing: true,
         },
@@ -19,8 +18,8 @@ export const narharpurFamilyData = {
 };
 
 export const narharpurFamilyDataHindi = {
-  name: "राजा राय मल्ल",
-  isExtra: "(महराज देव मल्ल के तृतीय पुत्र - मझौली राज)",
+  name: "राजा राय मल्ल (नरहरपुर एस्टेट) (न.प. 1)",
+  isExtra: "(मझौली राज के महाराजा देव मल्ल के तीसरे पुत्र)",
   isKing: true,
   children: [
     {
@@ -28,8 +27,8 @@ export const narharpurFamilyDataHindi = {
       isInfinite: true,
       children: [
         {
-          name: "राजा हरि प्रसाद मल्ल",
-          isExtra: "(शहीद - 1857 की क्रांति)",
+          name: "राजा हरि प्रसाद मल्ल (न.प. ?)",
+          isExtra: "(शहीद - 1857 के युद्ध में)",
           isKing: true,
         },
       ],

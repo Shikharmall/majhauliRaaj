@@ -1,10 +1,16 @@
 "use client";
 import LanguageContext from "@/context/languageContext";
 import COLORS from "@/utils/color";
-import React, { useRef, useEffect, useContext } from "react";
+import React, { useRef, useEffect, useContext, useState } from "react";
 
 // Recursive TreeNode component
 function TreeNode({ node }) {
+  // let currentInd = ind;
+
+  // if (node?.king && !node?.isInfinite) {
+  //   currentInd = currentInd + 1;
+  // }
+
   return (
     <div className="flex flex-col items-center relative">
       {/* Node box */}
@@ -17,7 +23,7 @@ function TreeNode({ node }) {
         <div
           className={`px-4 py-2 rounded shadow flex flex-col items-center
             ${
-              node.isKing
+              node?.isKing
                 ? "border-2 border-[#FFD700] text-[#FFD700]"
                 : "border-2 border-[#f47217] text-[#f5a873]"
             }`}
@@ -27,6 +33,7 @@ function TreeNode({ node }) {
             ${node?.isKing ? "text-[#FFD700]" : "text-[#f5a873]"}`}
           >
             {node?.name?.toUpperCase()}
+            {/* {node?.isKing && `(${currentInd})`} */}
           </p>
           <p
             className={`text-sm font-semibold 
@@ -38,7 +45,7 @@ function TreeNode({ node }) {
       )}
 
       {/* Children connectors */}
-      {node.children && node.children.length > 0 && (
+      {node?.children && node?.children?.length > 0 && (
         <>
           {/* Vertical line down from node */}
           <div className="h-5 w-px bg-gray-400"></div>
@@ -49,7 +56,7 @@ function TreeNode({ node }) {
             <div className="absolute top-0 left-0 right-0 h-px bg-gray-400 z-0" />
 
             {/* Render each child node */}
-            {node.children.map((child, index) => (
+            {node?.children.map((child, index) => (
               <div key={index} className="flex flex-col items-center px-4 z-10">
                 <div className="h-5 w-px bg-gray-400"></div>
                 <TreeNode node={child} />
@@ -66,6 +73,7 @@ function TreeNode({ node }) {
 export default function FamilyTreeStructure({ familyData }) {
   const { language } = useContext(LanguageContext);
   const containerRef = useRef();
+  const [ind, setInd] = useState(0);
 
   useEffect(() => {
     if (containerRef.current) {

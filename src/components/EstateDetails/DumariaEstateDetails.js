@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
@@ -8,9 +8,17 @@ import {
   dumariafamilyData,
   dumariaFamilyDataHindi,
 } from "@/data/dumariaFamilyData";
+import ImageModal from "../ImageModel";
 
 export default function DumariaEstateDetails() {
   const { language } = useContext(LanguageContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
   return (
     <div>
       <Banner
@@ -29,7 +37,14 @@ export default function DumariaEstateDetails() {
               alt="majhauli-img"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg border-3 border-gray-300"
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+              onClick={() =>
+                openModal({
+                  url: "/assets/img/dumaria/dumaria1.jpg",
+                  estate: "Haveli of Dumaria Zamindari",
+                  estateHindi: "डुमरिया ज़मींदारी की हवेली",
+                })
+              }
             />
             <div className="flex items-center justify-center">
               <h2>
@@ -102,6 +117,12 @@ export default function DumariaEstateDetails() {
           }
         />
       </main>
+      {/* Modal */}
+      <ImageModal
+        isOpen={isModalOpen}
+        imageSrc={selectedImage}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }

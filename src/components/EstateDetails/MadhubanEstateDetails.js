@@ -414,7 +414,13 @@ export default function MadhubanEstateDetails() {
                 descendants took on the surname “Mall”, and many settled across
                 eastern UP — especially in Madhuban, Mau, Gorakhpur and Deoria,
                 and villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
-                Parshurampur.
+                Parshurampur. The villages these descendants resides are
+              </p>
+
+              <p className="font-serif">
+                Lakhnaur, Jaauli-Kothgharana, Bhelurr, Ufrauli, Lakuragram,
+                Karanpura, Jogiya(Gorakhpur), Poti, Khirikhot, Gangeveer,
+                Nevada, Nathupur, Usari, Ahirauli, Laalanpur, Bahrampur.
               </p>
             </div>
           ) : (

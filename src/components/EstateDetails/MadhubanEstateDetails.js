@@ -603,7 +603,7 @@ export default function MadhubanEstateDetails() {
                   exceptional skill in warfare. Together, they defeated Prince Khurram Khan,
                   the future Mughal emperor, and magnanimously spared his life. In recognition
                   of his valor in this victory, Raja Ajay Bahadur Mall was honored with the
-                  title "Fatah Bahadur Mall." Years later, after Emperor Jahangir's death on
+                  title &quot;Fatah Bahadur Mall.&quot; Years later, after Emperor Jahangir&apos;s death on
                   6 February 1628, Khurram Khan ascended the Mughal throne as Shah Jahan.
                   Determined to avenge his earlier defeat, he launched campaigns against the
                   states that had opposed him at Jang-e-Tauns. His armies destroyed forts at
@@ -631,8 +631,8 @@ export default function MadhubanEstateDetails() {
                 </p>
                 <p className="font-serif mt-4 font-bold">
                   This account originated as a local folk tale, preserving the memory of the
-                  battle and Mohan Pandey's heroism. Later, after extensive research, <em>Shri Mahtab
-                    Narayan Mall</em> documented this event in the book <em>"Visen Vansh Darpan"</em>.
+                  battle and Mohan Pandey&apos;s heroism. Later, after extensive research, <em>Shri Mahtab
+                    Narayan Mall</em> documented this event in the book <em>&quot;Visen Vansh Darpan&quot;</em>.
                 </p>
               </div>
               {/* <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
@@ -656,7 +656,7 @@ export default function MadhubanEstateDetails() {
                   मल्ल विशेन और उनके भाई राजा अजय बहादुर मल्ल विशेन ने युद्धकला में
                   अद्वितीय कौशल दिखाया। दोनों ने मिलकर खुर्रम खां, जो भविष्य में मुग़ल
                   सम्राट बने, को पराजित किया और उनकी जान बचा दी। इस विजय के सम्मान में
-                  राजा अजय बहादुर मल्ल को "फतह बहादुर मल्ल" की उपाधि दी गई।
+                  राजा अजय बहादुर मल्ल को &quot;फतह बहादुर मल्ल&quot; की उपाधि दी गई।
                   काफी वर्षों बाद, शहंशाह जहाँगीर की मृत्यु के पश्चात् 6 फरवरी 1628 को
                   खुर्रम खां ने आगरा का शासन संभाला और शाहजहाँ के नाम से राज्याभिषेक
                   किया। अपनी पिछली हार का बदला लेने के लिए उन्होंने उन राज्यों पर
@@ -689,7 +689,7 @@ export default function MadhubanEstateDetails() {
                   यह घटना मूल रूप से स्थानीय लोककथा के रूप में प्रचलित थी, जिसने
                   जंग और मोहन पाण्डेय की वीरता की स्मृति को संरक्षित किया। बाद में,
                   विस्तृत शोध के पश्चात <em>महताब नारायण मल्ल</em> ने इसे पुस्तक
-                  <em>"विशेन वंश दर्पण"</em> में प्रकाशित किया।
+                  <em>&quot;विशेन वंश दर्पण&quot;</em> में प्रकाशित किया।
                 </p>
               </div>
               {/* <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">

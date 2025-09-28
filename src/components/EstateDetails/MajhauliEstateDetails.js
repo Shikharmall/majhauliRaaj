@@ -2,7 +2,7 @@
 import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Banner from "../common/Banner";
-import FamilyTreeStructure from "../FamilyTreeStructure";
+import FamilyTreeStructure from "../common/FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
 import COLORS from "@/utils/color";
 import ImageModal from "../common/ImageModel";

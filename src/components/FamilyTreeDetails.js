@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
 import Banner from "./common/Banner";
-import FamilyTreeStructure from "./FamilyTreeStructure";
+import FamilyTreeStructure from "./common/FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
 import {
   majhauliFamilyData,

@@ -411,16 +411,23 @@ export default function MadhubanEstateDetails() {
               <p className="font-serif">
                 Raja Madhav Mall had two sons: Raja Nath Mall and Raja Ajay
                 Bahadur Mall (also known as Fateh Bahadur Mall). Their
-                descendants took on the surname “Mall”, and many settled across
+                descendants took on the surname &quot;Mall&quot;, and many settled across
                 eastern UP — especially in Madhuban, Mau, Gorakhpur and Deoria,
                 and villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
                 Parshurampur. The villages these descendants resides are
               </p>
-
               <p className="font-serif">
                 Lakhnaur, Jaauli-Kothgharana, Bhelurr, Ufrauli, Lakuragram,
                 Karanpura, Jogiya(Gorakhpur), Poti, Khirikhot, Gangeveer,
                 Nevada, Nathupur, Usari, Ahirauli, Laalanpur, Bahrampur.
+              </p>
+              <p className="font-serif font-bold">
+                <strong>
+                  <em> Debunked Theory (due to lack of evidence) by Lal Khadag Bahadur Mall</em>
+                </strong>
+              </p>
+              <p className="font-serif">
+                Lal Khadag Bahadur Mall, in his book <em>&quot;Vishen Vansh Vatika&quot;</em>, mentioned the name of Raja Madhav Mall but did not include his children Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall. He presented the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife. This theory was criticized by many historians and kings of that time and was later debunked.
               </p>
             </div>
           ) : (
@@ -441,11 +448,20 @@ export default function MadhubanEstateDetails() {
               <p className="font-serif">
                 राजा माधव मल्ल के दो पुत्र थे: राजा नत्थ मल्ल और राजा अजय बहादुर
                 मल्ल (जिन्हें फतेह बहादुर मल्ल के नाम से भी जाना जाता है)। इनके
-                वंशजों ने “मल्ल” उपनाम को अपनाया और वे पूर्वी उत्तर प्रदेश के
+                वंशजों ने &quot;मल्ल&quot; उपनाम को अपनाया और वे पूर्वी उत्तर प्रदेश के
                 विभिन्न क्षेत्रों में बस गए — विशेष रूप से मधुबन, मऊ, गोरखपुर,
                 देवरिया और हसनपुर, बहारामपुर, जाजौली, अहरौली और परशुरामपुर जैसे
                 गाँवों में।
               </p>
+              <p className="font-serif font-bold">
+                <strong>
+                  <em>लाल खड़ग बहादुर मल्ल द्वारा (प्रमाणों के अभाव में) खंडित सिद्धांत</em>
+                </strong>
+              </p>
+              <p className="font-serif">
+                लाल खड़ाग बहादुर मल्ल ने अपनी पुस्तक <em>&quot;विशेन वंश वाटिका&quot;</em> में राजा माधव मल्ल का नाम तो लिया, लेकिन उनके पुत्र राजा नत्थ बहादुर मल्ल और बाबू फतह बहादुर मल्ल को शामिल नहीं किया। उन्होंने मधुबन के मल्लों को मईयूर भट की कुर्मी पत्नी से उत्पन्न वंशज बताया। इस सिद्धांत की उस समय के कई इतिहासकारों और राजाओं द्वारा आलोचना की गई और बाद में इसे खारिज कर दिया गया।
+              </p>
+
             </div>
           )}
         </div>
@@ -516,7 +532,7 @@ export default function MadhubanEstateDetails() {
                 21st of second Jumada(corresponding to 14th October, 1606), and
                 the second appears on the 5th of Amurdad (corresponding to 25th
                 July, 1615).
-              </p>{" "}
+              </p>
               {/* october, 1606 // 25 July */}
               <p className="font-serif">
                 The first reference appears on the page titled

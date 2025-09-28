@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import ImageModal from "./ImageModel";
+import ImageModal from "./common/ImageModel";
 import { useState } from "react";
 
 export default function RoyalImagesGrid({ images }) {

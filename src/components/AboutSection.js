@@ -2,7 +2,7 @@ import LanguageContext from "@/context/languageContext";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext, useState } from "react";
-import ImageModal from "./ImageModel";
+import ImageModal from "./common/ImageModel";
 
 export default function AboutSection() {
   const { language } = useContext(LanguageContext);

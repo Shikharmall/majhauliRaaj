@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import FamilyTreeStructure from "../FamilyTreeStructure";
-import Banner from "../Banner";
+import Banner from "../common/Banner";
 import LanguageContext from "@/context/languageContext";
 import {
   bhadriFamilyData,

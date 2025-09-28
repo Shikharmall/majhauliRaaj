@@ -1,6 +1,6 @@
 "use client";
 import COLORS from "@/utils/color";
-import Banner from "./Banner";
+import Banner from "./common/Banner";
 import LanguageContext from "@/context/languageContext";
 import { useContext, useState } from "react";
 

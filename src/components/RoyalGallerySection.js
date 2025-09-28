@@ -1,6 +1,6 @@
 "use client";
 import LanguageContext from "@/context/languageContext";
-import Banner from "./Banner";
+import Banner from "./common/Banner";
 import RoyalImagesGrid from "./RoyalImagesGrid";
 import { useContext } from "react";
 

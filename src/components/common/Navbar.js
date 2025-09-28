@@ -14,7 +14,7 @@ export default function Navbar() {
             <Link
               href="/"
               className="text-xl font-semibold text-[#f47217] font-serif"
-              // className="text-xl font-semibold text-[#caaf44] font-serif"
+            // className="text-xl font-semibold text-[#caaf44] font-serif"
             >
               {language === "english" ? "Majhauli Raj" : "मझौली राज"}
             </Link>
@@ -28,6 +28,12 @@ export default function Navbar() {
               className="text-gray-700 hover:text-orange-600"
             >
               {language === "english" ? "Family Tree" : "वंशावली"}
+            </Link>
+            <Link
+              href="/mallMahajanpada"
+              className="text-gray-700 hover:text-orange-600"
+            >
+              {language === "english" ? "Mall Mahajanpada" : "मल्ल महाजनपद"}
             </Link>
             <Link
               href="/gallery"

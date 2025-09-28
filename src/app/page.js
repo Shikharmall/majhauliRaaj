@@ -1,12 +1,12 @@
 "use client";
-import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
-import SwiperSlider from "@/components/SwiperSlider";
+import Header from "@/components/common/Header";
+import Navbar from "@/components/common/Navbar";
+import SwiperSlider from "@/components/home/SwiperSlider";
 import AboutSection from "@/components/AboutSection";
-import Footer from "@/components/Footer";
-import GallerySection from "@/components/GallerySection";
-import MoreSection from "@/components/MoreSection";
-import MapSection from "@/components/MapSection";
+import Footer from "@/components/common/Footer";
+import GallerySection from "@/components/home/GallerySection";
+import MoreSection from "@/components/home/MoreSection";
+import MapSection from "@/components/home/MapSection";
 
 export default function Home() {
   return (

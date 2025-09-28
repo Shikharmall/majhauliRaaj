@@ -1,10 +1,10 @@
 "use client";
 import React, { useContext, useState } from "react";
 import Image from "next/image";
-import Banner from "../Banner";
+import Banner from "../common/Banner";
 import FamilyTreeStructure from "../FamilyTreeStructure";
 import LanguageContext from "@/context/languageContext";
-import ImageModal from "../ImageModel";
+import ImageModal from "../common/ImageModel";
 
 const familyData = {
   name: "Raja Madhav Mall",

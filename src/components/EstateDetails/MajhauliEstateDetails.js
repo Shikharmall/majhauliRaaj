@@ -1105,6 +1105,23 @@ export default function MajhauliEstateDetails() {
                 1100 to 1300 CE.
               </p>
               <p className="font-serif">
+                As the kings of Majhauli Raj were descendants of King Vishwasen
+                of Malla Mahajanpad, they stills put this name as a surname i.e.
+                Vishen/Bisen short form of Vishwasen in their names. They are
+                Suryavanshi Rajput and claim to be sons of God Laxmana from his
+                one of the sons Chandraketu (had got title Malla for being
+                extraordinary wrestler or fighter of that time) who was ruler of
+                Malla Rastra or Malla Mahajanpada in ancient India. Later many
+                kings who were of Majhauli Kingdom established many estates of
+                names Manakpur (Estate), Bhadri (Estate), Raja Madhav Mall
+                (Madhuban), Kalakankar (Estate) and many more in North India.
+              </p>
+              <p className="font-serif font-bold">
+                <strong>
+                  <em> Debunked Theory (due to lack of evidence) by Lal Khadag Bahadur Mall</em>
+                </strong>
+              </p>
+              <p className="font-serif">
                 One branch of this dynasty comes from a founder named Mayyur who
                 has been variously described as a Brahmin, Bhumihar or even a
                 Bhat. He had come from Kashi to Kushinara had children with four
@@ -1119,18 +1136,6 @@ export default function MajhauliEstateDetails() {
                 stablished Majhuli Raj, One son from his Brahmin wife went on to
                 become the ancestor of the Misra Brahmins; and the son from his
                 Kurmi wife went on to found the Kakradih estate.
-              </p>
-              <p className="font-serif">
-                As the kings of Majhauli Raj were descendants of King Vishwasen
-                of Malla Mahajanpad, they stills put this name as a surname i.e.
-                Vishen/Bisen short form of Vishwasen in their names. They are
-                Suryavanshi Rajput and claim to be sons of God Laxmana from his
-                one of the sons Chandraketu (had got title Malla for being
-                extraordinary wrestler or fighter of that time) who was ruler of
-                Malla Rastra or Malla Mahajanpada in ancient India. Later many
-                kings who were of Majhauli Kingdom established many estates of
-                names Manakpur (Estate), Bhadri (Estate), Raja Madhav Mall
-                (Madhuban), Kalakankar (Estate) and many more in North India.
               </p>
             </div>
           ) : (
@@ -1148,6 +1153,22 @@ export default function MajhauliEstateDetails() {
                 राज की स्थापना की।
               </p>
               <p className="font-serif">
+                चूंकि मझौली राज के राजा मल्ल महाजनपद के राजा विश्वसेन के वंशज
+                थे, इसलिए वे आज भी अपने नाम के साथ विश्वेन/बिसेन (जो कि विश्वसेन
+                का संक्षिप्त रूप है) उपनाम का प्रयोग करते हैं। वे सूर्यवंशी
+                राजपूत माने जाते हैं और स्वयं को भगवान लक्ष्मण के पुत्र
+                चंद्रकेतु (जिन्हें उस समय की कुश्ती और युद्ध-कला में प्रवीण होने
+                के कारण मल्ल की उपाधि मिली थी) की संतान मानते हैं। बाद में मझौली
+                राज के कई राजाओं ने भारत के उत्तरी भागों में कई रियासतों की
+                स्थापना की जैसे — मनकापुर (एस्टेट), भदरी (एस्टेट), राजा माधव
+                मल्ल (मधुबन), कालाकांकर (एस्टेट) आदि।
+              </p>
+              <p className="font-serif font-bold">
+                <strong>
+                  <em>लाल खड़ग बहादुर मल्ल द्वारा (प्रमाणों के अभाव में) खंडित सिद्धांत</em>
+                </strong>
+              </p>
+              <p className="font-serif">
                 इस वंश की एक शाखा के संस्थापक का नाम मय्यूर था, जिन्हें कभी
                 ब्राह्मण, भूमिहार या भट्ट के रूप में वर्णित किया गया है। वह काशी
                 से कुशीनगर आए थे और उनकी चार पत्नियाँ थीं: एक ब्राह्मण, एक मल्ल
@@ -1161,17 +1182,6 @@ export default function MajhauliEstateDetails() {
                 की। ब्राह्मण पत्नी से उत्पन्न पुत्र मिश्रा ब्राह्मणों के पूर्वज
                 बने और कुर्मी पत्नी से उत्पन्न पुत्र ने काकरडिह एस्टेट की
                 स्थापना की।
-              </p>
-              <p className="font-serif">
-                चूंकि मझौली राज के राजा मल्ल महाजनपद के राजा विश्वसेन के वंशज
-                थे, इसलिए वे आज भी अपने नाम के साथ विश्वेन/बिसेन (जो कि विश्वसेन
-                का संक्षिप्त रूप है) उपनाम का प्रयोग करते हैं। वे सूर्यवंशी
-                राजपूत माने जाते हैं और स्वयं को भगवान लक्ष्मण के पुत्र
-                चंद्रकेतु (जिन्हें उस समय की कुश्ती और युद्ध-कला में प्रवीण होने
-                के कारण मल्ल की उपाधि मिली थी) की संतान मानते हैं। बाद में मझौली
-                राज के कई राजाओं ने भारत के उत्तरी भागों में कई रियासतों की
-                स्थापना की जैसे — मनकापुर (एस्टेट), भदरी (एस्टेट), राजा माधव
-                मल्ल (मधुबन), कालाकांकर (एस्टेट) आदि।
               </p>
             </div>
           )}
@@ -1240,13 +1250,17 @@ export default function MajhauliEstateDetails() {
           {language === "english" ? (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                {`The first documented mention of Majhauli Raj appears in the Ain-i-Akbari, written by Abul Fazl, the court historian of Emperor Akbar. In this imperial record, Majhauli was incorrectly spelled as "Mahauli" and "Maholi", likely due to phonetic transliteration into Persian. Despite the spelling error, its inclusion highlights Majhauli's prominence during the Mughal era. At that time, Majhauli was a part of the Sarkar of Gorakhpur and consisted of two mahals, indicating its administrative importance within the region.`}
+                The first documented mention of Majhauli Raj appears in the
+                <strong>
+                  <em> Ain-i-Akbari </em>
+                </strong>
+                , written by Abul Fazl, the court historian of Emperor Akbar. In this imperial record, Majhauli was incorrectly spelled as "Mahauli" and "Maholi", likely due to phonetic transliteration into Persian. Despite the spelling error, its inclusion highlights Majhauli's prominence during the Mughal era. At that time, Majhauli was a part of the Sarkar of Gorakhpur and consisted of two mahals, indicating its administrative importance within the region.
               </p>
               <p className="font-serif">
-                {`Majhauli Raj held both military and architectural significance. The estate had two forts constructed from brick, which served defensive and strategic purposes. It also maintained a standing army of 2,000 infantry soldiers, showcasing its role in local security and possible participation in Mughal military campaigns. These details point to a strong and organized estate, capable of defending its territory and supporting the imperial administration when needed.`}
+                Majhauli Raj held both military and architectural significance. The estate had two forts constructed from brick, which served defensive and strategic purposes. It also maintained a standing army of 2,000 infantry soldiers, showcasing its role in local security and possible participation in Mughal military campaigns. These details point to a strong and organized estate, capable of defending its territory and supporting the imperial administration when needed.
               </p>
               <p className="font-serif">
-                {`Economically, Majhauli was a valuable asset to the empire. The Ain-i-Akbari records a revenue demand of 618,256 dams, calculated from 2,523 bighas of agricultural land. The dam was a copper coin widely used in Akbar's time, and such a high assessment reflects the estate's fertile land and productive output. The ruling family of Majhauli belonged to the Bisen Rajput clan, known for their loyalty, governance, and influence in eastern Uttar Pradesh.`}
+                Economically, Majhauli was a valuable asset to the empire. The Ain-i-Akbari records a revenue demand of 618,256 dams, calculated from 2,523 bighas of agricultural land. The dam was a copper coin widely used in Akbar's time, and such a high assessment reflects the estate's fertile land and productive output. The ruling family of Majhauli belonged to the Bisen Rajput clan, known for their loyalty, governance, and influence in eastern Uttar Pradesh.
               </p>
             </div>
           ) : (

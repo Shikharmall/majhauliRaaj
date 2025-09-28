@@ -580,6 +580,182 @@ export default function MadhubanEstateDetails() {
           )}
         </div>
 
+
+        {/* Battle of Tonsa */}
+
+        <div className="flex items-center gap-4 my-5">
+          <div className="h-px flex-grow bg-gray-300"></div>
+          <span className="text-gray-500 text-2xl whitespace-nowrap">
+            {language === "english" ? "BATTLE OF TONSA" : "जंग-ए-टौंस"}
+          </span>
+          <div className="h-px flex-grow bg-gray-300"></div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 my-3">
+          {/* Bio */}
+          {language === "english" ? (
+            <>
+              <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                <p className="font-serif">
+                  The Battle of Jang-e-Tauns, fought in the early 17th century, was a decisive
+                  conflict in the region of present-day Mau district. Raja Natth Bahadur Mall
+                  Vishen of Natthupur and his brother Raja Ajay Bahadur Mall Vishen displayed
+                  exceptional skill in warfare. Together, they defeated Prince Khurram Khan,
+                  the future Mughal emperor, and magnanimously spared his life. In recognition
+                  of his valor in this victory, Raja Ajay Bahadur Mall was honored with the
+                  title "Fatah Bahadur Mall." Years later, after Emperor Jahangir's death on
+                  6 February 1628, Khurram Khan ascended the Mughal throne as Shah Jahan.
+                  Determined to avenge his earlier defeat, he launched campaigns against the
+                  states that had opposed him at Jang-e-Tauns. His armies destroyed forts at
+                  Madhuban, Kakaradih, and Fatehpur before advancing on Natthupur.
+                </p>
+                <p className="font-serif">
+                  During this campaign, the rulers of Natthupur were traveling in South India,
+                  leaving the fort vulnerable. At this critical moment, Chief Minister Shaheed
+                  Mohan Pandey took command of the defenses. Demonstrating extraordinary courage
+                  and loyalty, he rallied the remaining soldiers to resist the Mughal forces.
+                  Though a contingent of soldiers from a particular caste fled in fear, Mohan
+                  Pandey continued the fight alone. The Mughals captured him and demanded
+                  information about the king and the treasury. Out of devotion to his state,
+                  he refused to divulge anything, enduring a week of torture before being
+                  martyred by being burned alive.
+                </p>
+                <p className="font-serif mt-4">
+                  Before dying, Mohan Pandey pronounced a curse on the fleeing soldiers and their
+                  descendants, declaring that none of them or their lineage would prosper in or
+                  around Natthupur. His samadhi (memorial) stands in the western garden of
+                  Natthupur village, where descendants of Raja Natth Bahadur Mall Vishen continue
+                  to honor his memory. The Battle of Jang-e-Tauns and the heroic defense led by
+                  Mohan Pandey remain enduring symbols of bravery, loyalty, and the high price
+                  of freedom in regional history.
+                </p>
+                <p className="font-serif mt-4 font-bold">
+                  This account originated as a local folk tale, preserving the memory of the
+                  battle and Mohan Pandey's heroism. Later, after extensive research, <em>Shri Mahtab
+                    Narayan Mall</em> documented this event in the book <em>"Visen Vansh Darpan"</em>.
+                </p>
+              </div>
+              {/* <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                <p className="font-serif">
+                  Great patriot Shaheed Mohan Pandey was born in the 16th century in the Madhuban tehsil area of present-day Mau district. He served as the chief minister to of Raja Madhav Mall Vishen of Madhuban estate and his son Raja Natth Bahadur Mall Vishen of Natthupur estate. Raja Natth Bahadur Mall Vishen and his brother Raja Ajay Bahadur Mall Vishen were such skilled warriors that they defeated Khurram Khan in the Battle of Jang-e-Tauns and spared his life. After this victory, Raja Ajay came to be known as Fatah Bahadur Mall.
+                </p>
+                <p className="font-serif">
+                  Years later, after Emperor Jahangir's death, on 6 February 1628 Khurram Khan became the ruler of Agra and took the title Shah Jahan. Consumed by a desire for revenge, he soon attacked the states that had opposed him in Jang-e-Tauns. Shah Jahan's forces destroyed forts at Madhuban, Kakaradih and Fatehpur and advanced on Natthupur. The rulers of Natthupur were traveling in South India at the time. In their absence, Chief Minister Mohan Pandey bravely rallied the defenders. Upon seeing a contingent of soldiers from a particular caste flee and join the Mughals, the Mughals captured Mohan Pandey and demanded information about the king and the treasury. Out of devotion to his state, he refused to divulge anything. After torturing him for a week without gaining any information, the Mughal soldiers burned Mohan Pandey alive.
+                </p>
+                <p className="font-serif mt-4">
+                  Before dying, the heroic martyr pronounced a curse on the fleeing soldiers and their descendants: if any of them or their lineage ever built a house in or around the Natthupur palace, they would come to no good and be destroyed with their families. His samadhi (memorial) stands in the western garden of Natthupur village, where descendants of Raja Natth Bahadur Mall Vishen still perform his worship. It is said that no member of the cursed caste's descendants has a home in that village.
+                </p>
+              </div> */}
+            </>
+          ) : (
+            <>
+              <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                <p className="font-serif">
+                  जंग-ए-टौंस की लड़ाई, जो 17वीं सदी के प्रारंभ में लड़ी गई थी, वर्तमान
+                  मऊ जिले के क्षेत्र में एक निर्णायक संघर्ष थी। नत्थुपुर के राजा नत्थ बहादुर
+                  मल्ल विशेन और उनके भाई राजा अजय बहादुर मल्ल विशेन ने युद्धकला में
+                  अद्वितीय कौशल दिखाया। दोनों ने मिलकर खुर्रम खां, जो भविष्य में मुग़ल
+                  सम्राट बने, को पराजित किया और उनकी जान बचा दी। इस विजय के सम्मान में
+                  राजा अजय बहादुर मल्ल को "फतह बहादुर मल्ल" की उपाधि दी गई।
+                  काफी वर्षों बाद, शहंशाह जहाँगीर की मृत्यु के पश्चात् 6 फरवरी 1628 को
+                  खुर्रम खां ने आगरा का शासन संभाला और शाहजहाँ के नाम से राज्याभिषेक
+                  किया। अपनी पिछली हार का बदला लेने के लिए उन्होंने उन राज्यों पर
+                  अभियान चलाया जिन्होंने जंग-ए-टौंस में उनका विरोध किया था। उनकी सेनाओं
+                  ने मधुबन, ककराडीह और फतहपुर के किलों को ध्वस्त किया और नत्थुपुर
+                  की ओर बढ़ीं।
+                </p>
+                <p className="font-serif">
+                  इस अभियान के दौरान नत्थुपुर के शासक दक्षिण भारत की यात्रा पर थे,
+                  जिससे किला असुरक्षित रह गया। इस कठिन समय में महामंत्री शहीद मोहन पाण्डेय
+                  ने किले की रक्षा की कमान संभाली। उन्होंने अद्भुत साहस और निष्ठा दिखाते
+                  हुए शेष सैनिकों को मुग़ल सेना का मुकाबला करने के लिए प्रेरित किया।
+                  हालांकि एक विशेष जाति के कुछ सैनिक भय के कारण भाग गए, मोहन पाण्डेय
+                  अकेले लड़ते रहे। मुग़लों ने उन्हें बंदी बना लिया और राजा तथा खजाने
+                  के बारे में जानकारी मांगी। अपने राज्य के प्रति भक्ति के कारण उन्होंने
+                  कुछ भी नहीं बताया और लगातार एक सप्ताह तक कष्ट सहने के बाद उन्हें
+                  जिंदा जला दिया गया।
+                </p>
+                <p className="font-serif mt-4">
+                  शहीद होने से पहले मोहन पाण्डेय ने भाग गए सैनिकों और उनके वंश पर
+                  श्राप दिया कि यदि उनका या उनके वंश का कोई भी सदस्य नत्थुपुर या
+                  उसके आस-पास घर बनाएगा तो उसका कल्याण नहीं होगा और वह सपरिवार
+                  नष्ट हो जाएगा। उनका ब्रह्मस्थान नत्थुपुर गाँव के पश्चिमी बागीचे
+                  में स्थित है, जहाँ राजा नत्थ बहादुर मल्ल विशेन के वंशज उनकी पूजा
+                  करते हैं। जंग-ए-टौंस और मोहन पाण्डेय के वीरतापूर्ण संघर्ष की
+                  स्मृति आज भी बहादुरी, निष्ठा और स्वतंत्रता के उच्च मूल्य का प्रतीक
+                  मानी जाती है।
+                </p>
+                <p className="font-serif mt-4 font-bold">
+                  यह घटना मूल रूप से स्थानीय लोककथा के रूप में प्रचलित थी, जिसने
+                  जंग और मोहन पाण्डेय की वीरता की स्मृति को संरक्षित किया। बाद में,
+                  विस्तृत शोध के पश्चात <em>महताब नारायण मल्ल</em> ने इसे पुस्तक
+                  <em>"विशेन वंश दर्पण"</em> में प्रकाशित किया।
+                </p>
+              </div>
+              {/* <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                मझौली के किसी भी राजा का पहला लिखित उल्लेख
+                <strong>
+                  <em> तुजुक-ए-जहाँगीरी &nbsp;</em>
+                </strong>
+                में मिलता है, जहाँ राजा नत्थ मल का दो बार उल्लेख हुआ है — दोनों
+                के बीच दस वर्षों का अंतर है। पहला उल्लेख दूसरी जमादि (22वीं
+                तारीख) के दिनांक (14 अक्टूबर, 1606) का है, और दूसरा अमुर्दाद की
+                5वीं तारीख (25 जुलाई, 1615) का है।
+              </p>
+              <p className="font-serif">
+                पहला उल्लेख
+                <strong> अज़ीज़ कोका का उल्लेखनीय पत्र </strong>
+                शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  &quot;मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये
+                  दिए।&quot;
+                </em>
+              </p>
+              <p className="font-serif mt-4">
+                दूसरा उल्लेख
+                <strong> हिंदू राजा मुसलमान बना </strong>
+                शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  &quot;5वीं अमुर्दाद को, राजा नत्थमल की मनसबदारी जो 1,500
+                  व्यक्तिगत और 1,100 घुड़सवार थी, उसमें 500 व्यक्तिगत और 100
+                  घुड़सवार की वृद्धि की गई।&quot;
+                </em>
+              </p>
+            </div> */}
+            </>
+          )}
+
+          {/* right Image */}
+          <div className="md:col-span-1">
+            <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+              <div className="flex flex-col md:flex-row justify-center">
+                <Image
+                  src="/assets/img/madhuban/mohanPandey.jpg"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/madhuban/mohanPandey.jpg" })
+                  }
+                />
+              </div>
+
+              <p>
+                {language === "english"
+                  ? "Martyrs' Memorial of Mohan Pandey, Commander-in-Chief of Raja Nath Mall's Army"
+                  : "शहीद स्मारक : मोहन पांडेय, राजा नाथ मल्ल की सेना के प्रधान सेनापति।"}
+              </p>
+            </div>
+          </div>
+        </div>
+
+
         {/* Post Independence Period */}
 
         <div className="flex items-center gap-4 my-5">

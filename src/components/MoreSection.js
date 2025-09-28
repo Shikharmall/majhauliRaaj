@@ -108,43 +108,40 @@ export default function MoreSection() {
         </motion.h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-items-center items-center gap-4">
-          {items.map((item, idx) => {
-            const cardRef = useRef(null);
-            const cardInView = useInView(cardRef, { once: true, margin: "-100px" });
-
-            return (
-              <motion.div
-                key={idx}
-                ref={cardRef}
-                animate={cardInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
+          {items.map((item, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
+            >
+              <Link
+                href={item.href}
+                className="flex flex-col items-center text-center transition p-3 rounded-xl w-50 h-50 m-1"
               >
-                <Link
-                  href={item.href}
-                  className="flex flex-col items-center text-center transition p-3 rounded-xl w-50 h-50 m-1"
-                >
-                  <Image
-                    src={item.src}
-                    alt="flag"
-                    width={100}
-                    height={100}
-                    className="w-24 h-24 object-contain"
-                  />
-                  <div className="name mt-2">
-                    <h1 className="text-lg font-serif">
-                      {language === "english" ? item.title : item.titleHindi}
-                    </h1>
-                    <p className="text-gray-600 mt-1 text-sm">
-                      {language === "english"
-                        ? item.description
-                        : item.descriptionHindi}
-                    </p>
-                  </div>
-                </Link>
-              </motion.div>
-            );
-          })}
+                <Image
+                  src={item.src}
+                  alt="flag"
+                  width={100}
+                  height={100}
+                  className="w-24 h-24 object-contain"
+                />
+                <div className="name mt-2">
+                  <h1 className="text-lg font-serif">
+                    {language === "english" ? item.title : item.titleHindi}
+                  </h1>
+                  <p className="text-gray-600 mt-1 text-sm">
+                    {language === "english"
+                      ? item.description
+                      : item.descriptionHindi}
+                  </p>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
         </div>
+
       </div>
     </section>
   );

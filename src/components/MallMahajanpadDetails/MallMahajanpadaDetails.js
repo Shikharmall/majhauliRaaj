@@ -342,22 +342,561 @@ export default function MallMahajanpadaDetails() {
   const { language } = useContext(LanguageContext);
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [isMaintenance, setIsMaintenance] = useState(true);
 
   const openModal = (src) => {
     setSelectedImage(src);
     setModalOpen(true);
   };
+
+
+
   return (
     <div>
       <Banner
         title={language === "english" ? "Mall Mahajanpada" : "मल्ल महाजनपद"}
       />
 
-      <div className="flex justify-center mb-10">
-        <p>Page under maintenance</p>
-      </div>
+      {
+        isMaintenance
+          ?
+          <div className="flex justify-center mb-10">
+            <p>Page under maintenance</p>
+          </div>
+          :
+          <>
+            {/* Main Content */}
+            <main className="container mx-auto px-5 md:px-20 py-5 md:py-10">
+              {/* intro */}
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Left Image */}
+                <div className="md:col-span-1 ">
+                  <Image
+                    src="/assets/img/ganaSanghas.jpg"
+                    alt="madhuban-img"
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+                    onClick={() =>
+                      openModal({
+                        url: "/assets/img/ganaSanghas.jpg",
+                        estate: "Mall Mahajanpada",
+                        estateHindi: "मल्ल महाजनपद",
+                      })
+                    }
+                  />
+                  <div className="flex items-center justify-center">
+                    <h2>
+                      {language === "english"
+                        ? "Mall Mahajanpada"
+                        : "मल्ल महाजनपद"}
+                    </h2>
+                  </div>
+                  <br />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14323.669579911992!2d83.67328034658887!3d26.1668195922816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39922eb427a6b111%3A0x15404933bf53d77f!2sMadhuban%2C%20Uttar%20Pradesh%20221603!5e0!3m2!1sen!2sin!4v1753207345187!5m2!1sen!2sin"
+                    width="100%"
+                    height="300"
+                    className="w-full rounded-md border-0"
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
 
-      
+                {/* Bio */}
+                {language === "english" ? (
+                  <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                    <p className="font-serif">
+                      Raja Madhav Mall was a prominent Rajput ruler from the Vishen
+                      (also called Bisen) dynasty, historically linked to the Majhauli
+                      Raj estate in eastern Uttar Pradesh. He was the second son of
+                      Raja Dev Mall, the 95th ruler of the Majhauli line.
+                    </p>
+                    <p className="font-serif">
+                      In the mid-16th century, Raja Madhav Mall established the region
+                      known as Madhuban (in present-day Mau district, Uttar Pradesh),
+                      which became an influential settlement for his descendants. This
+                      area is now the Madhuban tehsil, comprising numerous villages
+                      and a significant population.
+                    </p>
+                    <p className="font-serif">
+                      Raja Madhav Mall had two sons: Raja Nath Mall and Raja Ajay
+                      Bahadur Mall (also known as Fateh Bahadur Mall). Their
+                      descendants took on the surname &quot;Mall&quot;, and many settled across
+                      eastern UP — especially in Madhuban, Mau, Gorakhpur and Deoria,
+                      and villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
+                      Parshurampur. The villages these descendants resides are
+                    </p>
+                    <p className="font-serif">
+                      Lakhnaur, Jaauli-Kothgharana, Bhelurr, Ufrauli, Lakuragram,
+                      Karanpura, Jogiya(Gorakhpur), Poti, Khirikhot, Gangeveer,
+                      Nevada, Nathupur, Usari, Ahirauli, Laalanpur, Bahrampur.
+                    </p>
+                    <p className="font-serif font-bold">
+                      <strong>
+                        <em> Debunked Theory (due to lack of evidence) by Lal Khadag Bahadur Mall</em>
+                      </strong>
+                    </p>
+                    <p className="font-serif">
+                      Lal Khadag Bahadur Mall, in his book <em>&quot;Vishen Vansh Vatika&quot;</em>, mentioned the name of Raja Madhav Mall but did not include his children Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall. He presented the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife. This theory was criticized by many historians and kings of that time and was later debunked.
+                    </p>
+                  </div>
+                ) : (
+                  <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                    <p className="font-serif">
+                      राजा माधव मल्ल एक प्रमुख राजपूत शासक थे, जो विशेन (या बीसेन) वंश
+                      से संबंधित थे और उनका ऐतिहासिक संबंध उत्तर प्रदेश के पूर्वी भाग
+                      में स्थित मझौली राज रियासत से था। वे राजा देव मल्ल के द्वितीय
+                      पुत्र थे, जो मझौली वंश के 95वें शासक माने जाते हैं।
+                    </p>
+                    <p className="font-serif">
+                      16वीं शताब्दी के मध्य में, राजा माधव मल्ल ने मधुबन नामक क्षेत्र
+                      की स्थापना की (जो वर्तमान में उत्तर प्रदेश के मऊ ज़िले में स्थित
+                      है)। यह क्षेत्र उनके वंशजों के लिए एक प्रभावशाली बस्ती बन गया और
+                      आज यह मधुबन तहसील के रूप में जाना जाता है, जिसमें अनेक गाँव और
+                      बड़ी जनसंख्या शामिल है।
+                    </p>
+                    <p className="font-serif">
+                      राजा माधव मल्ल के दो पुत्र थे: राजा नत्थ मल्ल और राजा अजय बहादुर
+                      मल्ल (जिन्हें फतेह बहादुर मल्ल के नाम से भी जाना जाता है)। इनके
+                      वंशजों ने &quot;मल्ल&quot; उपनाम को अपनाया और वे पूर्वी उत्तर प्रदेश के
+                      विभिन्न क्षेत्रों में बस गए — विशेष रूप से मधुबन, मऊ, गोरखपुर,
+                      देवरिया और हसनपुर, बहारामपुर, जाजौली, अहरौली और परशुरामपुर जैसे
+                      गाँवों में।
+                    </p>
+                    <p className="font-serif font-bold">
+                      <strong>
+                        <em>लाल खड़ग बहादुर मल्ल द्वारा (प्रमाणों के अभाव में) खंडित सिद्धांत</em>
+                      </strong>
+                    </p>
+                    <p className="font-serif">
+                      लाल खड़ाग बहादुर मल्ल ने अपनी पुस्तक <em>&quot;विशेन वंश वाटिका&quot;</em> में राजा माधव मल्ल का नाम तो लिया, लेकिन उनके पुत्र राजा नत्थ बहादुर मल्ल और बाबू फतह बहादुर मल्ल को शामिल नहीं किया। उन्होंने मधुबन के मल्लों को मईयूर भट की कुर्मी पत्नी से उत्पन्न वंशज बताया। इस सिद्धांत की उस समय के कई इतिहासकारों और राजाओं द्वारा आलोचना की गई और बाद में इसे खारिज कर दिया गया।
+                    </p>
+
+                  </div>
+                )}
+              </div>
+
+              {/* Mughal Period */}
+
+              <div className="flex items-center gap-4 my-5">
+                <div className="h-px flex-grow bg-gray-300"></div>
+                <span className="text-gray-500 text-2xl whitespace-nowrap">
+                  {language === "english" ? "MUGHAL PERIOD" : "मुग़ल काल"}
+                </span>
+                <div className="h-px flex-grow bg-gray-300"></div>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 my-3">
+                {/* left Image */}
+                <div className="md:col-span-1">
+                  <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+                    <div className="flex flex-col md:flex-row justify-center">
+                      <Image
+                        src="/assets/img/majhauli/proof3.png"
+                        alt="majhauli-img"
+                        width={200}
+                        height={50}
+                        className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                        onClick={() =>
+                          openModal({
+                            url: "/assets/img/majhauli/proof3.png",
+                            // estate: "(Page 1)",
+                            // estateHindi: "(पृष्ठ 1)",
+                          })
+                        }
+                      />
+                      <Image
+                        src="/assets/img/majhauli/proof4.png"
+                        alt="majhauli-img"
+                        width={200}
+                        height={50}
+                        className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                        onClick={() =>
+                          openModal({
+                            url: "/assets/img/majhauli/proof4.png",
+                            // estate: "(Page 2)",
+                            // estateHindi: "(पृष्ठ 2)",
+                          })
+                        }
+                      />
+                    </div>
+
+                    <p>
+                      {language === "english"
+                        ? "Mention of Raja Nath Mall of Majhauli in Tuzuk-i-Jahangiri"
+                        : "तुझुक-ए-जहांगीरी में मझौली के राजा नत्थ मल्ल का उल्लेख मिलता है।"}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Bio */}
+                {language === "english" ? (
+                  <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                    <p className="font-serif">
+                      The first written record of any king of Majhauli appears in the
+                      <strong>
+                        <em> Tuzuk-i-Jahangiri </em>
+                      </strong>
+                      , where Raja Nath Mall is mentioned twice, with a gap of ten
+                      years between the two references. The first mention is dated the
+                      21st of second Jumada(corresponding to 14th October, 1606), and
+                      the second appears on the 5th of Amurdad (corresponding to 25th
+                      July, 1615).
+                    </p>
+                    {/* october, 1606 // 25 July */}
+                    <p className="font-serif">
+                      The first reference appears on the page titled
+                      <strong> Remarkable Letter of Aziz Koka</strong>, where it
+                      states:
+                    </p>
+                    <p className="font-serif mx-5 md:mx-10">
+                      <em>
+                        &quot;I gave 5,000 rupees to Nathu Mal(?), Raja of
+                        Manjholi.&quot;
+                      </em>
+                    </p>
+                    <p className="font-serif mt-4">
+                      The second reference appears on the page titled
+                      <strong> Hindu Raja Turns Musulman</strong>, where it states:
+                    </p>
+                    <p className="font-serif mx-5 md:mx-10">
+                      <em>
+                        &quot;On the 5th Amurdad, to the mansab of Raja Nathmal, which
+                        was 1,500 personal and 1,100 horse, an addition of 500
+                        personal and 100 horse was made.&quot;
+                      </em>
+                    </p>
+                  </div>
+                ) : (
+                  <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                    <p className="font-serif">
+                      मझौली के किसी भी राजा का पहला लिखित उल्लेख
+                      <strong>
+                        <em> तुजुक-ए-जहाँगीरी &nbsp;</em>
+                      </strong>
+                      में मिलता है, जहाँ राजा नत्थ मल का दो बार उल्लेख हुआ है — दोनों
+                      के बीच दस वर्षों का अंतर है। पहला उल्लेख दूसरी जमादि (22वीं
+                      तारीख) के दिनांक (14 अक्टूबर, 1606) का है, और दूसरा अमुर्दाद की
+                      5वीं तारीख (25 जुलाई, 1615) का है।
+                    </p>
+                    <p className="font-serif">
+                      पहला उल्लेख
+                      <strong> अज़ीज़ कोका का उल्लेखनीय पत्र </strong>
+                      शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
+                    </p>
+                    <p className="font-serif mx-5 md:mx-10">
+                      <em>
+                        &quot;मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये
+                        दिए।&quot;
+                      </em>
+                    </p>
+                    <p className="font-serif mt-4">
+                      दूसरा उल्लेख
+                      <strong> हिंदू राजा मुसलमान बना </strong>
+                      शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
+                    </p>
+                    <p className="font-serif mx-5 md:mx-10">
+                      <em>
+                        &quot;5वीं अमुर्दाद को, राजा नत्थमल की मनसबदारी जो 1,500
+                        व्यक्तिगत और 1,100 घुड़सवार थी, उसमें 500 व्यक्तिगत और 100
+                        घुड़सवार की वृद्धि की गई।&quot;
+                      </em>
+                    </p>
+                  </div>
+                )}
+              </div>
+
+
+              {/* Battle of Tonsa */}
+
+              <div className="flex items-center gap-4 my-5">
+                <div className="h-px flex-grow bg-gray-300"></div>
+                <span className="text-gray-500 text-2xl whitespace-nowrap">
+                  {language === "english" ? "BATTLE OF TONSA" : "जंग-ए-टौंस"}
+                </span>
+                <div className="h-px flex-grow bg-gray-300"></div>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 my-3">
+                {/* Bio */}
+                {language === "english" ? (
+                  <>
+                    <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                      <p className="font-serif">
+                        The Battle of Jang-e-Tauns, fought in the early 17th century, was a decisive
+                        conflict in the region of present-day Mau district. Raja Natth Bahadur Mall
+                        Vishen of Natthupur and his brother Raja Ajay Bahadur Mall Vishen displayed
+                        exceptional skill in warfare. Together, they defeated Prince Khurram Khan,
+                        the future Mughal emperor, and magnanimously spared his life. In recognition
+                        of his valor in this victory, Raja Ajay Bahadur Mall was honored with the
+                        title &quot;Fatah Bahadur Mall.&quot; Years later, after Emperor Jahangir&apos;s death on
+                        6 February 1628, Khurram Khan ascended the Mughal throne as Shah Jahan.
+                        Determined to avenge his earlier defeat, he launched campaigns against the
+                        states that had opposed him at Jang-e-Tauns. His armies destroyed forts at
+                        Madhuban, Kakaradih, and Fatehpur before advancing on Natthupur.
+                      </p>
+                      <p className="font-serif">
+                        During this campaign, the rulers of Natthupur were traveling in South India,
+                        leaving the fort vulnerable. At this critical moment, Chief Minister Shaheed
+                        Mohan Pandey took command of the defenses. Demonstrating extraordinary courage
+                        and loyalty, he rallied the remaining soldiers to resist the Mughal forces.
+                        Though a contingent of soldiers from a particular caste fled in fear, Mohan
+                        Pandey continued the fight alone. The Mughals captured him and demanded
+                        information about the king and the treasury. Out of devotion to his state,
+                        he refused to divulge anything, enduring a week of torture before being
+                        martyred by being burned alive.
+                      </p>
+                      <p className="font-serif mt-4">
+                        Before dying, Mohan Pandey pronounced a curse on the fleeing soldiers and their
+                        descendants, declaring that none of them or their lineage would prosper in or
+                        around Natthupur. His samadhi (memorial) stands in the western garden of
+                        Natthupur village, where descendants of Raja Natth Bahadur Mall Vishen continue
+                        to honor his memory. The Battle of Jang-e-Tauns and the heroic defense led by
+                        Mohan Pandey remain enduring symbols of bravery, loyalty, and the high price
+                        of freedom in regional history.
+                      </p>
+                      <p className="font-serif mt-4 font-bold">
+                        This account originated as a local folk tale, preserving the memory of the
+                        battle and Mohan Pandey&apos;s heroism. Later, after extensive research, <em>Shri Mahtab
+                          Narayan Mall</em> documented this event in the book <em>&quot;Visen Vansh Darpan&quot;</em>.
+                      </p>
+                    </div>
+                    {/* <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                <p className="font-serif">
+                  Great patriot Shaheed Mohan Pandey was born in the 16th century in the Madhuban tehsil area of present-day Mau district. He served as the chief minister to of Raja Madhav Mall Vishen of Madhuban estate and his son Raja Natth Bahadur Mall Vishen of Natthupur estate. Raja Natth Bahadur Mall Vishen and his brother Raja Ajay Bahadur Mall Vishen were such skilled warriors that they defeated Khurram Khan in the Battle of Jang-e-Tauns and spared his life. After this victory, Raja Ajay came to be known as Fatah Bahadur Mall.
+                </p>
+                <p className="font-serif">
+                  Years later, after Emperor Jahangir's death, on 6 February 1628 Khurram Khan became the ruler of Agra and took the title Shah Jahan. Consumed by a desire for revenge, he soon attacked the states that had opposed him in Jang-e-Tauns. Shah Jahan's forces destroyed forts at Madhuban, Kakaradih and Fatehpur and advanced on Natthupur. The rulers of Natthupur were traveling in South India at the time. In their absence, Chief Minister Mohan Pandey bravely rallied the defenders. Upon seeing a contingent of soldiers from a particular caste flee and join the Mughals, the Mughals captured Mohan Pandey and demanded information about the king and the treasury. Out of devotion to his state, he refused to divulge anything. After torturing him for a week without gaining any information, the Mughal soldiers burned Mohan Pandey alive.
+                </p>
+                <p className="font-serif mt-4">
+                  Before dying, the heroic martyr pronounced a curse on the fleeing soldiers and their descendants: if any of them or their lineage ever built a house in or around the Natthupur palace, they would come to no good and be destroyed with their families. His samadhi (memorial) stands in the western garden of Natthupur village, where descendants of Raja Natth Bahadur Mall Vishen still perform his worship. It is said that no member of the cursed caste's descendants has a home in that village.
+                </p>
+              </div> */}
+                  </>
+                ) : (
+                  <>
+                    <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                      <p className="font-serif">
+                        जंग-ए-टौंस की लड़ाई, जो 17वीं सदी के प्रारंभ में लड़ी गई थी, वर्तमान
+                        मऊ जिले के क्षेत्र में एक निर्णायक संघर्ष थी। नत्थुपुर के राजा नत्थ बहादुर
+                        मल्ल विशेन और उनके भाई राजा अजय बहादुर मल्ल विशेन ने युद्धकला में
+                        अद्वितीय कौशल दिखाया। दोनों ने मिलकर खुर्रम खां, जो भविष्य में मुग़ल
+                        सम्राट बने, को पराजित किया और उनकी जान बचा दी। इस विजय के सम्मान में
+                        राजा अजय बहादुर मल्ल को &quot;फतह बहादुर मल्ल&quot; की उपाधि दी गई।
+                        काफी वर्षों बाद, शहंशाह जहाँगीर की मृत्यु के पश्चात् 6 फरवरी 1628 को
+                        खुर्रम खां ने आगरा का शासन संभाला और शाहजहाँ के नाम से राज्याभिषेक
+                        किया। अपनी पिछली हार का बदला लेने के लिए उन्होंने उन राज्यों पर
+                        अभियान चलाया जिन्होंने जंग-ए-टौंस में उनका विरोध किया था। उनकी सेनाओं
+                        ने मधुबन, ककराडीह और फतहपुर के किलों को ध्वस्त किया और नत्थुपुर
+                        की ओर बढ़ीं।
+                      </p>
+                      <p className="font-serif">
+                        इस अभियान के दौरान नत्थुपुर के शासक दक्षिण भारत की यात्रा पर थे,
+                        जिससे किला असुरक्षित रह गया। इस कठिन समय में महामंत्री शहीद मोहन पाण्डेय
+                        ने किले की रक्षा की कमान संभाली। उन्होंने अद्भुत साहस और निष्ठा दिखाते
+                        हुए शेष सैनिकों को मुग़ल सेना का मुकाबला करने के लिए प्रेरित किया।
+                        हालांकि एक विशेष जाति के कुछ सैनिक भय के कारण भाग गए, मोहन पाण्डेय
+                        अकेले लड़ते रहे। मुग़लों ने उन्हें बंदी बना लिया और राजा तथा खजाने
+                        के बारे में जानकारी मांगी। अपने राज्य के प्रति भक्ति के कारण उन्होंने
+                        कुछ भी नहीं बताया और लगातार एक सप्ताह तक कष्ट सहने के बाद उन्हें
+                        जिंदा जला दिया गया।
+                      </p>
+                      <p className="font-serif mt-4">
+                        शहीद होने से पहले मोहन पाण्डेय ने भाग गए सैनिकों और उनके वंश पर
+                        श्राप दिया कि यदि उनका या उनके वंश का कोई भी सदस्य नत्थुपुर या
+                        उसके आस-पास घर बनाएगा तो उसका कल्याण नहीं होगा और वह सपरिवार
+                        नष्ट हो जाएगा। उनका ब्रह्मस्थान नत्थुपुर गाँव के पश्चिमी बागीचे
+                        में स्थित है, जहाँ राजा नत्थ बहादुर मल्ल विशेन के वंशज उनकी पूजा
+                        करते हैं। जंग-ए-टौंस और मोहन पाण्डेय के वीरतापूर्ण संघर्ष की
+                        स्मृति आज भी बहादुरी, निष्ठा और स्वतंत्रता के उच्च मूल्य का प्रतीक
+                        मानी जाती है।
+                      </p>
+                      <p className="font-serif mt-4 font-bold">
+                        यह घटना मूल रूप से स्थानीय लोककथा के रूप में प्रचलित थी, जिसने
+                        जंग और मोहन पाण्डेय की वीरता की स्मृति को संरक्षित किया। बाद में,
+                        विस्तृत शोध के पश्चात <em>महताब नारायण मल्ल</em> ने इसे पुस्तक
+                        <em>&quot;विशेन वंश दर्पण&quot;</em> में प्रकाशित किया।
+                      </p>
+                    </div>
+                    {/* <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                मझौली के किसी भी राजा का पहला लिखित उल्लेख
+                <strong>
+                  <em> तुजुक-ए-जहाँगीरी &nbsp;</em>
+                </strong>
+                में मिलता है, जहाँ राजा नत्थ मल का दो बार उल्लेख हुआ है — दोनों
+                के बीच दस वर्षों का अंतर है। पहला उल्लेख दूसरी जमादि (22वीं
+                तारीख) के दिनांक (14 अक्टूबर, 1606) का है, और दूसरा अमुर्दाद की
+                5वीं तारीख (25 जुलाई, 1615) का है।
+              </p>
+              <p className="font-serif">
+                पहला उल्लेख
+                <strong> अज़ीज़ कोका का उल्लेखनीय पत्र </strong>
+                शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  &quot;मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये
+                  दिए।&quot;
+                </em>
+              </p>
+              <p className="font-serif mt-4">
+                दूसरा उल्लेख
+                <strong> हिंदू राजा मुसलमान बना </strong>
+                शीर्षक वाले पृष्ठ पर मिलता है, जहाँ लिखा है:
+              </p>
+              <p className="font-serif mx-5 md:mx-10">
+                <em>
+                  &quot;5वीं अमुर्दाद को, राजा नत्थमल की मनसबदारी जो 1,500
+                  व्यक्तिगत और 1,100 घुड़सवार थी, उसमें 500 व्यक्तिगत और 100
+                  घुड़सवार की वृद्धि की गई।&quot;
+                </em>
+              </p>
+            </div> */}
+                  </>
+                )}
+
+                {/* right Image */}
+                <div className="md:col-span-1">
+                  <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+                    <div className="flex flex-col md:flex-row justify-center">
+                      <Image
+                        src="/assets/img/madhuban/mohanPandey.jpg"
+                        alt="majhauli-img"
+                        width={200}
+                        height={50}
+                        className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                        onClick={() =>
+                          openModal({ url: "/assets/img/madhuban/mohanPandey.jpg" })
+                        }
+                      />
+                    </div>
+
+                    <p>
+                      {language === "english"
+                        ? "Martyrs' Memorial of Mohan Pandey, Commander-in-Chief of Raja Nath Mall's Army"
+                        : "शहीद स्मारक : मोहन पांडेय, राजा नाथ मल्ल की सेना के प्रधान सेनापति।"}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              {/* Post Independence Period */}
+
+              <div className="flex items-center gap-4 my-5">
+                <div className="h-px flex-grow bg-gray-300"></div>
+                <span className="text-gray-500 text-2xl whitespace-nowrap">
+                  {language === "english"
+                    ? "POST INDEPENDENCE PERIOD"
+                    : "स्वतंत्रता प्राप्ति के बाद का काल"}
+                </span>
+                <div className="h-px flex-grow bg-gray-300"></div>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 my-3">
+                {/* left Image */}
+                <div className="md:col-span-1">
+                  <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+                    <div className="flex justify-center">
+                      <Image
+                        src="/assets/img/madhuban/letter.jpg"
+                        alt="madhuban-img"
+                        width={200}
+                        height={50}
+                        className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                        onClick={() =>
+                          openModal({
+                            url: "/assets/img/madhuban/letter.jpg",
+                            // estate: "Letter of Raja Awadesh Mall to Madhuban People",
+                            // estateHindi:
+                            //   "राजा अवधेश मल्ल का मधुबन की प्रजा के नाम पत्र।",
+                          })
+                        }
+                      />
+                    </div>
+
+                    <p>
+                      {language === "english"
+                        ? "Letter of Raja Awadesh Mall to Madhuban People"
+                        : "राजा अवधेश मल्ल का मधुबन की प्रजा के नाम पत्र।"}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Bio */}
+                {language === "english" ? (
+                  <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                    <p className="font-serif">
+                      A letter was written by Raja Awadesh Mall, King of Majhauli Raj
+                      to the people of Madhuban during the Uttar Pradesh Legislative
+                      Assembly elections. In it, he introduces himself as a candidate
+                      from the Congress Party and expresses deep gratitude for the
+                      continued loyalty, sympathy, and support he has received from
+                      the people, who are described as part of the larger Majhauli
+                      royal family.
+                    </p>
+                    <p className="font-serif">
+                      He acknowledges the changing political landscape—particularly
+                      that the Congress Party is no longer in power—and openly states
+                      that the usual support in terms of transportation, workers, and
+                      finances is now limited. Therefore, he earnestly seeks
+                      assistance from the people in the form of financial, human, and
+                      logistical support. The letter becomes especially emotional and
+                      personal as he requests a public meeting in Madhuban, where he
+                      hopes to meet everyone and seek their blessings and guidance.
+                    </p>
+                    <p className="font-serif mt-4">
+                      Overall, the letter is not only a political communication but
+                      also reflects the tone of a family elder reaching out to his
+                      extended kin, filled with tradition, humility, and a sense of
+                      shared responsibility in the democratic process.
+                    </p>
+                  </div>
+                ) : (
+                  <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+                    <p className="font-serif">
+                      यह पत्र राजा अवधेश मल्ल, जो मझौली राज के शासक थे, द्वारा उत्तर
+                      प्रदेश विधान सभा चुनावों के दौरान मधुबन की जनता को लिखा गया था।
+                      इसमें उन्होंने स्वयं को कांग्रेस पार्टी के उम्मीदवार के रूप में
+                      प्रस्तुत किया और मधुबनवासियों से प्राप्त निरंतर निष्ठा,
+                      सहानुभूति और समर्थन के लिए गहरी कृतज्ञता व्यक्त की। उन्होंने
+                      मधुबन की जनता को मझौली राजपरिवार का अभिन्न अंग बताया।
+                    </p>
+                    <p className="font-serif">
+                      उन्होंने बदलते राजनीतिक परिदृश्य को स्वीकार करते हुए यह स्पष्ट
+                      किया कि कांग्रेस पार्टी अब सत्ता में नहीं है और पहले की तरह
+                      परिवहन, कार्यकर्ता तथा आर्थिक सहायता जैसे संसाधन अब सीमित हैं।
+                      इसलिए उन्होंने जनता से वित्तीय, मानवीय और साधनात्मक रूप में
+                      सहयोग की अपील की। यह पत्र उस समय और अधिक भावनात्मक व आत्मीय बन
+                      जाता है जब वह मधुबन में एक सार्वजनिक बैठक आयोजित करने का आग्रह
+                      करते हैं, जहाँ वे सभी से मिलकर आशीर्वाद और मार्गदर्शन प्राप्त
+                      करना चाहते हैं।
+                    </p>
+                    <p className="font-serif mt-4">
+                      कुल मिलाकर, यह पत्र केवल एक राजनीतिक संदेश नहीं है, बल्कि यह एक
+                      परिवार के बुजुर्ग द्वारा अपने विस्तारित परिजनों से किया गया
+                      आत्मीय संवाद भी है, जिसमें परंपरा, विनम्रता और लोकतांत्रिक
+                      प्रक्रिया में साझा जिम्मेदारी की भावना समाहित है।
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* <FamilyTreeStructure
+          familyData={language === "english" ? familyData : familyDataHindi}
+        /> */}
+
+            </main>
+          </>
+
+      }
+
+
+
+
       {/* Modal */}
       <ImageModal
         isOpen={isModalOpen}

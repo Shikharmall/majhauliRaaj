@@ -8,14 +8,8 @@ import { motion, useInView } from "framer-motion";
 
 export default function MoreSection() {
   const { language } = useContext(LanguageContext);
-
   const sectionRef = useRef(null);
   const sectionInView = useInView(sectionRef, { once: true, margin: "-100px" });
-  const cardRef = useRef(null);
-  const cardInView = useInView(cardRef, {
-    once: true,
-    margin: "-100px",
-  });
 
   const items = [
     {
@@ -115,14 +109,15 @@ export default function MoreSection() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-items-center items-center gap-4">
           {items.map((item, idx) => {
+            const cardRef = useRef(null);
+            const cardInView = useInView(cardRef, { once: true, margin: "-100px" });
+
             return (
               <motion.div
                 key={idx}
                 ref={cardRef}
-                animate={
-                  cardInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
-                }
-                transition={{ duration: 0.3 , delay: 0.2 + idx * 0.1 }}
+                animate={cardInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
               >
                 <Link
                   href={item.href}

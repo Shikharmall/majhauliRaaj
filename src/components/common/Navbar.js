@@ -70,6 +70,12 @@ export default function Navbar() {
             {language === "english" ? "Family Tree" : "वंशावली"}
           </Link>
           <Link
+            href="/mallMahajanpada"
+            className="text-gray-700 hover:text-orange-600"
+          >
+            {language === "english" ? "Mall Mahajanpada" : "मल्ल महाजनपद"}
+          </Link>
+          <Link
             href="/gallery"
             className="block text-gray-700 hover:text-orange-600"
           >

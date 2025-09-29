@@ -60,6 +60,28 @@ export default function NarharpurEstateDetails() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+            <br />
+            <Image
+              src="/assets/img/narharpur/muktiDham1.jpg"
+              alt="Narharpur Estate"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
+              onClick={() =>
+                openModal({
+                  url: "/assets/img/narharpur/muktiDham1.jpg",
+                  estate: "Muktipath on bank of River Saryu (Ghaghara)",
+                  estateHindi: "मुक्तिपथ सरयू (घाघरा) नदी के तट पर|",
+                })
+              }
+            />
+            <div className="flex items-center justify-center mt-2">
+              <h2>
+                {language === "english"
+                  ? "Muktipath on bank of River Saryu (Ghaghara)"
+                  : "मुक्तिपथ सरयू (घाघरा) नदी के तट पर|"}
+              </h2>
+            </div>
           </div>
 
           {/* Bio */}

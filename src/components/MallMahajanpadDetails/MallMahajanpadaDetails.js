@@ -370,14 +370,14 @@ export default function MallMahajanpadaDetails() {
                 {/* Left Image */}
                 <div className="md:col-span-1 ">
                   <Image
-                    src="/assets/img/ganaSanghas.jpg"
+                    src="/assets/img/mallMahajanpada/ganaSanghas.jpg"
                     alt="madhuban-img"
                     width={600}
                     height={400}
                     className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
                     onClick={() =>
                       openModal({
-                        url: "/assets/img/ganaSanghas.jpg",
+                        url: "/assets/img/mallMahajanpada/ganaSanghas.jpg",
                         estate: "Mall Mahajanpada",
                         estateHindi: "मल्ल महाजनपद",
                       })
@@ -406,30 +406,22 @@ export default function MallMahajanpadaDetails() {
                 {language === "english" ? (
                   <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
                     <p className="font-serif">
-                      Raja Madhav Mall was a prominent Rajput ruler from the Vishen
-                      (also called Bisen) dynasty, historically linked to the Majhauli
-                      Raj estate in eastern Uttar Pradesh. He was the second son of
-                      Raja Dev Mall, the 95th ruler of the Majhauli line.
+                      Malla (Prakrit: 𑀫𑀮𑁆𑀮𑀈 Mallaī; Pali: Malla; Sanskrit: मल्ल​ Malla) was an ancient Indo-Aryan tribe of north-eastern South Asia whose existence is attested during the Iron Age. The population of Malla, the Mallakas, were divided into two branches, each organised into a gaṇasaṅgha (an aristocratic oligarchic republic), presently referred to as the Malla Republics, which were part of the larger Vajjika League.
                     </p>
                     <p className="font-serif">
-                      In the mid-16th century, Raja Madhav Mall established the region
-                      known as Madhuban (in present-day Mau district, Uttar Pradesh),
-                      which became an influential settlement for his descendants. This
-                      area is now the Madhuban tehsil, comprising numerous villages
-                      and a significant population.
+                      The Mallakas lived in the region now covered by the Kushinagar district in India, although their precise borders are yet to be determined. The Mallakas' neighbours to the east across the Sadānirā river were the Licchavikas, their neighbours to the west were the Sakyas, Koliyas, Moriyas, and Kauśalyas, the southern neighbours of the Mallakas were the Kālāmas and the Gaṅgā river, and the northern Mallaka borders were the Himālaya mountains. The territory of the Mallakas was a tract of land between the Vaidehas and the Kauśalyas.
+
+                      The territories of the two Malla republics were divided by the river named Hiraññavatī in Pāli, and Hiraṇyavatī in Sanskrit, and the two Malla republics respectively had their capitals at Kusinārā, identified with the modern village of Kāsiā in Kushinagar, and at Pāvā (now known as Fazilnagar). Kusinārā was close to the Sakya capital of Kapilavatthu to its north-east, and Pāvā was close to the Licchavika capital of Vesālī.
                     </p>
                     <p className="font-serif">
-                      Raja Madhav Mall had two sons: Raja Nath Mall and Raja Ajay
-                      Bahadur Mall (also known as Fateh Bahadur Mall). Their
-                      descendants took on the surname &quot;Mall&quot;, and many settled across
-                      eastern UP — especially in Madhuban, Mau, Gorakhpur and Deoria,
-                      and villages like Hasanpur, Bahrampur, Jajoli, Ahirauli, and
-                      Parshurampur. The villages these descendants resides are
+                      The Mallakas are called Malla in Pāli texts, Mallai in Jain Prākrit texts, and Malla in Sanskrit texts.
                     </p>
                     <p className="font-serif">
-                      Lakhnaur, Jaauli-Kothgharana, Bhelurr, Ufrauli, Lakuragram,
-                      Karanpura, Jogiya(Gorakhpur), Poti, Khirikhot, Gangeveer,
-                      Nevada, Nathupur, Usari, Ahirauli, Laalanpur, Bahrampur.
+                      The Mallakas were an Indo-Aryan tribe in the eastern Gangetic plain in the Greater Magadha cultural region. Similarly to the other populations of the Greater Magadha cultural area, Mallakas were initially not fully Brahmanised despite being an Indo-Aryan people, but, like the Vaidehas, they later became Brahmanised and adopted the Vāseṭṭha (in Pali) or Vaśiṣṭha (in Sanskrit) gotra. At some point in time, the Mallakas became divided into two separate republics with their respective capitals at Kusinārā and Pāvā, possibly due to internal trouble, and henceforth the relations between the two Mallaka republics remained uncordial. Both Mallaka republics nevertheless became members of the Licchavi-led Vajjika League, within which, unlike the Vaidehas, they maintained their own sovereign rights because they had not been conquered by the Licchavikas, and the Mallakas held friendly relations with the Licchavikas, the Vaidehas, and the Nāyikas who were the other members of this league.
+                      However occasional tensions between the Mallakas and the Licchavikas did arise, such as in the case of the man named Bandhula, a Mallaka who, thanks to his education received in Takṣaśilā, had offered his services as a general to the Kauśalya king Pasenadi so as to maintain the good relations between the Mallakas and Kosala. Bandhula, along with his wife Mallikā, violated the Abhiseka-Pokkharaṇī sacred tank of the Licchavikas, which resulted in armed hostilities between the Kauśalyas and the Licchavikas. Bandhula was later treacherously murdered along with his sons by Pasenadi, and, in retaliation, some Mallakas helped Pasenadi's son Viḍūḍabha usurp the throne of Kosala to avenge the death of Bandhula, after which Pasenadi fled from Kosala and died in front of the gates of the Māgadhī capital of Rājagaha.
+                      The Buddha arrived in Pāvā shortly after the Mallakas there had inaugurated their new santhāgāra, which they had named Ubbhataka. From Pāvā, the Buddha and his followers went to Kusinārā, and on the way they crossed two rivers, the first one being named Kakutthā in Pali and Kukustā in Sanskrit, and the second one being the Hiraññavatī which separated the two Mallaka republics. The Buddha spent his final days in the Malla republic of Kusinārā, and when he sent Ānanda to inform the Mallakas of Kusinārā of his impending death, Ānanda found the Mallaka Council holding a meeting about public affairs in their santhāgāra.
+                      When Ānanda went again to the Mallakas of Kusinārā to inform them of the Buddha's passing, he found them this time holding a meeting to discuss the funeral ceremony of the Buddha in the santhāgāra. After the Buddha's cremation, his remains were honoured in the santhāgāra of Kusinārā for seven days, and it was in this santhāgāra that the Mallakas of Kusinārā received the envoys of Magadha, Licchavi, Shakya, Buli, Koliya, the Mallakas of Pāvā, and Moriya, who all went to Kusinārā to claim their shares of the Buddha's relics. The Licchavikas, the Mallakas, and the Sakyas were able to claim shares of the relics, but the other members of the Vajjika League, the Vaidehas and the Nāyikas, were not among the states claiming a share because they were dependencies of the Licchavikas without their own sovereignty, and therefore could not put forth their own claim while Licchavi could. The Mallakas of Pāvā were the first ones to arrive with an army to Kusinārā, and they put forth their claim to the relics in rude and hostile terms. In the end, each Malla republic obtained a share of the Buddha's relics and built their own stūpas and gave their own feasts to commemorate this event.
+                      After the death of the 24th Jain Tīrthaṅkara, Mahāvīra, the Mallakas and the Licchavikas jointly instituted a festival of lights to commemorate his passing.
                     </p>
                     <p className="font-serif font-bold">
                       <strong>

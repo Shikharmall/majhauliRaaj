@@ -390,6 +390,34 @@ export default function MadhubanEstateDetails() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+            <br />
+
+            <div className="md:col-span-1">
+              <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+                <div className="flex flex-col md:flex-row justify-center">
+                  <Image
+                    src="/assets/img/madhuban/proof2.jpg"
+                    alt="madhuban-img"
+                    width={200}
+                    height={50}
+                    className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                    onClick={() =>
+                      openModal({
+                        url: "/assets/img/madhuban/proof2.jpg",
+                        // estate: "(Page 1)",
+                        // estateHindi: "(पृष्ठ 1)",
+                      })
+                    }
+                  />
+                </div>
+                <p>
+                  {language === "english"
+                    ? "Mention of Raja Madhav Mall in Visen Vansh Vatika"
+                    : "विसेन वंश वाटिका में राजा माधव मल्ल का उल्लेख मिलता है।"}
+                </p>
+              </div>
+            </div>
+
           </div>
 
           {/* Bio */}

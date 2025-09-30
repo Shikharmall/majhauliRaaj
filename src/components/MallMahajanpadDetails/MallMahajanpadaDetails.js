@@ -353,6 +353,7 @@ export default function MallMahajanpadaDetails() {
     <div>
       <Banner
         title={language === "english" ? "Mall Mahajanpada" : "मल्ल महाजनपद"}
+        bgImage={'/assets/img/mallMahajanpada/warOverBuddhaRelics.jpg'}
       />
 
       {

@@ -61,8 +61,8 @@ export default function SwiperSlider() {
         />
       </div> */}
       {/* <div className="swiper-pagination absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10 " /> */}
-      <div className="swiper-button-prev absolute left-2 top-1/2 -translate-y-1/2 z-10" />
-      <div className="swiper-button-next absolute right-2 top-1/2 -translate-y-1/2 z-10" />
+      <div className="swiper-button-prev absolute left-2 top-3/4 md:top-1/2 -translate-y-1/2 z-10" />
+      <div className="swiper-button-next absolute right-2 top-3/4 md:top-1/2 -translate-y-1/2 z-10" />
       <style jsx global>{`
         .swiper-button-next::after,
         .swiper-button-prev::after {

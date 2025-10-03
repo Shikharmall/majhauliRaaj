@@ -1118,10 +1118,10 @@ export default function MajhauliEstateDetails() {
               </p>
               <p className="font-serif font-bold">
                 <strong>
-                  <em> Debunked Theory (due to lack of evidence) by Lal Khadag Bahadur Mall</em>
+                  <em> Debunked Myth (due to lack of evidence) written by Lal Khadag Bahadur Mall</em>
                 </strong>
               </p>
-              <p className="font-serif">
+              {/* <p className="font-serif">
                 One branch of this dynasty comes from a founder named Mayyur who
                 has been variously described as a Brahmin, Bhumihar or even a
                 Bhat. He had come from Kashi to Kushinara had children with four
@@ -1136,7 +1136,33 @@ export default function MajhauliEstateDetails() {
                 stablished Majhuli Raj, One son from his Brahmin wife went on to
                 become the ancestor of the Misra Brahmins; and the son from his
                 Kurmi wife went on to found the Kakradih estate.
-              </p>
+              </p> */}
+              <div className="relative p-6 bg-white font-serif">
+                {/* Debunked Watermark */}
+                <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                   text-gray-600 text-5xl font-bold opacity-20 select-none pointer-events-none 
+                   rotate-[-45deg]">
+                  DEBUNKED
+                </span>
+
+                {/* Main content */}
+                <p className="relative z-10">
+                  One branch of this dynasty comes from a founder named Mayyur who
+                  has been variously described as a Brahmin, Bhumihar or even a
+                  Bhat. He had come from Kashi to Kushinara had children with four
+                  wives: One Brahmin, one Malla princess (name may be
+                  Suryaprabha), one more Bhumihar, as well as one Rajput. His son
+                  from his Bhumihar wife named King Bir Sen (Estimated 600 BCE)
+                  founder of Baghochia Dynasty and his descendants established
+                  Bans Gaon Estate (Dileepnagar Estate), Hathwa Raj and Tamkuhi
+                  raj and started Bhumihar branch. One son from his Malla
+                  princess name King Vishwasen founder of Vishwasen Rajput dynasty
+                  and his descendant (probably 86th generation) King Bhim Dev
+                  stablished Majhuli Raj, One son from his Brahmin wife went on to
+                  become the ancestor of the Misra Brahmins; and the son from his
+                  Kurmi wife went on to found the Kakradih estate.
+                </p>
+              </div>
             </div>
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
@@ -1165,10 +1191,36 @@ export default function MajhauliEstateDetails() {
               </p>
               <p className="font-serif font-bold">
                 <strong>
-                  <em>लाल खड़ग बहादुर मल्ल द्वारा (प्रमाणों के अभाव में) खंडित सिद्धांत</em>
+                  <em>लाल खड़ग बहादुर मल्ल द्वारा लिखा गया (प्रमाणों के अभाव में) खंडित मिथक</em>
                 </strong>
               </p>
-              <p className="font-serif">
+
+              <div className="relative p-6 bg-white font-serif">
+                {/* Debunked Watermark */}
+                <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                   text-gray-600 text-5xl font-bold opacity-20 select-none pointer-events-none 
+                   rotate-[-45deg]">
+                  खण्डित
+                </span>
+
+                {/* Main content */}
+                <p className="relative z-10">
+                  इस वंश की एक शाखा के संस्थापक का नाम मय्यूर था, जिन्हें कभी
+                  ब्राह्मण, भूमिहार या भट्ट के रूप में वर्णित किया गया है। वह काशी
+                  से कुशीनगर आए थे और उनकी चार पत्नियाँ थीं: एक ब्राह्मण, एक मल्ल
+                  राजकुमारी (संभवत: नाम सूर्यप्रभा), एक भूमिहार, और एक राजपूत।
+                  उनकी भूमिहार पत्नी से जन्मे पुत्र राजा वीरसेन (अनुमानित काल: 600
+                  ईसा पूर्व) ने बघोचिया वंश की स्थापना की और उनके वंशजों ने
+                  बांसगांव (दिलीपनगर) एस्टेट, हथुआ राज और तमकुही राज की स्थापना की
+                  तथा भूमिहार शाखा की शुरुआत की। मल्ल राजकुमारी से जन्मे पुत्र
+                  राजा विश्वसेन ने विश्वसेन राजपूत वंश की नींव रखी और उनके वंशज
+                  (संभवत: 86वीं पीढ़ी में) राजा भीम देव ने मझौली राज की स्थापना
+                  की। ब्राह्मण पत्नी से उत्पन्न पुत्र मिश्रा ब्राह्मणों के पूर्वज
+                  बने और कुर्मी पत्नी से उत्पन्न पुत्र ने काकरडिह एस्टेट की
+                  स्थापना की।
+                </p>
+              </div>
+              {/* <p className="font-serif">
                 इस वंश की एक शाखा के संस्थापक का नाम मय्यूर था, जिन्हें कभी
                 ब्राह्मण, भूमिहार या भट्ट के रूप में वर्णित किया गया है। वह काशी
                 से कुशीनगर आए थे और उनकी चार पत्नियाँ थीं: एक ब्राह्मण, एक मल्ल
@@ -1182,7 +1234,7 @@ export default function MajhauliEstateDetails() {
                 की। ब्राह्मण पत्नी से उत्पन्न पुत्र मिश्रा ब्राह्मणों के पूर्वज
                 बने और कुर्मी पत्नी से उत्पन्न पुत्र ने काकरडिह एस्टेट की
                 स्थापना की।
-              </p>
+              </p> */}
             </div>
           )}
         </div>

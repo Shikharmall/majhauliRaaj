@@ -451,12 +451,14 @@ export default function MadhubanEstateDetails() {
               </p>
               <p className="font-serif font-bold">
                 <strong>
-                  <em> Debunked Theory (due to lack of evidence) by Lal Khadag Bahadur Mall</em>
+                  <em> Debunked Myth (due to lack of evidence) given by Lal Khadag Bahadur Mall</em>
                 </strong>
               </p>
               <p className="font-serif">
-                Lal Khadag Bahadur Mall, in his book <em>&quot;Vishen Vansh Vatika&quot;</em>, mentioned the name of Raja Madhav Mall but did not include his children Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall. He presented the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife. This theory was criticized by many historians and kings of that time and was later debunked.
+                Lal Khadag Bahadur Mall, in his book <span className="font-bold"><em>&quot;Vishen Vansh Vatika&quot;</em></span> (written in 1887 AD), mentioned the name of Maharaja Madhav Mall but did not include his children, Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall. He described the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife. He also noted that Raja Natth Mall, mentioned in <em>&quot;Turk-e-Jahangiri&quot;</em>, was mistakenly referred to as Raja Bhim Mall due to a translation error caused by the shifting of a single dot. However, since Raja Nath Mall is mentioned twice in <em>&quot;Turk-e-Jahangiri&quot;</em>, this claim was not valid. Furthermore, this myth was criticized by many historians and kings of that time and was later debunked.
+                It was also perpetuated by the British in their census records.
               </p>
+
             </div>
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
@@ -483,13 +485,13 @@ export default function MadhubanEstateDetails() {
               </p>
               <p className="font-serif font-bold">
                 <strong>
-                  <em>लाल खड़ग बहादुर मल्ल द्वारा (प्रमाणों के अभाव में) खंडित सिद्धांत</em>
+                  <em>लाल खड़क बहादुर मल्ल द्वारा दिया गया मिथक (साक्ष्यों की कमी के कारण खंडित)</em>
                 </strong>
               </p>
               <p className="font-serif">
-                लाल खड़ाग बहादुर मल्ल ने अपनी पुस्तक <em>&quot;विशेन वंश वाटिका&quot;</em> में राजा माधव मल्ल का नाम तो लिया, लेकिन उनके पुत्र राजा नत्थ बहादुर मल्ल और बाबू फतह बहादुर मल्ल को शामिल नहीं किया। उन्होंने मधुबन के मल्लों को मईयूर भट की कुर्मी पत्नी से उत्पन्न वंशज बताया। इस सिद्धांत की उस समय के कई इतिहासकारों और राजाओं द्वारा आलोचना की गई और बाद में इसे खारिज कर दिया गया।
+                लाल खड़क बहादुर मल्ल ने अपनी पुस्तक <span className="font-bold"><em>&quot;विशेन वंश वाटिका&quot;</em></span> (1887 ई.) में महाराजा माधव मल्ल का नाम लिखा है, लेकिन उनके पुत्र, राजा नाथ बहादुर मल्ल और बाबू फतेह बहादुर मल्ल का उल्लेख नहीं किया। उन्होंने मधुबन के मल्लों को माय्युर भाट की कुम्हार पत्नी से उत्पन्न वंशज बताया। उन्होंने यह भी उल्लेख किया कि <em>&quot;तुर्क-ए-जाहाँगीरी&quot;</em> में लिखे राजा नत्थ मल्ल को अनुवाद की गलती के कारण राजा भीम मल्ल कहा गया, क्योंकि केवल एक बिंदु के स्थान परिवर्तन से यह भ्रम हुआ। हालांकि, चूँकि राजा नाथ मल्ल का नाम <em>&quot;तुर्क-ए-जाहाँगीरी&quot;</em> में दो बार आया है, यह दावा सही नहीं था। इसके अलावा, इस मिथक की उस समय के कई इतिहासकारों और राजाओं ने आलोचना की और बाद में इसे खारिज कर दिया गया।
+                यह मिथक ब्रिटिशों द्वारा उनकी जनगणना रिकॉर्ड में भी फैलाया गया।
               </p>
-
             </div>
           )}
         </div>

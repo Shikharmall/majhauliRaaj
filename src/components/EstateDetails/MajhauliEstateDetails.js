@@ -1519,10 +1519,10 @@ export default function MajhauliEstateDetails() {
           {language === "english" ? (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                In year 1896, W. Crooke in his book <span className="font-bold">"The Tribes and Castes of the North-Western Provinces and Oudh"</span> wrote bisen of Majhauli as well as the Donwår (q. v.) claim descent from one Mayûra Bhatta, who is said to have been a descendant of Jamadagni Rishi of the race of Bhrigu. Regarding this personage the local tradition is very vague. Some say he came from Hastinapur and was the son of one Aswathama; others that he was an emigrant from Maharashtra or the Marhatta country. He read Sanskrit for a while at Benares, and became a proficient in astrology, Quitting that city at last under a divine impulse he settled at <span className="font-bold">Kakradih, a village in Pargana Sikandarpur, of Azamgarh (present day Madhuban, Mau, Uttar Pradesh)</span>. The whole of that Pargana came gradually under his authority.
+                In year 1896, W. Crooke in his book <span className="font-bold">&quot;The Tribes and Castes of the North-Western Provinces and Oudh&quot;</span> wrote bisen of Majhauli as well as the Donwår (q. v.) claim descent from one Mayûra Bhatta, who is said to have been a descendant of Jamadagni Rishi of the race of Bhrigu. Regarding this personage the local tradition is very vague. Some say he came from Hastinapur and was the son of one Aswathama; others that he was an emigrant from Maharashtra or the Marhatta country. He read Sanskrit for a while at Benares, and became a proficient in astrology, Quitting that city at last under a divine impulse he settled at <span className="font-bold">Kakradih, a village in Pargana Sikandarpur, of Azamgarh (present day Madhuban, Mau, Uttar Pradesh)</span>. The whole of that Pargana came gradually under his authority.
               </p>
               <p className="font-serif">
-                His domestic arrangements illustrate a period when the bonds of caste, as we know them, were unknown, He is said to have had three wives, first a Brahmani named Nägseni; the second Surajprabha, a Sürajbans Rajputni; the third Haikumari, a Gautam Bhuinhårin. By his wife Sürajprabha he had a son, Biswa or Bissu Sen, who was the ancestor of the Bisen sept of Chhatris; by Haikumari, Baikal or Bagmar Sahi, the ances-tor of the Bliminhår families of Kuwari and Tamkûhi; by Någsen, Nages, Nagesar or Någsen; and by a Kurmin concubine Indra-dawwan Mal, from whom sprang the Mals of Azamgarh. He expelled the Bhars, and finally went on a pilgrimage to the Himalaya, where he died, There are thus a family of Misr Brahmans, and a large half Kurmi clan which claim common descent with the Majhauli Bisen family.
+                His domestic arrangements illustrate a period when the bonds of caste, as we know them, were unknown, He is said to have had three wives, first a Brahmani named Nägseni; the second Surajprabha, a Sürajbans Rajputni; the third Haikumari, a Gautam Bhuinhårin. By his wife Sürajprabha he had a son, Biswa or Bissu Sen, who was the ancestor of the Bisen sept of Chhatris; by Haikumari, Baikal or Bagmar Sahi, the ances-tor of the Bhuminhår families of Kuwari and Tamkûhi; by Någsen, Nages, Nagesar or Någsen; and by a Kurmin concubine Indra-dawwan Mal, from whom sprang the Mals of Azamgarh. He expelled the Bhars, and finally went on a pilgrimage to the Himalaya, where he died, There are thus a family of Misr Brahmans, and a large half Kurmi clan which claim common descent with the Majhauli Bisen family.
               </p>
               <p className="font-serif">
                 However, this myth was not accepted due to lack of evidence.
@@ -1531,34 +1531,38 @@ export default function MajhauliEstateDetails() {
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
               <p className="font-serif">
-                मझौली राज का पहला लिखित उल्लेख अबुल फज़ल द्वारा रचित प्रसिद्ध
-                ग्रंथ आईन-ए-अकबरी में मिलता है। इस मुगल दस्तावेज़ में मझौली को
-                गलती से “महौली” के रूप में लिखा गया है, जो फ़ारसी लिप्यंतरण की
-                त्रुटि का परिणाम था। इस नाम की गलती के बावजूद, इसका उल्लेख इस
-                बात का प्रमाण है कि मझौली मुग़ल काल में एक महत्वपूर्ण क्षेत्र
-                था। उस समय यह गोरखपुर सरकार का हिस्सा था और इसमें दो महल
-                (प्रशासनिक इकाइयाँ) शामिल थीं, जो इसके प्रशासनिक महत्व को
-                दर्शाता है।
+                वर्ष 1896 में डब्ल्यू. क्रूक (W. Crooke) ने अपनी पुस्तक
+                <span className="font-bold"> &quot;द ट्राइब्स एंड कास्ट्स ऑफ़ द नॉर्थ-वेस्टर्न प्रोविंसेस एंड अवध&quot; </span>
+                में लिखा कि मझौली के बिसेन तथा डोनवार दोनों एक
+                <span className="font-bold">मयूर भट्ट</span> नामक व्यक्ति से वंशज होने का दावा करते हैं,
+                जो कहा जाता है कि ऋषि जमदग्नि (भृगुवंशी) के वंशज थे।
+                इस व्यक्ति के संबंध में स्थानीय परंपराएँ बहुत अस्पष्ट हैं।
+                कुछ लोग कहते हैं कि वह हस्तिनापुर से आए थे और अश्वत्थामा के पुत्र थे;
+                अन्य लोग कहते हैं कि वह महाराष्ट्र या मराठा देश से प्रवासी थे।
+                उन्होंने कुछ समय बनारस में संस्कृत का अध्ययन किया और ज्योतिष के विद्वान बने।
+                अंततः एक दैवी प्रेरणा से उन्होंने बनारस त्याग दिया और
+                <span className="font-bold">काकरदिह नामक गाँव (परगना सिकंदरपुर, आजमगढ़ — वर्तमान मऊ जिले के मधुबन क्षेत्र में)</span>
+                में आकर बस गए। धीरे-धीरे पूरा परगना उनके अधिकार में आ गया।
               </p>
+
               <p className="font-serif">
-                मझौली राज सैन्य और स्थापत्य दोनों दृष्टियों से महत्वपूर्ण था। इस
-                रियासत में ईंटों से बने दो किले थे, जो रक्षा और रणनीतिक
-                उद्देश्यों के लिए बनाए गए थे। इसके अतिरिक्त, मझौली के पास 2,000
-                पैदल सैनिकों की एक संगठित सेना भी थी, जो इसे स्थानीय सुरक्षा में
-                सशक्त बनाती थी और संभवतः मुग़ल अभियानों में भी भाग लेती थी। यह
-                व्यवस्था इस रियासत की ताकत, अनुशासन और उसके राजनीतिक योगदान को
-                दर्शाती है।
+                उनके पारिवारिक प्रबंध उस काल को दर्शाते हैं जब जाति के बंधन आज की तरह कठोर नहीं थे।
+                कहा जाता है कि उनकी तीन पत्नियाँ थीं — पहली ब्राह्मणी नागसेनी;
+                दूसरी सूरजवंशी राजपूतनी सूरजप्रभा; और तीसरी गौतम भूँइहारिन हाइकुमारी।
+                सूरजप्रभा से उनका पुत्र विश्व या बिस्सू सेन हुआ,
+                जो छत्रिय बिसेन वंश का पूर्वज माना जाता है।
+                हाइकुमारी से बैकल या बाघमार साही हुए, जो कुवारी और टमकुही के भूँइहार परिवारों के पूर्वज माने जाते हैं।
+                नागसेनी से नागेस, नागेसर या नागसेन हुए;
+                और एक कुरमी रखैल इंद्रदावन मल से आजमगढ़ के “मल” वंश की उत्पत्ति हुई।
+                कहा जाता है कि उन्होंने भार जाति को परास्त किया और अंत में हिमालय की तीर्थ यात्रा पर चले गए, जहाँ उनका निधन हुआ।
+                इस प्रकार मिश्र ब्राह्मणों का एक परिवार और आधा कुरमी कुल ऐसा है जो मझौली के बिसेन परिवार के समान वंशज होने का दावा करता है।
               </p>
+
               <p className="font-serif">
-                आर्थिक रूप से भी मझौली राज मुग़ल खजाने के लिए एक महत्वपूर्ण
-                स्रोत था। आईन-ए-अकबरी के अनुसार, मझौली से 6,18,256 दाम (जो उस
-                समय तांबे का सिक्का था) का राजस्व निर्धारित किया गया था, जो कि
-                2,523 बीघा कृषि भूमि पर आधारित था। यह आँकड़ा मझौली की भूमि की
-                उपजाऊता और उत्पादन क्षमता को दर्शाता है। इस रियासत पर शासन करने
-                वाला बिसेन राजपूत वंश था, जो पूर्वी उत्तर प्रदेश में अपनी
-                निष्ठा, शासन-कुशलता और प्रभाव के लिए प्रसिद्ध था।
+                हालांकि, इस कथा को प्रमाणों के अभाव के कारण स्वीकार नहीं किया गया और इसे एक मिथक माना गया।
               </p>
             </div>
+
           )}
         </div>
 

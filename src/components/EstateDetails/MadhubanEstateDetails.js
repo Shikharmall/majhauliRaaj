@@ -454,10 +454,6 @@ export default function MadhubanEstateDetails() {
                   <em> Debunked Myth (due to lack of evidence) written by Lal Khadag Bahadur Mall</em>
                 </strong>
               </p>
-              {/* <p className="font-serif">
-                Lal Khadag Bahadur Mall, in his book <span className="font-bold"><em>&quot;Vishen Vansh Vatika&quot;</em></span> (written in 1887 AD), mentioned the name of Maharaja Madhav Mall but did not include his children, Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall. He described the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife. He also noted that Raja Natth Mall, mentioned in <em>&quot;Turk-e-Jahangiri&quot;</em>, was mistakenly referred to as Raja Bhim Mall due to a translation error caused by the shifting of a single dot. However, since Raja Nath Mall is mentioned twice in <em>&quot;Turk-e-Jahangiri&quot;</em>, this claim was not valid. Furthermore, this myth was criticized by many historians and kings of that time and was later debunked.
-                It was also perpetuated by the British in their census records.
-              </p> */}
               <div className="relative p-6 bg-white font-serif">
                 {/* Debunked Watermark */}
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
@@ -493,11 +489,6 @@ export default function MadhubanEstateDetails() {
                       <p className="text-3xl mt-2">راجا بھیم ملّ</p>
                     </div>
                   </div>
-                  {/* <p className="font-serif text-lg font-semibold">Raja Nath Mall</p>
-                  <p className="text-3xl font-serif mb-4">راجا ناتھ ملّ</p>
-
-                  <p className="font-serif text-lg font-semibold">Raja Bhim Mall</p>
-                  <p className="text-3xl font-serif">راجا بھیم ملّ</p> */}
                   <p>
                     There is a significant difference in the way their names are written in Persian.
                   </p>
@@ -509,26 +500,7 @@ export default function MadhubanEstateDetails() {
                   Furthermore, this myth was criticized by several historians and kshatriyas of that time
                   and was later debunked. It was also perpetuated by the British in their census records.
                 </p>
-
-
-                {/* <p className="font-serif">
-                  Lal Khadag Bahadur Mall, in his book <span className="font-bold"><em>&quot;Vishen Vansh Vatika&quot;</em></span> (written in 1887 AD), mentioned the name of Maharaja Madhav Mall but did not include his children, Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall. He described the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife. He also noted that Raja Natth Mall, mentioned in <em>&quot;Turk-e-Jahangiri&quot;</em>, was mistakenly referred to as Raja Bhim Mall due to a translation error caused by the shifting of a single dot.
-
-                  <span className="">
-                    Raja Nath Mall <br />
-                    <span className="text-3xl">راجا ناتھ ملّ</span> <br />
-
-                    Raja Bhim Mall <br />
-                    <span className="text-3xl">راجا بھیم ملّ</span> <br />
-                  </span>
-
-                  Their is huge difference in wrtting their name in persian language
-
-                  However, since Raja Nath Mall is mentioned thrice in <em>&quot;Turk-e-Jahangiri&quot;</em>, this claim was not valid. Furthermore, this myth was criticized by many historians and kings of that time and was later debunked.
-                  It was also perpetuated by the British in their census records.
-                </p> */}
               </div>
-
             </div>
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
@@ -563,19 +535,49 @@ export default function MadhubanEstateDetails() {
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                    text-gray-600 text-5xl font-bold opacity-20 select-none pointer-events-none 
                    rotate-[-45deg]">
-                  खण्डित
+                  खण्डित मिथक
                 </span>
 
                 {/* Main content */}
-                <p className="font-serif">
-                  लाल खड़क बहादुर मल्ल ने अपनी पुस्तक <span className="font-bold"><em>&quot;विशेन वंश वाटिका&quot;</em></span> (1887 ई.) में महाराजा माधव मल्ल का नाम लिखा है, लेकिन उनके पुत्र, राजा नाथ बहादुर मल्ल और बाबू फतेह बहादुर मल्ल का उल्लेख नहीं किया। उन्होंने मधुबन के मल्लों को मय्युर भट्ट की कुर्मी पत्नी से उत्पन्न वंशज बताया। उन्होंने यह भी उल्लेख किया कि <em>&quot;तुर्क-ए-जाहाँगीरी&quot;</em> में लिखे राजा नत्थ मल्ल को अनुवाद की गलती के कारण राजा भीम मल्ल कहा गया, क्योंकि केवल एक बिंदु के स्थान परिवर्तन से यह भ्रम हुआ। हालांकि, चूँकि राजा नाथ मल्ल का नाम <em>&quot;तुर्क-ए-जाहाँगीरी&quot;</em> में दो बार आया है, यह दावा सही नहीं था। इसके अलावा, इस मिथक की उस समय के कई इतिहासकारों और राजाओं ने आलोचना की और बाद में इसे खारिज कर दिया गया।
-                  यह मिथक ब्रिटिशों द्वारा उनकी जनगणना रिकॉर्ड में भी फैलाया गया।
+                <p className="font-serif leading-relaxed text-base">
+                  लाल खड़ग बहादुर मल्ल ने अपनी पुस्तक
+                  <span className="font-bold"><em>&quot;विषेण वंश वाटिका&quot;</em></span> (सन् 1887 ईस्वी में लिखी गई) में
+                  महाराजा माधव मल्ल का उल्लेख किया है,
+                  लेकिन उनके पुत्रों राजा नाथ बहादुर मल्ल और बाबू फतेह बहादुर मल्ल का नाम नहीं दिया।
+                  उन्होंने मधुबन के मल्लों को मयूर भट्ट और उनकी कुरमी पत्नी से उत्पन्न वंशज बताया।
+                  उन्होंने यह भी उल्लेख किया कि
+                  <em>&quot;तुर्क-ए-जहांगीरी&quot;</em> में वर्णित राजा नाथ मल्ल को अनुवाद की एक त्रुटि के कारण
+                  राजा भीम मल्ल लिखा गया, जो केवल एक बिंदु की गलत स्थिति के कारण हुआ था।
+                </p>
+
+                <div className="mt-6 mb-6 text-center border border-[#eee] rounded-md">
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-6">
+                    <div className="flex flex-col items-center">
+                      <p className="text-lg font-semibold">राजा नाथ मल्ल</p>
+                      <p className="text-3xl mt-2">راجا ناتھ ملّ</p>
+                    </div>
+
+                    <div className="hidden md:block w-px h-16 bg-gray-300 opacity-50"></div>
+
+                    <div className="flex flex-col items-center">
+                      <p className="text-lg font-semibold">राजा भीम मल्ल</p>
+                      <p className="text-3xl mt-2">راجا بھیم ملّ</p>
+                    </div>
+                  </div>
+
+                  <p className="font-serif text-base pb-4">
+                    फारसी (पर्शियन) भाषा में उनके नामों के लिखने के तरीके में स्पष्ट अंतर दिखाई देता है।
+                  </p>
+                </div>
+
+                <p className="font-serif leading-relaxed text-base">
+                  हालांकि, चूंकि <em>&quot;तुर्क-ए-जहांगीरी&quot;</em> में राजा नाथ मल्ल का उल्लेख तीन बार मिलता है,
+                  इसलिए यह दावा कि &quot;राजा भीम मल्ल&quot; नाम छपाई की गलती थी — सही नहीं है।
+                  इस मिथक की उस समय कई इतिहासकारों और क्षत्रिय राजाओं ने आलोचना की थी,
+                  और बाद में इसे असत्य घोषित कर खारिज कर दिया गया।
+                  यह भ्रम ब्रिटिश जनगणना अभिलेखों में भी आगे चलकर दोहराया गया।
                 </p>
               </div>
-              {/* <p className="font-serif">
-                लाल खड़क बहादुर मल्ल ने अपनी पुस्तक <span className="font-bold"><em>&quot;विशेन वंश वाटिका&quot;</em></span> (1887 ई.) में महाराजा माधव मल्ल का नाम लिखा है, लेकिन उनके पुत्र, राजा नाथ बहादुर मल्ल और बाबू फतेह बहादुर मल्ल का उल्लेख नहीं किया। उन्होंने मधुबन के मल्लों को मय्युर भट्ट की कुर्मी पत्नी से उत्पन्न वंशज बताया। उन्होंने यह भी उल्लेख किया कि <em>&quot;तुर्क-ए-जाहाँगीरी&quot;</em> में लिखे राजा नत्थ मल्ल को अनुवाद की गलती के कारण राजा भीम मल्ल कहा गया, क्योंकि केवल एक बिंदु के स्थान परिवर्तन से यह भ्रम हुआ। हालांकि, चूँकि राजा नाथ मल्ल का नाम <em>&quot;तुर्क-ए-जाहाँगीरी&quot;</em> में दो बार आया है, यह दावा सही नहीं था। इसके अलावा, इस मिथक की उस समय के कई इतिहासकारों और राजाओं ने आलोचना की और बाद में इसे खारिज कर दिया गया।
-                यह मिथक ब्रिटिशों द्वारा उनकी जनगणना रिकॉर्ड में भी फैलाया गया।
-              </p> */}
             </div>
           )}
         </div>

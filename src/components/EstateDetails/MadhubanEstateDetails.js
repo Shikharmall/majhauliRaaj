@@ -467,10 +467,66 @@ export default function MadhubanEstateDetails() {
                 </span>
 
                 {/* Main content */}
-                <p className="font-serif">
-                  Lal Khadag Bahadur Mall, in his book <span className="font-bold"><em>&quot;Vishen Vansh Vatika&quot;</em></span> (written in 1887 AD), mentioned the name of Maharaja Madhav Mall but did not include his children, Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall. He described the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife. He also noted that Raja Natth Mall, mentioned in <em>&quot;Turk-e-Jahangiri&quot;</em>, was mistakenly referred to as Raja Bhim Mall due to a translation error caused by the shifting of a single dot. However, since Raja Nath Mall is mentioned twice in <em>&quot;Turk-e-Jahangiri&quot;</em>, this claim was not valid. Furthermore, this myth was criticized by many historians and kings of that time and was later debunked.
-                  It was also perpetuated by the British in their census records.
+                <p className="font-serif leading-relaxed text-base">
+                  Lal Khadag Bahadur Mall, in his book
+                  <span className="font-bold"><em>"Vishen Vansh Vatika"</em></span> (written in 1887 AD),
+                  mentioned Maharaja Madhav Mall but did not include his sons,
+                  Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall.
+                  He described the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife.
+                  He also noted that Raja Nath Mall, mentioned in
+                  <em>&quot;Turk-e-Jahangiri&quot;</em>, was mistakenly referred to as Raja Bhim Mall
+                  due to a translation error caused by the misplacement of a single dot.
                 </p>
+
+
+                <div className="mt-6 mb-6 text-center border-1 border-[#eee]">
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-6">
+                    <div className="flex flex-col items-center">
+                      <p className="text-lg font-semibold">Raja Nath Mall</p>
+                      <p className="text-3xl mt-2">راجا ناتھ ملّ</p>
+                    </div>
+
+                    <div className="hidden md:block w-px h-16 bg-gray-300 opacity-50"></div>
+
+                    <div className="flex flex-col items-center">
+                      <p className="text-lg font-semibold">Raja Bhim Mall</p>
+                      <p className="text-3xl mt-2">راجا بھیم ملّ</p>
+                    </div>
+                  </div>
+                  {/* <p className="font-serif text-lg font-semibold">Raja Nath Mall</p>
+                  <p className="text-3xl font-serif mb-4">راجا ناتھ ملّ</p>
+
+                  <p className="font-serif text-lg font-semibold">Raja Bhim Mall</p>
+                  <p className="text-3xl font-serif">راجا بھیم ملّ</p> */}
+                  <p>
+                    There is a significant difference in the way their names are written in Persian.
+                  </p>
+                </div>
+
+                <p className="font-serif leading-relaxed text-base">
+                  However, since Raja Nath Mall is mentioned thrice in
+                  <em>&quot;Turk-e-Jahangiri&quot;</em>, the claim that the name Raja Bhim Mall was a misprint is not valid.
+                  Furthermore, this myth was criticized by several historians and kshatriyas of that time
+                  and was later debunked. It was also perpetuated by the British in their census records.
+                </p>
+
+
+                {/* <p className="font-serif">
+                  Lal Khadag Bahadur Mall, in his book <span className="font-bold"><em>&quot;Vishen Vansh Vatika&quot;</em></span> (written in 1887 AD), mentioned the name of Maharaja Madhav Mall but did not include his children, Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall. He described the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife. He also noted that Raja Natth Mall, mentioned in <em>&quot;Turk-e-Jahangiri&quot;</em>, was mistakenly referred to as Raja Bhim Mall due to a translation error caused by the shifting of a single dot.
+
+                  <span className="">
+                    Raja Nath Mall <br />
+                    <span className="text-3xl">راجا ناتھ ملّ</span> <br />
+
+                    Raja Bhim Mall <br />
+                    <span className="text-3xl">راجا بھیم ملّ</span> <br />
+                  </span>
+
+                  Their is huge difference in wrtting their name in persian language
+
+                  However, since Raja Nath Mall is mentioned thrice in <em>&quot;Turk-e-Jahangiri&quot;</em>, this claim was not valid. Furthermore, this myth was criticized by many historians and kings of that time and was later debunked.
+                  It was also perpetuated by the British in their census records.
+                </p> */}
               </div>
 
             </div>

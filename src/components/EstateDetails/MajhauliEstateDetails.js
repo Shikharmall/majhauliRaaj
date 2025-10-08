@@ -1450,6 +1450,16 @@ export default function MajhauliEstateDetails() {
                     openModal({ url: "/assets/img/majhauli/proof4.png" })
                   }
                 />
+                {/* <Image
+                  src="/assets/img/majhauli/proof5.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/majhauli/proof5.png" })
+                  }
+                /> */}
               </div>
 
               <p>
@@ -1461,22 +1471,105 @@ export default function MajhauliEstateDetails() {
           </div>
         </div>
 
+        {/* Debunked Myth */}
+
         <div className="flex items-center gap-4 my-5">
           <div className="h-px flex-grow bg-gray-300"></div>
           <span className="text-gray-500 text-2xl whitespace-nowrap">
-            {language === "english" ? "BRITISH PERIOD" : "मुग़ल काल"}
+            {language === "english" ? "DEBUNKED MYTH" : "भ्रांत मिथक (जो झूठा साबित हुआ)"}
           </span>
           <div className="h-px flex-grow bg-gray-300"></div>
         </div>
 
-        <Image
+        <div className="grid md:grid-cols-3 gap-6 my-3">
+          {/* Left Image */}
+          <div className="md:col-span-1">
+            <div className="border-1 border-gray-300 p-2 flex flex-col items-center">
+              <div className="flex flex-col md:flex-row justify-center">
+                <Image
+                  src="/assets/img/debunked/debunked3.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="border-1 border-gray-300 m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/debunked/debunked3.png" })
+                  }
+                />
+                <Image
+                  src="/assets/img/debunked/debunked4.png"
+                  alt="majhauli-img"
+                  width={200}
+                  height={50}
+                  className="border-1 border-gray-300 m-1 cursor-pointer" // shadow-lg border-3 border-gray-300
+                  onClick={() =>
+                    openModal({ url: "/assets/img/debunked/debunked4.png" })
+                  }
+                />
+              </div>
+              <p>
+                {language === "english"
+                  ? "The false origin of the Bisen Rajputs from Mayyur Bhat was written by W. Crooke in his book 'The Tribes and Castes of the North-Western Provinces and Oudh' in 1896."
+                  : "बिसेन राजपूतों की मय्यूर भट से उत्पत्ति का झूठा दावा डब्ल्यू. क्रूक ने अपनी पुस्तक 'द ट्राइब्स एंड कास्ट्स ऑफ़ द नॉर्थ-वेस्टर्न प्रोविंसेस एंड अवध' में 1896 में लिखा।"}
+              </p>
+            </div>
+          </div>
+
+          {/* Bio */}
+          {language === "english" ? (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                In year 1896, W. Crooke in his book <span className="font-bold">"The Tribes and Castes of the North-Western Provinces and Oudh"</span> wrote bisen of Majhauli as well as the Donwår (q. v.) claim descent from one Mayûra Bhatta, who is said to have been a descendant of Jamadagni Rishi of the race of Bhrigu. Regarding this personage the local tradition is very vague. Some say he came from Hastinapur and was the son of one Aswathama; others that he was an emigrant from Maharashtra or the Marhatta country. He read Sanskrit for a while at Benares, and became a proficient in astrology, Quitting that city at last under a divine impulse he settled at <span className="font-bold">Kakradih, a village in Pargana Sikandarpur, of Azamgarh (present day Madhuban, Mau, Uttar Pradesh)</span>. The whole of that Pargana came gradually under his authority.
+              </p>
+              <p className="font-serif">
+                His domestic arrangements illustrate a period when the bonds of caste, as we know them, were unknown, He is said to have had three wives, first a Brahmani named Nägseni; the second Surajprabha, a Sürajbans Rajputni; the third Haikumari, a Gautam Bhuinhårin. By his wife Sürajprabha he had a son, Biswa or Bissu Sen, who was the ancestor of the Bisen sept of Chhatris; by Haikumari, Baikal or Bagmar Sahi, the ances-tor of the Bliminhår families of Kuwari and Tamkûhi; by Någsen, Nages, Nagesar or Någsen; and by a Kurmin concubine Indra-dawwan Mal, from whom sprang the Mals of Azamgarh. He expelled the Bhars, and finally went on a pilgrimage to the Himalaya, where he died, There are thus a family of Misr Brahmans, and a large half Kurmi clan which claim common descent with the Majhauli Bisen family.
+              </p>
+              <p className="font-serif">
+                However, this myth was not accepted due to lack of evidence.
+              </p>
+            </div>
+          ) : (
+            <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
+              <p className="font-serif">
+                मझौली राज का पहला लिखित उल्लेख अबुल फज़ल द्वारा रचित प्रसिद्ध
+                ग्रंथ आईन-ए-अकबरी में मिलता है। इस मुगल दस्तावेज़ में मझौली को
+                गलती से “महौली” के रूप में लिखा गया है, जो फ़ारसी लिप्यंतरण की
+                त्रुटि का परिणाम था। इस नाम की गलती के बावजूद, इसका उल्लेख इस
+                बात का प्रमाण है कि मझौली मुग़ल काल में एक महत्वपूर्ण क्षेत्र
+                था। उस समय यह गोरखपुर सरकार का हिस्सा था और इसमें दो महल
+                (प्रशासनिक इकाइयाँ) शामिल थीं, जो इसके प्रशासनिक महत्व को
+                दर्शाता है।
+              </p>
+              <p className="font-serif">
+                मझौली राज सैन्य और स्थापत्य दोनों दृष्टियों से महत्वपूर्ण था। इस
+                रियासत में ईंटों से बने दो किले थे, जो रक्षा और रणनीतिक
+                उद्देश्यों के लिए बनाए गए थे। इसके अतिरिक्त, मझौली के पास 2,000
+                पैदल सैनिकों की एक संगठित सेना भी थी, जो इसे स्थानीय सुरक्षा में
+                सशक्त बनाती थी और संभवतः मुग़ल अभियानों में भी भाग लेती थी। यह
+                व्यवस्था इस रियासत की ताकत, अनुशासन और उसके राजनीतिक योगदान को
+                दर्शाती है।
+              </p>
+              <p className="font-serif">
+                आर्थिक रूप से भी मझौली राज मुग़ल खजाने के लिए एक महत्वपूर्ण
+                स्रोत था। आईन-ए-अकबरी के अनुसार, मझौली से 6,18,256 दाम (जो उस
+                समय तांबे का सिक्का था) का राजस्व निर्धारित किया गया था, जो कि
+                2,523 बीघा कृषि भूमि पर आधारित था। यह आँकड़ा मझौली की भूमि की
+                उपजाऊता और उत्पादन क्षमता को दर्शाता है। इस रियासत पर शासन करने
+                वाला बिसेन राजपूत वंश था, जो पूर्वी उत्तर प्रदेश में अपनी
+                निष्ठा, शासन-कुशलता और प्रभाव के लिए प्रसिद्ध था।
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* <Image
           src="/assets/img/map3.png"
           alt="majhauli-img"
           width={600}
           height={400}
           className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
           onClick={() => openModal({ url: "/assets/img/map3.png" })}
-        />
+        /> */}
 
         <FamilyTreeStructure
           familyData={language === "english" ? familyData1 : familyData1Hindi}
@@ -1486,101 +1579,6 @@ export default function MajhauliEstateDetails() {
           familyData={language === "english" ? familyData : familyDataHindi}
         />
 
-        {/* Personal Details Table */}
-        {/* <div className="mt-12">
-          <h2 className="text-2xl font-bold mb-4">Personal Details</h2>
-          <div className="overflow-x-auto">
-            <table className="min-w-full border border-gray-300">
-              <tbody>
-                <tr>
-                  <th className="border px-4 py-2 text-left">Name</th>
-                  <td className="border px-4 py-2">
-                    Brij Bhushan Sharan Singh
-                  </td>
-                </tr>
-                <tr>
-                  <th className="border px-4 py-2 text-left">Father’s Name</th>
-                  <td className="border px-4 py-2">
-                    Shri Jagdamba Sharan Singh
-                  </td>
-                </tr>
-                <tr>
-                  <th className="border px-4 py-2 text-left">Date of Birth</th>
-                  <td className="border px-4 py-2">08 January 1957</td>
-                </tr>
-                <tr>
-                  <th className="border px-4 py-2 text-left">Place of Birth</th>
-                  <td className="border px-4 py-2">Gonda, Uttar Pradesh</td>
-                </tr>
-                <tr>
-                  <th className="border px-4 py-2 text-left">Marital Status</th>
-                  <td className="border px-4 py-2">Married</td>
-                </tr>
-                <tr>
-                  <th className="border px-4 py-2 text-left">Spouse</th>
-                  <td className="border px-4 py-2">Ketki Devi Singh</td>
-                </tr>
-                <tr>
-                  <th className="border px-4 py-2 text-left">Children</th>
-                  <td className="border px-4 py-2">2 sons and 1 daughter</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div> */}
-
-        {/* Positions Held Table */}
-        {/* <div className="mt-12">
-          <h2 className="text-2xl font-bold mb-4">Positions Held</h2>
-          <div className="overflow-x-auto">
-            <table className="min-w-full border border-gray-300">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border px-4 py-2 text-left">Year</th>
-                  <th className="border px-4 py-2 text-left">Position</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border px-4 py-2">1991</td>
-                  <td className="border px-4 py-2">
-                    Elected to 10th Lok Sabha (Gonda)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">1999</td>
-                  <td className="border px-4 py-2">
-                    Elected to 13th Lok Sabha (Balrampur)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">2004</td>
-                  <td className="border px-4 py-2">
-                    Elected to 14th Lok Sabha (Kaiserganj)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">2009</td>
-                  <td className="border px-4 py-2">
-                    Re-elected to 15th Lok Sabha (Kaiserganj)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">2014</td>
-                  <td className="border px-4 py-2">
-                    Re-elected to 16th Lok Sabha (Kaiserganj)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">2019</td>
-                  <td className="border px-4 py-2">
-                    Re-elected to 17th Lok Sabha (Kaiserganj)
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div> */}
       </main>
 
       {/* Modal */}

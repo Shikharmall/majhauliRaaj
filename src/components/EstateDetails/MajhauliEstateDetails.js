@@ -1116,20 +1116,18 @@ export default function MajhauliEstateDetails() {
                 names Manakpur (Estate), Bhadri (Estate), Raja Madhav Mall
                 (Madhuban), Kalakankar (Estate) and many more in North India.
               </p>
-              <p className="font-serif font-bold">
+              <>
+                {/* <p className="font-serif font-bold">
                 <strong>
                   <em> Debunked Origin Myth (due to lack of evidence) written by Lal Khadag Bahadur Mall</em>
                 </strong>
               </p>
               <div className="relative p-6 bg-white font-serif">
-                {/* Debunked Watermark */}
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                    text-gray-600 text-5xl font-bold opacity-20 select-none pointer-events-none 
                    rotate-[-45deg]">
                   DEBUNKED
                 </span>
-
-                {/* Main content */}
                 <p className="relative z-10">
                   One branch of this dynasty comes from a founder named Mayyur who
                   has been variously described as a Brahmin, Bhumihar or even a
@@ -1146,7 +1144,8 @@ export default function MajhauliEstateDetails() {
                   become the ancestor of the Misra Brahmins; and the son from his
                   Kurmi wife went on to found the Kakradih estate.
                 </p>
-              </div>
+              </div> */}
+              </>
             </div>
           ) : (
             <div className="md:col-span-2 space-y-4 text-justify leading-relaxed">
@@ -1173,21 +1172,18 @@ export default function MajhauliEstateDetails() {
                 स्थापना की जैसे — मनकापुर (एस्टेट), भदरी (एस्टेट), राजा माधव
                 मल्ल (मधुबन), कालाकांकर (एस्टेट) आदि।
               </p>
-              <p className="font-serif font-bold">
+              <>
+                {/* <p className="font-serif font-bold">
                 <strong>
                   <em>लाल खड़ग बहादुर मल्ल द्वारा लिखा गया (प्रमाणों के अभाव में) खंडित मूल उत्पत्ति मिथक</em>
                 </strong>
               </p>
-
               <div className="relative p-6 bg-white font-serif">
-                {/* Debunked Watermark */}
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                    text-gray-600 text-5xl font-bold opacity-20 select-none pointer-events-none 
                    rotate-[-45deg]">
                   खण्डित
                 </span>
-
-                {/* Main content */}
                 <p className="relative z-10">
                   इस वंश की एक शाखा के संस्थापक का नाम मय्यूर था, जिन्हें कभी
                   ब्राह्मण, भूमिहार या भट्ट के रूप में वर्णित किया गया है। वह काशी
@@ -1203,22 +1199,8 @@ export default function MajhauliEstateDetails() {
                   बने और कुर्मी पत्नी से उत्पन्न पुत्र ने काकरडिह एस्टेट की
                   स्थापना की।
                 </p>
-              </div>
-              {/* <p className="font-serif">
-                इस वंश की एक शाखा के संस्थापक का नाम मय्यूर था, जिन्हें कभी
-                ब्राह्मण, भूमिहार या भट्ट के रूप में वर्णित किया गया है। वह काशी
-                से कुशीनगर आए थे और उनकी चार पत्नियाँ थीं: एक ब्राह्मण, एक मल्ल
-                राजकुमारी (संभवत: नाम सूर्यप्रभा), एक भूमिहार, और एक राजपूत।
-                उनकी भूमिहार पत्नी से जन्मे पुत्र राजा वीरसेन (अनुमानित काल: 600
-                ईसा पूर्व) ने बघोचिया वंश की स्थापना की और उनके वंशजों ने
-                बांसगांव (दिलीपनगर) एस्टेट, हथुआ राज और तमकुही राज की स्थापना की
-                तथा भूमिहार शाखा की शुरुआत की। मल्ल राजकुमारी से जन्मे पुत्र
-                राजा विश्वसेन ने विश्वसेन राजपूत वंश की नींव रखी और उनके वंशज
-                (संभवत: 86वीं पीढ़ी में) राजा भीम देव ने मझौली राज की स्थापना
-                की। ब्राह्मण पत्नी से उत्पन्न पुत्र मिश्रा ब्राह्मणों के पूर्वज
-                बने और कुर्मी पत्नी से उत्पन्न पुत्र ने काकरडिह एस्टेट की
-                स्थापना की।
-              </p> */}
+              </div> */}
+              </>
             </div>
           )}
         </div>
@@ -1460,7 +1442,7 @@ export default function MajhauliEstateDetails() {
         <div className="flex items-center gap-4 my-5">
           <div className="h-px flex-grow bg-gray-300"></div>
           <span className="text-gray-500 text-2xl whitespace-nowrap">
-            {language === "english" ? "DEBUNKED MYTH" : "भ्रांत मिथक (जो झूठा साबित हुआ)"}
+            {language === "english" ? "DEBUNKED ORIGIN MYTH" : "भ्रांत मूल उत्पत्ति मिथक"}
           </span>
           <div className="h-px flex-grow bg-gray-300"></div>
         </div>
@@ -1509,7 +1491,7 @@ export default function MajhauliEstateDetails() {
                 His domestic arrangements illustrate a period when the bonds of caste, as we know them, were unknown, He is said to have had three wives, first a Brahmani named Nägseni; the second Surajprabha, a Sürajbans Rajputni; the third Haikumari, a Gautam Bhuinhårin. By his wife Sürajprabha he had a son, Biswa or Bissu Sen, who was the ancestor of the Bisen sept of Chhatris; by Haikumari, Baikal or Bagmar Sahi, the ances-tor of the Bhuminhår families of Kuwari and Tamkûhi; by Någsen, Nages, Nagesar or Någsen; and by a Kurmin concubine Indra-dawwan Mal, from whom sprang the Mals of Azamgarh. He expelled the Bhars, and finally went on a pilgrimage to the Himalaya, where he died, There are thus a family of Misr Brahmans, and a large half Kurmi clan which claim common descent with the Majhauli Bisen family.
               </p>
               <p className="font-serif">
-                However, this myth was not accepted due to lack of evidence.
+                However, this origin myth was not accepted due to lack of evidence.
               </p>
             </div>
           ) : (
@@ -1549,15 +1531,6 @@ export default function MajhauliEstateDetails() {
 
           )}
         </div>
-
-        {/* <Image
-          src="/assets/img/map3.png"
-          alt="majhauli-img"
-          width={600}
-          height={400}
-          className="rounded-lg shadow-lg border-3 border-gray-300 cursor-pointer"
-          onClick={() => openModal({ url: "/assets/img/map3.png" })}
-        /> */}
 
         <FamilyTreeStructure
           familyData={language === "english" ? familyData1 : familyData1Hindi}

@@ -192,7 +192,7 @@ const familyDataHindi = {
                 },
                 {
                   name: "सुल्तान मल्ल",
-                  isExtra: "(खीरीकोट, गंगेवीर, नेवादा, नाथुपुर)",
+                  isExtra: "(खीरीकोट, गंगेवीर, नेवादा, नत्थुपुर)",
                 },
                 {
                   name: "नवल मल्ल",
@@ -543,17 +543,17 @@ export default function MadhubanEstateDetails() {
                   लाल खड़ग बहादुर मल्ल ने अपनी पुस्तक
                   <span className="font-bold"><em>&quot;विषेण वंश वाटिका&quot;</em></span> (सन् 1887 ईस्वी में लिखी गई) में
                   महाराजा माधव मल्ल का उल्लेख किया है,
-                  लेकिन उनके पुत्रों राजा नाथ बहादुर मल्ल और बाबू फतेह बहादुर मल्ल का नाम नहीं दिया।
+                  लेकिन उनके पुत्रों राजा नत्थ बहादुर मल्ल और बाबू फतेह बहादुर मल्ल का नाम नहीं दिया।
                   उन्होंने मधुबन के मल्लों को मयूर भट्ट और उनकी कुर्मी पत्नी से उत्पन्न वंशज बताया।
                   उन्होंने यह भी उल्लेख किया कि
-                  <em>&quot;तुर्क-ए-जहांगीरी&quot;</em> में वर्णित राजा नाथ मल्ल को अनुवाद की एक त्रुटि के कारण
+                  <em>&quot;तुर्क-ए-जहांगीरी&quot;</em> में वर्णित राजा नत्थ मल्ल को अनुवाद की एक त्रुटि के कारण
                   राजा भीम मल्ल लिखा गया, जो केवल एक बिंदु की गलत स्थिति के कारण हुआ था।
                 </p>
 
                 <div className="mt-6 mb-6 text-center border border-[#eee] rounded-md">
                   <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-6">
                     <div className="flex flex-col items-center">
-                      <p className="text-lg font-semibold">राजा नाथ मल्ल</p>
+                      <p className="text-lg font-semibold">राजा नत्थ मल्ल</p>
                       <p className="text-3xl mt-2">راجا ناتھ ملّ</p>
                     </div>
 
@@ -571,7 +571,7 @@ export default function MadhubanEstateDetails() {
                 </div>
 
                 <p className="font-serif leading-relaxed text-base">
-                  हालांकि, चूंकि <em>&quot;तुर्क-ए-जहांगीरी&quot;</em> में राजा नाथ मल्ल का उल्लेख तीन बार मिलता है,
+                  हालांकि, चूंकि <em>&quot;तुर्क-ए-जहांगीरी&quot;</em> में राजा नत्थ मल्ल का उल्लेख तीन बार मिलता है,
                   इसलिए यह दावा कि &quot;राजा भीम मल्ल&quot; नाम छपाई की गलती थी — सही नहीं है।
                   इस मिथक की उस समय कई इतिहासकारों और क्षत्रिय राजाओं ने आलोचना की थी,
                   और बाद में इसे असत्य घोषित कर खारिज कर दिया गया।
@@ -692,7 +692,7 @@ export default function MadhubanEstateDetails() {
               </p>
               <p className="font-serif mx-5 md:mx-10">
                 <em>
-                  &quot;मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये
+                  &quot;मैंने नत्थू मल(?), मंझोली के राजा को 5,000 रुपये
                   दिए।&quot;
                 </em>
               </p>
@@ -842,7 +842,7 @@ export default function MadhubanEstateDetails() {
               </p>
               <p className="font-serif mx-5 md:mx-10">
                 <em>
-                  &quot;मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये
+                  &quot;मैंने नत्थू मल(?), मंझोली के राजा को 5,000 रुपये
                   दिए।&quot;
                 </em>
               </p>
@@ -881,7 +881,7 @@ export default function MadhubanEstateDetails() {
               <p>
                 {language === "english"
                   ? "Martyrs' Memorial of Mohan Pandey, Commander-in-Chief of Raja Nath Mall's Army"
-                  : "शहीद स्मारक : मोहन पांडेय, राजा नाथ मल्ल की सेना के प्रधान सेनापति।"}
+                  : "शहीद स्मारक : मोहन पांडेय, राजा नत्थ मल्ल की सेना के प्रधान सेनापति।"}
               </p>
             </div>
           </div>

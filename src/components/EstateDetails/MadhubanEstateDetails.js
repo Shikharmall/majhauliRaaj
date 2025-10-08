@@ -469,7 +469,7 @@ export default function MadhubanEstateDetails() {
                 {/* Main content */}
                 <p className="font-serif leading-relaxed text-base">
                   Lal Khadag Bahadur Mall, in his book
-                  <span className="font-bold"><em>"Vishen Vansh Vatika"</em></span> (written in 1887 AD),
+                  <span className="font-bold"><em>&quot;Vishen Vansh Vatika&quot;</em></span> (written in 1887 AD),
                   mentioned Maharaja Madhav Mall but did not include his sons,
                   Raja Nath Bahadur Mall and Babu Fateh Bahadur Mall.
                   He described the Malls of Madhuban as descendants of Mayyur Bhat through his Kurmi wife.

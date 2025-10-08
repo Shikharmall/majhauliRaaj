@@ -1118,25 +1118,9 @@ export default function MajhauliEstateDetails() {
               </p>
               <p className="font-serif font-bold">
                 <strong>
-                  <em> Debunked Myth (due to lack of evidence) written by Lal Khadag Bahadur Mall</em>
+                  <em> Debunked Origin Myth (due to lack of evidence) written by Lal Khadag Bahadur Mall</em>
                 </strong>
               </p>
-              {/* <p className="font-serif">
-                One branch of this dynasty comes from a founder named Mayyur who
-                has been variously described as a Brahmin, Bhumihar or even a
-                Bhat. He had come from Kashi to Kushinara had children with four
-                wives: One Brahmin, one Malla princess (name may be
-                Suryaprabha), one more Bhumihar, as well as one Rajput. His son
-                from his Bhumihar wife named King Bir Sen (Estimated 600 BCE )
-                founder of Baghochia Dynasty and his descendants established
-                Bans Gaon Estate (Dileepnagar Estate), Hathwa Raj and Tamkuhi
-                raj and started Bhumihar branch . One son from his Malla
-                princess name King Vishwasen founder of Vishwasen Rajput dynasty
-                and his descendant (probably 86th generation) King Bhim Dev
-                stablished Majhuli Raj, One son from his Brahmin wife went on to
-                become the ancestor of the Misra Brahmins; and the son from his
-                Kurmi wife went on to found the Kakradih estate.
-              </p> */}
               <div className="relative p-6 bg-white font-serif">
                 {/* Debunked Watermark */}
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
@@ -1191,7 +1175,7 @@ export default function MajhauliEstateDetails() {
               </p>
               <p className="font-serif font-bold">
                 <strong>
-                  <em>लाल खड़ग बहादुर मल्ल द्वारा लिखा गया (प्रमाणों के अभाव में) खंडित मिथक</em>
+                  <em>लाल खड़ग बहादुर मल्ल द्वारा लिखा गया (प्रमाणों के अभाव में) खंडित मूल उत्पत्ति मिथक</em>
                 </strong>
               </p>
 

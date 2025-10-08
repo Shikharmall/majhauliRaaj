@@ -1322,13 +1322,9 @@ export default function MajhauliEstateDetails() {
               <p className="font-serif">
                 The first written record of any king of Majhauli appears in the
                 <strong>
-                  <em> Tuzuk-i-Jahangiri </em>
+                  <em> Tuzuk-i-Jahangiri, </em>
                 </strong>
-                , where Raja Nath Mall is mentioned twice, with a gap of ten
-                years between the two references. The first mention is dated the
-                21st of second Jumada(corresponding to 14th October, 1606), and
-                the second appears on the 5th of Amurdad (corresponding to 25th
-                July, 1615).
+                where Raja Nath Mall (who probably acted as regent for Maharaja Bhim Mall) is mentioned thrice: the first two references are ten years apart, and the third appears in the index. The first mention is dated the 21st of second Jumada(corresponding to 14th October, 1606), and the second appears on the 5th of Amurdad (corresponding to 25th July, 1615).
               </p>{" "}
               {/* october, 1606 // 25 July */}
               <p className="font-serif">
@@ -1361,8 +1357,7 @@ export default function MajhauliEstateDetails() {
                 <strong>
                   <em> तुजुक-ए-जहाँगीरी &nbsp;</em>
                 </strong>
-                में मिलता है, जहाँ राजा नत्थ मल का दो बार उल्लेख हुआ है — दोनों
-                के बीच दस वर्षों का अंतर है। पहला उल्लेख दूसरी जमादि (22वीं
+                में मिलता है, जहाँ राजा नत्थ मल (जो संभवतः महाराजा भीम मल्ल के प्रति अभिभर्तक (रिजेंट) के रूप में कार्यरत थे) का तीन बार उल्लेख हुआ है : पहले दो संदर्भों के बीच दस वर्षों का अंतर है, और तीसरा संदर्भ सूची (इंडेक्स) में दिखाई देता है। पहला उल्लेख दूसरी जमादि (22वीं
                 तारीख) के दिनांक (14 अक्टूबर, 1606) का है, और दूसरा अमुर्दाद की
                 5वीं तारीख (25 जुलाई, 1615) का है।
               </p>
@@ -1373,7 +1368,7 @@ export default function MajhauliEstateDetails() {
               </p>
               <p className="font-serif mx-5 md:mx-10">
                 <em>
-                  &quot;मैंने नाथू मल(?), मंझोली के राजा को 5,000 रुपये
+                  &quot;मैंने नत्थू मल(?), मंझोली के राजा को 5,000 रुपये
                   दिए।&quot;
                 </em>
               </p>

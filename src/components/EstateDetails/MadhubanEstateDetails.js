@@ -431,7 +431,7 @@ export default function MadhubanEstateDetails() {
               </p>
               <p className="font-serif">
                 In the mid-16th century, Raja Madhav Mall established the region
-                known as Madhuban (in present-day Mau district, Uttar Pradesh),
+                known as Madhuban/Mallān (in present-day Mau district, Uttar Pradesh),
                 which became an influential settlement for his descendants. This
                 area is now the Madhuban tehsil, comprising numerous villages
                 and a significant population.

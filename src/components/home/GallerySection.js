@@ -91,8 +91,8 @@ export default function GallerySection() {
       ],
     },
     {
-      name: "Madhuban Estate",
-      nameHindi: "मधुबन रियासत",
+      name: "Madhuban Zamindari",
+      nameHindi: "मधुबन ज़मींदारी",
       successor: "Majhauli Estate",
       successorHindi: "मझौली राज",
       king: "King Madhav Mall",
@@ -119,8 +119,8 @@ export default function GallerySection() {
       ],
     },
     {
-      name: "Dumaria Estate",
-      nameHindi: "डुमरिया रियासत",
+      name: "Dumaria Zamindari",
+      nameHindi: "डुमरिया ज़मींदारी",
       successor: "Majhauli Estate",
       successorHindi: "मझौली राज",
       king: "Jagat Bahadur Shahi",

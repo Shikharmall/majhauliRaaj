@@ -17,7 +17,7 @@ export default function MoreSection() {
       titleHindi: "मझौली राज",
       description: "Raja Vishwa Sen",
       descriptionHindi: "राजा विश्वसेन",
-      src: "/assets/img/royalFlagC.png",
+      src: "/assets/img/majhauli/majhauli_coa.png",
       href: "estates/majhauliEstate",
     },
     {
@@ -61,8 +61,8 @@ export default function MoreSection() {
       href: "/estates/bhingaEstate",
     },
     {
-      title: "Madhuban Estate",
-      titleHindi: "मधुबन रियासत",
+      title: "Madhuban Zamindari",
+      titleHindi: "मधुबन ज़मींदारी",
       description: "Raja Madhav Mall",
       descriptionHindi: "राजा माधव मल",
       src: "/assets/img/royalFlagC.png",

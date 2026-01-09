@@ -350,7 +350,7 @@ export default function MadhubanEstateDetails() {
   return (
     <div>
       <Banner
-        title={language === "english" ? "Madhuban Estate" : "मधुबन रियासत"}
+        title={language === "english" ? "Madhuban Zamindari" : "मधुबन ज़मींदारी"}
       />
 
       {/* Main Content */}

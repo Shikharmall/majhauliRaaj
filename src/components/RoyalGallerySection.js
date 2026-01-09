@@ -181,23 +181,23 @@ const images = [
     url: "/assets/img/bhadri/bhadri8.png",
   },
   {
-    estate: "Dumaria Estate",
-    estateHindi: "डुमरिया रियासत",
+    estate: "Dumaria Zamindari",
+    estateHindi: "डुमरिया ज़मींदारी",
     url: "/assets/img/dumaria/dumaria1.jpg",
   },
   {
-    estate: "Dumaria Estate",
-    estateHindi: "डुमरिया रियासत",
+    estate: "Dumaria Zamindari",
+    estateHindi: "डुमरिया ज़मींदारी",
     url: "/assets/img/dumaria/dumaria5.jpg",
   },
   {
-    estate: "Dumaria Estate",
-    estateHindi: "डुमरिया रियासत",
+    estate: "Dumaria Zamindari",
+    estateHindi: "डुमरिया ज़मींदारी",
     url: "/assets/img/dumaria/dumaria7.jpg",
   },
   {
-    estate: "Dumaria Estate",
-    estateHindi: "डुमरिया रियासत",
+    estate: "Dumaria Zamindari",
+    estateHindi: "डुमरिया ज़मींदारी",
     url: "/assets/img/dumaria/dumaria8.jpg",
   },
   {
@@ -256,23 +256,23 @@ const images = [
     url: "/assets/img/narharpur/narharpur6.png",
   },
   {
-    estate: "Madhuban Estate",
-    estateHindi: "मधुबन रियासत",
+    estate: "Madhuban Zamindari",
+    estateHindi: "मधुबन ज़मींदारी",
     url: "/assets/img/madhuban/madhuban1.jpg",
   },
   {
-    estate: "Madhuban Estate",
-    estateHindi: "मधुबन रियासत",
+    estate: "Madhuban Zamindari",
+    estateHindi: "मधुबन ज़मींदारी",
     url: "/assets/img/madhuban/madhuban2.png",
   },
   {
-    estate: "Madhuban Estate",
-    estateHindi: "मधुबन रियासत",
+    estate: "Madhuban Zamindari",
+    estateHindi: "मधुबन ज़मींदारी",
     url: "/assets/img/madhuban/madhuban3.png",
   },
   {
-    estate: "Madhuban Estate",
-    estateHindi: "मधुबन रियासत",
+    estate: "Madhuban Zamindari",
+    estateHindi: "मधुबन ज़मींदारी",
     url: "/assets/img/madhuban/madhuban4.png",
   },
 ];

@@ -173,13 +173,13 @@ export default function MallMahajanpadaDetails() {
                       where Raja Chandraketu, mentioned as the son of Lord Lakshmana,
                       was granted dominion over the country of Mallya (Mall) by Lord Rama.
                       There, Rama himself built a splendid capital for him, known as Chandrakanti —
-                      a city described as “highly picturesque and comparable to the city of the celestials.”
+                      a city described as &quot;highly picturesque and comparable to the city of the celestials.&quot;
                     </p>
 
                     <p className="font-serif">
                       The first reference states that Lord Rama said to Lakshmana:
-                      “O son of Sumitra, your two sons, Angada and Chandraketu, are virtuous and capable;
-                      I shall establish them as rulers over their respective kingdoms.”
+                      &quot;O son of Sumitra, your two sons, Angada and Chandraketu, are virtuous and capable;
+                      I shall establish them as rulers over their respective kingdoms.&quot;
                     </p>
 
                     <p className="font-serif mx-5 md:mx-10">

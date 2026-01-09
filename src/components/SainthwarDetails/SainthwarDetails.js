@@ -90,11 +90,11 @@ const familyDataHindi = {
   ],
 };
 
-export default function MallMahajanpadaDetails() {
+export default function SainthwarDetails() {
   const { language } = useContext(LanguageContext);
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isMaintenance, setIsMaintenance] = useState(true);
+  const [isMaintenance, setIsMaintenance] = useState(false);
 
   const openModal = (src) => {
     setSelectedImage(src);
@@ -104,8 +104,8 @@ export default function MallMahajanpadaDetails() {
   return (
     <div>
       <Banner
-        title={language === "english" ? "Mall Mahajanpada" : "मल्ल महाजनपद"}
-        bgImage={'/assets/img/mallMahajanpada/warOverBuddhaRelics.jpg'}
+        title={language === "english" ? "Sainthwar" : "सैंथवार"}
+        bgImage={'/assets/img/sainthwarBanner.jpg'}
       />
 
       {

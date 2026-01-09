@@ -35,6 +35,12 @@ export default function Navbar() {
             >
               {language === "english" ? "Mall Mahajanpada" : "मल्ल महाजनपद"}
             </Link>
+            {/* <Link
+              href="/sainthwar"
+              className="text-gray-700 hover:text-orange-600"
+            >
+              {language === "english" ? "Sainthwar" : "सैंथवार"}
+            </Link> */}
             <Link
               href="/gallery"
               className="text-gray-700 hover:text-orange-600"
@@ -75,6 +81,12 @@ export default function Navbar() {
           >
             {language === "english" ? "Mall Mahajanpada" : "मल्ल महाजनपद"}
           </Link>
+          {/* <Link
+              href="/sainthwar"
+              className="text-gray-700 hover:text-orange-600"
+            >
+              {language === "english" ? "Sainthwar" : "सैंथवार"}
+            </Link> */}
           <Link
             href="/gallery"
             className="block text-gray-700 hover:text-orange-600"

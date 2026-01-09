@@ -128,6 +128,8 @@ export default function GallerySection() {
       images: [
         "/assets/img/dumaria/dumaria1.jpg",
         "/assets/img/dumaria/dumaria2.png",
+        "/assets/img/dumaria/dumaria7.jpg",
+        "/assets/img/dumaria/dumaria5.jpg",
       ],
     },
   ];

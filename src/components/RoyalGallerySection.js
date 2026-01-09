@@ -186,6 +186,21 @@ const images = [
     url: "/assets/img/dumaria/dumaria1.jpg",
   },
   {
+    estate: "Dumaria Estate",
+    estateHindi: "डुमरिया रियासत",
+    url: "/assets/img/dumaria/dumaria5.jpg",
+  },
+  {
+    estate: "Dumaria Estate",
+    estateHindi: "डुमरिया रियासत",
+    url: "/assets/img/dumaria/dumaria7.jpg",
+  },
+  {
+    estate: "Dumaria Estate",
+    estateHindi: "डुमरिया रियासत",
+    url: "/assets/img/dumaria/dumaria8.jpg",
+  },
+  {
     estate: "Bhinga Estate",
     estateHindi: "भिंगा रियासत",
     url: "/assets/img/bhinga/bhinga1.jpg",

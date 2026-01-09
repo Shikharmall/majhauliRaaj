@@ -218,10 +218,10 @@ export default function MallMahajanpadaDetails() {
                     </p>
 
                     <p className="font-serif mx-5 md:mx-10">
-                      <em>
+                      {/* <em>
                         &quot;ततः सुमित्रानन्दनौ पुत्रौ तव लङ्क्ष्मण । <br />
                         अङ्गदं चन्द्रकेतुं च राज्ये स्थापयिता अहम् ॥&quot;
-                      </em>
+                      </em> */}
                     </p>
 
                     <p className="font-serif mt-4">
